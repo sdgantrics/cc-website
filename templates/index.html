@@ -43,14 +43,16 @@
         <a class="btn btn-primary" href="episodes.html" data-event="Listen Now">Listen now</a>
         <a class="btn btn-ghost" href="https://constructionbriefs.substack.com/subscribe" data-event="Newsletter CTA">Get the newsletter</a>
       </div>
-      <!-- START HERE flagship episode.
-           PLACEHOLDER: Stephen to supply the flagship episode. Replace the
-           title text below and set data-src on the <audio> tag to the episode's
-           MP3 URL from the Podbean feed (or paste a Podbean embed here instead). -->
+      <!-- Latest episode, injected by build.py from the Podbean feed on every
+           rebuild. Thumbnail is the episode art when the feed has it, otherwise
+           the show cover. -->
       <div class="start-here">
-        <div class="ep-meta"><span class="tag">Start Here</span><span class="stamp">FLAGSHIP EPISODE</span></div>
-        <h3>[Flagship episode title]</h3>
-        <audio controls preload="none" data-event="Start Here Play" data-src="[FLAGSHIP_EPISODE_MP3_URL]"></audio>
+        <div class="sh-thumb"><img src="assets/img/latest-episode.jpg" alt="Latest episode artwork"></div>
+        <div class="sh-body">
+          <div class="ep-meta"><span class="tag">Latest Episode</span><span class="stamp">{{LATEST_META}}</span></div>
+          <h3><a href="episodes/{{LATEST_SLUG}}.html">{{LATEST_TITLE}}</a></h3>
+          <audio controls preload="none" data-src="{{LATEST_AUDIO}}"></audio>
+        </div>
       </div>
       <div class="platforms">
         <span class="stamp">Wherever you listen:</span>
@@ -128,7 +130,7 @@
   <div class="wrap ran-inner">
     <div class="sec-label" style="margin-bottom:0; border-bottom:none; padding-bottom:0;">03 / The Roundtable</div>
     <h2 class="display">Reviewed as Noted</h2>
-    <p>Once a month, the roundtable. Karl, Matt, and Tyler join to work through the construction tech stories that mattered, what's signal, what's noise, and what nobody's saying out loud.</p>
+    <p>Once a month, a run through the industry news that mattered with a panel of industry experts. Karl, Matt, and Tyler join Stephen to sort what's signal, what's noise, and what nobody's saying out loud.</p>
     <a class="btn btn-ghost" href="episodes.html?q=reviewed%20as%20noted">Listen to the roundtable</a>
   </div>
 </div>

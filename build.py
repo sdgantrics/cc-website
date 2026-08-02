@@ -98,6 +98,7 @@ def parse_episodes(xml_text: str):
             specials += 1
         secs = parse_duration(text(item, "duration", ITUNES))
         desc = strip_html(text(item, "description") or text(item, "summary", ITUNES))
+        item_img = item.find(ITUNES + "image")
         episodes.append({
             "title": title,
             "display_title": re.sub(r"^Ep\.?\s*\d+\s*[-–—:]\s*", "", title),
@@ -111,6 +112,7 @@ def parse_episodes(xml_text: str):
             "desc_full": clip_words(desc, 150),
             "audio": enclosure.get("url") if enclosure is not None else "",
             "link": text(item, "link"),
+            "image": item_img.get("href") if item_img is not None else "",
         })
     art = channel.find(ITUNES + "image")
     artwork = art.get("href") if art is not None else ""
@@ -165,18 +167,35 @@ def build():
     episodes, artwork = parse_episodes(xml_text)
     print(f"Parsed {len(episodes)} episodes from feed")
 
+    def download(url, dest):
+        req = urllib.request.Request(url, headers={"User-Agent": "cc-site-builder"})
+        (ROOT / dest).write_bytes(urllib.request.urlopen(req, timeout=30).read())
+
     if artwork:
         try:
-            req = urllib.request.Request(artwork, headers={"User-Agent": "cc-site-builder"})
-            (ROOT / "site/assets/img/cover-art.jpg").write_bytes(
-                urllib.request.urlopen(req, timeout=30).read())
+            download(artwork, "site/assets/img/cover-art.jpg")
         except Exception as e:
             print(f"Cover art skipped: {e}")
 
+    # Hero card thumbnail: episode art when the feed carries it, show cover
+    # otherwise. Refreshed every rebuild so the card tracks the newest episode.
+    latest = episodes[0]
+    try:
+        download(latest["image"] or artwork, "site/assets/img/latest-episode.jpg")
+        print("Downloaded latest-episode thumbnail")
+    except Exception as e:
+        print(f"Latest thumbnail skipped: {e}")
+
+    latest_tag = f'EP {int(latest["num"]):03d}' if latest["num"] else "SPECIAL"
+    latest_meta = " · ".join(v for v in (latest["date"], latest["duration"]) if v).upper()
     replacements = {
         "{{EPISODE_COUNT}}": str(len(episodes)),
         "{{LATEST_EPISODES}}": "\n".join(card(e) for e in episodes[:3]),
         "{{ALL_EPISODES}}": "\n".join(card(e) for e in episodes),
+        "{{LATEST_TITLE}}": html.escape(latest["display_title"]),
+        "{{LATEST_META}}": f"{latest_tag} · {latest_meta}",
+        "{{LATEST_AUDIO}}": latest["audio"],
+        "{{LATEST_SLUG}}": latest["slug"],
     }
     for name in ("index.html", "episodes.html", "sponsors.html"):
         out = (ROOT / "templates" / name).read_text()

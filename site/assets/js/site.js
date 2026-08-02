@@ -72,8 +72,10 @@ if (search) {
   if (q) search.value = q;
   var cards = Array.prototype.slice.call(document.querySelectorAll('#ep-list .ep-card'));
   var count = document.getElementById('ep-count');
+  var ranNote = document.getElementById('ran-note');
   var update = function () {
     var term = search.value.trim().toLowerCase();
+    if (ranNote) ranNote.hidden = term.indexOf('reviewed') === -1;
     var shown = 0;
     cards.forEach(function (c) {
       var hit = !term || c.textContent.toLowerCase().indexOf(term) !== -1;
