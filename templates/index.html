@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Construction Conversations — A construction podcast with no press release voice</title>
+<meta name="description" content="Stephen Poppe and Lars Herman talk to the people actually building things — about the failures, the fixes, and the tech that didn't survive contact with the field.">
+<link rel="icon" type="image/png" href="assets/img/cc-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400..900;1,400..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="index.html"><img src="assets/img/cc-logo.png" alt="Construction Conversations"></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="episodes.html">Episodes</a></li>
+      <li><a href="episodes.html?q=reviewed%20as%20noted">Reviewed as Noted</a></li>
+      <li><a href="https://constructionbriefs.substack.com/">Briefs</a></li>
+      <li><a href="index.html#guest">Be a Guest</a></li>
+      <li><a class="nav-cta" href="index.html#sponsor">Sponsor Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ======================= HERO · one headline, one paragraph, two buttons ======================= -->
+<section class="hero">
+  <div class="studs">
+    <div class="wrap hero-inner">
+      <span class="stamp orange">A construction podcast with no press release voice</span>
+      <h1 class="display">The stuff everyone knows and nobody <em>says</em></h1>
+      <p class="lede">Stephen Poppe and Lars Herman talk to the people actually building things — about the failures, the fixes, and the tech that didn't survive contact with the field.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="episodes.html">Listen now</a>
+        <a class="btn btn-ghost" href="https://constructionbriefs.substack.com/subscribe">Get the newsletter</a>
+      </div>
+      <div class="platforms">
+        <span class="stamp">Wherever you listen —</span>
+        <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812">Apple</a>
+        <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3">Spotify</a>
+        <a href="https://www.youtube.com/@ConstructionConversations">YouTube</a>
+        <a href="https://feed.podbean.com/constructionconversations/feed.xml">RSS</a>
+      </div>
+    </div>
+  </div>
+  <div class="hazard"></div>
+</section>
+
+<!-- ======================= STATS · in Anton, never in a chart ======================= -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat"><b>1,100+</b><span>Verified LinkedIn followers</span></div>
+      <div class="stat"><b>77%</b><span>Decision-makers · Mgr+</span></div>
+      <div class="stat"><b>30+</b><span>ENR Top 400 / GC firms</span></div>
+      <div class="stat"><b>43%</b><span>Senior / executive level</span></div>
+    </div>
+    <p class="stats-note">LinkedIn follower data · May 2026 · Named accounts, real titles, refreshed quarterly</p>
+  </div>
+</div>
+
+<!-- ======================= LATEST EPISODES ======================= -->
+<section class="block" id="episodes">
+  <div class="wrap">
+    <div class="sec-label">01 / Episodes</div>
+    <div class="section-head">
+      <h2 class="display">Latest conversations</h2>
+      <a class="btn btn-ghost" href="episodes.html">All {{EPISODE_COUNT}} episodes</a>
+    </div>
+    <div class="ep-grid">
+{{LATEST_EPISODES}}
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ABOUT / HOSTS ======================= -->
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="sec-label">02 / The Show</div>
+    <h2 class="display">Built for adjacency, not scale</h2>
+    <p class="lede" style="margin-top:20px; max-width:640px;">Project managers, superintendents, VDC leaders, GC executives, and ConTech founders — talking honestly about leadership, career growth, innovation, and the culture of the built world. If you have a sharp point of view about the gap between technology promises and jobsite reality, this is the room.</p>
+    <div class="hosts-grid">
+      <div class="host-card">
+        <div class="duotone"><img src="assets/img/stephen.jpg" alt="Stephen Poppe"></div>
+        <div class="host-info">
+          <h3>Stephen Poppe</h3>
+          <p>15+ years in construction. Director of Digital Construction Operations. Founder of Gantrics.</p>
+          <a href="https://www.linkedin.com/in/stephenpoppe/">LinkedIn →</a>
+        </div>
+      </div>
+      <div class="host-card">
+        <div class="duotone"><img src="assets/img/lars.jpg" alt="Lars Herman"></div>
+        <div class="host-info">
+          <h3>Lars Herman</h3>
+          <p>Construction technology leader focused on what actually works when tech meets the jobsite.</p>
+          <a href="https://www.linkedin.com/in/larsherman/">LinkedIn →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SPONSOR + GUEST ======================= -->
+<section class="block" id="sponsor">
+  <div class="wrap">
+    <div class="sec-label">03 / Work With Us</div>
+    <div class="split">
+      <div class="cta-card">
+        <span class="tag">Sponsor</span>
+        <h2 class="display">Adjacency, not advertising</h2>
+        <p>Your brand next to voices your buyers already trust, in the same feed where they decide who is real. Stephen reads sponsor messages himself, on a show that prides itself on calling out hype. If you sell into ENR Top 400 GCs or sit inside the ConTech ecosystem, the audience is already in the room.</p>
+        <a class="btn btn-primary" href="mailto:stephen@gantrics.com?subject=Construction%20Conversations%20Sponsorship">Explore sponsorship</a>
+      </div>
+      <div class="cta-card" id="guest">
+        <span class="tag">Guests</span>
+        <h2 class="display">Want on the show?</h2>
+        <p>Built for guests who have done the work and want to talk about it honestly. People with a real opinion, including the unpopular ones. The discovery call is a real conversation, not a pre-interview script. If you're pitching a generic message to a generic audience, this is the wrong room.</p>
+        <a class="btn btn-ghost" href="mailto:stephen@gantrics.com?subject=Guest%20Pitch%20—%20Construction%20Conversations">Pitch yourself or a guest</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= BRIEFS ======================= -->
+<section class="block" id="newsletter">
+  <div class="wrap">
+    <div class="sec-label">04 / Construction Briefs</div>
+    <div class="newsletter-inner">
+      <h2 class="display">The newsletter for the people who build</h2>
+      <p class="lede" style="max-width:640px;">Construction technology news and analysis, plus episode recaps and insider takes from the show's guests. Free on Substack.</p>
+      <a class="btn btn-primary" href="https://constructionbriefs.substack.com/subscribe">Get the newsletter</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-links">
+      <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812">Apple</a>
+      <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3">Spotify</a>
+      <a href="https://www.youtube.com/@ConstructionConversations">YouTube</a>
+      <a href="https://www.linkedin.com/company/construction-conversations/">LinkedIn</a>
+      <a href="https://constructionbriefs.substack.com/">Briefs</a>
+    </div>
+    <small>© 2026 Construction Conversations · Every other Tuesday · Wherever you listen</small>
+  </div>
+  <div class="hazard"></div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

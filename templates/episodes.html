@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Episodes — Construction Conversations</title>
+<meta name="description" content="All episodes of Construction Conversations — the stuff everyone knows and nobody says.">
+<link rel="icon" type="image/png" href="assets/img/cc-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400..900;1,400..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="index.html"><img src="assets/img/cc-logo.png" alt="Construction Conversations"></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="episodes.html">Episodes</a></li>
+      <li><a href="episodes.html?q=reviewed%20as%20noted">Reviewed as Noted</a></li>
+      <li><a href="https://constructionbriefs.substack.com/">Briefs</a></li>
+      <li><a href="index.html#guest">Be a Guest</a></li>
+      <li><a class="nav-cta" href="index.html#sponsor">Sponsor Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-head studs">
+  <div class="wrap">
+    <span class="stamp orange" style="display:block; margin-bottom:18px;">The full record</span>
+    <h1 class="display">Every conversation</h1>
+    <p class="lede" style="max-width:640px;">All {{EPISODE_COUNT}} episodes, playable right here. Also on
+      <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812">Apple</a>,
+      <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3">Spotify</a>, and
+      <a href="https://www.youtube.com/@ConstructionConversations">YouTube</a>.</p>
+    <div class="search-row">
+      <input type="search" id="ep-search" placeholder="Search by title, guest, or topic…" aria-label="Search episodes">
+      <span class="search-count" id="ep-count"></span>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:36px;">
+  <div class="wrap">
+    <div class="ep-grid" id="ep-list">
+{{ALL_EPISODES}}
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-links">
+      <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812">Apple</a>
+      <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3">Spotify</a>
+      <a href="https://www.youtube.com/@ConstructionConversations">YouTube</a>
+      <a href="https://www.linkedin.com/company/construction-conversations/">LinkedIn</a>
+      <a href="https://constructionbriefs.substack.com/">Briefs</a>
+    </div>
+    <small>© 2026 Construction Conversations · Every other Tuesday · Wherever you listen</small>
+  </div>
+  <div class="hazard"></div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
