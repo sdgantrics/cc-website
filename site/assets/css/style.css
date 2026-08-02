@@ -204,6 +204,7 @@ h2.display { font-size: clamp(34px, 4.5vw, 48px); }
 /* ---------- stat strip (stats in Anton, never in a chart) ---------- */
 .stats { border-bottom: 1px solid var(--hairline); }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.stats-grid-3 { grid-template-columns: repeat(3, 1fr); }
 .stat { padding: 34px 20px 30px; border-left: 1px solid var(--hairline); }
 .stat:first-child { border-left: none; padding-left: 0; }
 .stat b {
@@ -321,7 +322,7 @@ footer { border-top: 1px solid var(--hairline); }
 
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
-  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .stats-grid, .stats-grid-3 { grid-template-columns: 1fr 1fr; }
   .stat:nth-child(3) { border-left: none; padding-left: 0; }
   .stat { border-top: 1px solid var(--hairline); }
   .stat:nth-child(-n+2) { border-top: none; }
