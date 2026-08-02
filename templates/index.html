@@ -3,13 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Construction Conversations — A construction podcast with no press release voice</title>
-<meta name="description" content="Stephen Poppe and Lars Herman talk to the people actually building things — about the failures, the fixes, and the tech that didn't survive contact with the field.">
+<title>Construction Conversations | Twenty Years of Expensive Lessons, About an Hour a Week</title>
+<meta name="description" content="The construction podcast for everything they don't teach you. Stephen Poppe and Lars Herman get the lessons that cost projects, clients, and careers out of the people who lived them.">
 <link rel="icon" type="image/png" href="assets/img/cc-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400..900;1,400..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- ANALYTICS: Plausible. Create a site at plausible.io for this domain, then
+     uncomment the line below. Event bindings already live in assets/js/site.js
+     and queue harmlessly until the script loads. -->
+<!-- <script defer data-domain="constructionconversations.com" src="https://plausible.io/js/script.js"></script> -->
 </head>
 <body>
 
@@ -22,51 +26,93 @@
       <li><a href="episodes.html?q=reviewed%20as%20noted">Reviewed as Noted</a></li>
       <li><a href="https://constructionbriefs.substack.com/">Briefs</a></li>
       <li><a href="index.html#guest">Be a Guest</a></li>
-      <li><a class="nav-cta" href="index.html#sponsor">Sponsor Us</a></li>
+      <li><a class="nav-cta" href="sponsors.html">Sponsor Us</a></li>
     </ul>
   </div>
 </header>
 
-<!-- ======================= HERO · one headline, one paragraph, two buttons ======================= -->
+<!-- ======================= HERO ======================= -->
 <section class="hero">
   <div class="studs">
     <div class="wrap hero-inner">
-      <span class="stamp orange">A construction podcast with no press release voice</span>
-      <h1 class="display">The stuff everyone knows and nobody <em>says</em></h1>
-      <p class="lede">Stephen Poppe and Lars Herman talk to the people actually building things — about the failures, the fixes, and the tech that didn't survive contact with the field.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="episodes.html">Listen now</a>
-        <a class="btn btn-ghost" href="https://constructionbriefs.substack.com/subscribe">Get the newsletter</a>
+      <span class="stamp orange">The construction podcast for everything they don't teach you</span>
+      <h1 class="display">Twenty years of <em>expensive</em> lessons. About an hour a week.</h1>
+      <p class="lede">The lessons that usually cost a project, a client, or a career to learn. Stephen Poppe and Lars Herman get them out of the people who lived them.</p>
+      <p class="stamp dim" style="margin: 16px 0 0;">{{EPISODE_COUNT}} episodes with the PMs, supers, VDC leads, and founders at 30+ ENR Top 400 firms</p>
+      <div class="hero-ctas" style="margin-top: 26px;">
+        <a class="btn btn-primary" href="episodes.html" data-event="Listen Now">Listen now</a>
+        <a class="btn btn-ghost" href="https://constructionbriefs.substack.com/subscribe" data-event="Newsletter CTA">Get the newsletter</a>
+      </div>
+      <!-- START HERE flagship episode.
+           PLACEHOLDER: Stephen to supply the flagship episode. Replace the
+           title text below and set data-src on the <audio> tag to the episode's
+           MP3 URL from the Podbean feed (or paste a Podbean embed here instead). -->
+      <div class="start-here">
+        <div class="ep-meta"><span class="tag">Start Here</span><span class="stamp">FLAGSHIP EPISODE</span></div>
+        <h3>[Flagship episode title]</h3>
+        <audio controls preload="none" data-event="Start Here Play" data-src="[FLAGSHIP_EPISODE_MP3_URL]"></audio>
       </div>
       <div class="platforms">
-        <span class="stamp">Wherever you listen —</span>
-        <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812">Apple</a>
-        <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3">Spotify</a>
-        <a href="https://www.youtube.com/@ConstructionConversations">YouTube</a>
-        <a href="https://feed.podbean.com/constructionconversations/feed.xml">RSS</a>
+        <span class="stamp">Wherever you listen:</span>
+        <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812" data-event="Platform: Apple">Apple</a>
+        <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3" data-event="Platform: Spotify">Spotify</a>
+        <a href="https://www.youtube.com/@ConstructionConversations" data-event="Platform: YouTube">YouTube</a>
+        <a href="https://feed.podbean.com/constructionconversations/feed.xml" data-event="Platform: RSS">RSS</a>
       </div>
     </div>
   </div>
   <div class="hazard"></div>
 </section>
 
-<!-- ======================= STATS · in Anton, never in a chart ======================= -->
-<div class="stats">
-  <div class="wrap">
-    <div class="stats-grid">
-      <div class="stat"><b>1,100+</b><span>Verified LinkedIn followers</span></div>
-      <div class="stat"><b>77%</b><span>Decision-makers · Mgr+</span></div>
-      <div class="stat"><b>30+</b><span>ENR Top 400 / GC firms</span></div>
-      <div class="stat"><b>43%</b><span>Senior / executive level</span></div>
-    </div>
-    <p class="stats-note">LinkedIn follower data · May 2026 · Named accounts, real titles, refreshed quarterly</p>
+<!-- ======================= RECENT GUESTS PROOF STRIP ======================= -->
+<div class="guest-strip">
+  <div class="wrap guest-strip-inner">
+    <span class="stamp lead">Recent guests</span>
+    <span class="stamp g">SVP Operations · Cleveland Construction</span>
+    <span class="stamp g">VP of Digital Solutions · Skanska USA</span>
+    <span class="stamp g">CEO · Trunk Tools</span>
+    <span class="stamp g">Co-founder &amp; CEO · VIATechnik</span>
+    <span class="stamp g">Technology Integration Leader · DPR Construction</span>
+    <span class="stamp g">Director of Digital Strategy · McCarthy</span>
+    <span class="stamp g">General Superintendent · XL Construction</span>
+    <span class="stamp g">Managing Partner · Shadow Ventures</span>
   </div>
 </div>
+
+<!-- ======================= WHERE TO START ======================= -->
+<section class="block" id="start">
+  <div class="wrap">
+    <div class="sec-label">01 / Where to Start</div>
+    <div class="section-head">
+      <h2 class="display">Where to start</h2>
+    </div>
+    <div class="doors">
+      <div class="door">
+        <span class="tag">If You Run Work in the Field</span>
+        <p>Supers, PMs, and the tech that survives contact with the jobsite.</p>
+        <!-- PLACEHOLDER: Stephen to pick the episode. Point href at episodes/<slug>.html -->
+        <a class="door-link" href="episodes.html" data-event="Door: Field">[Episode pick] →</a>
+      </div>
+      <div class="door">
+        <span class="tag">If You Run the Company</span>
+        <p>GC executives on what they're actually buying, and why most pilots die.</p>
+        <!-- PLACEHOLDER: Stephen to pick the episode. Point href at episodes/<slug>.html -->
+        <a class="door-link" href="episodes.html" data-event="Door: Exec">[Episode pick] →</a>
+      </div>
+      <div class="door">
+        <span class="tag">If You're Building the Tech</span>
+        <p>Founders and product leads on what the field really thinks of your product.</p>
+        <!-- PLACEHOLDER: Stephen to pick the episode. Point href at episodes/<slug>.html -->
+        <a class="door-link" href="episodes.html" data-event="Door: Builder">[Episode pick] →</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ======================= LATEST EPISODES ======================= -->
 <section class="block" id="episodes">
   <div class="wrap">
-    <div class="sec-label">01 / Episodes</div>
+    <div class="sec-label">02 / Episodes</div>
     <div class="section-head">
       <h2 class="display">Latest conversations</h2>
       <a class="btn btn-ghost" href="episodes.html">All {{EPISODE_COUNT}} episodes</a>
@@ -77,12 +123,23 @@
   </div>
 </section>
 
+<!-- ======================= REVIEWED AS NOTED ======================= -->
+<div class="ran-band">
+  <div class="wrap ran-inner">
+    <div class="sec-label" style="margin-bottom:0; border-bottom:none; padding-bottom:0;">03 / The Roundtable</div>
+    <h2 class="display">Reviewed as Noted</h2>
+    <p>Once a month, the roundtable. Karl, Matt, and Tyler join to work through the construction tech stories that mattered, what's signal, what's noise, and what nobody's saying out loud.</p>
+    <a class="btn btn-ghost" href="episodes.html?q=reviewed%20as%20noted">Listen to the roundtable</a>
+  </div>
+</div>
+
 <!-- ======================= ABOUT / HOSTS ======================= -->
 <section class="block" id="about">
   <div class="wrap">
-    <div class="sec-label">02 / The Show</div>
+    <div class="sec-label">04 / The Show</div>
     <h2 class="display">Built for adjacency, not scale</h2>
-    <p class="lede" style="margin-top:20px; max-width:640px;">Project managers, superintendents, VDC leaders, GC executives, and ConTech founders — talking honestly about leadership, career growth, innovation, and the culture of the built world. If you have a sharp point of view about the gap between technology promises and jobsite reality, this is the room.</p>
+    <p class="lede" style="margin-top:20px; max-width:640px;">Project managers, superintendents, VDC leaders, GC executives, and ConTech founders, talking honestly about what actually happens on projects. No scripts, no pitch decks.</p>
+    <p class="lede" style="margin-top:14px; max-width:640px;">If you have a sharp point of view about the gap between technology promises and jobsite reality, this is the room.</p>
     <div class="hosts-grid">
       <div class="host-card">
         <div class="duotone"><img src="assets/img/stephen.jpg" alt="Stephen Poppe"></div>
@@ -101,38 +158,21 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ======================= SPONSOR + GUEST ======================= -->
-<section class="block" id="sponsor">
-  <div class="wrap">
-    <div class="sec-label">03 / Work With Us</div>
-    <div class="split">
-      <div class="cta-card">
-        <span class="tag">Sponsor</span>
-        <h2 class="display">Adjacency, not advertising</h2>
-        <p>Your brand next to voices your buyers already trust, in the same feed where they decide who is real. Stephen reads sponsor messages himself, on a show that prides itself on calling out hype. If you sell into ENR Top 400 GCs or sit inside the ConTech ecosystem, the audience is already in the room.</p>
-        <a class="btn btn-primary" href="mailto:stephen@gantrics.com?subject=Construction%20Conversations%20Sponsorship">Explore sponsorship</a>
-      </div>
-      <div class="cta-card" id="guest">
-        <span class="tag">Guests</span>
-        <h2 class="display">Want on the show?</h2>
-        <p>Built for guests who have done the work and want to talk about it honestly. People with a real opinion, including the unpopular ones. The discovery call is a real conversation, not a pre-interview script. If you're pitching a generic message to a generic audience, this is the wrong room.</p>
-        <a class="btn btn-ghost" href="mailto:stephen@gantrics.com?subject=Guest%20Pitch%20—%20Construction%20Conversations">Pitch yourself or a guest</a>
-      </div>
-    </div>
+    <p class="stamp dim" id="guest" style="margin-top: 24px;">Want on the show? <a href="mailto:stephen@gantrics.com?subject=Guest%20Pitch" style="color:var(--crane);">Pitch yourself or a guest →</a></p>
   </div>
 </section>
 
 <!-- ======================= BRIEFS ======================= -->
 <section class="block" id="newsletter">
   <div class="wrap">
-    <div class="sec-label">04 / Construction Briefs</div>
+    <div class="sec-label">05 / Construction Briefs</div>
     <div class="newsletter-inner">
       <h2 class="display">The newsletter for the people who build</h2>
-      <p class="lede" style="max-width:640px;">Construction technology news and analysis, plus episode recaps and insider takes from the show's guests. Free on Substack.</p>
-      <a class="btn btn-primary" href="https://constructionbriefs.substack.com/subscribe">Get the newsletter</a>
+      <p class="lede">Construction tech news, episode recaps, and insider takes from the show's guests. Weekly, free, on Substack.</p>
+      <form class="nl-form" action="https://constructionbriefs.substack.com/subscribe" method="get" data-event="Newsletter Submit">
+        <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
     </div>
   </div>
 </section>
@@ -140,11 +180,13 @@
 <footer>
   <div class="wrap foot">
     <div class="foot-links">
-      <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812">Apple</a>
-      <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3">Spotify</a>
-      <a href="https://www.youtube.com/@ConstructionConversations">YouTube</a>
+      <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812" data-event="Platform: Apple">Apple</a>
+      <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3" data-event="Platform: Spotify">Spotify</a>
+      <a href="https://www.youtube.com/@ConstructionConversations" data-event="Platform: YouTube">YouTube</a>
       <a href="https://www.linkedin.com/company/construction-conversations/">LinkedIn</a>
       <a href="https://constructionbriefs.substack.com/">Briefs</a>
+      <a href="index.html#guest">Be a Guest</a>
+      <a href="sponsors.html" data-event="Sponsor Link: Footer">Sponsor the show</a>
     </div>
     <small>© 2026 Construction Conversations · Every other Tuesday · Wherever you listen</small>
   </div>

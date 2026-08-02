@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """Construction Conversations website builder.
 
-Fetches the Podbean RSS feed and regenerates site/index.html and
-site/episodes.html from the files in templates/. Design lives in the
-templates and site/assets/css/style.css; this script only fills in
-episode data at the {{...}} markers.
+Fetches the Podbean RSS feed and regenerates the site from templates/:
+  site/index.html      - homepage (latest 3 episodes injected)
+  site/episodes.html   - full episode list with search
+  site/sponsors.html   - sponsor page (static content, count injected)
+  site/episodes/*.html - one page per episode, with PodcastEpisode JSON-LD
+
+Design lives in the templates and site/assets/css/style.css; this script
+only fills in episode data at the {{...}} markers.
 
 Usage:
     python3 build.py            # fetch fresh feed + rebuild
@@ -12,6 +16,7 @@ Usage:
 """
 
 import html
+import json
 import re
 import sys
 import urllib.request
@@ -39,50 +44,71 @@ def text(el, tag, ns=""):
     return (node.text or "").strip() if node is not None and node.text else ""
 
 
-def clean_desc(raw: str, limit: int = 230) -> str:
+def strip_html(raw: str) -> str:
     txt = re.sub(r"<[^>]+>", " ", raw)
     txt = html.unescape(txt)
-    txt = re.sub(r"\s+", " ", txt).strip()
+    # Site copy rule: no em-dashes anywhere. Feed text is normalized too.
+    txt = txt.replace(" — ", ", ").replace("—", ", ")
+    return re.sub(r"\s+", " ", txt).strip()
+
+
+def clip_chars(txt: str, limit: int) -> str:
     if len(txt) > limit:
         txt = txt[:limit].rsplit(" ", 1)[0] + "…"
     return txt
 
 
-def fmt_duration(raw: str) -> str:
+def clip_words(txt: str, limit: int = 150) -> str:
+    words = txt.split()
+    if len(words) > limit:
+        return " ".join(words[:limit]) + "…"
+    return txt
+
+
+def parse_duration(raw: str) -> int:
+    """Return duration in whole seconds."""
     if not raw:
-        return ""
+        return 0
     if ":" in raw:
-        parts = [int(p) for p in raw.split(":")]
         secs = 0
-        for p in parts:
-            secs = secs * 60 + p
-    else:
-        secs = int(raw)
-    m = round(secs / 60)
-    return f"{m} min"
+        for p in raw.split(":"):
+            secs = secs * 60 + int(p)
+        return secs
+    return int(raw)
 
 
 def parse_episodes(xml_text: str):
     channel = ET.fromstring(xml_text).find("channel")
     episodes = []
+    specials = 0
     for item in channel.findall("item"):
         title = text(item, "title")
         enclosure = item.find("enclosure")
         pub = text(item, "pubDate")
         try:
-            date = parsedate_to_datetime(pub).strftime("%b %-d, %Y")
+            dt = parsedate_to_datetime(pub)
+            date, date_iso = dt.strftime("%b %-d, %Y"), dt.strftime("%Y-%m-%d")
         except Exception:
-            date = ""
-# Public numbering lives in the title ("Ep. 54 - ..."); Podbean's
+            date, date_iso = "", ""
+        # Public numbering lives in the title ("Ep. 54 - ..."); Podbean's
         # itunes:episode counts specials too and drifts from it.
         m = re.match(r"Ep\.?\s*(\d+)", title)
         ep_num = m.group(1) if m else ""
+        if not ep_num:
+            specials += 1
+        secs = parse_duration(text(item, "duration", ITUNES))
+        desc = strip_html(text(item, "description") or text(item, "summary", ITUNES))
         episodes.append({
             "title": title,
+            "display_title": re.sub(r"^Ep\.?\s*\d+\s*[-–—:]\s*", "", title),
             "num": ep_num,
+            "slug": f"ep-{int(ep_num):03d}" if ep_num else f"special-{specials}",
             "date": date,
-            "duration": fmt_duration(text(item, "duration", ITUNES)),
-            "desc": clean_desc(text(item, "description") or text(item, "summary", ITUNES)),
+            "date_iso": date_iso,
+            "duration": f"{round(secs / 60)} min" if secs else "",
+            "duration_iso": f"PT{round(secs / 60)}M" if secs else "",
+            "desc": clip_chars(desc, 230),
+            "desc_full": clip_words(desc, 150),
             "audio": enclosure.get("url") if enclosure is not None else "",
             "link": text(item, "link"),
         })
@@ -95,17 +121,38 @@ def card(ep) -> str:
     # Site Gothic: stamp tag (mono on Crane) + DM Mono metadata, Anton title
     tag = f'EP {int(ep["num"]):03d}' if ep["num"] else "SPECIAL"
     meta = " · ".join(v for v in (ep["date"], ep["duration"]) if v)
-    display_title = re.sub(r"^Ep\.?\s*\d+\s*[-–—:]\s*", "", ep["title"])
     return f'''      <article class="ep-card">
         <div class="ep-meta"><span class="tag">{tag}</span><span class="stamp">{meta.upper()}</span></div>
-        <h3><a href="{ep["link"]}">{html.escape(display_title)}</a></h3>
+        <h3><a href="episodes/{ep["slug"]}.html">{html.escape(ep["display_title"])}</a></h3>
         <p class="ep-desc">{html.escape(ep["desc"])}</p>
         <div class="ep-actions">
           <button class="play-btn">▶ Play</button>
-          <a href="{ep["link"]}">Show notes</a>
+          <a href="episodes/{ep["slug"]}.html">Show notes</a>
         </div>
         <div class="ep-player"><audio controls preload="none" data-src="{ep["audio"]}"></audio></div>
       </article>'''
+
+
+def jsonld(ep) -> str:
+    data = {
+        "@context": "https://schema.org",
+        "@type": "PodcastEpisode",
+        "name": ep["title"],
+        "datePublished": ep["date_iso"],
+        "description": ep["desc_full"],
+        "url": ep["link"],
+        "associatedMedia": {"@type": "MediaObject", "contentUrl": ep["audio"]},
+        "partOfSeries": {
+            "@type": "PodcastSeries",
+            "name": "Construction Conversations",
+            "url": "https://constructionconversations.com/",
+        },
+    }
+    if ep["num"]:
+        data["episodeNumber"] = int(ep["num"])
+    if ep["duration_iso"]:
+        data["timeRequired"] = ep["duration_iso"]
+    return json.dumps(data, indent=2)
 
 
 def build():
@@ -123,7 +170,6 @@ def build():
             req = urllib.request.Request(artwork, headers={"User-Agent": "cc-site-builder"})
             (ROOT / "site/assets/img/cover-art.jpg").write_bytes(
                 urllib.request.urlopen(req, timeout=30).read())
-            print("Downloaded cover art")
         except Exception as e:
             print(f"Cover art skipped: {e}")
 
@@ -132,12 +178,34 @@ def build():
         "{{LATEST_EPISODES}}": "\n".join(card(e) for e in episodes[:3]),
         "{{ALL_EPISODES}}": "\n".join(card(e) for e in episodes),
     }
-    for name in ("index.html", "episodes.html"):
+    for name in ("index.html", "episodes.html", "sponsors.html"):
         out = (ROOT / "templates" / name).read_text()
         for k, v in replacements.items():
             out = out.replace(k, v)
         (ROOT / "site" / name).write_text(out)
         print(f"Wrote site/{name}")
+
+    # Per-episode pages
+    ep_dir = ROOT / "site" / "episodes"
+    ep_dir.mkdir(exist_ok=True)
+    ep_template = (ROOT / "templates" / "episode.html").read_text()
+    for ep in episodes:
+        tag = f'EP {int(ep["num"]):03d}' if ep["num"] else "SPECIAL"
+        meta = " · ".join(v for v in (ep["date"], ep["duration"]) if v).upper()
+        page = ep_template
+        for k, v in {
+            "{{TITLE}}": html.escape(ep["display_title"]),
+            "{{TAG}}": tag,
+            "{{META}}": meta,
+            "{{DESC_SHORT}}": html.escape(ep["desc"]),
+            "{{DESC_FULL}}": html.escape(ep["desc_full"]),
+            "{{AUDIO}}": ep["audio"],
+            "{{LINK}}": ep["link"],
+            "{{JSONLD}}": jsonld(ep),
+        }.items():
+            page = page.replace(k, v)
+        (ep_dir / f'{ep["slug"]}.html').write_text(page)
+    print(f"Wrote {len(episodes)} episode pages to site/episodes/")
 
     print(f"Built {datetime.now():%Y-%m-%d %H:%M}")
 
