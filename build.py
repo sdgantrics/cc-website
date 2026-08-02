@@ -29,6 +29,9 @@ ROOT = Path(__file__).parent
 FEED_URL = "https://feed.podbean.com/constructionconversations/feed.xml"
 FEED_CACHE = ROOT / "feed.xml"
 ITUNES = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
+# YouTube uploads feed for @ConstructionConversations; episode thumbnails
+# live on YouTube (the Podbean feed has no per-episode art).
+YT_FEED = "https://www.youtube.com/feeds/videos.xml?channel_id=UC2NzKKnmKxtvlFRO6c3R1Aw"
 
 
 def fetch_feed() -> str:
@@ -135,6 +138,39 @@ def card(ep) -> str:
       </article>'''
 
 
+def youtube_thumb_url(ep) -> str:
+    """Find the episode's YouTube thumbnail by matching video titles.
+
+    Prefers an exact "Ep. NN" prefix match, then falls back to word overlap.
+    Returns "" when nothing matches (caller falls back to Podbean art).
+    """
+    try:
+        req = urllib.request.Request(YT_FEED, headers={"User-Agent": "cc-site-builder"})
+        root = ET.fromstring(urllib.request.urlopen(req, timeout=30).read())
+    except Exception as e:
+        print(f"YouTube feed skipped: {e}")
+        return ""
+    ns = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
+    videos = [(v.find("a:title", ns).text or "", v.find("yt:videoId", ns).text)
+              for v in root.findall("a:entry", ns)]
+
+    vid = ""
+    if ep["num"]:
+        pat = re.compile(rf"^Ep\.?\s*0*{int(ep['num'])}\b", re.I)
+        vid = next((v for t, v in videos if pat.match(t)), "")
+    if not vid:
+        words = {w for w in re.findall(r"[a-z']+", ep["title"].lower()) if len(w) > 3}
+        best, best_score = "", 0.0
+        for t, v in videos:
+            vw = {w for w in re.findall(r"[a-z']+", t.lower()) if len(w) > 3}
+            score = len(words & vw) / max(len(words), 1)
+            if score > best_score:
+                best, best_score = v, score
+        if best_score >= 0.5:
+            vid = best
+    return f"https://i.ytimg.com/vi/{vid}/maxresdefault.jpg" if vid else ""
+
+
 def jsonld(ep) -> str:
     data = {
         "@context": "https://schema.org",
@@ -177,14 +213,21 @@ def build():
         except Exception as e:
             print(f"Cover art skipped: {e}")
 
-    # Hero card thumbnail: episode art when the feed carries it, show cover
-    # otherwise. Refreshed every rebuild so the card tracks the newest episode.
+    # Hero card thumbnail: the episode's YouTube thumbnail, falling back to
+    # Podbean episode art, then the show cover. Refreshed every rebuild so
+    # the card tracks the newest episode.
     latest = episodes[0]
-    try:
-        download(latest["image"] or artwork, "site/assets/img/latest-episode.jpg")
-        print("Downloaded latest-episode thumbnail")
-    except Exception as e:
-        print(f"Latest thumbnail skipped: {e}")
+    yt = youtube_thumb_url(latest)
+    for src in (yt, yt.replace("maxresdefault", "hqdefault") if yt else "",
+                latest["image"], artwork):
+        if not src:
+            continue
+        try:
+            download(src, "site/assets/img/latest-episode.jpg")
+            print(f"Latest thumbnail: {src[:70]}")
+            break
+        except Exception:
+            continue
 
     latest_tag = f'EP {int(latest["num"]):03d}' if latest["num"] else "SPECIAL"
     latest_meta = " · ".join(v for v in (latest["date"], latest["duration"]) if v).upper()
