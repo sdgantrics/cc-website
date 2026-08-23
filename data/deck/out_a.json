@@ -1,0 +1,72 @@
+[
+ {
+  "n": 1,
+  "story": "Garrett Mott, a construction trial lawyer at Hennigh Law, tried a case where a PM of about 25 or 26 had sent five emails, probably dashed off at the end of long days, asking things like whether the team was still using the bad stuff. Those five emails became Exhibit 12 in the trial, and when Stephen asked what they cost, Mott put the number at about 30 million dollars. He has watched the same pattern decide other cases, including a subsidence claim he settled largely because a young city superintendent had emailed, about a retaining wall barrier, should we be putting this stuff on the bottom here even though we know it fails. His rule for PMs and supers is observe and report: emails should state facts, never conclusions or opinions, because one day they go up on a courtroom projector in front of a jury.",
+  "quote": "Superintendents, PMs, you need to think every time that you send something. I know it's a little scary to think, but every time you send something, think, is that gonna be exhibit 12?",
+  "quote_time": "26:00",
+  "move": "Before you hit send, strip the email down to what you observed: dates, names, events. If a question needs an expert answer, route it to the architect, engineer, or supplier who owns that lane instead of stating your own conclusion."
+ },
+ {
+  "n": 2,
+  "story": "Libby Magliolo spent over a decade building presentations at PwC and Southwest Airlines before founding The Slide Master and teaching SMU Cox MBAs to present. At Southwest, you could not even get on the executive team's calendar without declaring whether your presentation was an inform, a discuss, or a decide. She teaches that most updates are structured like murder mysteries, context and background building to a reveal, when audiences give you maybe 30 good seconds of attention and communication should work like a newspaper article with the headline first. For an OAC meeting that means opening with one sentence, this part of the project is running behind due to XYZ and here is what we need to do about it, and only flipping to the Gantt chart when someone asks.",
+  "quote": "Lead with the answer. Don't walk me through the process that you walked through to get to the answer. Give me the answer and then walk me through the process.",
+  "quote_time": "13:30",
+  "move": "Open every update with the one-sentence headline: what is behind, why, and what you are doing about it. Keep the Gantt chart and the backup detail in reserve for when the room asks."
+ },
+ {
+  "n": 3,
+  "story": "Mitch bled Lusardi red for 17 years, and when his first son Mason was born he was back on a Bay Area job a week later, driving down to San Diego every couple of weeks, so he saw the boy maybe six or eight times in his first six months. Leaving took him two years to work up to, and CEO Scott Free flew up to ask what happened because nobody at the company believed Mitch would go. Before the jump he asked Mike, the owner of MC Painting, for guidance and got the sentence that reframed his career: the company's decisions will always be best for the company, and only sometimes will they happen to align with what is best for you. He joined XL Construction in 2014 vowing never to bleed for a company that way again, and now manages a work-life rhythm instead of chasing balance.",
+  "quote": "You always need to do right in what's good for you and your family, because the company will always do what's best for the company.",
+  "quote_time": "30:49",
+  "move": "Run every career decision through the family test first: what serves you and your family, then check whether the company's ask happens to align. When the two diverge, choose your side deliberately instead of defaulting to the company."
+ },
+ {
+  "n": 4,
+  "story": "When industry-agnostic investors ask KP Reddy why construction is so backwards, the Shadow Ventures founder tells them it is not the tech, it is incentive alignment. AE firms run on billable hours, a labor arbitrage model inherited from the days when firms charged separately for CAD time and then for BIM time, and GCs pass tools like Procore straight through to the job, so technology that shrinks the billable base has no sponsor. He told one site-planning startup that the terrible plans developers submit to permitting are not a quality problem at all: submitting to the city is a payment milestone that unlocks the first construction draw for a developer who has been out of pocket and a civil engineer sitting on hundred-day receivables. Until the business model rewards building cheaper, no amount of technology changes behavior.",
+  "quote": "I don't think it's tech. I think it's incentives, incentive alignment. If a contractor used all this tech and AI and could build a building 30 percent cheaper, there's no incentive to do that.",
+  "quote_time": "2:56",
+  "move": "Before piloting any efficiency tool, trace who currently gets paid for the hours it would eliminate. Fix the billing model first, or pick tools whose savings land on your own margin instead of inside someone else's billable base."
+ },
+ {
+  "n": 5,
+  "story": "Elliot Christiansen ran the Trunk Tools rollout at Cleveland Construction as a sequence of pilots: a first trunk text pilot on a job already 75 percent complete with messy data and staff turnover, then three more pilots on three jobs under three different project executives to widen the sample. When he staffs a pilot he deliberately mixes demographics and seats two known quantities, a future champion who can help train project teams later, and the person he knows will hate the change. The detractor tells him everything wrong with the tool, and Elliot carries that list back to the tech company to work through while still in the pilot stage. By the time a tool goes enterprise-wide across the roughly 120 people in Cleveland's GC division, the loudest objections have already been flushed out.",
+  "quote": "I usually do try to pick somebody that I know probably will hate change, he'll probably hate doing this, but I'm gonna get him involved in the pilot because he's gonna tell me all the things that are wrong with it.",
+  "quote_time": "32:18",
+  "move": "Name your loudest skeptic to the pilot team on day one and route every complaint straight to the vendor while the deployment is still small. Save your champions for training duty at rollout."
+ },
+ {
+  "n": 7,
+  "story": "Garrett Mott gets daily reports admitted under California's business records exception because routine records made every day carry an indicia of reliability, and in one trial a super's red spiral-bound log books, kept daily for multiple years and stacked high, went straight into evidence. That diligence once uncovered fraud: after a dispute, a sub blew up a change order with post hoc hours and extra people, but the super had logged exactly which subs worked, at what times, with how many people, so one letter ended it and the sub pulled way back. In another matter a fabricated work log, which Mott believes was AI-generated, claimed a man worked 116 hours in a single day when the super's notes showed four. Post hoc documentation gets knocked out by courts or shredded on the stand, while same-day notes are, in his words, absolute gold.",
+  "quote": "Evidence that is post hoc, evidence that's created after a dispute arises, has drastically low credibility. Juries understand it immediately.",
+  "quote_time": "1:02:58",
+  "move": "Write the daily log the same day, every day, with names, times, headcounts, and what happened, and keep the format consistent across the whole job. Never reconstruct records after a dispute starts."
+ },
+ {
+  "n": 16,
+  "story": "Mitch started at Lusardi as a carpenter in 1997, was running work as an acting superintendent by 1998, and made general superintendent at XL Construction in 2018, in his mid forties when most reach the role in their late fifties. The promotion inverted his job: senior superintendent ran on 80 percent technical skill, general superintendent runs on 80 percent soft skills. The work became guiding what he calls the collective mass of trades, building enough trust that the ball rolls on its own while he only nudges its speed and direction, because a really good superintendent does not direct, order, or tell. The skill set that got you through one stage, he warns, is not the skill set the next stage needs.",
+  "quote": "The skill set that you need as a successful senior superintendent is 80% technical skills and 20% soft skills. The skill set you need to be a successful general superintendent is 80% soft skills and 20% technical skills.",
+  "quote_time": "33:13",
+  "move": "Before chasing the next title, ask what ratio of technical to people work that job actually runs on, and start practicing the soft-skill side now: guide the trades toward a shared outcome instead of directing them."
+ },
+ {
+  "n": 25,
+  "story": "Libby asked her engineer husband Ryan whether their girls needed rain jackets for a trip, and he opened the weather app and read her the high, the low, and the percent chance of rain for every one of the five or six days, then looked up as if the case was closed. She uses the story in trainings because that is what professionals do to decision makers all the time: hand over raw data and quietly outsource the analysis. The job is the sentence, we're twelve percent over budget and it's due to this reason, not the spreadsheet behind it. In the AI age she sharpens the point further: you are ChatGPT for your CEO, expected to ingest the 30-page report and answer the question.",
+  "quote": "Bringing people raw data almost always creates work for them, because basically you're saying, I didn't analyze this, I didn't get any insights from this, but you can if you want to.",
+  "quote_time": "22:06",
+  "move": "Do the analysis before you walk in: state the number, the driver, and the recommendation in one sentence. Park the full data set in an appendix for whoever asks."
+ },
+ {
+  "n": 26,
+  "story": "KP Reddy tells construction startups the first three to five million in recurring revenue is a cakewalk if they sell the way his favorite founders do; NK at Track 3D moved his company from India and lived on job sites for a year and a half to learn the customer. Nobody in the industry is really building enterprise tools, only project tools, so an enterprise agreement without enterprise features just means the customer negotiates bulk purchasing and 20 percent off. His advice is to skip enterprise visibility entirely, sell job site to job site like the porta potty guys, and charge 10 percent more at the next project. Founders running drip campaigns behind a computer, he says, should get out of the business.",
+  "quote": "Porta potties aren't spec'd. Just like most technology is not spec'd as part of the project. You have to show up with a box of donuts, do a demo, and jump in your truck and go.",
+  "quote_time": "12:28",
+  "move": "Sell at the project level: show up on site, demo against a live problem, close it there, and raise your price at the next job site. Do not chase an enterprise agreement until you have actual enterprise features to anchor it."
+ },
+ {
+  "n": 30,
+  "story": "On a site visit Elliot asked one of his Cleveland Construction superintendents how the new Trunk RFI tool was working, and the super said he thought they had asked it twelve questions the other day. Elliot called his Trunk Tools rep, pulled the usage report for that job, and found the superintendent had personally asked zero; other people's questions added up to the twelve. He called the super back and told him to start asking questions. That is why Cleveland now requires every software vendor to provide usage dashboards, either standing access or regular reports from the back end, so he can verify teams are actually using what the company pays for instead of relying on self-report.",
+  "quote": "I've made a conscious effort of making sure that all of the people that we work with will provide us usage dashboards on a regular basis.",
+  "quote_time": "34:17",
+  "move": "Write usage reporting into every software contract before you sign: standing dashboard access or a scheduled export from the vendor's back end. Check it against what teams tell you, and follow up on the zeros."
+ }
+]
