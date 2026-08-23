@@ -509,23 +509,14 @@ def build_reviews(reviews, tpl_dir: Path):
 # ---------------------------------------------------------------------------
 # Join In + stories (Phase 3)
 
-def load_upcoming():
-    p = ROOT / "data" / "upcoming.json"
-    return json.loads(p.read_text()) if p.exists() else []
-
-
 def load_stories():
     stories = [parse_md(f) for f in (ROOT / "stories").glob("*.md")]
     stories.sort(key=lambda s: s.get("date", ""), reverse=True)
     return stories
 
 
-def build_join(upcoming, stories, tpl_dir: Path):
-    up = "".join(
-        f'<li><strong>{esc(u["name"])}</strong>{(", " + esc(u["role"])) if u.get("role") else ""}'
-        f'{(" · " + esc(u["topic"])) if u.get("topic") else ""}</li>' for u in upcoming) or "<li>Next guests announced soon.</li>"
+def build_join(stories, tpl_dir: Path):
     page = (tpl_dir / "join.html").read_text()
-    page = page.replace("{{UPCOMING}}", up)
     page = page.replace("{{NEWSLETTER}}", newsletter_block(""))
     (SITE / "join.html").write_text(apply_chrome(page, ""))
 

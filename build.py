@@ -410,7 +410,7 @@ def build():
     extras.build_tools(tools, tpl_dir)
     extras.build_lessons(extras.load_lessons(), tpl_dir)
     extras.build_reviews(extras.load_reviews(offline), tpl_dir)
-    extras.build_join(extras.load_upcoming(), extras.load_stories(), tpl_dir)
+    extras.build_join(extras.load_stories(), tpl_dir)
 
     print(f"Built {datetime.now():%Y-%m-%d %H:%M}")
 
