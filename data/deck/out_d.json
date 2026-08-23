@@ -1,0 +1,107 @@
+[
+ {
+  "n": 6,
+  "story": "Sarah Buchner started as a carpenter at 12 and spent 15 years in the field before a fatality on her Berlin high-rise pushed her into construction software, where she founded Trunk Tools. Her triage rule for construction companies is a two-part test: only automate work that is both repetitive and annoying. If a task is not repetitive, AI will struggle to get good at it, and if it is not annoying, people actually enjoy doing it and should keep it. By her count roughly 80 percent of white-collar construction workflows fail the necessity test, but even there she designs agents like her submittal agent to do the bureaucratic 95 percent while leaving the final call to the human, because fully automating those steps means the industry forgets how to do them within five to ten years.",
+  "quote": "If a task is repetitive and annoying, you should throw AI against it. Because if it's not repetitive, it's probably going to be hard to make an AI really good at it.",
+  "quote_time": "",
+  "move": "Run every automation candidate through the two-question filter: is it repetitive, and is it annoying. If it fails either test, leave it with your people, and when you do automate, keep the decision in human hands."
+ },
+ {
+  "n": 10,
+  "story": "As former Director of Innovation at Swinerton, Aaron Anderson watched productivity software pitch itself against construction's famous 3 percent margin and miss the real economics. On a $100M project a GC has roughly $15M of working capital deployed, and that 3 percent margin turns over 8 to 12 billing cycles a year, which compounds to roughly a 30 percent return on capital. That return is the hurdle rate any new tool or business model actually has to clear, which is why he argues disrupting a GC takes something like $100M of patient cash on a balance sheet, not an army of software engineers. Software aimed at shaving the 3 percent is aimed at the wrong number.",
+  "quote": "We talk about low margins in construction at 3%. But your return on capital is freaking massive. It's 3% 12 times. That's effectively a 30% return on your cap.",
+  "quote_time": "",
+  "move": "Before pitching or buying any productivity tool, compute the project's return on capital from margin times billing cycles, and make the case against that hurdle rate instead of the margin line."
+ },
+ {
+  "n": 11,
+  "story": "David Tibbetts, Chief Safety Officer at Highwire, points to an uncomfortable gap: recordable injury rates have dropped 80 percent in 30 years, yet construction fatalities have sat near 1,000 a year with no discernible decrease for 15 to 20 years. That is why Highwire weights EMR at just 10 percent of its prequalification score and treats no single data point, not a fatality history, not an OSHA citation, as an automatic disqualifier. A contractor who had a fatality and can clearly articulate what happened, what was learned, and what systems changed may have a more mature safety culture than one whose clean recordable rate is masking unaddressed exposures. The risk signal's job is to start that conversation, not end it.",
+  "quote": "There is no result of a prequalification assessment... that should automatically disqualify a contractor. It is a risk insight.",
+  "quote_time": "",
+  "move": "When a prequalification flag appears, schedule the conversation instead of pulling the trigger: ask what happened, what the company learned, and what changed, and weigh the quality of that answer more than the flag itself."
+ },
+ {
+  "n": 18,
+  "story": "John Riggs, a Senior Project Manager at Suffolk, has grown numb to vendor marketing that promises hours saved per week, because the hours a tool saves are rarely the hours that matter on a jobsite. With project lifespans running two to four years, even piloting a product across 20 jobsites cannot produce real success metrics quickly, so claims about how many projects a tool has been used on and how well it worked deserve skepticism on their face. His warning to vendors is that overselling to get in the door guarantees disappointment on the job, and his own rule is that innovation should be judged on iteration, where five near-misses and a sixth-try success is the right aim.",
+  "quote": "We saved you 10 hours a week on average. I don't know if you will. Those are probably hours 41 to 50. Or 61 to 70.",
+  "quote_time": "",
+  "move": "Ask every vendor how long and on how many completed projects their metrics were actually measured, and evaluate the tool on whether it removes the hours that matter, not the total it claims to save."
+ },
+ {
+  "n": 22,
+  "story": "Wes Juergens has spent his career as a superintendent in Houston commercial construction, and his experience is that the fourth-largest city in the country operates like a small town. Crews, foremen, and managers cross paths again and again across projects and companies for decades, often on opposite sides of the table from where they last met. That reality turns bridge-burning from a momentary release into a career-limiting move, because the person you torch today will be back on your next job wearing a different color hard hat. His advice is to protect the relationship even when the job or the dispute goes sideways.",
+  "quote": "Don't burn that bridge, dude, because we'll be back around soon. We might be wearing different color hard hats the next time we see each other.",
+  "quote_time": "",
+  "move": "End every job, dispute, and departure with the relationship intact, and assume the person across the table will show up on your next project in a different role."
+ },
+ {
+  "n": 24,
+  "story": "Joe Wilson built a spreadsheet-based risk analytics tool during COVID for a $100M project that was going poorly, and that work became his company, which builds data foundations for contractors. Across the projects he analyzes, submittal adherence is the single best leading indicator of schedule risk: teams that miss submittal due dates go on to incur schedule delays. The problem is that the system-of-record workflow for updating submittals runs one item at a time, and in an industry that values speed, teams default to Excel the moment the system is slower than they need it to be. That fragmentation destroys the very indicator that would have warned them, and makes portfolio-level analytics nearly impossible.",
+  "quote": "Submittals are one of the key early indicators of a project at risk. If you're missing your dates and your submittals, it's likely that you will be incurring delays on your schedule.",
+  "quote_time": "",
+  "move": "Track submittal date adherence in the system of record from day one and report it before any other metric. Fix whatever workflow friction is pushing your team to Excel, because the indicator dies with the fragmentation."
+ },
+ {
+  "n": 27,
+  "story": "Michael Zeppieri, VP of Digital Solutions at Skanska USA, came up through West Point and Boeing, and he borrows a military insight: mundane, repetitive tasks build muscle memory. The project engineer walking the site with a camera is not just taking photos, they are learning the ebb and flow of the job, and a photo robot that takes over the walk removes exactly the development that was making that person better. His warning is that automating those tasks is an easy mistake because the ROI math never accounts for the training value. Which tasks get protected from automation has to be a deliberate decision, not a byproduct of whatever a vendor happens to sell.",
+  "quote": "You can very easily make the mistake of automating the things that are actually making your people better.",
+  "quote_time": "",
+  "move": "Before automating any task, ask what the person doing it is learning. Keep a deliberate list of developmental tasks you will protect even when a robot could do them cheaper."
+ },
+ {
+  "n": 28,
+  "story": "David Tibbetts of Highwire insists that root cause analysis exhaust every systemic failure before anyone reaches for personal choice as the explanation. The questions come in order: did we plan the work effectively, did we set the worker up for success, did they have the equipment, the time, and the training. His working group's data shows why the discipline matters, finding four times as many serious-injury-potential exposures as recordable incidents across participating projects, most of them untracked. Jumping to blame closes the investigation exactly where the fatal patterns live, and only after the systemic questions are answered honestly can an individual factor even enter the conversation.",
+  "quote": "Only after we've convinced ourselves of all those things can we start to even think about an individual factor like a personal choice.",
+  "quote_time": "",
+  "move": "In every incident review, work the systemic checklist first: planning, equipment, time, and training. Do not allow personal choice into the conversation until every one of those has been honestly cleared."
+ },
+ {
+  "n": 29,
+  "story": "Jack Desloge came out of McCarthy's field operations before becoming a Senior VDC Manager at VIATechnik, and he calls concrete planning VDC's highest-leverage low-hanging fruit. Nothing moves a job faster than a concrete pour and nothing is harder to fix afterward: it is a high-dollar activity that happens in about 16 hours and cannot be undone. Lift drawings plus MEP coordination before the pour de-risk exactly that moment, catching embeds, sleeves, and conflicts while they are still lines on a drawing instead of problems in cured concrete. Skipping that work leaves an outsized pile of risk sitting on the schedule's fastest-moving activity.",
+  "quote": "If you're not doing some aspect of concrete planning and concrete lift drawing development... you're leaving a lot of risk on the table for an activity that happens in 16 hours.",
+  "quote_time": "",
+  "move": "Make concrete lift drawings and pre-pour MEP coordination standard scope on every job, and aim your VDC hours at the pour before any other workflow."
+ },
+ {
+  "n": 32,
+  "story": "Jeremy Crumley, Preconstruction Director at Balfour Beatty, watched his team lose a pursuit for a reason that would have been unthinkable a decade ago: the owner told them their preconstruction services were priced too cheaply. The market has shifted, and owners increasingly read the precon fee as a signal of how much effort and value they are buying rather than expecting it as a free loss leader. Being the cheapest number on that line signaled the least effort, and it cost the firm the job. The lesson runs against every instinct to buy work with free precon.",
+  "quote": "We were actually not awarded a project because the owner told us they thought our pre-construction services were too cheap.",
+  "quote_time": "",
+  "move": "Price preconstruction to reflect the actual effort and value of the work, and present it as a professional service. A real precon fee wins jobs that a free line item loses."
+ },
+ {
+  "n": 38,
+  "story": "Chris Masse runs daily coordination for hundreds of workers as a senior superintendent at EllisDon, getting roughly 400 adults moving in the same direction at 6am. His conclusion is that dictatorship fails at that scale: people listen when they are part of the conversation and tune out when they are treated as subordinates receiving orders. Construction culture still rewards command-and-control, and the industry talks constantly about being in control while rarely talking about being an incredible teammate, which Masse and his coach Tim Smith argue is the more effective posture. The daily huddle works because the crews help shape the plan they are about to execute.",
+  "quote": "People will listen when they're part of the conversation, but if it's going to be a dictatorship, I think you're going to fail.",
+  "quote_time": "",
+  "move": "Run morning coordination as a conversation, not a briefing. Give crews a real voice in shaping the day's plan so they execute a plan they helped build."
+ },
+ {
+  "n": 39,
+  "story": "On a $200M project where Joe Wilson's team supported the owner's rep, the scheduling data showed the contractor hitting only about 25 percent of critical path milestones on time. The contractor kept saying they would be fine, month after month, until they finally admitted to a month of delay just three months before completion. By then the one-month pattern had stretched to eight months of consistent underperformance, and the data itself had built the owner's case: the contractor had forfeited any entitlement to a time extension. The pattern, not any single missed date, was what closed the door.",
+  "quote": "When one month pattern turns into three, that turns into eight months of basically not improving. Now all of a sudden you've built up a case where, okay guys, you're not entitled to any kind of extra time here.",
+  "quote_time": "",
+  "move": "Track your critical path hit rate every month and confront a slipping pattern within the first month or two. Never let a string of reassurances run long enough to become the owner's case against you."
+ },
+ {
+  "n": 40,
+  "story": "Tim Straub started as a superintendent at Whiting-Turner building data centers, then crossed to the owner side as a Senior Technical Program Manager at Google responsible for construction quality and commissioning. The move taught him that the presumption that owners call the shots is a fallacy: on the owner side you lead through influence, asking leading questions that help the GC arrive at the solution itself rather than prescribing it. That takes respecting that other GCs win with different means and methods than the ones he grew up with, and adapting his approach to the distinct cultures of iron workers, electricians, and GC teams. Command-and-control from the owner's chair simply does not get the work done.",
+  "quote": "",
+  "quote_time": "",
+  "move": "When you sit on the owner side, drop the directive. Ask leading questions until the contractor arrives at the solution themselves, and respect their means and methods once they do."
+ },
+ {
+  "n": 45,
+  "story": "Michael Zeppieri of Skanska USA, who came to construction from systems engineering at West Point and software at Boeing, names a specific operational hazard in the industry's rush to chat-based AI. An LLM does not know when it is wrong, and it is built to please you, so instead of correcting a flawed plan it reinforces it, building your confidence that you are on the right path. That turns the tool into a confirmation bias machine at exactly the moment you think you are checking your judgment. For anyone using a chatbot to pressure-test a construction decision, the agreeable answer is the one to distrust most.",
+  "quote": "Not only does it not know it's wrong, it wants to please you, so it actually builds your confidence that you're on the right path... in many ways it's confirmation bias.",
+  "quote_time": "",
+  "move": "Treat an LLM's agreement as a warning sign rather than validation. Force it to argue against your position, and verify any consequential call with a person who knows the work."
+ },
+ {
+  "n": 49,
+  "story": "After his run as Director of Innovation at Swinerton, Aaron Anderson concluded that the innovation role only works if risk tolerance, including the willingness to be fired, is written into the job description. Doing the job right means asking the hard questions that make an organization uncomfortable, and you cannot ask them while simultaneously protecting your seat. He pairs this with his diagnosis of epistemic distance: people trust their own intentions and nobody else's, so an innovator who plays it safe never earns the standing to show anyone a different way. He applies the same verdict to the whole industry, which quashes curiosity in the name of fundamentals and kills its next generation of innovators.",
+  "quote": "I need to be willing and accept that if I'm doing my job right as an innovator, that this could be my last day. You can't protect your job and ask hard questions.",
+  "quote_time": "",
+  "move": "If you hold an innovation role, write risk tolerance into it explicitly, including your willingness to lose the job. Ask the hard question even when it threatens your seat, or admit you are not doing the work."
+ }
+]

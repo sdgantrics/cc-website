@@ -25,16 +25,27 @@
 
 <section class="page-head studs">
   <div class="wrap">
-    <span class="stamp orange" style="display:block; margin-bottom:18px;">From {{LESSON_COUNT}} conversations</span>
+    <span class="stamp orange" style="display:block; margin-bottom:18px;">The Field Deck · from {{LESSON_COUNT}} conversations</span>
     <h1 class="display">The 50 most expensive lessons</h1>
-    <p class="lede" style="max-width:640px;">Each one cost somebody a project, a client, or a career to learn. Each one is attributed and linked to the episode where it was said. Read them here, or get the one-page-each version by email below.</p>
+    <p class="lede" style="max-width:640px;">Each one cost somebody a project, a client, or a career. Each card carries what it cost, the exact words of the person who paid it, and the move to make next time. Grouped by the situation you are in, not by theme.</p>
+    <div class="search-row filters" id="role-filter">
+      <button class="filter active" data-role="">All 50</button>
+      <button class="filter" data-role="Super">For Supers</button>
+      <button class="filter" data-role="PM">For PMs</button>
+      <button class="filter" data-role="Exec">For Execs &amp; Owners</button>
+      <button class="filter" data-role="Founder">For Founders</button>
+    </div>
+    <div class="hero-ctas" style="margin-top:20px;">
+      <a class="btn btn-ghost" href="assets/cc-expensive-lessons-deck.pdf" download data-event="Deck PDF">Full deck (PDF)</a>
+      <a class="btn btn-ghost" href="assets/cc-expensive-lessons-super.pdf" download data-event="Deck PDF Super">Superintendent edition</a>
+      <a class="btn btn-ghost" href="assets/cc-expensive-lessons-pm.pdf" download data-event="Deck PDF PM">PM edition</a>
+      <a class="btn btn-ghost" href="assets/cc-expensive-lessons-exec.pdf" download data-event="Deck PDF Exec">Exec edition</a>
+    </div>
   </div>
 </section>
 <section class="block" style="padding-top:36px;">
   <div class="wrap">
-    <div class="lessons">
 {{LESSONS}}
-    </div>
   </div>
 </section>
 

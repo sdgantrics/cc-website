@@ -468,3 +468,20 @@ footer { border-top: 1px solid var(--hairline); }
   .stamp, .lesson .ep-meta a.stamp { color: #6B737B; }
   a { text-decoration: none; }
 }
+
+/* ---------- field deck ---------- */
+.sit-block { margin-bottom: 44px; }
+.l-story { color: var(--grey); font-size: 15px; line-height: 1.6; margin: 0 0 14px; max-width: 760px; }
+.lesson .ep-quote { margin: 0 0 14px; }
+.lesson .ep-quote p { font-size: 16px; }
+.l-move { color: var(--chalk); font-size: 15px; line-height: 1.55; margin: 0 0 12px; max-width: 760px; }
+.l-move .stamp.orange { color: var(--crane); margin-right: 8px; }
+.lesson .pill { padding: 4px 8px; font-size: 11px; }
+@media print {
+  .lesson { page-break-after: always; page-break-inside: avoid; border: none; border-top: 6px solid #D9702F; padding: 28px 8px; }
+  .sit-block .sec-label { break-after: avoid; }
+  .filters, .hero-ctas { display: none !important; }
+  .l-move { color: #0B0F12; }
+  .lesson .ep-quote p { color: #0B0F12; }
+  .l-story { color: #3A444C; }
+}

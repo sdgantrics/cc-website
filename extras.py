@@ -100,7 +100,7 @@ def newsletter_block(base: str = "", compact: bool = False) -> str:
     head = "" if compact else '<h2 class="display">Get the 50 most expensive lessons</h2>'
     return f'''<div class="newsletter-inner">
       {head}
-      <p class="lede">Fifty hard-won lessons from the people on this show, one page each, attributed and linked to the episode. Free, delivered by the Construction Briefs welcome email. Then the weekly newsletter: construction tech news, episode recaps, and insider takes from the guests.</p>
+      <p class="lede">The Expensive Lessons Field Deck: 50 cards, one page each, with what it cost, the exact quote from the person who paid it, and the move to make next time. Printable for toolbox talks, in Superintendent, PM, and Exec editions. Free, delivered by the Construction Briefs welcome email, and a new lesson lands with each episode.</p>
       <form class="nl-form" action="{SUBSTACK}/subscribe" method="get" data-event="Newsletter Submit">
         <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address">
         <button type="submit" class="btn btn-primary">Send me the 50 lessons</button>
@@ -375,7 +375,78 @@ def episode_tools_block(slug: str, data) -> str:
 
 def load_lessons():
     p = ROOT / "data" / "lessons.json"
-    return json.loads(p.read_text()) if p.exists() else {"lessons": []}
+    return merge_deck(json.loads(p.read_text())) if p.exists() else {"lessons": []}
+
+
+def merge_deck(data):
+    """Fold data/deck/out_*.json enrichment (story, quote, quote_time, move) into lessons."""
+    enrich = {}
+    for f in sorted((ROOT / "data" / "deck").glob("out_*.json")):
+        try:
+            for r in json.loads(f.read_text()):
+                enrich[r["n"]] = r
+        except Exception as e:
+            print(f"WARNING deck {f.name}: {e}")
+    for l in data.get("lessons", []):
+        e = enrich.get(l["n"])
+        if e:
+            l.setdefault("story", e.get("story", ""))
+            l.setdefault("quote", e.get("quote", ""))
+            l.setdefault("quote_time", e.get("quote_time", ""))
+            l.setdefault("move", e.get("move", ""))
+    return data
+
+
+ROLE_LABEL = {"Super": "Supers", "PM": "PMs", "Exec": "Execs & Owners", "Founder": "Founders"}
+
+
+def lesson_card(l, base: str = "") -> str:
+    roles = l.get("roles", [])
+    ep = l["episode"]
+    t = l.get("quote_time", "")
+    hear = f'{base}episodes/{ep}.html'
+    if t:
+        hear += f"#t={t2s(t)}"
+    story = f'<p class="l-story">{esc(l.get("story") or l.get("detail", ""))}</p>'
+    quote = ""
+    if l.get("quote"):
+        cite = esc(l.get("guest", "")) + ((" · " + esc(t)) if t else "")
+        quote = f'<blockquote class="ep-quote"><p>"{esc(l["quote"])}"</p><cite>{cite}</cite></blockquote>'
+    move = f'<p class="l-move"><span class="stamp orange">The move</span> {esc(l["move"])}</p>' if l.get("move") else ""
+    chips = "".join(f'<span class="pill">{html.escape(ROLE_LABEL.get(r, r))}</span>' for r in roles)
+    hear_txt = "Hear it" + ((" at " + esc(t)) if t else "")
+    return (
+        f'      <article class="lesson" id="l{l["n"]}" data-roles="{" ".join(roles)}">\n'
+        f'        <div class="lesson-n">{l["n"]:02d}</div>\n'
+        f'        <div>\n'
+        f'          <div class="ep-meta">{chips}<a class="stamp" href="{hear}">{esc(ep_label(ep))}</a></div>\n'
+        f'          <h3>{esc(l["lesson"])}</h3>\n'
+        f'          {story}\n'
+        f'          {quote}\n'
+        f'          {move}\n'
+        f'          <p class="stamp">{esc(l.get("guest", ""))}{(" · " + esc(l["role"])) if l.get("role") else ""} · <a href="{hear}" style="color:var(--crane);">{hear_txt} →</a></p>\n'
+        f'        </div>\n'
+        f'      </article>')
+
+
+SIT_ORDER = ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8"]
+
+
+def lessons_sections(data, base: str = "", role: str = "") -> str:
+    sits = data.get("situations", {})
+    out = []
+    for i, sid in enumerate(SIT_ORDER, 1):
+        group = [l for l in data["lessons"] if l.get("situation") == sid
+                 and (not role or role in l.get("roles", []))]
+        if not group:
+            continue
+        meta = sits.get(sid, {"title": sid, "sub": ""})
+        cards = "\n".join(lesson_card(l, base) for l in group)
+        out.append(
+            f'    <div class="sit-block" id="{sid.lower()}">\n'
+            f'      <div class="sec-label">{i:02d} / {esc(meta["title"])} · {esc(meta["sub"])}</div>\n'
+            f'      <div class="lessons">\n{cards}\n      </div>\n    </div>')
+    return "\n".join(out)
 
 
 def build_lessons(data, tpl_dir: Path):
@@ -383,22 +454,14 @@ def build_lessons(data, tpl_dir: Path):
     if not lessons:
         print("lessons.json missing or empty; skipped site/lessons.html")
         return
-    items = "".join(
-        f'''      <article class="lesson" id="l{l["n"]}">
-        <div class="lesson-n">{l["n"]:02d}</div>
-        <div>
-          <div class="ep-meta"><span class="tag">{esc(l.get("theme", ""))}</span><a class="stamp" href="episodes/{l["episode"]}.html">{esc(ep_label(l["episode"]))}</a></div>
-          <h3>{esc(l["lesson"])}</h3>
-          <p>{esc(l.get("detail", ""))}</p>
-          <p class="stamp">{esc(l.get("guest", ""))}{(" · " + esc(l["role"])) if l.get("role") else ""}</p>
-        </div>
-      </article>''' for l in lessons)
-    page = (tpl_dir / "lessons.html").read_text()
     n_eps = len({l["episode"] for l in lessons})
-    page = page.replace("{{LESSONS}}", items).replace("{{LESSON_COUNT}}", str(n_eps))
+    page = (tpl_dir / "lessons.html").read_text()
+    page = page.replace("{{LESSONS}}", lessons_sections(data))
+    page = page.replace("{{LESSON_COUNT}}", str(n_eps))
     page = page.replace("{{NEWSLETTER}}", newsletter_block("", compact=True))
     (SITE / "lessons.html").write_text(apply_chrome(page, ""))
-    print(f"Wrote site/lessons.html ({len(lessons)} lessons)")
+    enriched = sum(1 for l in lessons if l.get("story"))
+    print(f"Wrote site/lessons.html ({len(lessons)} lessons, {enriched} enriched)")
 
 
 # ---------------------------------------------------------------------------

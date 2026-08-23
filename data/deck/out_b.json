@@ -1,0 +1,79 @@
+[
+ {
+  "n": 8,
+  "story": "When Wes Juergens came back on the show after moving up to a regional superintendent role, he zeroed in on why very large projects sink: communication. On a smaller job a PM or PE covers seven or eight scopes and overhears everything in the trailer, but on a hundred person team each engineer owns a single scope, so the concrete engineer has no idea what the elevator guy or the window guy is doing. Wes borrows a saying from an experienced friend in the industry: if everybody's got it, nobody's got it. An email to two people gets handled because one of them makes sure it happens, while the same email to 25 people dies because everyone assumes somebody else is on it. His fix is written role expectations set early, so every problem lands on a name.",
+  "quote": "If everybody's got it, then nobody's got it. If I send that email out to 25 people and say, hey, this is a big problem, they all just assume that somebody else is doing it.",
+  "quote_time": "26:29",
+  "move": "Assign the problem to one named person with a deadline, then inform the wider group. Put written role expectations in place at kickoff so every scope has a single owner."
+ },
+ {
+  "n": 9,
+  "story": "Tim Smith has spent more than 30 years commissioning power plants from Kuwait and Saudi Arabia to Oklahoma City and Boston, and now directs commissioning for QTS Data Centers. In all that time, commissioning has been the project's relief valve: lose two weeks on the base build, pull it from commissioning; lose a million dollars of budget, pull it from commissioning. By the time actual startup arrives, the team is a dollar late and a day short. So he writes every commissioning schedule assuming shortfalls, because the bid-format version never survives. The data center boom has only amplified the squeeze, making it a struggle to commission at the quality the end users expect.",
+  "quote": "We lost two weeks on the base build, let's pull it from commissioning. We lost a million dollars on budget, let's pull it from commissioning. So by the time you get to actual startup, you're a dollar late and a day short.",
+  "quote_time": "4:08",
+  "move": "Build the project schedule backwards from the drop dead turnover date with every commissioning step in it, and let that force changes to the build schedule. Write the commissioning plan assuming shortfalls will land on it."
+ },
+ {
+  "n": 12,
+  "story": "Mark Fly went from swinging hammers to evangelizing SmartBid, and co-host Lars, then a contractor customer, remembered exactly why he trusted him: he was burned so many times by software salesmen promising features that never showed up. Mark's team held the line from marketing through sales, refusing the pitch language entirely; he says if he hears the phrase game changer one more time he will throw up. After telling a prospect what the product did for their job, the evangelist in him would also tell them what it would not do. In an industry where decades of overpromising put workers' shields permanently up, that stated honesty was the thing that kept customers like Lars for nearly 20 years.",
+  "quote": "The evangelist part of me would tell them, and it also will not do this or this or this.",
+  "quote_time": "20:49",
+  "move": "Open the demo with what the product does for the buyer's specific pain, then state plainly what it will not do before they discover it on a jobsite. Ban game changer language from the pitch."
+ },
+ {
+  "n": 14,
+  "story": "Aaron McClellan runs construction technology at Granite Construction, where every candidate solution goes through a build versus buy evaluation. Security comes first, with Granite's IT department running cybersecurity analysis because the company does federal work. Then the team evaluates the process itself and matches the solution to the existing process, specifically so they do not have to go through massive change management. A new technology is already one piece of change management on its own; introduce a new technology and change the process at the same time and you are talking about a very long adoption. The guiding question is whether they can get the tool to operations as fast as possible with as little change as necessary.",
+  "quote": "If you introduce a new technology, that's already one piece of change management that has to happen. So if you start introducing a new technology and changing the process, you're talking a long time.",
+  "quote_time": "9:45",
+  "move": "Map the candidate tool against your existing process before you buy, and pick the option that changes only one variable. If the tool truly requires a new process, run the process change as its own separate rollout."
+ },
+ {
+  "n": 17,
+  "story": "Steve Little, who directs facilities and engineering for The Fresh Market, was walking a store job the week of the recording and found the electrician's work was not quite per the plans. Instead of forcing a rip-out, he walked it with the electrician and suggested an alternate route that got closer to the plan and still met its intent, and the electrician was over the moon because he did not have to tear out what he had built. Steve's bet is on reciprocity: if he later asks that same electrician for one more outlet tapped off the nearby circuit, no change order is coming. For him that is what a real trade partnership looks like, interpersonal credit built one solved problem at a time.",
+  "quote": "I guarantee you, if I asked him, hey man, I need to make one more outlet right over here, you can tap off of this, you think he'd hit me with a change order after I just helped him?",
+  "quote_time": "35:17",
+  "move": "When a trade's work drifts from the plans, walk it with them in person and find the fix that avoids rip-out before reaching for the contract. Bank the goodwill and spend it on the small asks later."
+ },
+ {
+  "n": 31,
+  "story": "Tim Smith's owner-side commissioning team at QTS lives in the field, capped at 30 minutes a day in the site office, and one of the things they hunt is whether Level 2 arrival inspections actually happened. The tell is right in the commissioning platform: open CxAlloy and find 45 checklists all completed within two minutes of each other. When Level 2 gets pencil-whipped, the failures surface later as holdups in Level 3 and then Level 4 testing. Tim finds it is almost never malice, just a lack of education about why the checklist matters, so the response is mentoring rather than punishment, and catching it early actually aids the schedule.",
+  "quote": "Did you actually do it, or did you just pencil whip the checklist? Can we go in and look at CxAlloy and see forty-five checklists that were all done within two minutes of each other?",
+  "quote_time": "35:52",
+  "move": "Audit checklist completion timestamps every week and flag batches closed minutes apart. Respond by mentoring the crew on why the inspection matters downstream, not by writing them up."
+ },
+ {
+  "n": 33,
+  "story": "Aaron McClellan did 11 years in the Army, with the 82nd Airborne and then Special Forces at 5th Group, and came into construction on paper unexperienced and unqualified. What carried over was a single value rule: whatever you are doing in your current job, the value you contribute needs to reach the person sitting two levels above you, your boss's boss. He argues that if you have that mindset you will succeed in the industry, no doubt about it, and that companies cannot cap someone generating that much value. The alternative he warns against is staying what the military calls the gray man, floating in the middle, which is exactly where you will stay.",
+  "quote": "Your value that you're contributing needs to attribute to the person that's sitting two levels above you. If you have that mindset, then you're gonna succeed in the industry, no doubt about it.",
+  "quote_time": "43:50",
+  "move": "Before you take on any piece of work, ask how it creates value for your boss's boss, then make that contribution visible to them. Do not settle into being the gray man in the middle."
+ },
+ {
+  "n": 36,
+  "story": "As a regional superintendent dropped into troubled jobs, Wes Juergens starts with culture, and he ties injuries and quality escapes directly back to the GC's own example. If the superintendent walks the site with his harness straps undone, his vest unzipped, and his safety glasses swinging from his hand, every trade reads that as the real standard, the same way un-pre-punched GC inspection requests tell trade partners quality does not matter. His favorite proof it can work the other way: a laborer with a shovel turned around and told Wes to put his gloves on, while Wes's own people stared in disbelief. Wes thanked him on the spot and recognized him at the next all-hands safety meeting, because a crew unafraid to call out the boss is the goal state.",
+  "quote": "If the superintendent's walking around and his straps undone and his vest is unzipped and swinging his safety glasses in his hands, you're setting the example right there.",
+  "quote_time": "14:12",
+  "move": "Wear every piece of PPE correctly yourself and pre-punch your own areas before calling inspections. When a craft worker calls out a leader on safety, thank them publicly at the next site meeting."
+ },
+ {
+  "n": 41,
+  "story": "Back in the SmartBid days, somewhere between the first 100 and 300 customers, Mark Fly's company built an advisory board, and he had watched every other contech company stack theirs with VPs, big names, and the people who sign the checks. Mark was adamant the board be real contractors instead, people in the muck who walk sites and run bids daily, and he pushed to seat practitioners like Lars and Seth Cheever. His reasoning is that the field practitioners are the ones who detect BS, while the 30th floor view builds a product for the person who signs rather than the person who uses. He gives the same advice to funded startups today: really talk to your customers about their actual pains before building the flashy campaign.",
+  "quote": "They normally go after the VPs and the big check writers. And I was adamant, adamant, no. We want real contractors on our advisory board.",
+  "quote_time": "22:45",
+  "move": "Seat working supers, foremen, and estimators on your advisory board alongside any executives, and run product and roadmap decisions past the people who would use the tool every day."
+ },
+ {
+  "n": 46,
+  "story": "Mark Fly's urgency about knowledge capture has nothing to do with the technology and everything to do with the retirement clock. He wants to reach boomers and veterans leaving the industry and give them ways to release their knowledge before it is gone, pairing that capture with mentorship for the young workers coming up. On the show he and Stephen sketched what it could look like, from digitizing a career into an AI twin of an expert like Mark himself to gamified scenario walkthroughs through the CSI divisions. His window is explicit: with the knowledge leaving the field now, the next five years are when it gets captured or lost.",
+  "quote": "With the knowledge leaving the field, capturing that now for over the next five years is crucial.",
+  "quote_time": "46:50",
+  "move": "Start structured capture with your retiring field veterans now: recorded scenario walkthroughs, mentorship pairings, and digitized decision knowledge, while they are still on the payroll."
+ },
+ {
+  "n": 47,
+  "story": "Steve Little and the hosts dug into what got lost when construction management moved behind screens, and Stephen admitted he had lived it himself, more comfortable in BIM 360 and Last Planner views than walking with the foreman challenging constructability ideas. Steve's diagnosis is that technology has become a buffer that gives people a safe space to be on the job without interacting with it, because challenging somebody in person is genuinely harder than firing off a short email. He contrasts it with the old OAC discipline of running the logs and driving the schedule face to face, and with the real relationships built by getting bloodied up together on site. The jobsite walk with the electrician that same week was his proof of what the in-person version still buys you.",
+  "quote": "It's a whole lot more difficult to challenge somebody face to face than it is over a short email.",
+  "quote_time": "33:57",
+  "move": "Take constructability challenges to the foreman in person and keep email for documenting what was agreed. If the conversation could change the outcome, have it face to face on the walk."
+ }
+]

@@ -1,0 +1,123 @@
+[
+ {
+  "n": 8,
+  "lesson": "If you send the problem email to 25 people, nobody owns it. Name one person or it will not get done.",
+  "detail": "On large projects everyone assumes someone else is handling it. Named individual accountability is the only fix he has found.",
+  "guest": "Wes Juergens",
+  "role": "Regional Superintendent",
+  "episode": "ep-043",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 43 - Wes Juergens/wes-juergens-take-02.txt",
+  "chapters_json": "data/chapters/ep-043.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 9,
+  "lesson": "Write the commissioning schedule assuming it will be cut, because every week and dollar lost upstream gets taken from the end.",
+  "detail": "Base build loses two weeks, pull it from commissioning. Budget loses a million, pull it from commissioning. By startup you are a dollar late and a day short.",
+  "guest": "Tim Smith",
+  "role": "Director of Commissioning, QTS Data Centers",
+  "episode": "ep-055",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-055.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 12,
+  "lesson": "Tell the customer what your product will not do before they find out on a jobsite. Honesty outsells features.",
+  "detail": "Decades of overpromising vendors have construction workers' shields permanently up, so stated limits are the only thing that earns trust.",
+  "guest": "Mark Fly",
+  "role": "Product Evangelist and Construction Tech Advisor",
+  "episode": "ep-037",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 37 - Mark Fly/mark-fly.txt",
+  "chapters_json": "data/chapters/ep-037.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 14,
+  "lesson": "Never introduce a new tool and a new process in the same rollout. One is change management; both is a multi-year slog.",
+  "detail": "Granite maps every candidate solution against existing processes first, specifically to keep change management to one variable.",
+  "guest": "Aaron McClellan",
+  "role": "Construction Technology Manager, Granite Construction",
+  "episode": "ep-040",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 40 - Aaron McClellan/aaron-mcclellan.txt",
+  "chapters_json": "data/chapters/ep-040.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 17,
+  "lesson": "Help the electrician solve the problem on site today and he will not hit you with a change order tomorrow.",
+  "detail": "Working with a trade to avoid ripping out work creates reciprocity that quietly eliminates future change orders.",
+  "guest": "Steve Little",
+  "role": "Director of Facilities and Engineering, The Fresh Market",
+  "episode": "ep-038",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 38 - Steve Little/steve-little.txt",
+  "chapters_json": "data/chapters/ep-038.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 31,
+  "lesson": "Forty-five checklists completed within two minutes of each other is a pencil-whipping signature the data will expose later.",
+  "detail": "Pencil-whipped Level 2 checklists cascade into Level 3 and Level 4 delays. It is almost always ignorance rather than malice, so the fix is mentoring.",
+  "guest": "Tim Smith",
+  "role": "Director of Commissioning, QTS Data Centers",
+  "episode": "ep-055",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-055.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 33,
+  "lesson": "Create value for the person two levels above you and advancement takes care of itself.",
+  "detail": "Career advice carried from Special Forces into construction: think about your boss's boss and make your work visibly useful to them.",
+  "guest": "Aaron McClellan",
+  "role": "Construction Technology Manager, Granite Construction",
+  "episode": "ep-040",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 40 - Aaron McClellan/aaron-mcclellan.txt",
+  "chapters_json": "data/chapters/ep-040.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 36,
+  "lesson": "If the GC super walks the site with his harness strap undone, every trade will too. Injuries trace back to the example you set.",
+  "detail": "Quality and safety culture flow from the GC superintendent's own behavior. The goal state is a laborer calling out the super for missing gloves.",
+  "guest": "Wes Juergens",
+  "role": "Regional Superintendent",
+  "episode": "ep-043",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 43 - Wes Juergens/wes-juergens-take-02.txt",
+  "chapters_json": "data/chapters/ep-043.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 41,
+  "lesson": "Put field practitioners on your advisory board, not just VPs, or you will build for the person who signs and not the one who uses.",
+  "detail": "The people who detect BS are the ones who walk the site daily.",
+  "guest": "Mark Fly",
+  "role": "Product Evangelist and Construction Tech Advisor",
+  "episode": "ep-037",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 37 - Mark Fly/mark-fly.txt",
+  "chapters_json": "data/chapters/ep-037.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 46,
+  "lesson": "Experienced workers' knowledge is walking out the door and there are roughly five years left to capture it digitally.",
+  "detail": "The urgency is the retirement clock, not the technology.",
+  "guest": "Mark Fly",
+  "role": "Product Evangelist and Construction Tech Advisor",
+  "episode": "ep-037",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 37 - Mark Fly/mark-fly.txt",
+  "chapters_json": "data/chapters/ep-037.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 47,
+  "lesson": "Walk the constructability with the foreman face to face. A short email is where a generation hides from hard conversations.",
+  "detail": "Technology gets used as a buffer against accountability, because challenging someone over email is easier than in person.",
+  "guest": "Steve Little",
+  "role": "Director of Facilities and Engineering, The Fresh Market",
+  "episode": "ep-038",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 38 - Steve Little/steve-little.txt",
+  "chapters_json": "data/chapters/ep-038.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ }
+]

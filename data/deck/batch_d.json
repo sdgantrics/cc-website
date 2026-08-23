@@ -1,0 +1,167 @@
+[
+ {
+  "n": 6,
+  "lesson": "Only automate a task that is both repetitive and annoying. If it is not annoying, let your people keep doing it.",
+  "detail": "AI will not get good at non-repetitive work, and non-annoying work is what people actually want to do.",
+  "guest": "Dr. Sarah Buchner",
+  "role": "Founder and CEO, Trunk Tools",
+  "episode": "ep-028",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-028.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 10,
+  "lesson": "Three percent margin turned over twelve billing cycles is a thirty percent return on capital. Pitch against that, not the margin.",
+  "detail": "On a $100M project with about $15M of working capital, productivity software aimed at the 3 percent is aimed at the wrong economics.",
+  "guest": "Aaron Anderson",
+  "role": "Former Director of Innovation, Swinerton",
+  "episode": "ep-047",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-047.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 11,
+  "lesson": "An owner who can explain exactly what changed after a fatality may be safer than a contractor with a clean record.",
+  "detail": "No single prequalification data point should disqualify. A risk signal should trigger a conversation about what the company learned.",
+  "guest": "David Tibbetts",
+  "role": "Chief Safety Officer, Highwire",
+  "episode": "ep-024",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-024.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 18,
+  "lesson": "Distrust any vendor claim of hours saved per week. Those are hours 41 to 50, not the hours that matter.",
+  "detail": "With two to four year project lifespans, real pilot metrics take years, and vendors who oversell to get in the door guarantee disappointment on the job.",
+  "guest": "John Riggs",
+  "role": "Senior Project Manager, Suffolk",
+  "episode": "ep-022",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-022.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 22,
+  "lesson": "Never burn a bridge in commercial construction. You will work with the same people again wearing different hard hats.",
+  "detail": "Houston is the fourth-largest city in the country and a small world. Crews and managers cross paths across projects and companies for decades.",
+  "guest": "Wes Juergens",
+  "role": "Senior Superintendent, Austin Commercial",
+  "episode": "ep-001",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-001.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 24,
+  "lesson": "Missed submittal dates are the earliest reliable warning of schedule delay. Track them before you track anything else.",
+  "detail": "Submittal adherence is the single best leading indicator, but one-by-one workflows push teams to Excel, which destroys the indicator's reliability.",
+  "guest": "Joe Wilson",
+  "role": "Founder and CEO, Projexion",
+  "episode": "ep-019",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-019.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 27,
+  "lesson": "Do not automate the tasks that train your people. The PE walking the site with a camera is learning the job.",
+  "detail": "Mundane tasks build muscle memory. A photo robot removes the development the PE was getting from the walk. Which tasks to protect is a deliberate decision.",
+  "guest": "Michael Zeppieri",
+  "role": "VP of Digital Solutions, Skanska USA",
+  "episode": "ep-030",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-030.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 28,
+  "lesson": "Before blaming a worker's choice, prove the work was planned, the equipment was there, and the training and time existed.",
+  "detail": "Exhaust systemic failures first. Only after convincing yourself of all of those can an individual factor even be considered.",
+  "guest": "David Tibbetts",
+  "role": "Chief Safety Officer, Highwire",
+  "episode": "ep-024",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-024.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 29,
+  "lesson": "If you are not doing concrete lift drawings and MEP coordination before a pour, you are leaving risk on a 16-hour activity you cannot undo.",
+  "detail": "Nothing moves a job faster than a concrete pour, and nothing is harder to fix. Concrete planning is VDC's highest-leverage work on any job.",
+  "guest": "Jack Desloge",
+  "role": "Sr. VDC Manager, VIATechnik",
+  "episode": "ep-003",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-003.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 32,
+  "lesson": "Pricing preconstruction too cheap can lose you the job. One owner rejected a GC for exactly that reason.",
+  "detail": "Owners now read precon as value rather than a free loss leader. Being the cheapest signaled the least effort.",
+  "guest": "Jeremy Crumley",
+  "role": "Preconstruction Director, Balfour Beatty",
+  "episode": "ep-029",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-029.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 38,
+  "lesson": "Running 400 adults at 6am as a dictatorship will fail. People only listen when they are part of the conversation.",
+  "detail": "Daily coordination of hundreds of workers works because they are treated as participants, not subordinates. Command and control is rewarded culturally but is less effective.",
+  "guest": "Chris Masse",
+  "role": "Senior Superintendent, EllisDon",
+  "episode": "ep-021",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-021.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 39,
+  "lesson": "Hit only 25 percent of critical path milestones for eight straight months and you have forfeited any claim to a time extension.",
+  "detail": "On a $200M project the contractor kept saying 'we'll be fine' until admitting a month of delay three months from completion. The pattern itself became the owner's case.",
+  "guest": "Joe Wilson",
+  "role": "Founder and CEO, Projexion",
+  "episode": "ep-019",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-019.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 40,
+  "lesson": "On the owner side you do not call the shots. You ask leading questions until the GC arrives at the solution itself.",
+  "detail": "The presumption that owners command is a fallacy. Influence, and respect for the GC's means and methods, is how the work gets done.",
+  "guest": "Tim Straub",
+  "role": "Senior Technical Program Manager, Google",
+  "episode": "ep-027",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-027.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 45,
+  "lesson": "An LLM does not know it is wrong and wants to please you, so it will build your confidence on the wrong path.",
+  "detail": "Confirmation bias instead of course correction: a specific operational hazard for anyone checking their judgment against a chatbot.",
+  "guest": "Michael Zeppieri",
+  "role": "VP of Digital Solutions, Skanska USA",
+  "episode": "ep-030",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-030.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 49,
+  "lesson": "If you are doing the innovator's job right, today could be your last day. You cannot protect your job and ask hard questions.",
+  "detail": "Risk tolerance, including willingness to be fired, belongs in the job description. He applies the diagnosis to the whole industry.",
+  "guest": "Aaron Anderson",
+  "role": "Former Director of Innovation, Swinerton",
+  "episode": "ep-047",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-047.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ }
+]

@@ -137,3 +137,22 @@ if (toolSearch) {
     });
   });
 }
+
+// Field deck role filter
+var roleBar = document.getElementById('role-filter');
+if (roleBar) {
+  roleBar.addEventListener('click', function (e) {
+    var btn = e.target.closest('.filter');
+    if (!btn) return;
+    roleBar.querySelectorAll('.filter').forEach(function (b) { b.classList.toggle('active', b === btn); });
+    var role = btn.dataset.role;
+    document.querySelectorAll('.lesson[data-roles]').forEach(function (c) {
+      c.style.display = (!role || c.dataset.roles.split(' ').indexOf(role) !== -1) ? '' : 'none';
+    });
+    document.querySelectorAll('.sit-block').forEach(function (b) {
+      var any = Array.prototype.some.call(b.querySelectorAll('.lesson'), function (c) { return c.style.display !== 'none'; });
+      b.style.display = any ? '' : 'none';
+    });
+    if (window.plausible) plausible('Deck Filter: ' + (role || 'All'));
+  });
+}

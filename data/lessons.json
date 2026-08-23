@@ -2,55 +2,718 @@
  "title": "The 50 Most Expensive Lessons",
  "generated": "2026-08-23",
  "lessons": [
-  {"n": 1, "lesson": "Every email you send is a potential Exhibit 12. State facts, never opinions or conclusions.", "detail": "A 25-year-old PM's five emails asking 'are we still using the bad stuff?' ended up on a courtroom projector in a $30 million dispute.", "guest": "Garrett Mott", "role": "Construction Trial Lawyer, Hennigh Law", "episode": "ep-045", "theme": "Documentation & Risk"},
-  {"n": 2, "lesson": "Lead with the answer. 'This part is behind because of X, here is what we do about it.' Then earn the Gantt chart.", "detail": "Most project updates are structured like a murder mystery building to a reveal. Owners want the headline first; the detail comes only when someone asks.", "guest": "Libby Magliolo", "role": "Founder, The Slide Master", "episode": "ep-054", "theme": "Communication"},
-  {"n": 3, "lesson": "The company will always do what is best for the company, so you must do what is best for you and your family.", "detail": "Mitch calls this realization the turning point in his relationship with his career. Never bleed for a company the way it will not bleed for you.", "guest": "Mitch McDonald", "role": "General Superintendent, XL Construction", "episode": "ep-005", "theme": "Career"},
-  {"n": 4, "lesson": "Nobody builds 30 percent cheaper on a cost-plus contract. Adoption fails on incentives, not technology.", "detail": "Billing models reward hours, not outcomes, so a contractor has no reason to deploy efficiency tech that shrinks the billable base.", "guest": "KP Reddy", "role": "Managing Partner, Shadow Ventures", "episode": "ep-041", "theme": "Business Model"},
-  {"n": 5, "lesson": "Deliberately recruit your loudest known detractor into the pilot so objections surface before the enterprise rollout.", "detail": "Surface the objections early and fix them with the vendor while it is still cheap, rather than discovering them across 120 people later.", "guest": "Elliot Christiansen", "role": "SVP Operations, Cleveland Construction", "episode": "ep-053", "theme": "Tech Adoption"},
-  {"n": 6, "lesson": "Only automate a task that is both repetitive and annoying. If it is not annoying, let your people keep doing it.", "detail": "AI will not get good at non-repetitive work, and non-annoying work is what people actually want to do.", "guest": "Dr. Sarah Buchner", "role": "Founder and CEO, Trunk Tools", "episode": "ep-028", "theme": "AI"},
-  {"n": 7, "lesson": "Daily logs written the same day are admissible gold. Documentation created after a dispute starts has almost no credibility.", "detail": "Courts admit routine contemporaneous records under the business records exception. One super's meticulous logs caught a sub's invoice fraud and ended it with a letter.", "guest": "Garrett Mott", "role": "Construction Trial Lawyer, Hennigh Law", "episode": "ep-045", "theme": "Documentation & Risk"},
-  {"n": 8, "lesson": "If you send the problem email to 25 people, nobody owns it. Name one person or it will not get done.", "detail": "On large projects everyone assumes someone else is handling it. Named individual accountability is the only fix he has found.", "guest": "Wes Juergens", "role": "Regional Superintendent", "episode": "ep-043", "theme": "Communication"},
-  {"n": 9, "lesson": "Write the commissioning schedule assuming it will be cut, because every week and dollar lost upstream gets taken from the end.", "detail": "Base build loses two weeks, pull it from commissioning. Budget loses a million, pull it from commissioning. By startup you are a dollar late and a day short.", "guest": "Tim Smith", "role": "Director of Commissioning, QTS Data Centers", "episode": "ep-055", "theme": "Scheduling"},
-  {"n": 10, "lesson": "Three percent margin turned over twelve billing cycles is a thirty percent return on capital. Pitch against that, not the margin.", "detail": "On a $100M project with about $15M of working capital, productivity software aimed at the 3 percent is aimed at the wrong economics.", "guest": "Aaron Anderson", "role": "Former Director of Innovation, Swinerton", "episode": "ep-047", "theme": "Business Model"},
-  {"n": 11, "lesson": "An owner who can explain exactly what changed after a fatality may be safer than a contractor with a clean record.", "detail": "No single prequalification data point should disqualify. A risk signal should trigger a conversation about what the company learned.", "guest": "David Tibbetts", "role": "Chief Safety Officer, Highwire", "episode": "ep-024", "theme": "Safety"},
-  {"n": 12, "lesson": "Tell the customer what your product will not do before they find out on a jobsite. Honesty outsells features.", "detail": "Decades of overpromising vendors have construction workers' shields permanently up, so stated limits are the only thing that earns trust.", "guest": "Mark Fly", "role": "Product Evangelist and Construction Tech Advisor", "episode": "ep-037", "theme": "Building & Selling Tech"},
-  {"n": 13, "lesson": "Zero RFIs on a project is a red flag that nobody asked the right questions, not a win to brag about.", "detail": "Did you actually have line of sight to your risk profile before field execution? RFI quality, not count, is the signal.", "guest": "Alex Belkofer", "role": "Senior Director of VDC, McCarthy Building Companies", "episode": "ep-025", "theme": "Documentation & Risk"},
-  {"n": 14, "lesson": "Never introduce a new tool and a new process in the same rollout. One is change management; both is a multi-year slog.", "detail": "Granite maps every candidate solution against existing processes first, specifically to keep change management to one variable.", "guest": "Aaron McClellan", "role": "Construction Technology Manager, Granite Construction", "episode": "ep-040", "theme": "Tech Adoption"},
-  {"n": 15, "lesson": "One retiring veteran takes five new hires to replace. The real labor shortage is knowledge leaving, not bodies missing.", "detail": "Roughly 400,000 workers retire annually against about 100,000 apprentice completions. The productivity gap is what kills a crew, not the headcount gap.", "guest": "Angelo Suntres", "role": "Director of Operations, Matina", "episode": "ep-034", "theme": "Workforce"},
-  {"n": 16, "lesson": "The skills flip at general superintendent. Senior super is 80 percent technical; general super is 80 percent soft skills.", "detail": "The skills that got you promoted are nearly the inverse of what the next job needs. The job becomes guiding the collective mass of trades, not directing.", "guest": "Mitch McDonald", "role": "General Superintendent, XL Construction", "episode": "ep-005", "theme": "Field Leadership"},
-  {"n": 17, "lesson": "Help the electrician solve the problem on site today and he will not hit you with a change order tomorrow.", "detail": "Working with a trade to avoid ripping out work creates reciprocity that quietly eliminates future change orders.", "guest": "Steve Little", "role": "Director of Facilities and Engineering, The Fresh Market", "episode": "ep-038", "theme": "Owners"},
-  {"n": 18, "lesson": "Distrust any vendor claim of hours saved per week. Those are hours 41 to 50, not the hours that matter.", "detail": "With two to four year project lifespans, real pilot metrics take years, and vendors who oversell to get in the door guarantee disappointment on the job.", "guest": "John Riggs", "role": "Senior Project Manager, Suffolk", "episode": "ep-022", "theme": "Tech Adoption"},
-  {"n": 19, "lesson": "The real AI risk is not security. It is someone shipping the first draft as the final draft.", "detail": "Corporate AI policies obsess over data leakage while the actual damage comes from people treating the tool as an easy button and skipping review.", "guest": "Hugh Seaton", "role": "Founder, The Link", "episode": "ep-035", "theme": "AI"},
-  {"n": 20, "lesson": "You cannot fix a bad buy. Scope missed at buyout comes straight out of margin with no way to recover it.", "detail": "Buyout is the highest-stakes irreversible moment in construction.", "guest": "Charles Ma", "role": "Founder and CEO, Scoreboard AI", "episode": "ep-042", "theme": "Documentation & Risk"},
-  {"n": 21, "lesson": "Finishing on schedule and budget only buys you the right to bid the next one. The career gets built in moments not in the contract.", "detail": "The relationships that carry a PM or super come from small, unscripted moments with the client.", "guest": "Sean Johnson", "role": "Founder, Madison Consulting Services", "episode": "ep-052", "theme": "Career"},
-  {"n": 22, "lesson": "Never burn a bridge in commercial construction. You will work with the same people again wearing different hard hats.", "detail": "Houston is the fourth-largest city in the country and a small world. Crews and managers cross paths across projects and companies for decades.", "guest": "Wes Juergens", "role": "Senior Superintendent, Austin Commercial", "episode": "ep-001", "theme": "Career"},
-  {"n": 23, "lesson": "The GC that can bid its CM fee at zero wins, because the margin lives in supply, insurance, and equipment.", "detail": "Turner's SourceBlue, insurance brokerage, and equipment rentals make the fee a loss leader. A GC stuck doing a little of everything will fail.", "guest": "Victor Muchiri", "role": "Growth Lead, Build Vision", "episode": "ep-033", "theme": "Business Model"},
-  {"n": 24, "lesson": "Missed submittal dates are the earliest reliable warning of schedule delay. Track them before you track anything else.", "detail": "Submittal adherence is the single best leading indicator, but one-by-one workflows push teams to Excel, which destroys the indicator's reliability.", "guest": "Joe Wilson", "role": "Founder and CEO, Projexion", "episode": "ep-019", "theme": "Scheduling"},
-  {"n": 25, "lesson": "Raw data handed to a decision maker is not help. It is work you were supposed to do and pushed onto them.", "detail": "Saying 'twelve percent over budget due to this reason' is the job. The spreadsheet is not.", "guest": "Libby Magliolo", "role": "Founder, The Slide Master", "episode": "ep-054", "theme": "Communication"},
-  {"n": 26, "lesson": "Sell construction tech like porta potties: show up on one project with donuts, demo, close it on site, drive to the next.", "detail": "Tech is not spec'd into the project any more than porta potties are. Chasing enterprise agreements without enterprise features is how startups stall.", "guest": "KP Reddy", "role": "Managing Partner, Shadow Ventures", "episode": "ep-041", "theme": "Building & Selling Tech"},
-  {"n": 27, "lesson": "Do not automate the tasks that train your people. The PE walking the site with a camera is learning the job.", "detail": "Mundane tasks build muscle memory. A photo robot removes the development the PE was getting from the walk. Which tasks to protect is a deliberate decision.", "guest": "Michael Zeppieri", "role": "VP of Digital Solutions, Skanska USA", "episode": "ep-030", "theme": "Workforce"},
-  {"n": 28, "lesson": "Before blaming a worker's choice, prove the work was planned, the equipment was there, and the training and time existed.", "detail": "Exhaust systemic failures first. Only after convincing yourself of all of those can an individual factor even be considered.", "guest": "David Tibbetts", "role": "Chief Safety Officer, Highwire", "episode": "ep-024", "theme": "Safety"},
-  {"n": 29, "lesson": "If you are not doing concrete lift drawings and MEP coordination before a pour, you are leaving risk on a 16-hour activity you cannot undo.", "detail": "Nothing moves a job faster than a concrete pour, and nothing is harder to fix. Concrete planning is VDC's highest-leverage work on any job.", "guest": "Jack Desloge", "role": "Sr. VDC Manager, VIATechnik", "episode": "ep-003", "theme": "Field Leadership"},
-  {"n": 30, "lesson": "Require usage dashboards from every vendor, because people will tell you they use the tool when the data says zero.", "detail": "A superintendent claimed he had asked the Q&A tool twelve questions. The dashboard showed none. Accountability needs data, not self-report.", "guest": "Elliot Christiansen", "role": "SVP Operations, Cleveland Construction", "episode": "ep-053", "theme": "Tech Adoption"},
-  {"n": 31, "lesson": "Forty-five checklists completed within two minutes of each other is a pencil-whipping signature the data will expose later.", "detail": "Pencil-whipped Level 2 checklists cascade into Level 3 and Level 4 delays. It is almost always ignorance rather than malice, so the fix is mentoring.", "guest": "Tim Smith", "role": "Director of Commissioning, QTS Data Centers", "episode": "ep-055", "theme": "Documentation & Risk"},
-  {"n": 32, "lesson": "Pricing preconstruction too cheap can lose you the job. One owner rejected a GC for exactly that reason.", "detail": "Owners now read precon as value rather than a free loss leader. Being the cheapest signaled the least effort.", "guest": "Jeremy Crumley", "role": "Preconstruction Director, Balfour Beatty", "episode": "ep-029", "theme": "Owners"},
-  {"n": 33, "lesson": "Create value for the person two levels above you and advancement takes care of itself.", "detail": "Career advice carried from Special Forces into construction: think about your boss's boss and make your work visibly useful to them.", "guest": "Aaron McClellan", "role": "Construction Technology Manager, Granite Construction", "episode": "ep-040", "theme": "Career"},
-  {"n": 34, "lesson": "Do not bring in another point solution unless it eliminates two or three existing ones. Otherwise you just added a login.", "detail": "The industry is littered with purpose-built apps for the 150 processes on a project, and every extra one adds noise and data bottlenecks.", "guest": "Hannu Lindberg", "role": "Technology Leader, DPR Construction", "episode": "ep-013", "theme": "Tech Adoption"},
-  {"n": 35, "lesson": "When you try to automate a process you discover how much unpriced judgment the 'not that bright' guy was adding.", "detail": "Pulling a human out of a process trades quality for new risk nobody budgeted. The embedded intelligence only shows up once it is gone.", "guest": "Hugh Seaton", "role": "Founder, The Link", "episode": "ep-056", "theme": "AI"},
-  {"n": 36, "lesson": "If the GC super walks the site with his harness strap undone, every trade will too. Injuries trace back to the example you set.", "detail": "Quality and safety culture flow from the GC superintendent's own behavior. The goal state is a laborer calling out the super for missing gloves.", "guest": "Wes Juergens", "role": "Regional Superintendent", "episode": "ep-043", "theme": "Safety"},
-  {"n": 37, "lesson": "If your tool is harder than the hand signature it replaces, crews revert, and everybody in their network hears about it.", "detail": "Weeks of training plus an unkept promise sends users back to the old way, and the lost trust is nearly impossible to recover in a relationship-driven industry.", "guest": "Jackie Guilbault", "role": "Product Marketing Manager, Document Crunch", "episode": "ep-017", "theme": "Building & Selling Tech"},
-  {"n": 38, "lesson": "Running 400 adults at 6am as a dictatorship will fail. People only listen when they are part of the conversation.", "detail": "Daily coordination of hundreds of workers works because they are treated as participants, not subordinates. Command and control is rewarded culturally but is less effective.", "guest": "Chris Masse", "role": "Senior Superintendent, EllisDon", "episode": "ep-021", "theme": "Field Leadership"},
-  {"n": 39, "lesson": "Hit only 25 percent of critical path milestones for eight straight months and you have forfeited any claim to a time extension.", "detail": "On a $200M project the contractor kept saying 'we'll be fine' until admitting a month of delay three months from completion. The pattern itself became the owner's case.", "guest": "Joe Wilson", "role": "Founder and CEO, Projexion", "episode": "ep-019", "theme": "Documentation & Risk"},
-  {"n": 40, "lesson": "On the owner side you do not call the shots. You ask leading questions until the GC arrives at the solution itself.", "detail": "The presumption that owners command is a fallacy. Influence, and respect for the GC's means and methods, is how the work gets done.", "guest": "Tim Straub", "role": "Senior Technical Program Manager, Google", "episode": "ep-027", "theme": "Owners"},
-  {"n": 41, "lesson": "Put field practitioners on your advisory board, not just VPs, or you will build for the person who signs and not the one who uses.", "detail": "The people who detect BS are the ones who walk the site daily.", "guest": "Mark Fly", "role": "Product Evangelist and Construction Tech Advisor", "episode": "ep-037", "theme": "Building & Selling Tech"},
-  {"n": 42, "lesson": "Field tech does not save you months on the schedule. It gives you your time back and real data when a dispute lands.", "detail": "The honest ROI is the superintendent's personal time plus defensible records in a conflict. Expecting schedule compression sets up disappointment.", "guest": "Chris Masse", "role": "Senior Superintendent, EllisDon", "episode": "ep-011", "theme": "Tech Adoption"},
-  {"n": 43, "lesson": "Prefab is a manufacturing business, not construction in a warehouse, and running it with a construction mindset is how you get burned.", "detail": "Manufacturing processes, work instructions, and controlled environments demand a paradigm shift from field habits. He admits he did not appreciate the difference at first.", "guest": "Andrew Rener", "role": "Executive, Architectural Metals", "episode": "ep-007", "theme": "Business Model"},
-  {"n": 44, "lesson": "Put model due, signed off, shop drawings in, and approved for install in the field schedule and track them like a bottom-out date.", "detail": "VDC milestones that live outside the super's schedule slip silently and eat field float.", "guest": "Wally Castro", "role": "Superintendent, Bernards", "episode": "ep-049", "theme": "Scheduling"},
-  {"n": 45, "lesson": "An LLM does not know it is wrong and wants to please you, so it will build your confidence on the wrong path.", "detail": "Confirmation bias instead of course correction: a specific operational hazard for anyone checking their judgment against a chatbot.", "guest": "Michael Zeppieri", "role": "VP of Digital Solutions, Skanska USA", "episode": "ep-030", "theme": "AI"},
-  {"n": 46, "lesson": "Experienced workers' knowledge is walking out the door and there are roughly five years left to capture it digitally.", "detail": "The urgency is the retirement clock, not the technology.", "guest": "Mark Fly", "role": "Product Evangelist and Construction Tech Advisor", "episode": "ep-037", "theme": "Workforce"},
-  {"n": 47, "lesson": "Walk the constructability with the foreman face to face. A short email is where a generation hides from hard conversations.", "detail": "Technology gets used as a buffer against accountability, because challenging someone over email is easier than in person.", "guest": "Steve Little", "role": "Director of Facilities and Engineering, The Fresh Market", "episode": "ep-038", "theme": "Communication"},
-  {"n": 48, "lesson": "The schedule is the plan. Perfect RFIs and submittals cannot save a job where nobody trusts or is aligned to it.", "detail": "A schedule the team does not believe in is worse than none. Fix plan trust before buying any other PM tool.", "guest": "Franco Giaquinto", "role": "Co-Founder and CEO, Outbuild", "episode": "ep-046", "theme": "Scheduling"},
-  {"n": 49, "lesson": "If you are doing the innovator's job right, today could be your last day. You cannot protect your job and ask hard questions.", "detail": "Risk tolerance, including willingness to be fired, belongs in the job description. He applies the diagnosis to the whole industry.", "guest": "Aaron Anderson", "role": "Former Director of Innovation, Swinerton", "episode": "ep-047", "theme": "Career"},
-  {"n": 50, "lesson": "It is not the guy in the trailer that builds the job. Make young PMs lay block and walk steel so they respect the craft.", "detail": "The Building Skills program forced young project managers to do trade work to understand what makes a 20-year plasterer's work look effortless.", "guest": "Andrew Rener", "role": "Executive, Architectural Metals", "episode": "ep-007", "theme": "Field Leadership"}
- ]
+  {
+   "n": 1,
+   "lesson": "Every email you send is a potential Exhibit 12. State facts, never opinions or conclusions.",
+   "detail": "A 25-year-old PM's five emails asking 'are we still using the bad stuff?' ended up on a courtroom projector in a $30 million dispute.",
+   "guest": "Garrett Mott",
+   "role": "Construction Trial Lawyer, Hennigh Law",
+   "episode": "ep-045",
+   "theme": "Documentation & Risk",
+   "situation": "S1",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 2,
+   "lesson": "Lead with the answer. 'This part is behind because of X, here is what we do about it.' Then earn the Gantt chart.",
+   "detail": "Most project updates are structured like a murder mystery building to a reveal. Owners want the headline first; the detail comes only when someone asks.",
+   "guest": "Libby Magliolo",
+   "role": "Founder, The Slide Master",
+   "episode": "ep-054",
+   "theme": "Communication",
+   "situation": "S2",
+   "roles": [
+    "Super",
+    "PM",
+    "Exec"
+   ]
+  },
+  {
+   "n": 3,
+   "lesson": "The company will always do what is best for the company, so you must do what is best for you and your family.",
+   "detail": "Mitch calls this realization the turning point in his relationship with his career. Never bleed for a company the way it will not bleed for you.",
+   "guest": "Mitch McDonald",
+   "role": "General Superintendent, XL Construction",
+   "episode": "ep-005",
+   "theme": "Career",
+   "situation": "S7",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 4,
+   "lesson": "Nobody builds 30 percent cheaper on a cost-plus contract. Adoption fails on incentives, not technology.",
+   "detail": "Billing models reward hours, not outcomes, so a contractor has no reason to deploy efficiency tech that shrinks the billable base.",
+   "guest": "KP Reddy",
+   "role": "Managing Partner, Shadow Ventures",
+   "episode": "ep-041",
+   "theme": "Business Model",
+   "situation": "S8",
+   "roles": [
+    "Exec",
+    "Founder"
+   ]
+  },
+  {
+   "n": 5,
+   "lesson": "Deliberately recruit your loudest known detractor into the pilot so objections surface before the enterprise rollout.",
+   "detail": "Surface the objections early and fix them with the vendor while it is still cheap, rather than discovering them across 120 people later.",
+   "guest": "Elliot Christiansen",
+   "role": "SVP Operations, Cleveland Construction",
+   "episode": "ep-053",
+   "theme": "Tech Adoption",
+   "situation": "S5",
+   "roles": [
+    "PM",
+    "Exec"
+   ]
+  },
+  {
+   "n": 6,
+   "lesson": "Only automate a task that is both repetitive and annoying. If it is not annoying, let your people keep doing it.",
+   "detail": "AI will not get good at non-repetitive work, and non-annoying work is what people actually want to do.",
+   "guest": "Dr. Sarah Buchner",
+   "role": "Founder and CEO, Trunk Tools",
+   "episode": "ep-028",
+   "theme": "AI",
+   "situation": "S6",
+   "roles": [
+    "PM",
+    "Exec"
+   ]
+  },
+  {
+   "n": 7,
+   "lesson": "Daily logs written the same day are admissible gold. Documentation created after a dispute starts has almost no credibility.",
+   "detail": "Courts admit routine contemporaneous records under the business records exception. One super's meticulous logs caught a sub's invoice fraud and ended it with a letter.",
+   "guest": "Garrett Mott",
+   "role": "Construction Trial Lawyer, Hennigh Law",
+   "episode": "ep-045",
+   "theme": "Documentation & Risk",
+   "situation": "S1",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 8,
+   "lesson": "If you send the problem email to 25 people, nobody owns it. Name one person or it will not get done.",
+   "detail": "On large projects everyone assumes someone else is handling it. Named individual accountability is the only fix he has found.",
+   "guest": "Wes Juergens",
+   "role": "Regional Superintendent",
+   "episode": "ep-043",
+   "theme": "Communication",
+   "situation": "S1",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 9,
+   "lesson": "Write the commissioning schedule assuming it will be cut, because every week and dollar lost upstream gets taken from the end.",
+   "detail": "Base build loses two weeks, pull it from commissioning. Budget loses a million, pull it from commissioning. By startup you are a dollar late and a day short.",
+   "guest": "Tim Smith",
+   "role": "Director of Commissioning, QTS Data Centers",
+   "episode": "ep-055",
+   "theme": "Scheduling",
+   "situation": "S4",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 10,
+   "lesson": "Three percent margin turned over twelve billing cycles is a thirty percent return on capital. Pitch against that, not the margin.",
+   "detail": "On a $100M project with about $15M of working capital, productivity software aimed at the 3 percent is aimed at the wrong economics.",
+   "guest": "Aaron Anderson",
+   "role": "Former Director of Innovation, Swinerton",
+   "episode": "ep-047",
+   "theme": "Business Model",
+   "situation": "S8",
+   "roles": [
+    "Exec",
+    "Founder"
+   ]
+  },
+  {
+   "n": 11,
+   "lesson": "An owner who can explain exactly what changed after a fatality may be safer than a contractor with a clean record.",
+   "detail": "No single prequalification data point should disqualify. A risk signal should trigger a conversation about what the company learned.",
+   "guest": "David Tibbetts",
+   "role": "Chief Safety Officer, Highwire",
+   "episode": "ep-024",
+   "theme": "Safety",
+   "situation": "S3",
+   "roles": [
+    "Exec"
+   ]
+  },
+  {
+   "n": 12,
+   "lesson": "Tell the customer what your product will not do before they find out on a jobsite. Honesty outsells features.",
+   "detail": "Decades of overpromising vendors have construction workers' shields permanently up, so stated limits are the only thing that earns trust.",
+   "guest": "Mark Fly",
+   "role": "Product Evangelist and Construction Tech Advisor",
+   "episode": "ep-037",
+   "theme": "Building & Selling Tech",
+   "situation": "S8",
+   "roles": [
+    "Founder"
+   ]
+  },
+  {
+   "n": 13,
+   "lesson": "Zero RFIs on a project is a red flag that nobody asked the right questions, not a win to brag about.",
+   "detail": "Did you actually have line of sight to your risk profile before field execution? RFI quality, not count, is the signal.",
+   "guest": "Alex Belkofer",
+   "role": "Senior Director of VDC, McCarthy Building Companies",
+   "episode": "ep-025",
+   "theme": "Documentation & Risk",
+   "situation": "S1",
+   "roles": [
+    "PM"
+   ]
+  },
+  {
+   "n": 14,
+   "lesson": "Never introduce a new tool and a new process in the same rollout. One is change management; both is a multi-year slog.",
+   "detail": "Granite maps every candidate solution against existing processes first, specifically to keep change management to one variable.",
+   "guest": "Aaron McClellan",
+   "role": "Construction Technology Manager, Granite Construction",
+   "episode": "ep-040",
+   "theme": "Tech Adoption",
+   "situation": "S5",
+   "roles": [
+    "PM",
+    "Exec"
+   ]
+  },
+  {
+   "n": 15,
+   "lesson": "One retiring veteran takes five new hires to replace. The real labor shortage is knowledge leaving, not bodies missing.",
+   "detail": "Roughly 400,000 workers retire annually against about 100,000 apprentice completions. The productivity gap is what kills a crew, not the headcount gap.",
+   "guest": "Angelo Suntres",
+   "role": "Director of Operations, Matina",
+   "episode": "ep-034",
+   "theme": "Workforce",
+   "situation": "S6",
+   "roles": [
+    "Exec"
+   ]
+  },
+  {
+   "n": 16,
+   "lesson": "The skills flip at general superintendent. Senior super is 80 percent technical; general super is 80 percent soft skills.",
+   "detail": "The skills that got you promoted are nearly the inverse of what the next job needs. The job becomes guiding the collective mass of trades, not directing.",
+   "guest": "Mitch McDonald",
+   "role": "General Superintendent, XL Construction",
+   "episode": "ep-005",
+   "theme": "Field Leadership",
+   "situation": "S3",
+   "roles": [
+    "Super"
+   ]
+  },
+  {
+   "n": 17,
+   "lesson": "Help the electrician solve the problem on site today and he will not hit you with a change order tomorrow.",
+   "detail": "Working with a trade to avoid ripping out work creates reciprocity that quietly eliminates future change orders.",
+   "guest": "Steve Little",
+   "role": "Director of Facilities and Engineering, The Fresh Market",
+   "episode": "ep-038",
+   "theme": "Owners",
+   "situation": "S2",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 18,
+   "lesson": "Distrust any vendor claim of hours saved per week. Those are hours 41 to 50, not the hours that matter.",
+   "detail": "With two to four year project lifespans, real pilot metrics take years, and vendors who oversell to get in the door guarantee disappointment on the job.",
+   "guest": "John Riggs",
+   "role": "Senior Project Manager, Suffolk",
+   "episode": "ep-022",
+   "theme": "Tech Adoption",
+   "situation": "S5",
+   "roles": [
+    "PM",
+    "Exec"
+   ]
+  },
+  {
+   "n": 19,
+   "lesson": "The real AI risk is not security. It is someone shipping the first draft as the final draft.",
+   "detail": "Corporate AI policies obsess over data leakage while the actual damage comes from people treating the tool as an easy button and skipping review.",
+   "guest": "Hugh Seaton",
+   "role": "Founder, The Link",
+   "episode": "ep-035",
+   "theme": "AI",
+   "situation": "S6",
+   "roles": [
+    "PM",
+    "Exec"
+   ]
+  },
+  {
+   "n": 20,
+   "lesson": "You cannot fix a bad buy. Scope missed at buyout comes straight out of margin with no way to recover it.",
+   "detail": "Buyout is the highest-stakes irreversible moment in construction.",
+   "guest": "Charles Ma",
+   "role": "Founder and CEO, Scoreboard AI",
+   "episode": "ep-042",
+   "theme": "Documentation & Risk",
+   "situation": "S1",
+   "roles": [
+    "PM"
+   ]
+  },
+  {
+   "n": 21,
+   "lesson": "Finishing on schedule and budget only buys you the right to bid the next one. The career gets built in moments not in the contract.",
+   "detail": "The relationships that carry a PM or super come from small, unscripted moments with the client.",
+   "guest": "Sean Johnson",
+   "role": "Founder, Madison Consulting Services",
+   "episode": "ep-052",
+   "theme": "Career",
+   "situation": "S7",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 22,
+   "lesson": "Never burn a bridge in commercial construction. You will work with the same people again wearing different hard hats.",
+   "detail": "Houston is the fourth-largest city in the country and a small world. Crews and managers cross paths across projects and companies for decades.",
+   "guest": "Wes Juergens",
+   "role": "Senior Superintendent, Austin Commercial",
+   "episode": "ep-001",
+   "theme": "Career",
+   "situation": "S7",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 23,
+   "lesson": "The GC that can bid its CM fee at zero wins, because the margin lives in supply, insurance, and equipment.",
+   "detail": "Turner's SourceBlue, insurance brokerage, and equipment rentals make the fee a loss leader. A GC stuck doing a little of everything will fail.",
+   "guest": "Victor Muchiri",
+   "role": "Growth Lead, Build Vision",
+   "episode": "ep-033",
+   "theme": "Business Model",
+   "situation": "S8",
+   "roles": [
+    "Exec"
+   ]
+  },
+  {
+   "n": 24,
+   "lesson": "Missed submittal dates are the earliest reliable warning of schedule delay. Track them before you track anything else.",
+   "detail": "Submittal adherence is the single best leading indicator, but one-by-one workflows push teams to Excel, which destroys the indicator's reliability.",
+   "guest": "Joe Wilson",
+   "role": "Founder and CEO, Projexion",
+   "episode": "ep-019",
+   "theme": "Scheduling",
+   "situation": "S4",
+   "roles": [
+    "PM"
+   ]
+  },
+  {
+   "n": 25,
+   "lesson": "Raw data handed to a decision maker is not help. It is work you were supposed to do and pushed onto them.",
+   "detail": "Saying 'twelve percent over budget due to this reason' is the job. The spreadsheet is not.",
+   "guest": "Libby Magliolo",
+   "role": "Founder, The Slide Master",
+   "episode": "ep-054",
+   "theme": "Communication",
+   "situation": "S2",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 26,
+   "lesson": "Sell construction tech like porta potties: show up on one project with donuts, demo, close it on site, drive to the next.",
+   "detail": "Tech is not spec'd into the project any more than porta potties are. Chasing enterprise agreements without enterprise features is how startups stall.",
+   "guest": "KP Reddy",
+   "role": "Managing Partner, Shadow Ventures",
+   "episode": "ep-041",
+   "theme": "Building & Selling Tech",
+   "situation": "S8",
+   "roles": [
+    "Founder"
+   ]
+  },
+  {
+   "n": 27,
+   "lesson": "Do not automate the tasks that train your people. The PE walking the site with a camera is learning the job.",
+   "detail": "Mundane tasks build muscle memory. A photo robot removes the development the PE was getting from the walk. Which tasks to protect is a deliberate decision.",
+   "guest": "Michael Zeppieri",
+   "role": "VP of Digital Solutions, Skanska USA",
+   "episode": "ep-030",
+   "theme": "Workforce",
+   "situation": "S6",
+   "roles": [
+    "Exec"
+   ]
+  },
+  {
+   "n": 28,
+   "lesson": "Before blaming a worker's choice, prove the work was planned, the equipment was there, and the training and time existed.",
+   "detail": "Exhaust systemic failures first. Only after convincing yourself of all of those can an individual factor even be considered.",
+   "guest": "David Tibbetts",
+   "role": "Chief Safety Officer, Highwire",
+   "episode": "ep-024",
+   "theme": "Safety",
+   "situation": "S3",
+   "roles": [
+    "Super"
+   ]
+  },
+  {
+   "n": 29,
+   "lesson": "If you are not doing concrete lift drawings and MEP coordination before a pour, you are leaving risk on a 16-hour activity you cannot undo.",
+   "detail": "Nothing moves a job faster than a concrete pour, and nothing is harder to fix. Concrete planning is VDC's highest-leverage work on any job.",
+   "guest": "Jack Desloge",
+   "role": "Sr. VDC Manager, VIATechnik",
+   "episode": "ep-003",
+   "theme": "Field Leadership",
+   "situation": "S3",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 30,
+   "lesson": "Require usage dashboards from every vendor, because people will tell you they use the tool when the data says zero.",
+   "detail": "A superintendent claimed he had asked the Q&A tool twelve questions. The dashboard showed none. Accountability needs data, not self-report.",
+   "guest": "Elliot Christiansen",
+   "role": "SVP Operations, Cleveland Construction",
+   "episode": "ep-053",
+   "theme": "Tech Adoption",
+   "situation": "S5",
+   "roles": [
+    "PM",
+    "Exec"
+   ]
+  },
+  {
+   "n": 31,
+   "lesson": "Forty-five checklists completed within two minutes of each other is a pencil-whipping signature the data will expose later.",
+   "detail": "Pencil-whipped Level 2 checklists cascade into Level 3 and Level 4 delays. It is almost always ignorance rather than malice, so the fix is mentoring.",
+   "guest": "Tim Smith",
+   "role": "Director of Commissioning, QTS Data Centers",
+   "episode": "ep-055",
+   "theme": "Documentation & Risk",
+   "situation": "S1",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 32,
+   "lesson": "Pricing preconstruction too cheap can lose you the job. One owner rejected a GC for exactly that reason.",
+   "detail": "Owners now read precon as value rather than a free loss leader. Being the cheapest signaled the least effort.",
+   "guest": "Jeremy Crumley",
+   "role": "Preconstruction Director, Balfour Beatty",
+   "episode": "ep-029",
+   "theme": "Owners",
+   "situation": "S2",
+   "roles": [
+    "Exec"
+   ]
+  },
+  {
+   "n": 33,
+   "lesson": "Create value for the person two levels above you and advancement takes care of itself.",
+   "detail": "Career advice carried from Special Forces into construction: think about your boss's boss and make your work visibly useful to them.",
+   "guest": "Aaron McClellan",
+   "role": "Construction Technology Manager, Granite Construction",
+   "episode": "ep-040",
+   "theme": "Career",
+   "situation": "S7",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 34,
+   "lesson": "Do not bring in another point solution unless it eliminates two or three existing ones. Otherwise you just added a login.",
+   "detail": "The industry is littered with purpose-built apps for the 150 processes on a project, and every extra one adds noise and data bottlenecks.",
+   "guest": "Hannu Lindberg",
+   "role": "Technology Leader, DPR Construction",
+   "episode": "ep-013",
+   "theme": "Tech Adoption",
+   "situation": "S5",
+   "roles": [
+    "Exec"
+   ]
+  },
+  {
+   "n": 35,
+   "lesson": "When you try to automate a process you discover how much unpriced judgment the 'not that bright' guy was adding.",
+   "detail": "Pulling a human out of a process trades quality for new risk nobody budgeted. The embedded intelligence only shows up once it is gone.",
+   "guest": "Hugh Seaton",
+   "role": "Founder, The Link",
+   "episode": "ep-056",
+   "theme": "AI",
+   "situation": "S6",
+   "roles": [
+    "PM",
+    "Exec"
+   ]
+  },
+  {
+   "n": 36,
+   "lesson": "If the GC super walks the site with his harness strap undone, every trade will too. Injuries trace back to the example you set.",
+   "detail": "Quality and safety culture flow from the GC superintendent's own behavior. The goal state is a laborer calling out the super for missing gloves.",
+   "guest": "Wes Juergens",
+   "role": "Regional Superintendent",
+   "episode": "ep-043",
+   "theme": "Safety",
+   "situation": "S3",
+   "roles": [
+    "Super"
+   ]
+  },
+  {
+   "n": 37,
+   "lesson": "If your tool is harder than the hand signature it replaces, crews revert, and everybody in their network hears about it.",
+   "detail": "Weeks of training plus an unkept promise sends users back to the old way, and the lost trust is nearly impossible to recover in a relationship-driven industry.",
+   "guest": "Jackie Guilbault",
+   "role": "Product Marketing Manager, Document Crunch",
+   "episode": "ep-017",
+   "theme": "Building & Selling Tech",
+   "situation": "S5",
+   "roles": [
+    "Founder"
+   ]
+  },
+  {
+   "n": 38,
+   "lesson": "Running 400 adults at 6am as a dictatorship will fail. People only listen when they are part of the conversation.",
+   "detail": "Daily coordination of hundreds of workers works because they are treated as participants, not subordinates. Command and control is rewarded culturally but is less effective.",
+   "guest": "Chris Masse",
+   "role": "Senior Superintendent, EllisDon",
+   "episode": "ep-021",
+   "theme": "Field Leadership",
+   "situation": "S3",
+   "roles": [
+    "Super"
+   ]
+  },
+  {
+   "n": 39,
+   "lesson": "Hit only 25 percent of critical path milestones for eight straight months and you have forfeited any claim to a time extension.",
+   "detail": "On a $200M project the contractor kept saying 'we'll be fine' until admitting a month of delay three months from completion. The pattern itself became the owner's case.",
+   "guest": "Joe Wilson",
+   "role": "Founder and CEO, Projexion",
+   "episode": "ep-019",
+   "theme": "Documentation & Risk",
+   "situation": "S1",
+   "roles": [
+    "PM"
+   ]
+  },
+  {
+   "n": 40,
+   "lesson": "On the owner side you do not call the shots. You ask leading questions until the GC arrives at the solution itself.",
+   "detail": "The presumption that owners command is a fallacy. Influence, and respect for the GC's means and methods, is how the work gets done.",
+   "guest": "Tim Straub",
+   "role": "Senior Technical Program Manager, Google",
+   "episode": "ep-027",
+   "theme": "Owners",
+   "situation": "S2",
+   "roles": [
+    "Exec"
+   ]
+  },
+  {
+   "n": 41,
+   "lesson": "Put field practitioners on your advisory board, not just VPs, or you will build for the person who signs and not the one who uses.",
+   "detail": "The people who detect BS are the ones who walk the site daily.",
+   "guest": "Mark Fly",
+   "role": "Product Evangelist and Construction Tech Advisor",
+   "episode": "ep-037",
+   "theme": "Building & Selling Tech",
+   "situation": "S8",
+   "roles": [
+    "Founder"
+   ]
+  },
+  {
+   "n": 42,
+   "lesson": "Field tech does not save you months on the schedule. It gives you your time back and real data when a dispute lands.",
+   "detail": "The honest ROI is the superintendent's personal time plus defensible records in a conflict. Expecting schedule compression sets up disappointment.",
+   "guest": "Chris Masse",
+   "role": "Senior Superintendent, EllisDon",
+   "episode": "ep-011",
+   "theme": "Tech Adoption",
+   "situation": "S5",
+   "roles": [
+    "Super"
+   ]
+  },
+  {
+   "n": 43,
+   "lesson": "Prefab is a manufacturing business, not construction in a warehouse, and running it with a construction mindset is how you get burned.",
+   "detail": "Manufacturing processes, work instructions, and controlled environments demand a paradigm shift from field habits. He admits he did not appreciate the difference at first.",
+   "guest": "Andrew Rener",
+   "role": "Executive, Architectural Metals",
+   "episode": "ep-007",
+   "theme": "Business Model",
+   "situation": "S8",
+   "roles": [
+    "Exec",
+    "Founder"
+   ]
+  },
+  {
+   "n": 44,
+   "lesson": "Put model due, signed off, shop drawings in, and approved for install in the field schedule and track them like a bottom-out date.",
+   "detail": "VDC milestones that live outside the super's schedule slip silently and eat field float.",
+   "guest": "Wally Castro",
+   "role": "Superintendent, Bernards",
+   "episode": "ep-049",
+   "theme": "Scheduling",
+   "situation": "S4",
+   "roles": [
+    "Super"
+   ]
+  },
+  {
+   "n": 45,
+   "lesson": "An LLM does not know it is wrong and wants to please you, so it will build your confidence on the wrong path.",
+   "detail": "Confirmation bias instead of course correction: a specific operational hazard for anyone checking their judgment against a chatbot.",
+   "guest": "Michael Zeppieri",
+   "role": "VP of Digital Solutions, Skanska USA",
+   "episode": "ep-030",
+   "theme": "AI",
+   "situation": "S6",
+   "roles": [
+    "Super",
+    "PM",
+    "Exec"
+   ]
+  },
+  {
+   "n": 46,
+   "lesson": "Experienced workers' knowledge is walking out the door and there are roughly five years left to capture it digitally.",
+   "detail": "The urgency is the retirement clock, not the technology.",
+   "guest": "Mark Fly",
+   "role": "Product Evangelist and Construction Tech Advisor",
+   "episode": "ep-037",
+   "theme": "Workforce",
+   "situation": "S6",
+   "roles": [
+    "Exec"
+   ]
+  },
+  {
+   "n": 47,
+   "lesson": "Walk the constructability with the foreman face to face. A short email is where a generation hides from hard conversations.",
+   "detail": "Technology gets used as a buffer against accountability, because challenging someone over email is easier than in person.",
+   "guest": "Steve Little",
+   "role": "Director of Facilities and Engineering, The Fresh Market",
+   "episode": "ep-038",
+   "theme": "Communication",
+   "situation": "S2",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 48,
+   "lesson": "The schedule is the plan. Perfect RFIs and submittals cannot save a job where nobody trusts or is aligned to it.",
+   "detail": "A schedule the team does not believe in is worse than none. Fix plan trust before buying any other PM tool.",
+   "guest": "Franco Giaquinto",
+   "role": "Co-Founder and CEO, Outbuild",
+   "episode": "ep-046",
+   "theme": "Scheduling",
+   "situation": "S4",
+   "roles": [
+    "Super",
+    "PM"
+   ]
+  },
+  {
+   "n": 49,
+   "lesson": "If you are doing the innovator's job right, today could be your last day. You cannot protect your job and ask hard questions.",
+   "detail": "Risk tolerance, including willingness to be fired, belongs in the job description. He applies the diagnosis to the whole industry.",
+   "guest": "Aaron Anderson",
+   "role": "Former Director of Innovation, Swinerton",
+   "episode": "ep-047",
+   "theme": "Career",
+   "situation": "S7",
+   "roles": [
+    "Exec"
+   ]
+  },
+  {
+   "n": 50,
+   "lesson": "It is not the guy in the trailer that builds the job. Make young PMs lay block and walk steel so they respect the craft.",
+   "detail": "The Building Skills program forced young project managers to do trade work to understand what makes a 20-year plasterer's work look effortless.",
+   "guest": "Andrew Rener",
+   "role": "Executive, Architectural Metals",
+   "episode": "ep-007",
+   "theme": "Field Leadership",
+   "situation": "S3",
+   "roles": [
+    "PM",
+    "Exec"
+   ]
+  }
+ ],
+ "situations": {
+  "S1": {
+   "title": "The Paper Trail",
+   "sub": "Before you hit send"
+  },
+  "S2": {
+   "title": "The Owner Meeting",
+   "sub": "Walking into the room"
+  },
+  "S3": {
+   "title": "Running the Job",
+   "sub": "Leading the field"
+  },
+  "S4": {
+   "title": "When the Schedule Slips",
+   "sub": "The plan under pressure"
+  },
+  "S5": {
+   "title": "The Pilot",
+   "sub": "When leadership hands you new tech"
+  },
+  "S6": {
+   "title": "The Automation Question",
+   "sub": "AI and the knowledge walking out the door"
+  },
+  "S7": {
+   "title": "The Next Ten Years",
+   "sub": "Career moves nobody teaches"
+  },
+  "S8": {
+   "title": "The Business You Are In",
+   "sub": "Margins, models, and selling to construction"
+  }
+ }
 }

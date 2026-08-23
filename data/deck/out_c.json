@@ -1,0 +1,100 @@
+[
+ {
+  "n": 13,
+  "story": "Alex Belkofer runs VDC for McCarthy Building Companies, where the return on digital work gets framed as the cost of goals not scored, his goalie analogy for the 70 or 80 saves in a big game that nobody counts because the team kept winning. McCarthy pulls the risk curve forward into the design phase, blocking and tackling issues digitally so they never become RFIs in the field. He has seen projects brag about delivering zero RFIs, and he pushes back: a silent log usually means the team never verified its line of sight to the risk profile before field execution. The healthy signal is streamlined, higher quality RFIs with faster answers, not a low count.",
+  "quote": "There's projects that are out there that say we've had zero RFIs. I would challenge and question though, is it good that there are no RFIs?",
+  "quote_time": "20:32",
+  "move": "Audit the RFI log for quality, not quantity. If a scope produced zero RFIs, ask whether the team actually had line of sight to its risk profile with the digital tools before field execution, and treat silence as unexamined risk."
+ },
+ {
+  "n": 15,
+  "story": "Angelo Suntres, Director of Operations at Matina, an MEP contractor, argues the labor crisis is misdiagnosed: roughly 400,000 workers retire from the industry each year against about 100,000 apprentices completing programs, and of the 250,000 or so who start an apprenticeship only 30 to 35 percent finish. Worse, one experienced worker carries productivity it takes about five new entrants to replace, so the real gap is knowledge walking out the door, not empty seats. His conclusion is that finding bodies will not be the hard part; transferring knowledge into those bodies to make them useful will be. He is even building a mentorship matching and lessons learned tool himself, having systematized 372 items from his own field logbook.",
+  "quote": "I don't think finding bodies is going to be an issue, but transferring the knowledge to put into those people to make them useful is going to be the real challenge.",
+  "quote_time": "4:11",
+  "move": "Plan for five new hires of productivity behind every retiring veteran, and start capturing their knowledge now: pair them with new entrants and get their lessons learned out of their heads and into a searchable system before they leave."
+ },
+ {
+  "n": 19,
+  "story": "Hugh Seaton, founder of The Link, has read plenty of corporate AI policies, and almost all of them obsess over security, which he calls the least of a contractor's worries. The bigger danger is the easy button: AI gives great demos, cannot answer concisely, and knows nothing about your specific job. It hands back a first draft of an answer, and people who ship that draft as the final product are the ones who get their companies in trouble. His prescription for GC leadership starts small: get your arms around the chatbots your people are already using and train them to prompt and to review.",
+  "quote": "It doesn't know what's going on in your job. It doesn't have any judgment like a human would. It's going to give you a first draft of an answer, and if people treat that like a final draft, they're going to get in trouble.",
+  "quote_time": "9:38",
+  "move": "Rewrite the AI policy around review, not just data security. Train teams on prompting, and make it a rule that every AI output is a first draft that gets human judgment applied before it goes out the door."
+ },
+ {
+  "n": 20,
+  "story": "Charles Ma, a structural engineer turned bootstrapped founder, chose Scoreboard AI's first workflow after discovery interviews with builders kept returning the same line: you can't fix a bad buy. Buyout is where the budget is set, and the operations team gets only a couple of weeks to write subcontracts, manually pulling scope inclusions out of thousands of pages of unstructured plans and specs. Anything missed in that window is never repriced; it comes directly out of profit margin later in the job. Stuff slips through the cracks until the last responsible moment, then blows up as a fire drill, which is why his tool scans the documents and pulls job specific scope inclusions for every trade.",
+  "quote": "What we heard over and over again was you can't fix a bad buy. Scope buyout, that's where the budget is set. If you miss something, if you don't price it in during buyout, it comes directly out of your profit margin later on.",
+  "quote_time": "14:29",
+  "move": "Treat the buyout window as the most expensive few weeks on the job. Before subcontracts are signed, walk every bid package against the plans and specs for job specific scope inclusions, and put experienced eyes on what the estimate's first pass missed."
+ },
+ {
+  "n": 21,
+  "story": "Sean Johnson, founder of Madison Consulting Services, builds on The Discipline of Market Leaders: you can win on best product, on operational efficiency, or on customer intimacy, and only the third lane is open to everybody. Hitting schedule and budget is table stakes, the price of being allowed to bid the next one, while the owner who asks for you by name gets made in small moments that were never in the contract. His formative example is a hotel clerk who ran into town through a blizzard to buy the Diet Coke the front desk did not stock. He systematizes the idea with a champagne fridge labeled champagne is for closers, opening a bottle with every new client no matter the size.",
+  "quote": "It's really hard to compete on best product and it's really hard to compete on operational efficiency. But everybody can do customer intimacy if they want to.",
+  "quote_time": "22:07",
+  "move": "Build your own playbook of deliberate moments for owners and architects, a handwritten note, a celebration ritual, a weekly check in, and run it on every project instead of repeating one good gesture once and hoping schedule and budget do the rest."
+ },
+ {
+  "n": 23,
+  "story": "Victor Muchiri, a former project engineer at Barton Malow and Turner who later served as Barton Malow's Entrepreneur in Residence, watched fee compression push contractors into self perform, CSIPs, SDI insurance, prefab, and procurement. Turner is the endgame: SourceBlue for procurement, an insurance brokerage, and the newly announced FEC equipment rental business mean it soon will not matter what Turner earns on the CM fee. Walk into a bid meeting against that model and your 3 percent, knocked down to two and a half, still loses to a fee of zero that gets made up on everything else on the back end. His warning is that GCs stuck in no man's land, doing a little of everything, will fail.",
+  "quote": "How do you go into a meeting against a Turner? They'll just do it for zero because you're going to make it up on everything else on the back end.",
+  "quote_time": "50:18",
+  "move": "Decide deliberately what business your GC is in, then build the ancillary lines where the margin actually lives, supply, insurance, equipment, self perform, instead of defending a compressed CM fee with a little of everything."
+ },
+ {
+  "n": 34,
+  "story": "Hannu Lindberg leads construction technology at DPR Construction in an industry littered with point solutions, each purpose built for one of the roughly 150 processes a project has to manage. Every added app is another place to administer information, another potential data bottleneck, and another application some poor superintendent has to log into. His filter at DPR, one his teams are probably tired of hearing, is that a new tool must eliminate two or three existing solutions and be more comprehensive and integrated. He even jokes that the real business idea is a fund that buys every point solution in a single workflow and simply makes them work together under one brand.",
+  "quote": "Don't bring in just another point solution. Bring in something that's going to eliminate two or three other solutions. Find something that is more comprehensive, more integrated.",
+  "quote_time": "24:16",
+  "move": "Before approving any new tool, name the two or three existing solutions it will retire. If it only adds another login, another data bottleneck, and another place to administer information, pass."
+ },
+ {
+  "n": 35,
+  "story": "Hugh Seaton, founder of The Link and now an AI strategy consultant to contractors, pushes back on human in the loop as a throwaway phrase that usually means automate everything and stick an approval at the end. In his experience you cannot automate as much as you think, and the attempt is exactly what reveals how much unpriced judgment people add, including the guy nobody rates as bright. Pull those people out of the process and you do not just take a little pain later, you introduce brand new risk that nobody budgeted. His frame for leadership is to treat expertise as a strategic asset: figure out what it is, capture it, and elevate people rather than skim tasks.",
+  "quote": "When you try to automate a thing, you realize how smart people are. Even the guy that you don't think is that bright is adding a ton of value in the process. If you pull people out of it, you introduce new risk.",
+  "quote_time": "9:36",
+  "move": "Before automating any process, map the judgment the humans inside it are quietly adding and price the new risk of removing them. Capture and elevate that expertise instead of just deleting the headcount."
+ },
+ {
+  "n": 42,
+  "story": "Chris Masse, a senior superintendent at EllisDon, admits he was a late adopter still running jobs with Crayolas, highlighters, and 11 by 17s before a pilot project changed his mind. When co-host Lars asked whether the technology actually returns time, his answer was blunt: if you expect it to save months on the schedule, it will not, and that expectation sets you up for disappointment. What it gives back is his own personal time, plus real data when a conflict lands, laid out as you did this, I did this, here is the proof, so both sides come to an agreement and carry on. He figures it is 99 percent right and he will take that all day long.",
+  "quote": "If you think it's going to save you months on the schedule, it's not. What it's giving me is my time back, and allowing me to present real data in the event of a conflict.",
+  "quote_time": "23:28",
+  "move": "Sell and measure field tech on the superintendent's personal time returned and on dispute ready records, not schedule compression. When a conflict lands, bring the laid out data, agree, and carry on."
+ },
+ {
+  "n": 44,
+  "story": "Wally Castro, a superintendent at Bernards who started at Turner, answered the question of what VDC misses with one word: schedule. His current City of Ontario job was sold as an eight week coordination cycle on a three story building, so he demands per level dates from the VDC team: model due, model signed off, shop drawings in, shop drawings approved and ready for install. He wants every one of those dates living in his field schedule so that when something slips he captures the movement and can see whether it is detrimental to installation, and he makes his drop dead dates known early. He has watched design build jobs where the design catches the construction and the job ends up totally shot, costing the owner money instead of saving it, with no way to recover.",
+  "quote": "This day level one will be due. This day level one will be signed off. This day level one shop drawings will be in. This day level one shop drawings will be approved and ready for install. I want all those days in my schedule.",
+  "quote_time": "22:10",
+  "move": "Load every VDC milestone, model due, signed off, shop drawings in, approved for install, into the master field schedule by level, and track them weekly like pour dates with drop dead dates communicated up front."
+ },
+ {
+  "n": 48,
+  "story": "Franco Giaquinto built the scheduling startup Ipsum in Chile and relaunched it in the US as Outbuild, having picked the space with his founder filter: find the biggest shit show in an industry and fix it. He argues the old scheduling tools promote unhealthy habits, terrible coordination, bad relationships between stakeholders, and no clear plan to get back on track, ending in claims and legal disputes that now involve more money and more time than ever. Nobody was supporting the field, where the reality of the project actually lives. His founding thesis is that perfect paperwork cannot compensate for a plan the team does not believe in or align to.",
+  "quote": "You can have the best RFIs, the best submittals, the best everything, but if your plan is shit and no one is aligned, it's very hard to end up on the right track.",
+  "quote_time": "5:12",
+  "move": "Fix plan trust before buying any other PM tool: build one schedule the field, the trades, and the office all believe in and align to, and treat alignment to it as the leading indicator of project health."
+ },
+ {
+  "n": 37,
+  "story": "Jackie Guilbault has marketed construction tech at Topcon, Versatile, and Document Crunch, going as far as operating an excavator to understand her users. When co-host Lars described a government retirement process running on a three inch stack of hand signed paper in an underground vault and noted that it works, she pointed out the trap: if the promoted replacement is harder and takes weeks of training, users go straight back to the hand signature. In a relationship driven industry where everyone talks about their experiences, a tool that does not do what it says online is a credibility killer, and the whole network hears about it. That lost trust, she argues, is nearly impossible to win back.",
+  "quote": "If the solution that's promoted to you is harder and takes weeks of training, then you'll revert back to that hand signature. If it doesn't do what it says online and it's actually harder, it's a credibility killer and everybody's gonna hear about it.",
+  "quote_time": "40:39",
+  "move": "Before rollout, test the tool head to head against the manual process it replaces with real field users. If it needs weeks of training or is slower than the old way, fix that before launch, because reverting crews will tell their entire network."
+ },
+ {
+  "n": 43,
+  "story": "Andrew Rener helped run Centerline Prefab and admits he started without an appreciation for the gap between running a manufacturing business and doing construction in a warehouse. Manufacturing demands documented processes, work instructions, and controlled environments that field habits do not supply, a full paradigm shift from how construction teams operate. When COVID stopped travel, he enrolled in his alma mater's remote graduate courses specifically to learn manufacturing processes, a path that grew into a full engineering doctorate. He is equally blunt on the sales side: prefab loses line item cost comparisons and only wins when owners value the holistic case, schedule compression and certainty of outcome.",
+  "quote": "I didn't personally have an appreciation for the difference between running that business as a manufacturing business versus construction in a warehouse.",
+  "quote_time": "3:30",
+  "move": "Run a prefab operation as a factory from day one: documented manufacturing processes, work instructions, and controlled environment quality control, staffed with manufacturing expertise rather than transplanted field habits."
+ },
+ {
+  "n": 50,
+  "story": "At Barton Malow, Rener co-created a program called Building Skills that sent young project managers to school for a day, once a month or every other month across the 16 CSI divisions, to physically do the trade work. One engineer proudly took an hour to lay a single perfect block and was told you cannot lay one block an hour; others placed yards of concrete, framed small sheds, and walked steel at the ironworkers training center. The point was humility, understanding why a plasterer with 20 years of experience makes the work look effortless. A degree does not put the work in place, and without genuine appreciation for the trades it just gets you chased back into the trailer.",
+  "quote": "We want you to appreciate what these tradespeople do, and it takes a while to get good at what they do. If not for them, the jobs don't get built. It's not the guy in the trailer that builds the job.",
+  "quote_time": "12:28",
+  "move": "Put young PMs and estimators through real trade work, laying block, placing concrete, walking steel, early in their careers, so they manage from respect for the craft instead of a title in the trailer."
+ }
+]

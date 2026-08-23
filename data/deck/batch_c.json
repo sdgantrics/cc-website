@@ -1,0 +1,156 @@
+[
+ {
+  "n": 13,
+  "lesson": "Zero RFIs on a project is a red flag that nobody asked the right questions, not a win to brag about.",
+  "detail": "Did you actually have line of sight to your risk profile before field execution? RFI quality, not count, is the signal.",
+  "guest": "Alex Belkofer",
+  "role": "Senior Director of VDC, McCarthy Building Companies",
+  "episode": "ep-025",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 25 - Alex Belkofer/alex-stephen.txt",
+  "chapters_json": "data/chapters/ep-025.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 15,
+  "lesson": "One retiring veteran takes five new hires to replace. The real labor shortage is knowledge leaving, not bodies missing.",
+  "detail": "Roughly 400,000 workers retire annually against about 100,000 apprentice completions. The productivity gap is what kills a crew, not the headcount gap.",
+  "guest": "Angelo Suntres",
+  "role": "Director of Operations, Matina",
+  "episode": "ep-034",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 34 - Angelo Suntres/11-26 Interview_ Angelo - Human-Centered Leadership and AI in Construction-transcript.txt",
+  "chapters_json": "data/chapters/ep-034.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 19,
+  "lesson": "The real AI risk is not security. It is someone shipping the first draft as the final draft.",
+  "detail": "Corporate AI policies obsess over data leakage while the actual damage comes from people treating the tool as an easy button and skipping review.",
+  "guest": "Hugh Seaton",
+  "role": "Founder, The Link",
+  "episode": "ep-035",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 35 - Hugh Seaton/hugh-seaton.txt",
+  "chapters_json": "data/chapters/ep-035.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 20,
+  "lesson": "You cannot fix a bad buy. Scope missed at buyout comes straight out of margin with no way to recover it.",
+  "detail": "Buyout is the highest-stakes irreversible moment in construction.",
+  "guest": "Charles Ma",
+  "role": "Founder and CEO, Scoreboard AI",
+  "episode": "ep-042",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 42 - Charles Ma/charles-ma.txt",
+  "chapters_json": "data/chapters/ep-042.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 21,
+  "lesson": "Finishing on schedule and budget only buys you the right to bid the next one. The career gets built in moments not in the contract.",
+  "detail": "The relationships that carry a PM or super come from small, unscripted moments with the client.",
+  "guest": "Sean Johnson",
+  "role": "Founder, Madison Consulting Services",
+  "episode": "ep-052",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 52 - Sean Johnson/sean johnson.txt",
+  "chapters_json": "data/chapters/ep-052.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 23,
+  "lesson": "The GC that can bid its CM fee at zero wins, because the margin lives in supply, insurance, and equipment.",
+  "detail": "Turner's SourceBlue, insurance brokerage, and equipment rentals make the fee a loss leader. A GC stuck doing a little of everything will fail.",
+  "guest": "Victor Muchiri",
+  "role": "Growth Lead, Build Vision",
+  "episode": "ep-033",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-033.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 34,
+  "lesson": "Do not bring in another point solution unless it eliminates two or three existing ones. Otherwise you just added a login.",
+  "detail": "The industry is littered with purpose-built apps for the 150 processes on a project, and every extra one adds noise and data bottlenecks.",
+  "guest": "Hannu Lindberg",
+  "role": "Technology Leader, DPR Construction",
+  "episode": "ep-013",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 13 - Hannu/Ep 13 - hannu-lindberg.txt",
+  "chapters_json": "data/chapters/ep-013.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 35,
+  "lesson": "When you try to automate a process you discover how much unpriced judgment the 'not that bright' guy was adding.",
+  "detail": "Pulling a human out of a process trades quality for new risk nobody budgeted. The embedded intelligence only shows up once it is gone.",
+  "guest": "Hugh Seaton",
+  "role": "Founder, The Link",
+  "episode": "ep-056",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 56 - Hugh Seaton/hugh-seaton.txt",
+  "chapters_json": "data/chapters/ep-056.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 42,
+  "lesson": "Field tech does not save you months on the schedule. It gives you your time back and real data when a dispute lands.",
+  "detail": "The honest ROI is the superintendent's personal time plus defensible records in a conflict. Expecting schedule compression sets up disappointment.",
+  "guest": "Chris Masse",
+  "role": "Senior Superintendent, EllisDon",
+  "episode": "ep-011",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 11 - Chris Masse/lars-chris-stephen.txt",
+  "chapters_json": "data/chapters/ep-011.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 44,
+  "lesson": "Put model due, signed off, shop drawings in, and approved for install in the field schedule and track them like a bottom-out date.",
+  "detail": "VDC milestones that live outside the super's schedule slip silently and eat field float.",
+  "guest": "Wally Castro",
+  "role": "Superintendent, Bernards",
+  "episode": "ep-049",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 49 - Wally Castro/wally.txt",
+  "chapters_json": "data/chapters/ep-049.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 48,
+  "lesson": "The schedule is the plan. Perfect RFIs and submittals cannot save a job where nobody trusts or is aligned to it.",
+  "detail": "A schedule the team does not believe in is worse than none. Fix plan trust before buying any other PM tool.",
+  "guest": "Franco Giaquinto",
+  "role": "Co-Founder and CEO, Outbuild",
+  "episode": "ep-046",
+  "transcript": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/02_Published Episodes/Ep 46 - Franco Giaquinto/franco-giaquinto.txt",
+  "chapters_json": "data/chapters/ep-046.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 37,
+  "lesson": "If your tool is harder than the hand signature it replaces, crews revert, and everybody in their network hears about it.",
+  "detail": "Weeks of training plus an unkept promise sends users back to the old way, and the lost trust is nearly impossible to recover in a relationship-driven industry.",
+  "guest": "Jackie Guilbault",
+  "role": "Product Marketing Manager, Document Crunch",
+  "episode": "ep-017",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-017.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 43,
+  "lesson": "Prefab is a manufacturing business, not construction in a warehouse, and running it with a construction mindset is how you get burned.",
+  "detail": "Manufacturing processes, work instructions, and controlled environments demand a paradigm shift from field habits. He admits he did not appreciate the difference at first.",
+  "guest": "Andrew Rener",
+  "role": "Executive, Architectural Metals",
+  "episode": "ep-007",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-007.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ },
+ {
+  "n": 50,
+  "lesson": "It is not the guy in the trailer that builds the job. Make young PMs lay block and walk steel so they respect the craft.",
+  "detail": "The Building Skills program forced young project managers to do trade work to understand what makes a 20-year plasterer's work look effortless.",
+  "guest": "Andrew Rener",
+  "role": "Executive, Architectural Metals",
+  "episode": "ep-007",
+  "transcript": "",
+  "chapters_json": "data/chapters/ep-007.json",
+  "summary_dir": "/Users/stephenpoppe/Library/CloudStorage/GoogleDrive-stephen@gantrics.com/My Drive/Podcast/06_Brain/episode_summaries/"
+ }
+]
