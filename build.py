@@ -6,6 +6,8 @@ Fetches the Podbean RSS feed and regenerates the site from templates/:
   site/episodes.html   - full episode list with search
   site/sponsors.html   - sponsor page (static content, count injected)
   site/episodes/*.html - one page per episode, with PodcastEpisode JSON-LD
+  site/start.html      - Start Here hub (listening paths from paths.json)
+  site/start/*.html    - one page per listening path
 
 Design lives in the templates and site/assets/css/style.css; this script
 only fills in episode data at the {{...}} markers.
@@ -109,6 +111,7 @@ def parse_episodes(xml_text: str):
             "slug": f"ep-{int(ep_num):03d}" if ep_num else f"special-{specials}",
             "date": date,
             "date_iso": date_iso,
+            "secs": secs,
             "duration": f"{round(secs / 60)} min" if secs else "",
             "duration_iso": f"PT{round(secs / 60)}M" if secs else "",
             "desc": clip_chars(desc, 230),
@@ -122,20 +125,136 @@ def parse_episodes(xml_text: str):
     return episodes, artwork
 
 
-def card(ep) -> str:
+def card(ep, base: str = "", why: str = "", step: int = 0) -> str:
+    """Episode card. `base` prefixes links for pages in subfolders ("../").
+    `why`/`step` render the Start Here path variant (numbered, curator note
+    in place of the feed description)."""
     # Site Gothic: stamp tag (mono on Crane) + DM Mono metadata, Anton title
     tag = f'EP {int(ep["num"]):03d}' if ep["num"] else "SPECIAL"
     meta = " · ".join(v for v in (ep["date"], ep["duration"]) if v)
-    return f'''      <article class="ep-card">
-        <div class="ep-meta"><span class="tag">{tag}</span><span class="stamp">{meta.upper()}</span></div>
-        <h3><a href="episodes/{ep["slug"]}.html">{html.escape(ep["display_title"])}</a></h3>
-        <p class="ep-desc">{html.escape(ep["desc"])}</p>
+    step_html = f'<span class="step">{step:02d}</span>' if step else ""
+    desc = why or ep["desc"]
+    cls = "ep-card path-card" if why else "ep-card"
+    return f'''      <article class="{cls}">
+        <div class="ep-meta">{step_html}<span class="tag">{tag}</span><span class="stamp">{meta.upper()}</span></div>
+        <h3><a href="{base}episodes/{ep["slug"]}.html">{html.escape(ep["display_title"])}</a></h3>
+        <p class="ep-desc">{html.escape(desc)}</p>
         <div class="ep-actions">
           <button class="play-btn">▶ Play</button>
-          <a href="episodes/{ep["slug"]}.html">Show notes</a>
+          <a href="{base}episodes/{ep["slug"]}.html">Show notes</a>
         </div>
         <div class="ep-player"><audio controls preload="none" data-src="{ep["audio"]}"></audio></div>
       </article>'''
+
+
+# ---------------------------------------------------------------------------
+# Start Here listening paths (paths.json)
+
+def load_paths(episodes):
+    """Read paths.json and resolve episode slugs. Unknown slugs are dropped
+    with a warning so a typo never breaks the build."""
+    by_slug = {e["slug"]: e for e in episodes}
+    data = json.loads((ROOT / "paths.json").read_text())
+
+    def resolve(items, where):
+        out = []
+        for it in items:
+            ep = by_slug.get(it["slug"])
+            if not ep:
+                print(f"WARNING paths.json [{where}]: unknown episode {it['slug']}, skipped")
+                continue
+            out.append({"ep": ep, "why": it.get("why", "")})
+        return out
+
+    first = data.get("first_three", {})
+    first["items"] = resolve(first.get("episodes", []), "first_three")
+    paths = []
+    for p in data.get("paths", []):
+        p["items"] = resolve(p.get("episodes", []), p["slug"])
+        secs = sum(it["ep"]["secs"] for it in p["items"])
+        hrs = secs / 3600
+        p["time"] = f"about {hrs:.0f} hours" if hrs >= 1.5 else f"about {round(secs/60)} minutes"
+        paths.append(p)
+    return first, paths
+
+
+def path_door(p, base: str = "") -> str:
+    n = len(p["items"])
+    return f'''      <a class="door path-door" href="{base}start/{p["slug"]}.html" data-event="Path: {html.escape(p["tag"])}">
+        <span class="tag">{html.escape(p["tag"])}</span>
+        <h3>{html.escape(p["title"])}</h3>
+        <p>{html.escape(p["blurb"])}</p>
+        <span class="door-link">{n} episodes · {html.escape(p["time"])} →</span>
+      </a>'''
+
+
+def path_jsonld(p) -> str:
+    data = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": f'{p["title"]} | Construction Conversations',
+        "description": p["blurb"],
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": len(p["items"]),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1,
+             "name": it["ep"]["title"],
+             "url": f'https://constructionconversations.com/episodes/{it["ep"]["slug"]}.html'}
+            for i, it in enumerate(p["items"])
+        ],
+    }
+    return json.dumps(data, indent=2)
+
+
+def build_paths(first, paths, count: int):
+    """Write site/start.html and site/start/<slug>.html."""
+    start_dir = ROOT / "site" / "start"
+    start_dir.mkdir(exist_ok=True)
+
+    hub = (ROOT / "templates" / "start.html").read_text()
+    for k, v in {
+        "{{EPISODE_COUNT}}": str(count),
+        "{{FIRST_THREE_TITLE}}": html.escape(first.get("title", "If you only listen to three")),
+        "{{FIRST_THREE_BLURB}}": html.escape(first.get("blurb", "")),
+        "{{FIRST_THREE}}": "\n".join(card(it["ep"], why=it["why"], step=i + 1)
+                                     for i, it in enumerate(first["items"])),
+        "{{PATH_CARDS}}": "\n".join(path_door(p) for p in paths),
+    }.items():
+        hub = hub.replace(k, v)
+    (ROOT / "site" / "start.html").write_text(hub)
+    print("Wrote site/start.html")
+
+    tpl = (ROOT / "templates" / "path.html").read_text()
+    for i, p in enumerate(paths):
+        nxt = [paths[(i + 1) % len(paths)], paths[(i + 2) % len(paths)]] if len(paths) > 2 else []
+        page = tpl
+        for k, v in {
+            "{{PATH_TITLE}}": html.escape(p["title"]),
+            "{{PATH_TAG}}": html.escape(p["tag"]),
+            "{{PATH_WHO}}": html.escape(p["who"]),
+            "{{PATH_BLURB}}": html.escape(p["blurb"]),
+            "{{PATH_COUNT}}": str(len(p["items"])),
+            "{{PATH_TIME}}": html.escape(p["time"]),
+            "{{PATH_EPISODES}}": "\n".join(card(it["ep"], base="../", why=it["why"], step=j + 1)
+                                           for j, it in enumerate(p["items"])),
+            "{{NEXT_PATHS}}": "\n".join(path_door(n, base="../") for n in nxt),
+            "{{JSONLD}}": path_jsonld(p),
+        }.items():
+            page = page.replace(k, v)
+        (start_dir / f'{p["slug"]}.html').write_text(page)
+    print(f"Wrote {len(paths)} path pages to site/start/")
+
+
+def episode_paths_block(ep, paths) -> str:
+    """'Part of these paths' links for an episode page (empty if none)."""
+    hits = [p for p in paths if any(it["ep"]["slug"] == ep["slug"] for it in p["items"])]
+    if not hits:
+        return ""
+    links = "".join(
+        f'<a class="path-pill" href="../start/{p["slug"]}.html" data-event="Path: {html.escape(p["tag"])}">'
+        f'{html.escape(p["title"])} →</a>' for p in hits)
+    return f'''<div class="sec-label" style="margin-top:40px;">Part of these listening paths</div>
+  <div class="path-pills">{links}</div>'''
 
 
 def youtube_thumb_url(ep) -> str:
@@ -229,6 +348,8 @@ def build():
         except Exception:
             continue
 
+    first, paths = load_paths(episodes)
+
     latest_tag = f'EP {int(latest["num"]):03d}' if latest["num"] else "SPECIAL"
     latest_meta = " · ".join(v for v in (latest["date"], latest["duration"]) if v).upper()
     replacements = {
@@ -264,10 +385,13 @@ def build():
             "{{AUDIO}}": ep["audio"],
             "{{LINK}}": ep["link"],
             "{{JSONLD}}": jsonld(ep),
+            "{{PATHS}}": episode_paths_block(ep, paths),
         }.items():
             page = page.replace(k, v)
         (ep_dir / f'{ep["slug"]}.html').write_text(page)
     print(f"Wrote {len(episodes)} episode pages to site/episodes/")
+
+    build_paths(first, paths, len(episodes))
 
     print(f"Built {datetime.now():%Y-%m-%d %H:%M}")
 

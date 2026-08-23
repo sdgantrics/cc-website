@@ -3,11 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- GUEST DATA PLACEHOLDER: when guest name, title, and firm are confirmed for
-     this episode, prepend them to the <title> and <h1>, e.g.
-     "Jane Doe, VP of VDC at Example Co: {{TITLE}}" -->
-<title>{{TITLE}} | Construction Conversations</title>
-<meta name="description" content="{{DESC_SHORT}}">
+<title>{{PATH_TITLE}} | Start Here | Construction Conversations</title>
+<meta name="description" content="{{PATH_BLURB}}">
 <link rel="icon" type="image/png" href="../assets/img/cc-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,33 +33,45 @@
   </div>
 </header>
 
-<section class="wrap ep-page">
-  <div class="ep-meta"><span class="tag">{{TAG}}</span><span class="stamp">{{META}}</span></div>
-  <!-- GUEST DATA PLACEHOLDER: prepend guest name, title, firm when confirmed. -->
-  <h1 class="display">{{TITLE}}</h1>
-  <p class="ep-body">{{DESC_FULL}}</p>
-  <audio controls preload="none" data-src="{{AUDIO}}"></audio>
-
-  <!-- NOTABLE QUOTES PLACEHOLDER: uncomment and fill three pull quotes.
-  <div class="sec-label" style="margin-top:40px;">Notable Quotes</div>
-  <blockquote class="ep-body">"[Pull quote one]"</blockquote>
-  <blockquote class="ep-body">"[Pull quote two]"</blockquote>
-  <blockquote class="ep-body">"[Pull quote three]"</blockquote>
-  -->
-
-  <div class="platforms ep-links">
-    <span class="stamp">Listen on:</span>
-    <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812" data-event="Platform: Apple" target="_blank" rel="noopener">Apple</a>
-    <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3" data-event="Platform: Spotify" target="_blank" rel="noopener">Spotify</a>
-    <a href="https://www.youtube.com/@ConstructionConversations" data-event="Platform: YouTube" target="_blank" rel="noopener">YouTube</a>
-    <a href="{{LINK}}" target="_blank" rel="noopener">Podbean</a>
+<section class="page-head studs">
+  <div class="wrap">
+    <p class="stamp dim" style="margin-bottom:18px;"><a href="../start.html" style="color:var(--grey-2);">← Start Here</a></p>
+    <div class="ep-meta"><span class="tag">{{PATH_TAG}}</span><span class="stamp">{{PATH_COUNT}} episodes · {{PATH_TIME}}</span></div>
+    <h1 class="display">{{PATH_TITLE}}</h1>
+    <p class="stamp dim" style="margin-bottom:16px;">For: {{PATH_WHO}}</p>
+    <p class="lede" style="max-width:640px;">{{PATH_BLURB}}</p>
   </div>
+</section>
 
-  {{PATHS}}
+<section class="block path-list" style="padding-top:36px;">
+  <div class="wrap">
+    <div class="sec-label">Listen in this order</div>
+    <div class="ep-grid" id="path-episodes">
+{{PATH_EPISODES}}
+    </div>
+  </div>
+</section>
 
-  <!-- GUEST LINKEDIN PLACEHOLDER: uncomment and set the guest's profile URL.
-  <p class="stamp dim" style="margin-top:20px;"><a href="[GUEST_LINKEDIN_URL]" style="color:var(--crane);">Guest on LinkedIn →</a></p>
-  -->
+<section class="block" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-label">Next path</div>
+    <div class="doors doors-2">
+{{NEXT_PATHS}}
+    </div>
+  </div>
+</section>
+
+<section class="block" id="newsletter" style="padding-top:0;">
+  <div class="wrap">
+    <div class="newsletter-inner">
+      <h2 class="display">Keep the lessons coming</h2>
+      <p class="lede">Construction tech news, episode recaps, and insider takes from the show's guests. Weekly, free, on Substack.</p>
+      <form class="nl-form" action="https://constructionbriefs.substack.com/subscribe" method="get" data-event="Newsletter Submit">
+        <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
 </section>
 
 <footer>

@@ -1,0 +1,118 @@
+{
+  "_readme": "Start Here listening paths. build.py turns this into site/start.html and site/start/<slug>.html. Edit freely: add/remove/reorder episodes, rewrite the 'why' lines. Episode keys are slugs (ep-043) matching the feed. Keep each path to 4-6 episodes, in the order a new listener should hear them. No em-dashes.",
+  "first_three": {
+    "title": "If you only listen to three",
+    "blurb": "Three conversations that explain what this show is and why the people on it say things they would not say on a panel.",
+    "episodes": [
+      {"slug": "ep-043", "why": "A senior super on why the jobsite itself is the product nobody designed. The show's thesis in one episode."},
+      {"slug": "ep-047", "why": "Why the biggest GCs are really in the cash business, and what that does to innovation budgets."},
+      {"slug": "ep-053", "why": "The best tool rarely wins the adoption fight. What does, from someone who runs those fights."}
+    ]
+  },
+  "paths": [
+    {
+      "slug": "running-the-job",
+      "tag": "Field Leaders",
+      "title": "Running the Job",
+      "who": "Superintendents, PMs, and PEs managing the daily chaos",
+      "blurb": "The lessons supers and PMs usually pay for in schedule, money, or sleep. Communication, documentation, scheduling, and the tech that survives contact with a real jobsite.",
+      "episodes": [
+        {"slug": "ep-043", "why": "Wes Juergen on breaking the micromanagement habit when you go from one job to several, and why the field's daily experience is the thing to fix first."},
+        {"slug": "ep-054", "why": "Libby Magliolo on how site leaders lose the room in 90 seconds and the lead-with-the-answer habit that keeps it."},
+        {"slug": "ep-045", "why": "Garrett Mott walks through how one email cost $30 million, and the documentation habits that keep frontline teams out of the deposition chair."},
+        {"slug": "ep-046", "why": "Franco on why most schedules fail and what has to change in how teams build and maintain them."},
+        {"slug": "ep-011", "why": "Chris Massey, Senior Superintendent at EllisDon, on what tech adoption looks like from the trailer rather than the boardroom."},
+        {"slug": "ep-049", "why": "Wally Castro, the super who came up through architecture, on translating between the design side and the field."}
+      ]
+    },
+    {
+      "slug": "field-to-corner-office",
+      "tag": "Career",
+      "title": "From the Field to the Corner Office",
+      "who": "Anyone planning the next ten years of a construction career",
+      "blurb": "Nobody hands you the playbook for getting from PE to VP. These guests figured it out the hard way: mentorship, visibility, the skills nobody budgets for, and the toll it takes if you ignore the rest of your life.",
+      "episodes": [
+        {"slug": "ep-052", "why": "Sean Johnson's career cheat code: the hospitality and customer-intimacy moves field leaders are never taught but get promoted for."},
+        {"slug": "ep-005", "why": "Mitch McDonald, General Superintendent at XL, on third-generation lessons in leadership and future-proofing a field career."},
+        {"slug": "ep-021", "why": "Chris and Tim Smith on mentorship and coaching, and why the industry's knowledge transfer is mostly informal and mostly broken."},
+        {"slug": "ep-037", "why": "Mark Fly on a career built by saying yes to the strange opportunity, and what the retirement wave means for whoever is next."},
+        {"slug": "ep-034", "why": "Angelo Suntres on the human side of the workforce crisis and the knowledge gap the industry has to close."},
+        {"slug": "ep-006", "why": "Chris Wilocki on navigating a construction career without losing your mental health along the way."}
+      ]
+    },
+    {
+      "slug": "gc-business-model",
+      "tag": "Executives",
+      "title": "Where the GC Business Is Going",
+      "who": "Owners, executives, and anyone responsible for a P&L",
+      "blurb": "Margin pressure, the CM fee, owners who grade their contractors, and why the biggest firms struggle to innovate. The conversations about the business of building, not the building.",
+      "episodes": [
+        {"slug": "ep-047", "why": "Aaron Anderson on why big GCs are in the cash business, and how that shapes every innovation decision."},
+        {"slug": "ep-033", "why": "Victor Muchiri on why the CM-fee model is about to break and what could replace it."},
+        {"slug": "ep-038", "why": "Steve Little, an owner who graded his last six GCs. Most of them failed. Hear what he was grading."},
+        {"slug": "ep-010", "why": "Hammad Chaudhry on rethinking the GC model from the partnerships side."},
+        {"slug": "ep-032", "why": "Fouad Khalil on where he would put a billion dollars to fix construction, and why the answer is not technology."},
+        {"slug": "ep-050", "why": "Scott and Chris Massey, a small GC and a big GC, on the AI reset and why you cannot buy your way out."}
+      ]
+    },
+    {
+      "slug": "ai-without-the-easy-button",
+      "tag": "AI",
+      "title": "AI Without the Easy Button",
+      "who": "Anyone being told AI will change their job and wanting to know how",
+      "blurb": "What AI actually does on a project today, what it does not, and what a contractor should do first. Practitioners and builders, no demos.",
+      "episodes": [
+        {"slug": "ep-056", "why": "Hugh Seaton on why your data does not need to be perfect, and how a contractor should actually start."},
+        {"slug": "ep-035", "why": "Hugh Seaton's first visit: the easy button is a lie, and here is what AI really does for construction."},
+        {"slug": "ep-044", "why": "Tyler Campbell on what project teams are getting wrong about AI, and his doula analogy for helping them through it."},
+        {"slug": "ep-028", "why": "Dr. Sarah Buchner, CEO of Trunk Tools, on what young PMs must know to survive the next five years."},
+        {"slug": "ep-036", "why": "Aaron Toppston on whether white-collar construction work is safe from AI. Asking for a friend."},
+        {"slug": "ep-029", "why": "Patrick Murphy and Jeremy Crumley on what actually matters in preconstruction in the age of AI."}
+      ]
+    },
+    {
+      "slug": "getting-the-field-to-use-it",
+      "tag": "Adoption",
+      "title": "Getting the Field to Actually Use It",
+      "who": "Innovation, VDC, and ops leaders who own rollouts",
+      "blurb": "Leadership bought it. The field ignores it. Every guest here has lived the gap between a signed contract and a tool people actually open, and most of them have a fix.",
+      "episodes": [
+        {"slug": "ep-053", "why": "Elliot Christiansen on pilots, leadership, and why the best tech rarely wins."},
+        {"slug": "ep-040", "why": "Aaron at Granite on layering tech into the business, citizen development, and when a point solution is dead weight."},
+        {"slug": "ep-002", "why": "Karl Sorensen, Director of Innovation at Davis, on what is and is not working about innovation in construction."},
+        {"slug": "ep-013", "why": "Hannu Lindberg on DPR's foundation for innovation and leading without titles."},
+        {"slug": "ep-025", "why": "Alex Belkofer on how a field-first approach made BIM McCarthy's digital backbone."},
+        {"slug": "ep-017", "why": "Jackie Guilbault on why adoption starts with a story the field believes."}
+      ]
+    },
+    {
+      "slug": "building-for-the-jobsite",
+      "tag": "Founders",
+      "title": "Building for the Jobsite",
+      "who": "Contech founders, product, and go-to-market teams",
+      "blurb": "What practitioners actually think of your product, how GCs really buy, and why the org chart on the other side of the table matters more than your roadmap.",
+      "episodes": [
+        {"slug": "ep-042", "why": "Charles Ma on bootstrapping a construction SaaS company and why the customer's org chart is killing innovation."},
+        {"slug": "ep-031", "why": "Cameron Page on the hard truth about going from the jobsite to founding ClearStory."},
+        {"slug": "ep-041", "why": "KP Reddy on why a contech VC stopped investing in SaaS."},
+        {"slug": "ep-012", "why": "Aaron Toppston on the VC playbook for construction innovation."},
+        {"slug": "ep-030", "why": "Michael Zeppieri on the brutal truth about construction tech nobody wants to admit."},
+        {"slug": "ep-026", "why": "Al Ricci's masterclass on three decades of selling and servicing construction technology."}
+      ]
+    },
+    {
+      "slug": "the-talent-cliff",
+      "tag": "Workforce",
+      "title": "The Talent Cliff",
+      "who": "Leaders watching the experience walk out the door",
+      "blurb": "The boomers are retiring, the knowledge is not written down, and the next generation learns differently. What the industry is doing about it, and what it is not.",
+      "episodes": [
+        {"slug": "ep-048", "why": "Steve Dell'Orto on digitizing your brain before you retire, and the talent cliff coming for precon."},
+        {"slug": "ep-037", "why": "Mark Fly on the retirement wave and why the industry cannot afford to lose any more boomers."},
+        {"slug": "ep-034", "why": "Angelo Suntres on the knowledge gap at the center of the workforce crisis."},
+        {"slug": "ep-018", "why": "Matt Graves, the Construction Yeti, on why training the next generation means building better content."},
+        {"slug": "ep-021", "why": "Chris and Tim Smith on mentorship as the industry's actual knowledge-transfer system."}
+      ]
+    }
+  ]
+}

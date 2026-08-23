@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Episodes | Construction Conversations</title>
-<meta name="description" content="All {{EPISODE_COUNT}} episodes of Construction Conversations. Whole careers of expensive lessons from the people who lived them, playable right here.">
+<title>Start Here | Construction Conversations</title>
+<meta name="description" content="New to Construction Conversations? Pick a listening path built for your job: field leaders, career growth, GC executives, AI, tech adoption, founders, and the talent cliff.">
 <link rel="icon" type="image/png" href="assets/img/cc-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,28 +32,44 @@
 
 <section class="page-head studs">
   <div class="wrap">
-    <span class="stamp orange" style="display:block; margin-bottom:18px;">The full record</span>
-    <h1 class="display">Every conversation</h1>
-    <p class="lede" style="max-width:640px;">All {{EPISODE_COUNT}} episodes, playable right here. Also on
-      <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812" data-event="Platform: Apple" target="_blank" rel="noopener">Apple</a>,
-      <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3" data-event="Platform: Spotify" target="_blank" rel="noopener">Spotify</a>, and
-      <a href="https://www.youtube.com/@ConstructionConversations" data-event="Platform: YouTube" target="_blank" rel="noopener">YouTube</a>.</p>
-    <div class="search-row">
-      <input type="search" id="ep-search" placeholder="Search by title, guest, or topic…" aria-label="Search episodes">
-      <span class="search-count" id="ep-count"></span>
-    </div>
-    <!-- Shown by site.js when the list is filtered to Reviewed as Noted -->
-    <div class="ran-note" id="ran-note" hidden>
-      <span class="tag">The Roundtable</span>
-      <p>Reviewed as Noted is the monthly roundtable: a run through the industry news that mattered with a rotating panel of industry experts, sorting what's signal, what's noise, and what nobody's saying out loud.</p>
+    <span class="stamp orange" style="display:block; margin-bottom:18px;">Start here</span>
+    <h1 class="display">{{EPISODE_COUNT}} episodes is a lot. Pick a path.</h1>
+    <p class="lede" style="max-width:640px;">Each path is four to six conversations in the order a new listener should hear them, chosen for one job or one problem. Finish one and the next is waiting.</p>
+  </div>
+</section>
+
+<!-- ======================= FIRST THREE ======================= -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-label">00 / {{FIRST_THREE_TITLE}}</div>
+    <p class="lede" style="max-width:640px; margin-bottom:28px;">{{FIRST_THREE_BLURB}}</p>
+    <div class="ep-grid">
+{{FIRST_THREE}}
     </div>
   </div>
 </section>
 
-<section class="block" style="padding-top:36px;">
+<!-- ======================= PATHS ======================= -->
+<section class="block" id="paths">
   <div class="wrap">
-    <div class="ep-grid" id="ep-list">
-{{ALL_EPISODES}}
+    <div class="sec-label">01 / Listening paths</div>
+    <div class="paths-grid">
+{{PATH_CARDS}}
+    </div>
+  </div>
+</section>
+
+<!-- ======================= BRIEFS ======================= -->
+<section class="block" id="newsletter">
+  <div class="wrap">
+    <div class="sec-label">02 / Construction Briefs</div>
+    <div class="newsletter-inner">
+      <h2 class="display">New paths, new episodes, in your inbox</h2>
+      <p class="lede">Construction tech news, episode recaps, and insider takes from the show's guests. Weekly, free, on Substack.</p>
+      <form class="nl-form" action="https://constructionbriefs.substack.com/subscribe" method="get" data-event="Newsletter Submit">
+        <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
     </div>
   </div>
 </section>
