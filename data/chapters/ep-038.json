@@ -1,0 +1,44 @@
+{
+  "slug": "ep-038",
+  "guest": {
+    "name": "Steve Little",
+    "title": "Director of Facilities and Engineering (inferred)",
+    "firm": "The Fresh Market"
+  },
+  "chapters": [
+    { "time": "00:00", "title": "Intro and sound check banter" },
+    { "time": "01:51", "title": "From bagging groceries to the trades" },
+    { "time": "05:22", "title": "Ucrop's culture and the free groceries story" },
+    { "time": "12:36", "title": "Selling Ucrop's and landing at Fresh Market" },
+    { "time": "18:09", "title": "Why store construction costs exploded post-COVID" },
+    { "time": "25:26", "title": "What a real trade partnership looks like" },
+    { "time": "30:14", "title": "Basic construction management practices got lost" },
+    { "time": "44:32", "title": "Treat people how you want to be treated" },
+    { "time": "55:03", "title": "Work-life balance and advice to his younger self" },
+    { "time": "58:49", "title": "Best projects and what separates great GCs" }
+  ],
+  "mentions": [
+    { "name": "Ucrop's", "kind": "company" },
+    { "name": "The Fresh Market", "kind": "company" },
+    { "name": "Safeway", "kind": "company" },
+    { "name": "Reconstruct", "kind": "tool" },
+    { "name": "AIA", "kind": "company" }
+  ],
+  "quotes": [
+    {
+      "time": "26:12",
+      "text": "I can lower my fees a little bit, still make some money, not as much as I normally would, but I'd like for you to do three or four jobs with me.",
+      "who": "Steve Little"
+    },
+    {
+      "time": "46:11",
+      "text": "I don't ever walk into a new relationship with a GC thinking it's adversarial. I want to be a good partner with them. I want to be treated well, just like I would want to be treated.",
+      "who": "Steve Little"
+    },
+    {
+      "time": "1:02:27",
+      "text": "When the subs are running the job instead of the GC, that's where you get into lots of problems. The GC's got to drive the job and focus people in the areas they need to be in.",
+      "who": "Steve Little"
+    }
+  ]
+}

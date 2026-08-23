@@ -397,3 +397,74 @@ footer { border-top: 1px solid var(--hairline); }
 }
 .path-pill:hover { border-color: var(--crane); }
 @media (max-width: 860px) { .paths-grid, .doors-2 { grid-template-columns: 1fr; } }
+
+/* ---------- chapters, quotes, mentions (episode pages) ---------- */
+.guest-line { color: var(--crane); margin: -10px 0 22px; }
+.chapters { list-style: none; padding: 0; margin: 0 0 12px; max-width: 720px; border-top: 1px solid var(--border); }
+.chapters li { border-bottom: 1px solid var(--border); }
+.chapters a.chapter { display: flex; gap: 18px; align-items: baseline; padding: 12px 4px; color: var(--chalk); border-bottom: none; }
+.chapters a.chapter:hover { color: var(--crane); }
+.chapters a.chapter .stamp { color: var(--crane); min-width: 54px; font-variant-numeric: tabular-nums; }
+.ep-quote { border-left: 3px solid var(--crane); padding: 6px 0 6px 20px; margin: 0 0 18px; max-width: 720px; }
+.ep-quote p { font-family: var(--archivo); font-size: 18px; line-height: 1.5; color: var(--chalk); margin: 0 0 6px; }
+.ep-quote cite { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--grey-2); font-style: normal; }
+.ep-quote cite a { color: var(--crane); border-bottom: none; }
+.pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.pills .pill, .pill { font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid var(--border); padding: 6px 10px; color: var(--grey); }
+
+/* ---------- articles ---------- */
+.art-body { max-width: 720px; color: var(--grey); font-size: 17px; line-height: 1.65; }
+.art-body p, .art-body ul, .art-body ol, .art-body blockquote { margin: 0 0 18px; }
+.art-body h2, .art-body h3, .art-body h4 { font-family: var(--anton); font-weight: 400; text-transform: uppercase; color: var(--chalk); line-height: 0.94; letter-spacing: -0.01em; margin: 36px 0 14px; }
+.art-body h2 { font-size: clamp(24px, 3vw, 32px); } .art-body h3 { font-size: 22px; } .art-body h4 { font-size: 18px; }
+.art-body strong { color: var(--chalk); }
+.art-body a { color: var(--crane); border-bottom: 1px solid rgba(246,139,79,.4); }
+.art-body img { max-width: 100%; height: auto; display: block; margin: 8px 0 18px; filter: grayscale(1) contrast(1.05); }
+.art-body blockquote { border-left: 3px solid var(--crane); padding-left: 18px; color: var(--chalk); }
+.art-body ul, .art-body ol { padding-left: 22px; }
+.art-body hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+.article .ep-card { margin-top: 16px; }
+.article .ep-card audio { width: 100%; max-width: 720px; margin-top: 12px; }
+.filters { gap: 8px; margin-top: 18px; }
+.filter { font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; background: none; border: 1px solid var(--border); color: var(--grey); padding: 8px 12px; cursor: pointer; }
+.filter:hover, .filter.active { border-color: var(--crane); color: var(--crane); }
+
+/* ---------- tools ---------- */
+.tool-ctx { list-style: none; padding: 0; margin: 0 0 14px; max-width: 760px; }
+.tool-ctx li { color: var(--grey); font-size: 15px; line-height: 1.5; padding: 8px 0; border-top: 1px solid var(--border); }
+.tool-ctx li .stamp { display: block; color: var(--crane); margin-bottom: 2px; }
+.tool-card .ep-actions a { font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--chalk); border-bottom: 1px solid var(--steel); }
+.tool-card .ep-actions a:hover { color: var(--crane); }
+
+/* ---------- lessons ---------- */
+.lessons { display: grid; gap: 14px; }
+.lesson { display: grid; grid-template-columns: 64px 1fr; gap: 18px; border: 1px solid var(--border); padding: 24px 26px; background: var(--pitch); }
+.lesson:hover { border-color: var(--steel); }
+.lesson-n { font-family: var(--anton); font-size: 40px; line-height: 1; color: var(--crane); }
+.lesson h3 { font-family: var(--archivo); font-weight: 700; font-size: 20px; line-height: 1.35; color: var(--chalk); margin: 0 0 8px; max-width: 760px; }
+.lesson p { color: var(--grey); font-size: 15px; line-height: 1.55; margin: 0 0 10px; max-width: 760px; }
+.lesson .ep-meta a.stamp { color: var(--grey-2); border-bottom: none; }
+.lesson .ep-meta a.stamp:hover { color: var(--crane); }
+@media (max-width: 600px) { .lesson { grid-template-columns: 1fr; } }
+
+/* ---------- reviews, join, stories ---------- */
+.review .tag { letter-spacing: 0.05em; }
+.upcoming { list-style: none; padding: 0; margin: 0 0 6px; color: var(--chalk); font-size: 15px; line-height: 1.5; }
+.upcoming li { padding: 6px 0; border-bottom: 1px solid var(--border); }
+.upcoming strong { color: var(--chalk); }
+.door h3 { font-family: var(--anton); font-weight: 400; text-transform: uppercase; font-size: 24px; line-height: 0.94; color: var(--chalk); }
+.story .ep-body { color: var(--grey); font-size: 16px; line-height: 1.6; max-width: 720px; margin-bottom: 12px; }
+
+/* ---------- print (lessons PDF) ---------- */
+@media print {
+  body { background: #fff; color: #0B0F12; }
+  .nav, footer, #newsletter, .hazard, .page-head .studs { display: none !important; }
+  .page-head { padding: 0 0 18px; border-bottom: 2px solid #0B0F12; background: none !important; }
+  .page-head .lede, .lesson p { color: #3A444C; }
+  .display, .lesson h3, .upcoming strong { color: #0B0F12; }
+  .lesson { border: 1px solid #D9D6D1; background: #fff; break-inside: avoid; padding: 16px 18px; }
+  .lesson-n { color: #D9702F; }
+  .tag { background: #D9702F; color: #fff; }
+  .stamp, .lesson .ep-meta a.stamp { color: #6B737B; }
+  a { text-decoration: none; }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "ep-025",
+  "guest": {
+    "name": "Alex Belkofer",
+    "title": "Digital Strategy & VDC Leader (inferred)",
+    "firm": "McCarthy Building Companies"
+  },
+  "chapters": [
+    { "time": "00:00", "title": "Intro" },
+    { "time": "01:51", "title": "From boutique BIM hire to McCarthy's digital strategy lead" },
+    { "time": "06:24", "title": "Why BIM maturity still varies so widely across GCs" },
+    { "time": "16:22", "title": "Executive buy-in and culture for digital transformation" },
+    { "time": "18:37", "title": "Measuring ROI through the cost of goals not scored" },
+    { "time": "23:58", "title": "Cutting through the tech noise, from BIM to AI tools" },
+    { "time": "31:01", "title": "What it really means to build from the model" },
+    { "time": "32:53", "title": "The future of BIM and VDC careers" },
+    { "time": "36:50", "title": "How McCarthy weighs AI's risk against its upside" },
+    { "time": "41:27", "title": "Advice for the next generation in AECO" }
+  ],
+  "mentions": [
+    { "name": "McCarthy Building Companies", "kind": "company" },
+    { "name": "PCS (Project and Construction Services)", "kind": "company" },
+    { "name": "Dodge", "kind": "company" },
+    { "name": "National Institute of Building Sciences (NIBS)", "kind": "company" },
+    { "name": "Revizto", "kind": "tool" },
+    { "name": "Autodesk Construction Cloud", "kind": "tool" },
+    { "name": "OpenSpace", "kind": "tool" },
+    { "name": "Dusty Robotics", "kind": "tool" },
+    { "name": "Trimble", "kind": "company" },
+    { "name": "Hexagon", "kind": "company" },
+    { "name": "ChatGPT", "kind": "tool" }
+  ],
+  "quotes": [
+    {
+      "time": "19:40",
+      "text": "There's a term that I've been saying for the better part of a couple years now, how do you measure the cost of goals not scored.",
+      "who": "Alex Belkofer"
+    },
+    {
+      "time": "31:23",
+      "text": "I've had a lot of superintendents in recent years that have told me that we live and die by the model, quote unquote.",
+      "who": "Alex Belkofer"
+    },
+    {
+      "time": "41:51",
+      "text": "It takes a village, I feel like, for us to really realize what is possible as an industry.",
+      "who": "Alex Belkofer"
+    }
+  ]
+}

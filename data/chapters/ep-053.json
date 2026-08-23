@@ -1,0 +1,50 @@
+{
+  "slug": "ep-053",
+  "guest": {
+    "name": "Elliot Christiansen",
+    "title": "Senior Vice President of Operations",
+    "firm": "Cleveland Construction"
+  },
+  "chapters": [
+    {"time": "00:00", "title": "Meet Elliot and co-host Lars"},
+    {"time": "01:39", "title": "Why executives must roll up their sleeves on pilots"},
+    {"time": "03:47", "title": "OpenSpace and the weekly walk as job documentation"},
+    {"time": "05:41", "title": "Trunk Tools pilots and straight-line submittal time savings"},
+    {"time": "09:48", "title": "What a good vendor pilot looks like"},
+    {"time": "15:11", "title": "Initiative fatigue and switching Procore to Autodesk"},
+    {"time": "26:30", "title": "Measuring ROI across the tech stack"},
+    {"time": "31:40", "title": "Picking detractors and champions for pilots"},
+    {"time": "38:24", "title": "Taking vendor calls and advice for salespeople"},
+    {"time": "50:25", "title": "The 2015 Procore pilot and career lessons"}
+  ],
+  "mentions": [
+    {"name": "Cleveland Construction", "kind": "company"},
+    {"name": "Trunk Tools", "kind": "tool"},
+    {"name": "OpenSpace", "kind": "tool"},
+    {"name": "Procore", "kind": "tool"},
+    {"name": "Autodesk Construction Cloud", "kind": "tool"},
+    {"name": "GCPay", "kind": "tool"},
+    {"name": "Breadcrumb", "kind": "tool"},
+    {"name": "Primavera P6", "kind": "tool"},
+    {"name": "Sage 300", "kind": "tool"},
+    {"name": "DocuSign", "kind": "tool"},
+    {"name": "Tanger Outlets", "kind": "company"}
+  ],
+  "quotes": [
+    {
+      "time": "02:30",
+      "text": "If I'm gonna put my name behind it, then I'm gonna be involved in it throughout the rollout, throughout the pilot process.",
+      "who": "Elliot Christiansen"
+    },
+    {
+      "time": "17:43",
+      "text": "Superintendents are very skeptical people. They're gonna ask a question and it's gonna give them an answer and they're still gonna check. So it's not necessarily always saving them time until they get to the point where they trust the answers.",
+      "who": "Elliot Christiansen"
+    },
+    {
+      "time": "40:30",
+      "text": "If their product only does one thing, it's probably not something that we're gonna look for. We don't want twenty point solutions. We wanna have a couple things in our tech stack that work really well and solve several problems each.",
+      "who": "Elliot Christiansen"
+    }
+  ]
+}

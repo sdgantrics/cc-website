@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} | Construction Conversations</title>
+<meta name="description" content="{{SUBTITLE}}">
+<link rel="icon" type="image/png" href="../assets/img/cc-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400..900;1,400..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">
+{{JSONLD}}
+</script>
+<!-- ANALYTICS: Plausible. Uncomment after creating the site at plausible.io. -->
+<!-- <script defer data-domain="constructionconversations.com" src="https://plausible.io/js/script.js"></script> -->
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="../index.html"><img src="../assets/img/cc-logo.png" alt="Construction Conversations"></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links"></ul>
+  </div>
+</header>
+
+<article class="wrap ep-page article">
+  <p class="stamp dim" style="margin-bottom:18px;"><a href="../articles.html" style="color:var(--grey-2);">← Articles</a></p>
+  <div class="ep-meta"><span class="tag">{{TYPE}}</span><span class="stamp">{{DATE}}</span><span class="stamp">By {{AUTHOR}}</span></div>
+  <h1 class="display">{{TITLE}}</h1>
+  <p class="lede" style="margin-bottom:28px;">{{SUBTITLE}}</p>
+  <div class="art-body">
+{{BODY}}
+  </div>
+  <p class="stamp dim" style="margin-top:28px;">Originally published in Construction Briefs. <a href="{{SUBSTACK_URL}}" target="_blank" rel="noopener" style="color:var(--crane);">Read on Substack →</a></p>
+  {{EPISODE_BLOCK}}
+</article>
+
+<section class="block" id="newsletter">
+  <div class="wrap">
+    <div class="sec-label">Construction Briefs</div>
+    {{NEWSLETTER}}
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-links"></div>
+    <small>© 2026 Construction Conversations · Every other Tuesday · Wherever you listen</small>
+  </div>
+  <div class="hazard"></div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

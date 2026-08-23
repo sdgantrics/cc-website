@@ -1,0 +1,32 @@
+{
+  "slug": "ep-040",
+  "guest": {"name": "Aaron McClellan", "title": "Construction Technology Manager", "firm": "Granite Construction"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro and Seabee banter"},
+    {"time": "02:07", "title": "Leading contech at a large contractor in 2026"},
+    {"time": "04:51", "title": "Why most tech ignores horizontal construction"},
+    {"time": "09:06", "title": "How Granite decides build versus buy"},
+    {"time": "13:04", "title": "Lean black belts and voice of customer"},
+    {"time": "20:11", "title": "Where AI in construction actually goes"},
+    {"time": "29:06", "title": "Point solutions, data flow, and tool fatigue"},
+    {"time": "30:50", "title": "Citizen developers building Copilot agents"},
+    {"time": "37:02", "title": "Replit, vibe coding, and IP guardrails"},
+    {"time": "43:12", "title": "Special Forces to construction and the two levels above rule"}
+  ],
+  "mentions": [
+    {"name": "Granite Construction", "kind": "company"},
+    {"name": "Microsoft Copilot", "kind": "tool"},
+    {"name": "Replit", "kind": "tool"},
+    {"name": "Yammer", "kind": "tool"},
+    {"name": "SharePoint", "kind": "tool"},
+    {"name": "Microsoft Teams", "kind": "tool"},
+    {"name": "Kenny Construction", "kind": "company"},
+    {"name": "Home Depot", "kind": "company"},
+    {"name": "Last Planner", "kind": "tool"}
+  ],
+  "quotes": [
+    {"time": "24:28", "text": "If you stay in stealth mode and then you come out and go to market with your product, you better be ready that somebody is vibe coding a tool that's your competitor.", "who": "Aaron McClellan"},
+    {"time": "30:16", "text": "If your point solution fits in the middle of that data flow and doesn't really do anything with the data that's valuable, is it really worth the time?", "who": "Aaron McClellan"},
+    {"time": "43:50", "text": "Whatever you're doing in your current job, the value you're contributing needs to attribute to the person sitting two levels above you. If you have that mindset, you're going to succeed in this industry.", "who": "Aaron McClellan"}
+  ]
+}

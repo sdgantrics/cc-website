@@ -1,0 +1,31 @@
+{
+  "slug": "ep-037",
+  "guest": {"name": "Mark Fly", "title": "Product Evangelist & Partner (inferred)", "firm": "Jabberwocky"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro"},
+    {"time": "01:34", "title": "From swinging hammers to product evangelist"},
+    {"time": "10:45", "title": "Why ClickUp beats a CRM for his network"},
+    {"time": "14:30", "title": "Mentorship and the birth of the Bid Coach"},
+    {"time": "18:50", "title": "The marketing thesis: show me, don't hype me"},
+    {"time": "23:47", "title": "Advice for construction tech companies that just raised money"},
+    {"time": "29:10", "title": "From fax machines to Buzzsaw, learning tech in the field"},
+    {"time": "32:52", "title": "Jabberwocky and the job walk problem nobody talks about"},
+    {"time": "42:56", "title": "Digitizing a career of field knowledge into an AI twin"},
+    {"time": "47:16", "title": "Advice to his 27 year old self: have a path"}
+  ],
+  "mentions": [
+    {"name": "SmartBid", "kind": "company"},
+    {"name": "ClickUp", "kind": "tool"},
+    {"name": "HubSpot", "kind": "tool"},
+    {"name": "Jabberwocky", "kind": "company"},
+    {"name": "Clay", "kind": "tool"},
+    {"name": "Buzzsaw", "kind": "company"},
+    {"name": "NotebookLM", "kind": "tool"},
+    {"name": "James Benham", "kind": "person"}
+  ],
+  "quotes": [
+    {"time": "05:18", "text": "Everybody likes to make money, but I don't think I ever followed the money. I wanted to do what I enjoyed doing, and that had to be there no matter what the opportunity was.", "who": "Mark Fly"},
+    {"time": "20:26", "text": "Saves time, saves money. But what does it do for me? Everybody says that. What are you going to do for me? How can you handle my pain? How can you make my day easier? Show me, tell me.", "who": "Mark Fly"},
+    {"time": "51:00", "text": "Get in the field. Any opportunity you get. If you need to go sweep floors for a construction company, if you need to go pick up trash on a job site, get in the field no matter how you can.", "who": "Mark Fly"}
+  ]
+}

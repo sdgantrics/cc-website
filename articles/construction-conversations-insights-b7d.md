@@ -1,0 +1,48 @@
+---
+title: Your AI Strategy Starts With Fixing What's Broken
+subtitle: Ep. 30 - Michael Zeppieri, Skanska / Bond Brothers
+date: 2026-03-18
+type: Recap
+episode: ep-030
+author: Stephen Poppe
+substack: https://constructionbriefs.substack.com/p/construction-conversations-insights-b7d
+cover: https://substackcdn.com/image/fetch/$s_!psEw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd0df6599-bfee-4611-800f-66e632e77098_1024x743.png
+---
+<p>There are a lot of ways one comes to construction. My own path zigged and zagged through finance and banking before finding its true professional home in a job trailer in San Diego. Michael Zeppieri’s went through West Point, MIT, and Boeing before landing, finally, where he always wanted to be. driving technology strategy at Skanska.</p>
+<p>The challenge for people who arrive from outside the industry is the same whether you came from aerospace or accounting: you carry a lot of powerful frameworks, and none of them fully translate until you’ve spent real time in the field. Michael is refreshingly honest about that gap in himself, and it shapes everything about how he thinks.</p>
+<p>But what made this conversation stick is how Michael thinks about the mess the industry has already made with technology, and why AI might not clean it up the way we’re all hoping it will.</p>
+<p>Here’s what stood out.</p>
+<hr>
+<h3>1. Twenty years of tech debt is a potential limiter on AI's value.</h3>
+<p>Michael has been in digital transformation since the early 2000s. Big data at Boeing. Cloud migration. Mobile. SaaS. Each wave promised to solve the problem the last wave created. It didn’t.</p>
+<p>What we’re sitting on now is twenty years of fragmented systems, broken integrations, inconsistent data, and organizational habits built around workarounds. Michael’s term for it is “digital waste,” and his point is direct: you cannot layer AI on top of that and expect transformation. You get faster noise.</p>
+<p>The unglamorous work comes first. Standardizing how your company refers to its own offices. Cleaning up the dropdown menus in your project management system. Making sure the data your AI will eventually read is actually trustworthy. It is, as Michael put it, “the silliest things.” It is also the foundation everything else depends on.</p>
+<p>His analogy was perfect. Think about youth sports. Every team your kid plays on uses a different app. Schedules, notifications, RSVPs, all of it digitized. And yet half the kids don’t show up and the coach can’t field a team. Before the internet, coaches had a phone chain and a stack of photocopies, and it worked, because someone owned the process.</p>
+<p>“We made everything easy button, but in making it easy button, we’ve lost discipline and structure.”</p>
+<h3>2. The C-suite and the field are not solving the same problem.</h3>
+<p>This might be the sharpest observation Michael made. For the first time in his digital transformation career, the excitement about technology is coming from the top down, not the bottom up. Cloud adoption started in the trenches. Mobile devices started in the field. AI? The C-suite is leading the charge.</p>
+<p>The reason is overhead. Leadership sees the cost of managing the tech stack, the labor required just to stitch platforms together, the people doing admin work that adds zero value. AI promises to solve that burden.</p>
+<p>But here’s the disconnect. The field doesn’t see AI as a gift. They see it as AI taking away the distraction of technology so they can finally do their actual job. That’s not excitement. That’s relief that the noise might stop.</p>
+<p>When the ROI case only works from one perspective, adoption breaks down. Michael’s been watching that pattern repeat for two decades.</p>
+<h3>3. The Pendulum Is Swinging Back to Building Your Own Tools</h3>
+<p>Michael’s diagnosis of where the cloud went wrong is blunt. The vendors got so big, and layered with so many customer success teams, that the people solving problems have never actually touched the problem. The intimacy between builder and tool disappeared somewhere between the first Salesforce implementation and the fifteenth renewal negotiation.</p>
+<p>AI changes that equation. Not because it replaces vendors, but because it gives people who learned Visual Basic and lived in Excel the ability to build enterprise-quality tools by communicating intent. No Python required. Michael’s framing is simple: “Give me the environment, secure the environment, and give me the tools that let me build.”</p>
+<p>For mid-market contractors who cannot afford the Autodesk and ProCore partnerships, this is the most interesting development in construction technology in years. They already have the IP. They have the people knowledge. What they have lacked is the platform to turn that knowledge into something usable at scale. Low-code, no-code, and AI-assisted development could be the equalizer the mid-market has been waiting two decades for.</p>
+<p>The firms that figure this out will not be the ones who waited for a vendor to care about their use case. They will be the ones who stopped waiting and built it themselves.</p>
+<h3>4. Some “Mundane” Tasks Are Actually Building Muscle Memory</h3>
+<p>Michael drew from his West Point experience here, and it landed. Cadets practice putting on gas masks and clearing rifles to the point of absurdity. The reason? When things go sideways, you don’t want to be figuring out the basics. That needs to be muscle memory so you can focus on reacting.</p>
+<p>Now apply that to construction. A PE who leans on an automated submittal review tool gets an answer faster. No argument there. But the PE who sits down and manually compares that submittal against the spec requirements is also learning the spec. They are learning where the design intent lives, where the gaps are, where a subcontractor is likely to push back, and what a compliant versus a technically-compliant-but-problematic submittal actually looks like. That knowledge does not come from reading the output. It comes from doing the work.</p>
+<p>“You can very easily make the mistake of automating the things that are actually making your people better.”</p>
+<p>That’s a line worth sitting with. The automation conversation tends to sort tasks into “value-added” and “waste” without asking whether some of that waste is actually training.</p>
+<h3>5. The AI Conversation Is Broken on Both Sides</h3>
+<p>Michael referenced Shannon Vallor’s work on the narcissism of LLMs, and it’s a point that deserves way more airtime. When you interact with an AI, it doesn’t just fail to push back. It actively inflates your confidence. It’s designed to agree with you. It tells you you’re heading in the right direction even when you’re not, and you never feel the friction that would normally force you to reconsider. Some models like Opus 4.6 are better at attempting to provide some friction when possible but the flaw is foundational.</p>
+<p>“Not only does it not know it’s wrong, it wants to please you.”</p>
+<p>This tweet nails it:</p>
+<p>But here’s the bigger issue. The conversation around AI in construction is broken in both directions. On one side, you have people who are reflexively defensive, treating every new tool like a threat to the way things have always been done, shutting down before the demo even loads. On the other side, you have companies racing to “do AI” because they feel like they have to, not because they’ve identified a real problem worth solving. They’re not building what they actually need. They’re building what they think the market, or the board, or the next conference keynote expects them to build.</p>
+<p>Michael and I land in the same place on this. Bullish on what the tools can do, genuinely cautious about the human tendency to let the tool do the thinking for you. The capability is extraordinary. The question is whether we have the discipline to use it with intention, to build toward real problems instead of chasing whatever sounds impressive on a pitch deck.</p>
+<h3>Conclusion</h3>
+<p>Michael’s advice to his former self was telling. He would have spent his first two or three years in a field role before touching technology. Not because the tech doesn’t matter, but because you can’t solve problems you haven’t felt. He looks at superintendents the way he looks at a crusty old Sergeant Major, with deep respect for what they know and how they got there.</p>
+<p>The 2035 vision Michael painted was refreshingly human. Not a dystopia of robots and dashboards. Buildings with grandeur again. Craftsmen doing fulfilling work. People going home at a reasonable hour, safely. Technology in the background making all of that possible without making it more expensive.</p>
+<p>But here’s what sticks with me most from this conversation. We’ve spent twenty years digitizing construction without ever really asking whether we were building the right foundation. The tools got shinier, the dashboards got denser, and the underlying data stayed messy. AI doesn’t fix that. It amplifies it.</p>
+<p>The companies that will actually get to Michael’s 2035 aren’t the ones deploying the most models or announcing the biggest AI partnerships. They’re the ones doing the boring, unglamorous work right now: cleaning their data, standardizing their processes, rotating their technologists through the field, and asking whether the thing they’re automating is actually waste or whether it’s quietly building the next generation of builders.</p>
+<p>Whether we get there depends less on the technology and more on whether we have the honesty to admit what’s broken and the patience to fix it before we layer anything else on top.</p>

@@ -1,0 +1,32 @@
+{
+  "slug": "ep-045",
+  "guest": {"name": "Garrett Mott", "title": "Construction Trial Lawyer", "firm": "Hennig Law"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro, gaming chairs and afternoon Lars"},
+    {"time": "10:48", "title": "Trials are about witnesses, even the lowest level guy"},
+    {"time": "13:56", "title": "The five emails that became exhibit 12"},
+    {"time": "17:19", "title": "Be descriptive, not prescriptive, and stay in your lane"},
+    {"time": "28:00", "title": "Daily logs as gold and how many projects end in dispute"},
+    {"time": "39:42", "title": "Get the lawyer and CM in early, plaintiff versus defendant"},
+    {"time": "42:34", "title": "What to do with a non-performing sub"},
+    {"time": "49:53", "title": "Your people are your case, the $26M super"},
+    {"time": "52:10", "title": "AI for tone, not analysis, and the 116-hour work log"},
+    {"time": "1:01:06", "title": "Pre-con, AIA contracts and contemporaneous records"}
+  ],
+  "mentions": [
+    {"name": "Hennig Law", "kind": "company"},
+    {"name": "Whiting-Turner", "kind": "company"},
+    {"name": "Walsh Construction", "kind": "company"},
+    {"name": "Turner Construction", "kind": "company"},
+    {"name": "AIA Contract Documents", "kind": "tool"},
+    {"name": "Primavera P6", "kind": "tool"},
+    {"name": "ChatGPT", "kind": "tool"},
+    {"name": "Blueprint Conference", "kind": "company"},
+    {"name": "G.K. Chesterton", "kind": "person"}
+  ],
+  "quotes": [
+    {"time": "17:19", "text": "The advice is send emails that are descriptive, not emails that are prescriptive. Your job is to collect information and be descriptive about it. It's not to articulate a conclusion or opinion.", "who": "Garrett Mott"},
+    {"time": "26:00", "text": "Every time you send something, think, is that going to be exhibit 12?", "who": "Garrett Mott"},
+    {"time": "1:02:58", "text": "Evidence that's created after a dispute arises has drastically low credibility. Juries understand that immediately. Daily notes are absolute gold.", "who": "Garrett Mott"}
+  ]
+}

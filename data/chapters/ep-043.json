@@ -1,0 +1,30 @@
+{
+  "slug": "ep-043",
+  "guest": {"name": "Wes Juergens", "title": "Senior Superintendent, Regional Field Operations (inferred)", "firm": "National General Contractor (inferred)"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro, the first guest returns"},
+    {"time": "01:07", "title": "Moving up to a regional role"},
+    {"time": "03:44", "title": "Don't do it like Wes, breaking the micromanaging habit"},
+    {"time": "11:20", "title": "Dropped into a troubled job, start with culture"},
+    {"time": "15:50", "title": "Setting tempo from orientation to pull planning"},
+    {"time": "24:15", "title": "If everybody's got it, nobody's got it"},
+    {"time": "28:45", "title": "Battle fatigue, celebrating milestones and craft hospitality"},
+    {"time": "35:55", "title": "Telling your kids about the trades"},
+    {"time": "40:38", "title": "BIM on iPads, prefab and the nerd the ironworkers need"},
+    {"time": "51:00", "title": "Humility and never deciding uninformed"}
+  ],
+  "mentions": [
+    {"name": "Trimble", "kind": "tool"},
+    {"name": "Doxel", "kind": "company"},
+    {"name": "Dusty Robotics", "kind": "company"},
+    {"name": "Last Planner", "kind": "tool"},
+    {"name": "Mike Rowe", "kind": "person"},
+    {"name": "University of Houston Law Center", "kind": "company"},
+    {"name": "Unreasonable Hospitality", "kind": "book"}
+  ],
+  "quotes": [
+    {"time": "05:38", "text": "Anal retentiveness, micromanaging, anxiety, those are things that actually are great qualities in a superintendent because they run a disciplined, organized job.", "who": "Wes Juergens"},
+    {"time": "26:29", "text": "If everybody's got it, then nobody's got it. If I send that email out to 25 people, they all just assume that somebody else is doing it.", "who": "Wes Juergens"},
+    {"time": "52:45", "text": "You should never be making an uninformed decision. And if you're uninformed, then become informed and spare yourself a little bit of heartache because I caused myself plenty.", "who": "Wes Juergens"}
+  ]
+}

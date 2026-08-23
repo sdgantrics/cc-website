@@ -1,0 +1,35 @@
+{
+  "slug": "ep-031",
+  "guest": {"name": "Cameron Page", "title": "Founder & CEO", "firm": "ClearStory"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro"},
+    {"time": "01:28", "title": "The carpenter to founder origin story"},
+    {"time": "04:36", "title": "Starting ClearStory and the mustache comb side hustle"},
+    {"time": "09:02", "title": "How a T&M ticket idea became ClearStory"},
+    {"time": "11:03", "title": "The painful year with an offshore dev team"},
+    {"time": "16:10", "title": "Imposter syndrome and founder conviction"},
+    {"time": "20:22", "title": "Blending construction and tech culture as ClearStory scaled"},
+    {"time": "31:28", "title": "Why AI lowers the barrier to start a startup"},
+    {"time": "35:55", "title": "His AI stack for building product faster"},
+    {"time": "47:39", "title": "Book picks, podcasts, and advice for young PMs"}
+  ],
+  "mentions": [
+    {"name": "ClearStory", "kind": "company"},
+    {"name": "PlanGrid", "kind": "tool"},
+    {"name": "Building Connected", "kind": "tool"},
+    {"name": "ChatGPT", "kind": "tool"},
+    {"name": "Lovable", "kind": "tool"},
+    {"name": "Cursor", "kind": "tool"},
+    {"name": "Roo Code", "kind": "tool"},
+    {"name": "Granola", "kind": "tool"},
+    {"name": "Gong", "kind": "tool"},
+    {"name": "Shoe Dog", "kind": "book"},
+    {"name": "Nike", "kind": "company"},
+    {"name": "Phil Knight", "kind": "person"}
+  ],
+  "quotes": [
+    {"time": "09:36", "text": "Holy crap, that actually is a huge pain point, because I see it from thirty subcontractors who all do it on triplicate carbon copy paper.", "who": "Cameron Page"},
+    {"time": "16:40", "text": "I think the thing I've learned is you have to have some level of conviction around what you're building, and then you have to have a layer of humility to know there's a lot of things you don't know.", "who": "Cameron Page"},
+    {"time": "48:09", "text": "The book that I recommend the most is Shoe Dog, which is the history of Nike, particularly the audio version where Phil Knight reads the beginning of it.", "who": "Cameron Page"}
+  ]
+}

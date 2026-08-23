@@ -1,0 +1,31 @@
+---
+title: The Product Was Never the Hard Part
+subtitle: By Aaron Toppston | Managing Partner, GS Futures
+date: 2026-07-03
+type: Insider Take
+episode: ep-036
+author: Aaron Toppston
+substack: https://constructionbriefs.substack.com/p/the-product-was-never-the-hard-part
+cover: https://substackcdn.com/image/fetch/$s_!c3ga!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb66380eb-4333-4f4e-b823-983a5afde869_1200x630.png
+---
+<p>There is real skepticism about the value venture capital brings to construction, and I understand it. I have spent time on both sides of the table, first in the headquarters of a large builder, and now running a construction-focused fund. That vantage is what shapes how I think about where money helps, where technology actually sticks, and why building the product was never the hard part.</p>
+<p>Start with the skepticism itself, because it is fair. Venture is a very small amount of capital relative to the dollars moving through our industry, and it carries an unusually high tolerance for risk. It is the equity invested in ideas and entrepreneurs to try the things that would not otherwise get tried.</p>
+<p>In a sense, then, venture capital in construction is research and development for an industry that does not experiment widely on its own. Without that capital, the best ideas remain good conversations that never scale. Venture is what moves an idea from conversation to action. It is how you get gentle disruption in an industry that does not disrupt itself easily, and it most often comes from a team that pairs technical know-how with real construction experience.</p>
+<p><strong>Building and scaling tech are interrelated, yet uniquely different in construction</strong></p>
+<p>That pairing matters because building the product is rarely what kills a startup. Getting onto a jobsite, doing exactly what you said you would do, and earning the next introduction site after site, that is the hard part. Construction is fragmented. If you have done one project, you have done one project. The teams change, the buildings change, and every pilot begins from zero trust.</p>
+<p>That is why go-to-market in construction has to be as innovative as the product itself. I have often pointed to the model in Singapore, where the government subsidizes pilots so a builder can try new technology without absorbing the full cost and friction of the experiment. If it works, people are happy to pay. If it does not, no real harm is done. Removing that friction is itself a go-to-market strategy, and it is hard to overstate how difficult that friction is to overcome.</p>
+<p>The same fragmentation raises a harder question once a product exists, which is whether it is actually a business. Since 2025, that distinction has come into sharp focus. AI has made it dramatically cheaper to build a first version of almost anything, but cheaper MVPs raise the bar rather than lower it. A business is not “I built my first widget, now let’s sell it.” A business is happy customers, priced correctly, served consistently, with a product that keeps getting better. The companies worth backing are living, growing organizations that are always pushing forward, not a finished widget in search of a buyer.</p>
+<hr>
+<p><strong>Brought to you by FieldProof</strong></p>
+<p>Everybody in construction is being told they need to use AI. Almost nobody is showing operators how to actually do it. FieldProof runs a live, hands-on AI boot camp built specifically for construction professionals, estimators, PMs, superintendents, and BIM teams. Hands-on, not theory. If you want to get ahead of this instead of behind it, start with a cohort.</p>
+<p><a href="https://bootcamp.fieldproof.io/">bootcamp.fieldproof.io</a></p>
+<hr>
+<p><strong>For the buyer, start with the workflow</strong></p>
+<p>That discipline cuts both ways, because the contractor on the other side of the table has homework too. Before a firm spends a dollar on technology, it should understand its own workflow completely. The first-principles questions sound almost too simple, things like “what am I actually trying to accomplish?” and “where in that workflow does it make sense to exchange human effort for technology?” Yet they pay off time and again. The best construction technology companies think the same way, which is why the strongest startups emphasize outcomes, not just tools. That outcome focus, and the empathy to sit alongside the contractor as a partner rather than a vendor, is what separates the companies that last.</p>
+<p><strong>The coming physical shift</strong></p>
+<p>All of that is software. Further out, the change becomes physical. The tower crane was invented around 1950 and was slow to catch on, until the point arrived when no one could imagine building without it. New physical tools in construction have always been adopted slowly. But robotics is becoming cheaper and more capable, and we are heading toward that same tower crane moment with a more diverse set of purpose-built tools, for drilling, for repetitive installations, and for the measurement we perform over and over. Not tomorrow, but it is coming, and it is worth watching closely.</p>
+<p><strong>Technology can improve the work, but it cannot replace trust</strong></p>
+<p>None of this, though, displaces the thing that actually makes projects happen. I do not believe a technological magic bullet erodes the human influence at the center of this industry. What good technology does is clear the routine work out of the way, so the best people can spend their time where judgment and relationships actually decide the outcome. The Master Builder may one day be possible, but not on the near-term horizon. Everything from large-scale token factories to custom homes still relies on professional judgment and interconnected, bespoke supply chains to deliver on time and on budget. That relationship-driven success, unique to every project team, is what makes construction a remarkable industry to work in, and to keep innovating for.</p>
+<p>Recent episode with Aaron:</p>
+<hr>
+<p><em>Aaron Toppston is Managing Partner at GS Futures, an early-stage venture fund focused on construction and real estate. </em></p>

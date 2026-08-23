@@ -27,6 +27,8 @@ from datetime import datetime
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
+import extras
+
 ROOT = Path(__file__).parent
 FEED_URL = "https://feed.podbean.com/constructionconversations/feed.xml"
 FEED_CACHE = ROOT / "feed.xml"
@@ -221,7 +223,7 @@ def build_paths(first, paths, count: int):
         "{{PATH_CARDS}}": "\n".join(path_door(p) for p in paths),
     }.items():
         hub = hub.replace(k, v)
-    (ROOT / "site" / "start.html").write_text(hub)
+    (ROOT / "site" / "start.html").write_text(extras.apply_chrome(extras.apply_newsletter(hub, ""), ""))
     print("Wrote site/start.html")
 
     tpl = (ROOT / "templates" / "path.html").read_text()
@@ -241,7 +243,7 @@ def build_paths(first, paths, count: int):
             "{{JSONLD}}": path_jsonld(p),
         }.items():
             page = page.replace(k, v)
-        (start_dir / f'{p["slug"]}.html').write_text(page)
+        (start_dir / f'{p["slug"]}.html').write_text(extras.apply_chrome(extras.apply_newsletter(page, "../"), "../"))
     print(f"Wrote {len(paths)} path pages to site/start/")
 
 
@@ -349,6 +351,10 @@ def build():
             continue
 
     first, paths = load_paths(episodes)
+    extras.set_episode_index(episodes)
+    chapters = extras.load_chapters()
+    articles = extras.load_articles()
+    tools = extras.load_tools()
 
     latest_tag = f'EP {int(latest["num"]):03d}' if latest["num"] else "SPECIAL"
     latest_meta = " · ".join(v for v in (latest["date"], latest["duration"]) if v).upper()
@@ -365,6 +371,7 @@ def build():
         out = (ROOT / "templates" / name).read_text()
         for k, v in replacements.items():
             out = out.replace(k, v)
+        out = extras.apply_chrome(extras.apply_newsletter(out, ""), "")
         (ROOT / "site" / name).write_text(out)
         print(f"Wrote site/{name}")
 
@@ -386,12 +393,24 @@ def build():
             "{{LINK}}": ep["link"],
             "{{JSONLD}}": jsonld(ep),
             "{{PATHS}}": episode_paths_block(ep, paths),
+            "{{GUEST_LINE}}": (f'<p class="stamp guest-line">{gl}</p>' if (gl := extras.guest_line(chapters.get(ep["slug"]))) else ""),
+            "{{CHAPTERS}}": extras.chapters_block(chapters.get(ep["slug"])),
+            "{{QUOTES}}": extras.quotes_block(chapters.get(ep["slug"])),
+            "{{MENTIONS}}": extras.mentions_block(chapters.get(ep["slug"])),
+            "{{ARTICLES}}": extras.episode_articles_block(ep["slug"], articles),
+            "{{TOOLS}}": extras.episode_tools_block(ep["slug"], tools),
         }.items():
             page = page.replace(k, v)
-        (ep_dir / f'{ep["slug"]}.html').write_text(page)
+        (ep_dir / f'{ep["slug"]}.html').write_text(extras.apply_chrome(page, "../"))
     print(f"Wrote {len(episodes)} episode pages to site/episodes/")
 
     build_paths(first, paths, len(episodes))
+    tpl_dir = ROOT / "templates"
+    extras.build_articles(articles, episodes, tpl_dir)
+    extras.build_tools(tools, tpl_dir)
+    extras.build_lessons(extras.load_lessons(), tpl_dir)
+    extras.build_reviews(extras.load_reviews(offline), tpl_dir)
+    extras.build_join(extras.load_upcoming(), extras.load_stories(), tpl_dir)
 
     print(f"Built {datetime.now():%Y-%m-%d %H:%M}")
 

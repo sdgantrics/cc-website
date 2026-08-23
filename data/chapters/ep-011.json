@@ -1,0 +1,30 @@
+{
+  "slug": "ep-011",
+  "guest": {"name": "Chris Masse", "title": "Senior Superintendent", "firm": "EllisDon"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro"},
+    {"time": "05:38", "title": "McKinsey's productivity gap and early tech resistance"},
+    {"time": "13:53", "title": "The pilot project that changed his mind on tech"},
+    {"time": "21:30", "title": "Rolling new tech out across EllisDon's field teams"},
+    {"time": "27:07", "title": "Why digital building demands a better BIM model"},
+    {"time": "31:32", "title": "Does tech return time to workers or just margin"},
+    {"time": "38:33", "title": "Building the CM Planner with color coded drawings"},
+    {"time": "47:53", "title": "Feeding the CPM schedule straight from the plan"},
+    {"time": "51:02", "title": "Advice for a young superintendent starting out"},
+    {"time": "55:17", "title": "Mentors, LinkedIn, and why construction is worth it"}
+  ],
+  "mentions": [
+    {"name": "EllisDon", "kind": "company"},
+    {"name": "AutoCAD", "kind": "tool"},
+    {"name": "Bluebeam", "kind": "tool"},
+    {"name": "CM Planner", "kind": "tool"},
+    {"name": "LinkedIn", "kind": "tool"},
+    {"name": "Tim Hortons", "kind": "company"},
+    {"name": "iPad", "kind": "tool"}
+  ],
+  "quotes": [
+    {"time": "38:33", "text": "If you're putting a plan together and continuously collaborating with the team, and tracking that plan, you're going to be much more successful than if you just show up and say what do you guys want to do today.", "who": "Chris Masse"},
+    {"time": "51:35", "text": "Being a superintendent is a lot harder than what people think. Spend as much time as you can in the field interacting with your trades, because you'll learn a lot more there in a much quicker time.", "who": "Chris Masse"},
+    {"time": "1:01:44", "text": "It's fun. It's a grind, but it's fun, and you might not feel like it. There are some pretty stressful times, some sleepless nights, and it comes in phases.", "who": "Chris Masse"}
+  ]
+}

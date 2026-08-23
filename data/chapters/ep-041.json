@@ -1,0 +1,35 @@
+{
+  "slug": "ep-041",
+  "guest": {"name": "KP Reddy", "title": "Founder and CEO", "firm": "ZeroRFI and Shadow Ventures"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro and writing a thousand words a day"},
+    {"time": "02:36", "title": "Why construction is backwards, it's incentives not tech"},
+    {"time": "07:01", "title": "Early revenue is easy, sell like the porta potty guys"},
+    {"time": "13:53", "title": "The owner has no ally from site selection to closeout"},
+    {"time": "18:05", "title": "In-house owner's reps and the data center plumber era"},
+    {"time": "21:16", "title": "Foundation Zero and why BIM is just tables"},
+    {"time": "33:30", "title": "Bridging legacy systems with 162 MCP servers"},
+    {"time": "37:23", "title": "God's Eye, the softwareless CRM and conference dossiers"},
+    {"time": "47:26", "title": "What a PM or super should build today with Claude"},
+    {"time": "53:05", "title": "Family businesses, 401ks, ESOPs and chasing opportunity"}
+  ],
+  "mentions": [
+    {"name": "ZeroRFI", "kind": "company"},
+    {"name": "Shadow Ventures", "kind": "company"},
+    {"name": "Procore", "kind": "tool"},
+    {"name": "Revit", "kind": "tool"},
+    {"name": "ICON", "kind": "company"},
+    {"name": "Track3D", "kind": "company"},
+    {"name": "NVIDIA Omniverse", "kind": "tool"},
+    {"name": "Claude Code", "kind": "tool"},
+    {"name": "Claude Cowork", "kind": "tool"},
+    {"name": "OpenClaw", "kind": "tool"},
+    {"name": "Notion", "kind": "tool"},
+    {"name": "Frank Gehry", "kind": "person"}
+  ],
+  "quotes": [
+    {"time": "05:16", "text": "That milestone of submitting to the city is a payment milestone. It's not a work progress milestone.", "who": "KP Reddy"},
+    {"time": "12:28", "text": "Porta potties aren't spec'd. Just like most technology is not spec'd as part of the project. You have to show up with a box of donuts, do a demo, and jump in your truck and go.", "who": "KP Reddy"},
+    {"time": "40:04", "text": "Do you love your software? Because if you loved your software, SaaS is safe. The problem is everyone else hates their SaaS software. Which user loves Procore?", "who": "KP Reddy"}
+  ]
+}

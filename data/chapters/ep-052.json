@@ -1,0 +1,35 @@
+{
+  "slug": "ep-052",
+  "guest": {"name": "Sean Johnson", "title": "Founder", "firm": "Madison Consulting Services"},
+  "chapters": [
+    {"time": "00:00", "title": "Why schedule and budget are only table stakes"},
+    {"time": "18:57", "title": "Business books, Tom Peters, and a career lane"},
+    {"time": "22:07", "title": "Customer intimacy as the third way to win"},
+    {"time": "24:54", "title": "Delightful scenes across the customer journey"},
+    {"time": "29:39", "title": "The Diet Coke story and indirect ROI"},
+    {"time": "33:31", "title": "Champagne fridge and Ways to Love People"},
+    {"time": "39:16", "title": "Prospecting like a human in the age of robots"},
+    {"time": "46:34", "title": "Kano model, key frustration, and the magic wand"},
+    {"time": "53:16", "title": "Curiosity, note-taking, and the Obsidian vault"},
+    {"time": "1:02:57", "title": "Recovering from mistakes and starting bottom-up"}
+  ],
+  "mentions": [
+    {"name": "The E-Myth", "kind": "book"},
+    {"name": "Michael Gerber", "kind": "person"},
+    {"name": "Tom Peters", "kind": "person"},
+    {"name": "The Discipline of Market Leaders", "kind": "book"},
+    {"name": "Ritz-Carlton", "kind": "company"},
+    {"name": "Southwest Airlines", "kind": "company"},
+    {"name": "Nordstrom", "kind": "company"},
+    {"name": "Zappos", "kind": "company"},
+    {"name": "Ryan Holiday", "kind": "person"},
+    {"name": "Roam Research", "kind": "tool"},
+    {"name": "Obsidian", "kind": "tool"},
+    {"name": "Notion", "kind": "tool"}
+  ],
+  "quotes": [
+    {"time": "22:07", "text": "It's really hard to compete on best product and it's really hard to compete on operational efficiency. But everybody can do customer intimacy if they want to.", "who": "Sean Johnson"},
+    {"time": "42:12", "text": "The objection to all of this is how do you scale it? I don't think you do scale it. You scale it with having your antenna up and trying a couple of times a week to do that for people.", "who": "Sean Johnson"},
+    {"time": "1:11:57", "text": "If it means I grow a little slower, then so be it. If it means that the robots beat me, then I would rather lose this way than win that way.", "who": "Sean Johnson"}
+  ]
+}

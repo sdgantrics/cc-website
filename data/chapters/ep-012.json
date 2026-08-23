@@ -1,0 +1,31 @@
+{
+  "slug": "ep-012",
+  "guest": {"name": "Aaron Toppston", "title": "Partner (inferred)", "firm": "GS Futures"},
+  "chapters": [
+    {"time": "00:00", "title": "Cold open, are VCs actually good for the industry"},
+    {"time": "01:30", "title": "From Walsh operations to running GS Futures"},
+    {"time": "05:50", "title": "Metrics driven growth versus solving the real problem"},
+    {"time": "09:12", "title": "Why go to market has to be as innovative as the product"},
+    {"time": "14:31", "title": "How AI is changing the capital needed to build software"},
+    {"time": "20:28", "title": "What makes a founder fundable, motorcycles included"},
+    {"time": "25:32", "title": "How GCs and trades will change over the next decade"},
+    {"time": "34:27", "title": "Buying outcomes, not just software tools"},
+    {"time": "46:09", "title": "Mentorship and advice for young talent entering the trades"},
+    {"time": "59:48", "title": "What's exciting next, robotics and the tower crane moment"}
+  ],
+  "mentions": [
+    {"name": "GS Futures", "kind": "company"},
+    {"name": "Walsh", "kind": "company"},
+    {"name": "Aon", "kind": "company"},
+    {"name": "Cursor", "kind": "tool"},
+    {"name": "CodeRabbit", "kind": "tool"},
+    {"name": "Smart PM", "kind": "company"},
+    {"name": "ClearStory", "kind": "company"},
+    {"name": "Raise Robotics", "kind": "company"}
+  ],
+  "quotes": [
+    {"time": "01:58", "text": "The role of venture is a small amount of capital compared to the amount of capital in the construction industry as a whole. It's high risk tolerance equity invested in ideas and entrepreneurs.", "who": "Aaron Toppston"},
+    {"time": "20:50", "text": "A lot of the best founders ride motorcycles. And if you look at our portfolio, it's like more than half ride motorcycles.", "who": "Aaron Toppston"},
+    {"time": "58:59", "text": "The only reason I feel comfortable talking about most types of projects is because folks were willing to explain it to me, and I was willing to ask the dumb question.", "who": "Aaron Toppston"}
+  ]
+}

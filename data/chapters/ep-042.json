@@ -1,0 +1,34 @@
+{
+  "slug": "ep-042",
+  "guest": {"name": "Charles Ma", "title": "Co-founder", "firm": "Scopeboard AI"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro and a lost propeller in Thailand"},
+    {"time": "01:18", "title": "Why bootstrap a construction SaaS in 2026"},
+    {"time": "03:30", "title": "Structural engineer roots and respecting the messy field"},
+    {"time": "05:09", "title": "Why the $10B contractors fizzled out"},
+    {"time": "11:25", "title": "You can't fix a bad buy, what Scopeboard does"},
+    {"time": "17:24", "title": "Vibe coding versus accuracy and traceability"},
+    {"time": "22:53", "title": "Citizen development, guardrails and knowing your own process"},
+    {"time": "33:44", "title": "Why field buy-in stalls in corporate bureaucracy"},
+    {"time": "41:56", "title": "Message to PMs and supers evaluating AI vendors"},
+    {"time": "46:31", "title": "Sell your secondaries, options, and bootstrapping limits"}
+  ],
+  "mentions": [
+    {"name": "Scopeboard AI", "kind": "company"},
+    {"name": "Balfour Beatty", "kind": "company"},
+    {"name": "Turner Construction", "kind": "company"},
+    {"name": "Procore", "kind": "tool"},
+    {"name": "Autodesk", "kind": "company"},
+    {"name": "Datagrid", "kind": "company"},
+    {"name": "Trunk Tools", "kind": "company"},
+    {"name": "ChatGPT", "kind": "tool"},
+    {"name": "Claude Code", "kind": "tool"},
+    {"name": "Claude Cowork", "kind": "tool"},
+    {"name": "Groundbreak", "kind": "company"}
+  ],
+  "quotes": [
+    {"time": "04:18", "text": "We don't live in this perfect orthogonal world of graph paper. Things out here are messy. When you live in a software world, it's easy to think everything can be reduced to rules.", "who": "Charles Ma"},
+    {"time": "13:00", "text": "The source of truth for most of construction is unstructured plans and specs. Thousands of pages. Stuff slips through the cracks until the last responsible moment when it blows up in your face.", "who": "Charles Ma"},
+    {"time": "52:27", "text": "There's never been a better time to be a high agency person. The tools at our disposal now are insane. But the fundamentals are still really important, which is product sense.", "who": "Charles Ma"}
+  ]
+}

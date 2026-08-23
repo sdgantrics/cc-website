@@ -1,0 +1,33 @@
+{
+  "slug": "ep-036",
+  "guest": {"name": "Aaron Toppston", "title": "Managing Partner", "firm": "GS Futures"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro"},
+    {"time": "01:41", "title": "Breaking down the 2028 AI intelligence crisis article"},
+    {"time": "09:28", "title": "Why human intelligence is losing its scarcity premium"},
+    {"time": "19:33", "title": "How GS Futures talks AI with its portfolio companies"},
+    {"time": "23:56", "title": "Building for an economy of AI agents, not humans"},
+    {"time": "30:19", "title": "Where the real friction sits now, in the field"},
+    {"time": "33:15", "title": "What Aaron would build first running a GC today"},
+    {"time": "40:50", "title": "Does construction's AI moat protect white collar jobs too"},
+    {"time": "48:18", "title": "Vertical versus horizontal construction tech investing"},
+    {"time": "57:19", "title": "Is construction venture capital a viable asset class"}
+  ],
+  "mentions": [
+    {"name": "GS Futures", "kind": "company"},
+    {"name": "SmartPM", "kind": "tool"},
+    {"name": "ClearStory", "kind": "tool"},
+    {"name": "Affinity", "kind": "tool"},
+    {"name": "Weld", "kind": "company"},
+    {"name": "Accenture", "kind": "company"},
+    {"name": "McKinsey", "kind": "company"},
+    {"name": "Jack Dorsey", "kind": "person"},
+    {"name": "Block", "kind": "company"},
+    {"name": "Ronny Chieng", "kind": "person"}
+  ],
+  "quotes": [
+    {"time": "03:58", "text": "It doesn't come up with new ideas. It is an insanely powerful research tool. It can get you to the right answers really quickly.", "who": "Aaron Toppston"},
+    {"time": "12:59", "text": "Most people want a salary. It's stability, it's predictability, it's an ability to take work and have it in a defined expectation box.", "who": "Aaron Toppston"},
+    {"time": "43:28", "text": "A boring $40 million warehouse project has hundreds of contracts. Having a thoughtful, documented SOP for that is highly unusual, if not impossible.", "who": "Aaron Toppston"}
+  ]
+}

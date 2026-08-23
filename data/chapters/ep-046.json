@@ -1,0 +1,39 @@
+{
+  "slug": "ep-046",
+  "guest": {
+    "name": "Franco Giaquinto",
+    "title": "Co-Founder and CEO",
+    "firm": "Outbuild"
+  },
+  "chapters": [
+    {"time": "00:00", "title": "Closing the biggest deal yet, fully remote"},
+    {"time": "01:36", "title": "From Ipsum in Chile to Outbuild in the US"},
+    {"time": "02:43", "title": "Why scheduling is construction's biggest shit show"},
+    {"time": "06:51", "title": "How supers, schedulers, and execs reacted"},
+    {"time": "08:53", "title": "What Outbuild is and how fast it rolls out"},
+    {"time": "13:22", "title": "Betting on the underserved mid-market"},
+    {"time": "19:24", "title": "Project Intelligence and who owns the data"},
+    {"time": "26:24", "title": "Is SaaS dead? Systems of record vs action"},
+    {"time": "30:24", "title": "Specialist agents and the scheduler's new job"},
+    {"time": "37:16", "title": "Earning trust, humility, and founder advice"}
+  ],
+  "mentions": [
+    {"name": "Outbuild", "kind": "company"},
+    {"name": "Ipsum", "kind": "company"},
+    {"name": "Primavera P6", "kind": "tool"},
+    {"name": "Microsoft Project", "kind": "tool"},
+    {"name": "Russell", "kind": "company"},
+    {"name": "Document Crunch", "kind": "company"},
+    {"name": "SmartPM", "kind": "company"},
+    {"name": "Clearstory", "kind": "company"},
+    {"name": "Procore", "kind": "company"},
+    {"name": "Oracle Primavera Cloud", "kind": "tool"},
+    {"name": "HubSpot", "kind": "tool"},
+    {"name": "Andreessen Horowitz", "kind": "company"}
+  ],
+  "quotes": [
+    {"time": "05:12", "text": "You can have the best RFIs, the best submittals, the best everything, but if your plan is shit and no one is aligned, it's very hard to end up on the right track.", "who": "Franco Giaquinto"},
+    {"time": "14:29", "text": "Everyone's talking about what's happening with the top hundred companies. And what about the other hundred thousand companies that are building the rest of the country?", "who": "Franco Giaquinto"},
+    {"time": "33:17", "text": "There's not going to be an AI that is going to be replacing a superintendent anytime soon, nor a scheduler. Their jobs are just going to evolve.", "who": "Franco Giaquinto"}
+  ]
+}

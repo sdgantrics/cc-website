@@ -1,0 +1,47 @@
+{
+  "slug": "ep-013",
+  "guest": {
+    "name": "Hannu Lindberg",
+    "title": "Maestro of Construction Technology",
+    "firm": "DPR Construction"
+  },
+  "chapters": [
+    { "time": "00:00", "title": "Intro" },
+    { "time": "01:16", "title": "Hannu's path from the jobsite to construction tech" },
+    { "time": "07:06", "title": "Why DPR ditched job titles" },
+    { "time": "16:00", "title": "How title free culture drives DPR's innovation buy-in" },
+    { "time": "27:54", "title": "Building a GC from scratch in the AI era" },
+    { "time": "32:02", "title": "Where the real ROI is in construction data" },
+    { "time": "37:49", "title": "Prefab strategy amid tariffs and material uncertainty" },
+    { "time": "41:28", "title": "Chasing the model what we build dream" },
+    { "time": "49:06", "title": "Advice for a young Hannu starting out" },
+    { "time": "50:48", "title": "The tech that's actually exciting him right now" }
+  ],
+  "mentions": [
+    { "name": "Trimble", "kind": "company" },
+    { "name": "Tekla Structures", "kind": "tool" },
+    { "name": "AutoCAD", "kind": "tool" },
+    { "name": "ARCHICAD", "kind": "tool" },
+    { "name": "Vico (formerly Dyna Project)", "kind": "tool" },
+    { "name": "DPR Construction", "kind": "company" },
+    { "name": "SherPods", "kind": "company" },
+    { "name": "Building Transformations", "kind": "company" }
+  ],
+  "quotes": [
+    {
+      "time": "25:56",
+      "text": "Building an app for everything isn't really helping. At some point, it's creating a lot of noise.",
+      "who": "Hannu Lindberg"
+    },
+    {
+      "time": "44:01",
+      "text": "I promise you, they don't build airplanes, they don't build cars without modeling every single part of that vehicle.",
+      "who": "Hannu Lindberg"
+    },
+    {
+      "time": "49:38",
+      "text": "The grass is not greener on the other side. Don't get me wrong, the pixie dust was certainly a big draw, it certainly got me excited to go work there.",
+      "who": "Hannu Lindberg"
+    }
+  ]
+}

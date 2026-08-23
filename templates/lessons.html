@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 50 Most Expensive Lessons | Construction Conversations</title>
+<meta name="description" content="Fifty hard-won lessons from the people on Construction Conversations, attributed and linked to the episode where they said it.">
+<link rel="icon" type="image/png" href="assets/img/cc-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400..900;1,400..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- ANALYTICS: Plausible. Uncomment after creating the site at plausible.io. -->
+<!-- <script defer data-domain="constructionconversations.com" src="https://plausible.io/js/script.js"></script> -->
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="index.html"><img src="assets/img/cc-logo.png" alt="Construction Conversations"></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links"></ul>
+  </div>
+</header>
+
+<section class="page-head studs">
+  <div class="wrap">
+    <span class="stamp orange" style="display:block; margin-bottom:18px;">From {{LESSON_COUNT}} conversations</span>
+    <h1 class="display">The 50 most expensive lessons</h1>
+    <p class="lede" style="max-width:640px;">Each one cost somebody a project, a client, or a career to learn. Each one is attributed and linked to the episode where it was said. Read them here, or get the one-page-each version by email below.</p>
+  </div>
+</section>
+<section class="block" style="padding-top:36px;">
+  <div class="wrap">
+    <div class="lessons">
+{{LESSONS}}
+    </div>
+  </div>
+</section>
+
+<section class="block" id="newsletter">
+  <div class="wrap">
+    <div class="sec-label">Construction Briefs</div>
+    {{NEWSLETTER}}
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-links"></div>
+    <small>© 2026 Construction Conversations · Every other Tuesday · Wherever you listen</small>
+  </div>
+  <div class="hazard"></div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

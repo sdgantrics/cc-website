@@ -1,0 +1,35 @@
+{
+  "slug": "ep-044",
+  "guest": {"name": "Tyler Campbell", "title": "Founder", "firm": "FieldProof"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro, kids books and OpenClaw setup woes"},
+    {"time": "05:56", "title": "The tech doula for MEP contractors and owners"},
+    {"time": "09:22", "title": "Approach innovation like a product manager"},
+    {"time": "17:29", "title": "Building a second brain in Airtable, then Notion"},
+    {"time": "20:10", "title": "Personal brain or company brain, CMMC and shadow AI"},
+    {"time": "23:37", "title": "Which company wins, the thousand upskilled or the five"},
+    {"time": "27:54", "title": "Owners are looking at removing GCs"},
+    {"time": "36:00", "title": "Automated daily logs and plugging in an assistant"},
+    {"time": "41:27", "title": "Orchestrator skills, the AI CMO and sub-agents"},
+    {"time": "50:56", "title": "An executive assistant for everyone and the AI cohort"}
+  ],
+  "mentions": [
+    {"name": "FieldProof", "kind": "company"},
+    {"name": "OpenClaw", "kind": "tool"},
+    {"name": "Hostinger", "kind": "tool"},
+    {"name": "Notion", "kind": "tool"},
+    {"name": "Airtable", "kind": "tool"},
+    {"name": "Perplexity", "kind": "tool"},
+    {"name": "Granola", "kind": "tool"},
+    {"name": "Nano Banana", "kind": "tool"},
+    {"name": "Manus", "kind": "tool"},
+    {"name": "Messer Construction", "kind": "company"},
+    {"name": "Troy DeGroot", "kind": "person"},
+    {"name": "Nate Herk", "kind": "person"}
+  ],
+  "quotes": [
+    {"time": "10:32", "text": "It's not my role to come in and say you need to do this because I'm super smart. What I should do is ask a bunch of questions of the people that know and understand where their pains are.", "who": "Tyler Campbell"},
+    {"time": "31:12", "text": "You need to be paying attention to how am I driving value to my customers beyond just being a paper pusher. Because that's a lot of GCs. They're project pilers.", "who": "Tyler Campbell"},
+    {"time": "57:12", "text": "Use it as a thought partner, not the thought leader. If you're still thinking this is good for email, you have not gone deep enough.", "who": "Tyler Campbell"}
+  ]
+}

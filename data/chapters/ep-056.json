@@ -1,0 +1,35 @@
+{
+  "slug": "ep-056",
+  "guest": {"name": "Hugh Seaton", "title": "Founder and AI Strategy Consultant", "firm": "The Link"},
+  "chapters": [
+    {"time": "00:00", "title": "Welcome back and the pivot to consulting"},
+    {"time": "04:10", "title": "Where contractors actually stand with AI"},
+    {"time": "08:11", "title": "How AI works and elevating human expertise"},
+    {"time": "13:04", "title": "Palantir, ontologies, and domain expertise"},
+    {"time": "18:02", "title": "Starting when your data is a mess"},
+    {"time": "26:21", "title": "Token spend, lock-in, and infrastructure overshoot"},
+    {"time": "31:41", "title": "Three tests for what you can automate"},
+    {"time": "37:13", "title": "Personal second brains meet enterprise AI"},
+    {"time": "51:29", "title": "Org structure, CIOs, and the authority gap"},
+    {"time": "54:08", "title": "New model releases and advice for leaders"}
+  ],
+  "mentions": [
+    {"name": "Palantir", "kind": "company"},
+    {"name": "Alex Karp", "kind": "person"},
+    {"name": "McCarthy", "kind": "company"},
+    {"name": "Microsoft Copilot", "kind": "tool"},
+    {"name": "Microsoft Fabric", "kind": "tool"},
+    {"name": "Databricks", "kind": "company"},
+    {"name": "Procore", "kind": "tool"},
+    {"name": "KPMG", "kind": "company"},
+    {"name": "MasterFormat", "kind": "tool"},
+    {"name": "Jay Snyder", "kind": "person"},
+    {"name": "BBI", "kind": "company"},
+    {"name": "Skanska", "kind": "company"}
+  ],
+  "quotes": [
+    {"time": "09:36", "text": "When you try to automate a thing, you realize how smart people are. Even the guy that you don't think is that bright is adding a ton of value in the process.", "who": "Hugh Seaton"},
+    {"time": "29:40", "text": "What history shows is the lock-in risk isn't ever actually at the infrastructure layer. It's when you're closer to the customer. So I would be more worried about a Palantir, and I'd be more worried about a Microsoft.", "who": "Hugh Seaton"},
+    {"time": "1:01:05", "text": "Knowing how to run a construction company is infinitely more complex than what they need to know about AI. This is just another tool.", "who": "Hugh Seaton"}
+  ]
+}

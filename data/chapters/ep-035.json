@@ -1,0 +1,50 @@
+{
+  "slug": "ep-035",
+  "guest": {
+    "name": "Hugh Seaton",
+    "title": "Founder & AI Strategist (inferred)",
+    "firm": "The Link"
+  },
+  "chapters": [
+    { "time": "00:00", "title": "Intro and pre-show banter" },
+    { "time": "02:24", "title": "Is AI like the early days of the internet" },
+    { "time": "04:35", "title": "Why construction is slow to adopt new tech tools" },
+    { "time": "08:03", "title": "The overwhelm problem and AI's easy button trap" },
+    { "time": "15:48", "title": "Data strategy myths and building AI parkour vision" },
+    { "time": "25:36", "title": "The future of SaaS moats in the AI era" },
+    { "time": "29:56", "title": "Build versus buy, and why CIOs need a seat at the table" },
+    { "time": "39:07", "title": "Building The Link, a spec intelligence tool in an uncertain market" },
+    { "time": "41:59", "title": "Claude Cowork, OpenClaw, and the real cost of running agents" },
+    { "time": "46:49", "title": "Practical AI advice for GC leadership, and why judgment stays human" }
+  ],
+  "mentions": [
+    { "name": "ChatGPT", "kind": "tool" },
+    { "name": "Claude", "kind": "tool" },
+    { "name": "OpenClaw", "kind": "tool" },
+    { "name": "Procore", "kind": "company" },
+    { "name": "Kahua", "kind": "company" },
+    { "name": "SMACNA", "kind": "company" },
+    { "name": "Nate B Jones", "kind": "person" },
+    { "name": "Satya Nadella", "kind": "person" },
+    { "name": "ServiceNow", "kind": "company" },
+    { "name": "Salesforce", "kind": "company" },
+    { "name": "Nvidia", "kind": "company" }
+  ],
+  "quotes": [
+    {
+      "time": "19:34",
+      "text": "You don't hear construction being described as a creative industry. It's probably one of the most creative industries because you're constantly figuring out new ways of making a circle go into a square hole.",
+      "who": "Hugh Seaton"
+    },
+    {
+      "time": "54:07",
+      "text": "Well, let's create it together. At the end of the day, this isn't the weather. We get a say in how it gets used.",
+      "who": "Hugh Seaton"
+    },
+    {
+      "time": "55:19",
+      "text": "It's a lot of people making decisions under uncertainty based on what they had for breakfast, and only a human can really manage that.",
+      "who": "Hugh Seaton"
+    }
+  ]
+}

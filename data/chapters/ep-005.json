@@ -1,0 +1,33 @@
+{
+  "slug": "ep-005",
+  "guest": {"name": "Mitchell McDonald", "title": "General Superintendent", "firm": "XL Construction"},
+  "chapters": [
+    {"time": "00:00", "title": "Intro"},
+    {"time": "01:00", "title": "Third generation superintendent raised on a dairy farm"},
+    {"time": "13:32", "title": "Joining Lusardi Construction as a carpenter in 1997"},
+    {"time": "19:44", "title": "Raising his hand for his first schedule"},
+    {"time": "22:15", "title": "Guiding older tradesmen instead of ordering them"},
+    {"time": "26:55", "title": "Bleeding Lusardi red and missing his son's first year"},
+    {"time": "33:13", "title": "The skill shift into general superintendent"},
+    {"time": "45:58", "title": "How the pandemic broke America's work culture"},
+    {"time": "54:03", "title": "Mentoring only works when the pupil seeks it"},
+    {"time": "1:01:34", "title": "Selling the trades over a four year degree"}
+  ],
+  "mentions": [
+    {"name": "XL Construction", "kind": "company"},
+    {"name": "Lusardi Construction", "kind": "company"},
+    {"name": "Global Construction", "kind": "company"},
+    {"name": "Atomic Habits", "kind": "book"},
+    {"name": "Dopamine Nation", "kind": "book"},
+    {"name": "How to Be More Tree", "kind": "book"},
+    {"name": "The Power of Now", "kind": "book"},
+    {"name": "Eckhart Tolle", "kind": "person"},
+    {"name": "Tucker Carlson", "kind": "person"},
+    {"name": "Rachel Maddow", "kind": "person"}
+  ],
+  "quotes": [
+    {"time": "23:32", "text": "A really good superintendent does not direct or order or tell. A really good superintendent guides.", "who": "Mitchell McDonald"},
+    {"time": "33:13", "text": "The skill set that you need as a successful senior superintendent is 80% technical skills and 20% soft skills.", "who": "Mitchell McDonald"},
+    {"time": "1:01:34", "text": "You graduate from high school, you start an apprenticeship with the carpenters union, and we pay you and teach you at the same time. When you're done in five years, you will be making more money than engineers or architects.", "who": "Mitchell McDonald"}
+  ]
+}

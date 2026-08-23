@@ -87,3 +87,53 @@ if (search) {
   search.addEventListener('input', update);
   update();
 }
+
+// ---------------------------------------------------------------------------
+// Chapter timestamps: click seeks the page's main player (episode pages)
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('a.chapter[data-t]');
+  if (!a) return;
+  var audio = document.querySelector('.ep-page audio');
+  if (!audio) return;
+  e.preventDefault();
+  if (!audio.src) audio.src = audio.dataset.src;
+  var seek = function () { audio.currentTime = parseInt(a.dataset.t, 10); audio.play(); };
+  if (audio.readyState >= 1) seek(); else { audio.addEventListener('loadedmetadata', seek, { once: true }); audio.load(); }
+  plausible('Chapter Seek');
+});
+// Deep link: episodes/ep-045.html#t=754
+(function () {
+  var m = /[#&]t=(\d+)/.exec(window.location.hash);
+  var audio = document.querySelector('.ep-page audio');
+  if (m && audio) {
+    if (!audio.src) audio.src = audio.dataset.src;
+    audio.addEventListener('loadedmetadata', function () { audio.currentTime = parseInt(m[1], 10); }, { once: true });
+    audio.load();
+  }
+})();
+
+// ---------------------------------------------------------------------------
+// Type / category filters (articles, tools) + tool search
+document.querySelectorAll('.filters').forEach(function (bar) {
+  var list = document.querySelector(bar.dataset.target);
+  if (!list) return;
+  bar.addEventListener('click', function (e) {
+    var btn = e.target.closest('.filter');
+    if (!btn) return;
+    bar.querySelectorAll('.filter').forEach(function (b) { b.classList.toggle('active', b === btn); });
+    var type = btn.dataset.type;
+    list.querySelectorAll('[data-type],[data-cat]').forEach(function (c) {
+      var v = c.dataset.type !== undefined ? c.dataset.type : c.dataset.cat;
+      c.style.display = (!type || v === type) ? '' : 'none';
+    });
+  });
+});
+var toolSearch = document.getElementById('tool-search');
+if (toolSearch) {
+  toolSearch.addEventListener('input', function () {
+    var term = toolSearch.value.trim().toLowerCase();
+    document.querySelectorAll('#tool-list .tool-card').forEach(function (c) {
+      c.style.display = (!term || c.textContent.toLowerCase().indexOf(term) !== -1) ? '' : 'none';
+    });
+  });
+}

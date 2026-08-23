@@ -1,0 +1,33 @@
+{
+  "slug": "ep-049",
+  "guest": {"name": "Wally Castro", "title": "Superintendent", "firm": "Bernards"},
+  "chapters": [
+    {"time": "00:00", "title": "Calling in from the Ontario city services trailer"},
+    {"time": "01:45", "title": "From high school architecture class to the field"},
+    {"time": "04:27", "title": "Trusting the model and teaching trades to use it"},
+    {"time": "09:14", "title": "Leaving Turner's safety net for a regional GC"},
+    {"time": "13:50", "title": "Tech budgets on hard bid jobs"},
+    {"time": "16:42", "title": "ChatGPT, AI daily logs, and the paper notebook"},
+    {"time": "19:54", "title": "How a super plugs into BIM coordination"},
+    {"time": "21:41", "title": "What VDC misses: the schedule"},
+    {"time": "25:11", "title": "AI search, drones, and the adoption hurdle"},
+    {"time": "34:52", "title": "CM Builder, Beverly Hills logistics, and advice to a younger self"}
+  ],
+  "mentions": [
+    {"name": "Turner Construction", "kind": "company"},
+    {"name": "Procore", "kind": "tool"},
+    {"name": "Navisworks", "kind": "tool"},
+    {"name": "ChatGPT", "kind": "tool"},
+    {"name": "DroneDeploy", "kind": "tool"},
+    {"name": "CM Builder", "kind": "tool"},
+    {"name": "Blender", "kind": "tool"},
+    {"name": "Datagrid", "kind": "tool"},
+    {"name": "ENR", "kind": "company"},
+    {"name": "City of Ontario", "kind": "company"}
+  ],
+  "quotes": [
+    {"time": "04:27", "text": "I have full confidence and faith that what I'm looking at in the model is what I need to install. A big part of why people hesitate is because they're like, is this even accurate?", "who": "Wally Castro"},
+    {"time": "23:07", "text": "The design catches the construction and now you're totally shot. Instead of saving the owner money and speeding up the outcome, we're costing the job a bunch of money and unable to recover in the end.", "who": "Wally Castro"},
+    {"time": "38:07", "text": "The knowledge that you gain out there, nobody could ever take that from you, because that's the bread and butter of what we do, and having that in your back pocket is more valuable than anything downstream.", "who": "Wally Castro"}
+  ]
+}

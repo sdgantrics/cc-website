@@ -1,0 +1,87 @@
+Tool,Category,Episode,Who said it,What they said
+Procore,Project Management,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
+Procore,Project Management,EP 033,Victor Muchiri,Procore's DataGrid buy signals a shift from discrete steps to whole workflows
+Procore,Project Management,EP 022,John Riggs,"Even when the GC is in the room before MSAs are signed, the owner-architect-engineer-GC contracting chain leaves each party on their own platform, and integrating them into the Procore home base gets…"
+Procore,Project Management,EP 019,Joe Wilson,Procore's submittal workflow pushes teams to Excel and fractures the source of truth
+Procore,Project Management,RAN Jul 2026,Reviewed as Noted panel,"The hard part of building your own software is context, not code"
+Procore,Project Management,RAN Jul 2026,Reviewed as Noted panel,"Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data"
+Procore,Project Management,RAN Jul 2026,Reviewed as Noted panel,A world where every owner Frankensteins their own platform is worse than the platform monopoly
+Procore,Project Management,RAN Jul 2026,Reviewed as Noted panel,"Customer success churn at a vendor is an adoption risk, not just an annoyance"
+Procore,Project Management,RAN Aug 2026,Reviewed as Noted panel,Legacy platforms letting features languish is what creates room for startups
+ChatGPT,AI/Analytics,EP 027,Tim Straub,"AI will make commissioning agents more efficient, not replace them, it's only as good as the human's prompt"
+ChatGPT,AI/Analytics,EP 032,Fouad Khalil,"AI in construction will be a long augmentation phase, not replacement, you can't automate what you don't understand"
+ChatGPT,AI/Analytics,EP 030,Michael Zeppieri,"Skanska invested in its data solutions team nearly two years before ChatGPT existed, unglamorous standardization like office decoder rings and subcontractor dropdowns is the foundation AI readiness…"
+ChatGPT,AI/Analytics,EP 033,Victor Muchiri,"Match the AI model to the job: ChatGPT to spar, Claude to edit, Gemini to research"
+ChatGPT,AI/Analytics,EP 018,Matt Graves,Firms that lean into AI to make PMs' lives less sucky will win the talent war within a decade
+ChatGPT,AI/Analytics,EP 018,Matt Graves,AI submittal review acts as a robot mentor that teaches juniors what to look for
+ChatGPT,AI/Analytics,EP 034,Angelo Suntres,Overusing ChatGPT for internal emails erodes your professional brand because people can tell
+ChatGPT,AI/Analytics,EP 022,John Riggs,"Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable…"
+Excel,Business Systems,EP 029,Patrick Murphy and Jeremy Crumley,Excel is great but traps precon data and blocks enterprise leverage
+Excel,Business Systems,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
+Excel,Business Systems,EP 030,Michael Zeppieri,"Digitalization mostly digitized the paper process, Word and Excel replicating paper forms, and lost the chance to improve the work itself; AI is the second chance to redesign processes rather than…"
+Excel,Business Systems,EP 019,Joe Wilson,Procore's submittal workflow pushes teams to Excel and fractures the source of truth
+Excel,Business Systems,RAN Aug 2026,Reviewed as Noted panel,"Hire for problem-solving persistence, not AI proficiency, the tooling is already table stakes"
+Autodesk,BIM/VDC,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
+Autodesk,BIM/VDC,EP 007,Andrew Rener,"Generative design is a massing exercise, not constructable documents"
+Autodesk,BIM/VDC,EP 055,Tim Smith,"Design engineers no longer spend field time before they design, and the drawings show it"
+Autodesk,BIM/VDC,RAN Jul 2026,Reviewed as Noted panel,A world where every owner Frankensteins their own platform is worse than the platform monopoly
+iPad,Field/Mobile,EP 011,Chris Masse,"Tech fatigue is the field's rational default: years of half-working apps (iPads that only refreshed in the trailer) mean superintendents open every pilot with 'no,' and EllisDon management had to say…"
+iPad,Field/Mobile,EP 007,Andrew Rener,Robots widen the industry's talent base by making trades appealing to younger workers
+iPad,Field/Mobile,EP 005,Mitchell McDonald,Reject work-life balance in favor of work-life rhythm
+iPad,Field/Mobile,EP 017,a Story the Field Believes with Jackie Guilbault,"iPads launched globally without field testing failed in rugged, cold conditions"
+OpenSpace,Reality Capture,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
+OpenSpace,Reality Capture,EP 022,John Riggs,"Jobsite tech's time savings are a tug of war: tools like OpenSpace genuinely give time back, but over the same period regulatory complexity and more sophisticated clients added administrative drag…"
+OpenSpace,Reality Capture,EP 022,John Riggs,"Photo documentation and site capture is the most oversaturated ConTech category to found a company in, because behemoths with funding and recurring revenue will out-ideate new entrants from their…"
+OpenSpace,Reality Capture,RAN Aug 2026,Reviewed as Noted panel,"Reality capture keeps getting funded because it multiplies the superintendent, not because it's novel"
+Claude,AI/Analytics,EP 033,Victor Muchiri,"Match the AI model to the job: ChatGPT to spar, Claude to edit, Gemini to research"
+Claude,AI/Analytics,EP 034,Angelo Suntres,"The next-gen edge is knowing how buildings actually get built, which won't be replaced by a prompt"
+Claude,AI/Analytics,EP 022,John Riggs,"Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable…"
+Trimble,BIM/VDC,EP 026,Al Ricci,"AccuBit's origin: a contractor built estimating software for himself, then pivoted to a company"
+Trimble,BIM/VDC,EP 013,Hannu Lindberg,"The Trimble model-to-field breakthrough, extracting model points to total stations, started as a back-office hack before becoming product, and connecting coordinated model data to field layout is…"
+Trimble,BIM/VDC,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
+AutoCAD,BIM/VDC,EP 011,Chris Masse,"His CM Planner method strips drawings to a blank sheet in AutoCAD, rebuilds them layer-by-layer in build sequence with each layer matching a schedule task and green/yellow/red pass colors, and trades…"
+AutoCAD,BIM/VDC,EP 013,Hannu Lindberg,"Going to the field first, against the pull of the 'cushy office', is how theory becomes practice, and his technology conversion came from tools that made his own job easier: finding drawing errors…"
+AutoCAD,BIM/VDC,EP 055,Tim Smith,"Design engineers no longer spend field time before they design, and the drawings show it"
+DroneDeploy,Reality Capture,EP 022,John Riggs,"Photo documentation and site capture is the most oversaturated ConTech category to found a company in, because behemoths with funding and recurring revenue will out-ideate new entrants from their…"
+DroneDeploy,Reality Capture,EP 022,John Riggs,"Consolidation, not novel capability, converts practitioner skeptics: he MacGyvered drone capture with a $3 app seven years ago and only saw DroneDeploy's value once it collapsed two or three…"
+DroneDeploy,Reality Capture,RAN Aug 2026,Reviewed as Noted panel,"Reality capture keeps getting funded because it multiplies the superintendent, not because it's novel"
+Trunk Tools,AI/Analytics,EP 030,Michael Zeppieri,"The IP of a construction company is its people, when owners evaluate a bid they are really interviewing the project team, and even global GCs win or lose work on relationships"
+Trunk Tools,AI/Analytics,EP 022,John Riggs,"Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable…"
+Autodesk Construction Cloud,Project Management,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
+Autodesk Construction Cloud,Project Management,RAN Jul 2026,Reviewed as Noted panel,"Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data"
+Bluebeam,Document/Contract,EP 011,Chris Masse,"His CM Planner method strips drawings to a blank sheet in AutoCAD, rebuilds them layer-by-layer in build sequence with each layer matching a schedule task and green/yellow/red pass colors, and trades…"
+Bluebeam,Document/Contract,EP 022,John Riggs,"Consolidation, not novel capability, converts practitioner skeptics: he MacGyvered drone capture with a $3 app seven years ago and only saw DroneDeploy's value once it collapsed two or three…"
+Document Crunch,Document/Contract,EP 017,a Story the Field Believes with Jackie Guilbault,"Contract value extends into the field, risk doesn't stop at signing"
+Document Crunch,Document/Contract,EP 017,a Story the Field Believes with Jackie Guilbault,Founder-market fit: an ex-construction-attorney CEO builds for the persona's real pain
+Dusty Robotics,Robotics/Automation,EP 007,Andrew Rener,Robots widen the industry's talent base by making trades appealing to younger workers
+Dusty Robotics,Robotics/Automation,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
+Microsoft Copilot,AI/Analytics,EP 034,Angelo Suntres,Overusing ChatGPT for internal emails erodes your professional brand because people can tell
+Microsoft Copilot,AI/Analytics,EP 022,John Riggs,"Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable…"
+Microsoft Word,Other,EP 030,Michael Zeppieri,"Digitalization mostly digitized the paper process, Word and Excel replicating paper forms, and lost the chance to improve the work itself; AI is the second chance to redesign processes rather than…"
+Microsoft Word,Other,RAN Aug 2026,Reviewed as Noted panel,"Hire for problem-solving persistence, not AI proficiency, the tooling is already table stakes"
+NVIDIA,AI/Analytics,EP 032,Fouad Khalil,"Hyperscale data centers have achieved 'China-level speed', a giant microchip on the earth"
+NVIDIA,AI/Analytics,EP 032,Fouad Khalil,Optimal modularity sits on a diagonal: standardization must be matched to required flexibility
+Primavera P6,Scheduling,EP 022,John Riggs,"Back-office schedule updating is low-hanging fruit for agentic AI right now, a chat-based agent reconciling what should have happened against what did and adjusting tied activities should be…"
+Primavera P6,Scheduling,EP 055,Tim Smith,"A GC's A-team or C-team is visible within 30 days, and the tell is a milestone schedule that is actually followed"
+Salesforce,Business Systems,EP 030,Michael Zeppieri,"Cloud value has stagnated because SaaS providers grew so many layers of customer success that people who never touched the problem are building for it, losing the developer-to-user intimacy that made…"
+Salesforce,Business Systems,EP 026,Al Ricci,The customer success model was pioneered by Salesforce as a subtle way of selling
+Tekla Structures,BIM/VDC,EP 013,Hannu Lindberg,"Fabrication-driven trades prove model-driven construction already works, steel detailers model 100% accurate in Tekla, MEP and now framing and reinforcement follow, so the missing link is how…"
+Tekla Structures,BIM/VDC,EP 013,Hannu Lindberg,"The Trimble model-to-field breakthrough, extracting model points to total stations, started as a back-office hack before becoming product, and connecting coordinated model data to field layout is…"
+Hexagon,BIM/VDC,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
+Kahua,Project Management,RAN Jul 2026,Reviewed as Noted panel,"Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data"
+Microsoft Project,Scheduling,EP 022,John Riggs,"Back-office schedule updating is low-hanging fruit for agentic AI right now, a chat-based agent reconciling what should have happened against what did and adjusting tied activities should be…"
+Microsoft Teams,Communication,EP 011,Chris Masse,"Field adoption of technology at a major GC only flipped from 'nice to have' to 'benefit' around 2018-2020, with COVID forcing digital collaboration that had been technically possible since 2015 but…"
+Palantir,AI/Analytics,RAN Aug 2026,Reviewed as Noted panel,Ask how you exit an ontology partnership before you sign it
+Python,Other,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
+ArchiCAD,BIM/VDC,EP 013,Hannu Lindberg,"Going to the field first, against the pull of the 'cushy office', is how theory becomes practice, and his technology conversion came from tools that made his own job easier: finding drawing errors…"
+Leica,Reality Capture,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
+LinkedIn,Communication,RAN Aug 2026,Reviewed as Noted panel,Vendor noise has trained innovation leaders to ignore the first eight emails
+OpenAI,AI/Analytics,EP 030,Michael Zeppieri,"Skanska invested in its data solutions team nearly two years before ChatGPT existed, unglamorous standardization like office decoder rings and subcontractor dropdowns is the foundation AI readiness…"
+Photoshop,Other,EP 022,John Riggs,"Consolidation, not novel capability, converts practitioner skeptics: he MacGyvered drone capture with a $3 app seven years ago and only saw DroneDeploy's value once it collapsed two or three…"
+Pix4D,Other,EP 022,John Riggs,"Photo documentation and site capture is the most oversaturated ConTech category to found a company in, because behemoths with funding and recurring revenue will out-ideate new entrants from their…"
+Revizto,Other,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
+Safety Sidekick,Other,EP 030,Michael Zeppieri,"With AI the build-vs-buy pendulum swings back to building in-house: vendors should secure the environment and provide the build tools rather than every native feature, Skanska's internally built…"
+Sherpods,Other,EP 013,Hannu Lindberg,"Prefab has no magic button, it only pays where there's repetition and the right job (bathroom pods, exterior panels and skid-mounted electrical rooms for remote data centers), it requires design…"
+Vico,Other,EP 013,Hannu Lindberg,"Going to the field first, against the pull of the 'cushy office', is how theory becomes practice, and his technology conversion came from tools that made his own job easier: finding drawing errors…"
+Visual Basic,Other,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
+Zoom,Communication,EP 011,Chris Masse,"Field adoption of technology at a major GC only flipped from 'nice to have' to 'benefit' around 2018-2020, with COVID forcing digital collaboration that had been technically possible since 2015 but…"

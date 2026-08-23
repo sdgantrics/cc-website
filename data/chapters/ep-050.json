@@ -1,0 +1,38 @@
+{
+  "slug": "ep-050",
+  "guest": {
+    "name": "Scott Massey and Chris Massey",
+    "title": "Scott runs MCI Group as a small GC owner; Chris is a superintendent and field tech champion at EllisDon",
+    "firm": "MCI Group and EllisDon"
+  },
+  "chapters": [
+    {"time": "00:00", "title": "Banter and meeting the Massey brothers"},
+    {"time": "05:31", "title": "Running a small GC in a noisy AI market"},
+    {"time": "13:25", "title": "Inside MCI Group's tech stack"},
+    {"time": "16:40", "title": "Superintendents, onboarding, and adoption at EllisDon"},
+    {"time": "20:29", "title": "Lars on Claude and buy versus build"},
+    {"time": "27:28", "title": "Data over PDFs and usage-based pricing"},
+    {"time": "32:11", "title": "Innovation budgets and breaking the system"},
+    {"time": "43:59", "title": "Documentation burden versus real communication"},
+    {"time": "49:19", "title": "Why construction is still exciting"},
+    {"time": "55:03", "title": "Scott's advice to his younger self"}
+  ],
+  "mentions": [
+    {"name": "Procore", "kind": "tool"},
+    {"name": "Fieldwire", "kind": "tool"},
+    {"name": "AutoCAD", "kind": "tool"},
+    {"name": "Autodesk Build", "kind": "tool"},
+    {"name": "Claude", "kind": "tool"},
+    {"name": "ChatGPT", "kind": "tool"},
+    {"name": "Power BI", "kind": "tool"},
+    {"name": "Monday.com", "kind": "tool"},
+    {"name": "Hardline", "kind": "tool"},
+    {"name": "Dawes", "kind": "company"},
+    {"name": "Ontario Ministry of Labour", "kind": "company"}
+  ],
+  "quotes": [
+    {"time": "05:55", "text": "It's awfully noisy out there, soliciting AI solutions for everything you can think of, whether it's in the field, in your office, or just being an AI assistant to an executive.", "who": "Scott Massey"},
+    {"time": "40:07", "text": "I'm a big believer in breaking the system as much as you possibly can. Because if they can fix it, and if they can fix it fast enough, you get better adoption.", "who": "Chris Massey"},
+    {"time": "45:59", "text": "Our documentation fifteen years ago was a diary, a daily report that was handwritten that said this is what happened and we trusted that's what happened. Now, if it doesn't get documented, it never happened.", "who": "Scott Massey"}
+  ]
+}

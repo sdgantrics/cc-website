@@ -1,0 +1,1496 @@
+{
+ "generated": "2026-08-23",
+ "sponsors": [
+  "Trunk Tools",
+  "Clearstory",
+  "Document Crunch"
+ ],
+ "tools": [
+  {
+   "name": "Procore",
+   "category": "Project Management",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "ConTech founders obsess over perceived competitors while the vast industry sits unpenetrated, and daily decision divergence means perceived competitors end up in different places anyway.",
+     "quote": "They were standing in a corner and looking into a ballroom, but the ballroom was the industry. But instead of looking into the ballroom, they were fighting each other in the corner."
+    },
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "Non-competing ConTech scale-ups are organizing a joint 'future of construction' conference (likely Austin) to replace separate vendor events that make customers travel all year.",
+     "quote": "Instead of every one of us does their own events and has their customers fly 50 weeks a year to somewhere, right, to wine and dine, let's just put it all together and show them what the future of construction looks like."
+    },
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the\u2026",
+     "quote": "If you're a little to midsize player, you may not be able to afford the partnership with like the Autodesk or the Procores of the world, but you have the IP and... the people knowledge... you just give them the platform to build in, they have the same power... it's right-sizing technology to the opportunity."
+    },
+    {
+     "episode": "ep-033",
+     "guest": "Victor Muchiri",
+     "source": "Practitioner",
+     "context": "Procore's DataGrid buy signals a shift from discrete steps to whole workflows",
+     "quote": "If you look at the acquisition by Data Grid, by Procore, I think that'll tell you kind of where the sands are shifting to. Do you really need to go do these individual steps or do you really need to think about from a workflow perspective?"
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Unlike prior construction technology, AI adoption is happening bottom-up whether companies sanction it or not, anyone under 22 got through school on ChatGPT, and employees use chatbots at home in a\u2026",
+     "quote": "Anyone under the age of 22, you have to assume they just got through high school or college with ChatGPT writing their essays. So whether you want to adopt it or not, your people are using it... no one uses Procore to figure out what to do this weekend. But they are using chatbots for that."
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (own tool)",
+     "context": "For The Link, the 2026 SaaS play is to build less new product until the agent landscape settles and instead invest in aggregated, categorized proprietary data, a database of 10,000 specs, that\u2026",
+     "quote": "Now is the time to say, how is this enhancing what I have already? And maybe build a little less than you might... the ability to assess a spec based on 10,000 specs... that you've got in your database. I think that's one opportunity."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Even when the GC is in the room before MSAs are signed, the owner-architect-engineer-GC contracting chain leaves each party on their own platform, and integrating them into the Procore home base gets\u2026",
+     "quote": "There'll be an agreement with the engineer and the architect that hired the engineer, and the owner hired the architects and the owner hired us... we do everything on Procore as our home base. And I've had to work out things where we integrate other platforms with Procore and it gets very complicated, very quick."
+    },
+    {
+     "episode": "ep-019",
+     "guest": "Joe Wilson",
+     "source": "Practitioner",
+     "context": "Procore's submittal workflow pushes teams to Excel and fractures the source of truth",
+     "quote": "You have to get into every single individual submittal and update it one by one... It's an unsustainable workflow. And so what happens then... is that contractors will then open up an Excel spreadsheet and track the long lead procurement items in Excel... the source of truth has fractured immediately."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "The hard part of building your own software is context, not code",
+     "quote": "The big battle though is context and getting content... now I've got to add the context of what I need. I've got to express that to them so that they can build it."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Contractors are now building software to own the data, not to save the license fee",
+     "quote": "It's not even so much that we're spending 300 grand and we're saving the money over the next couple years. That's not necessarily the play. It's we're spending 300 grand and we're basically creating a moat for ourselves as a company because it's our data now."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data",
+     "quote": "They're being forced to, but it's through gritted teeth and they hate it. The attitude down on my end is not great about those systems. So we're already trying to bend and having to do what the next customer wants us to do."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "ConTech M&A is a data land-grab, not a product roll-up",
+     "quote": "It's a data play from what I can tell. It's how much data have these companies captured that we can fold into our own ecosystem and use that to train the AI models on top of it."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "The integrator is the durable role in a stack no single vendor can serve",
+     "quote": "No one company is going to be able to serve every single segment of the market... Procore doesn't necessarily work for, or ACC for that matter, doesn't work for a steel detailing workflow."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "A world where every owner Frankensteins their own platform is worse than the platform monopoly",
+     "quote": "A scary world would be where every owner has their own sort of platform that they somehow Frankenstein together in-house to control their own data and now I'm supposed to bend my organization to that constant changing on me."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Host",
+     "context": "You are increasingly paying for a UI you will interface with less and less",
+     "quote": "In five years, the user interface of these platforms is going to matter a whole lot less than it does now... there's gonna be more agents kind of cross collaborating across platforms."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Customer success churn at a vendor is an adoption risk, not just an annoyance",
+     "quote": "In the course of 18 months, I had like six or seven customer success managers through my organization. That's not cool... you charge me how much and you can't manage your people?"
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Host",
+     "context": "Acquisition is a defensive move that makes the buying environment worse for contractors",
+     "quote": "It's kind of killing your competition in a different way... creating a more difficult buying environment with fewer and fewer firms having more leverage."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Legacy platforms letting features languish is what creates room for startups",
+     "quote": "Some of these legacy platforms, I think, are letting features and functionalities and tools die on the vine and just languish... as a result, we need to supplement it with other more compelling, earlier stage companies."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Palantir's product is the ontology, and dashboards are just the surface",
+     "quote": "What they built is pretty stinking cool... but it's dashboarding. The subsurface is the ontology aspect of it. When you hear ontology, they're going to start trying to preach that out there like it's something that they invented. It's not."
+    }
+   ]
+  },
+  {
+   "name": "ChatGPT",
+   "category": "AI/Analytics",
+   "mentions": [
+    {
+     "episode": "ep-027",
+     "guest": "Tim Straub",
+     "source": "Practitioner",
+     "context": "AI will make commissioning agents more efficient, not replace them, it's only as good as the human's prompt",
+     "quote": "it's just going to make the commissioning agents more efficient. AI definitely is a strong tool and has a lot of capabilities, but not able to operate without a human. And the AI is only as good as the human with it... The output all depends on the command prompt from the person who put it in there."
+    },
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "AI is democratizing the large-GC advantage, specialized teams and McKinsey retainers are now available to any regional via a chatbot, and less mid-management makes smaller firms faster at top-down\u2026",
+     "quote": "They had specialized teams for everything... they were able to hire McKinsey or something like that. If I want McKinsey today, I literally open [ChatGPT] and tell it, please be McKinsey for me. And it does a phenomenal job."
+    },
+    {
+     "episode": "ep-032",
+     "guest": "Fouad Khalil",
+     "source": "Practitioner",
+     "context": "AI in construction will be a long augmentation phase, not replacement, you can't automate what you don't understand",
+     "quote": "I'm a little more skeptical of our AI utopia future. One thing I've observed is you can't automate what you don't understand. I think our first threshold condition is going to be augmentation, not replacement. And that augmentation phase will be a long one."
+    },
+    {
+     "episode": "ep-031",
+     "guest": "Cameron Page",
+     "source": "Founder (own tool)",
+     "context": "A GPT-to-vibe-code-to-architect-mode pipeline compresses the product dev cycle",
+     "quote": "We start every new feature with a product brief... we built a custom GPT generator... each of our PMs vibe codes the feature in lovable, gets it to an end-to-end working state. Then we prompt lovable to write a PRD... then we feed the PRD into those tools and say build me a technical approach document. It's amazing how fast we can code now."
+    },
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "Skanska invested in its data solutions team nearly two years before ChatGPT existed, unglamorous standardization like office decoder rings and subcontractor dropdowns is the foundation AI readiness\u2026",
+     "quote": "We had made the investment in the data solutions team before OpenAI and before ChatGPT and before LLMs... we saw the value in putting discipline behind how we just manage our data and our processes... the decoder ring of how we refer to our offices or the drop-downs of how we refer to our subcontractors, just standardizing around the silliest things."
+    },
+    {
+     "episode": "ep-033",
+     "guest": "Victor Muchiri",
+     "source": "Practitioner",
+     "context": "Match the AI model to the job: ChatGPT to spar, Claude to edit, Gemini to research",
+     "quote": "I beat up my own ideas a lot using ChatGPT. But when I need an editor for something, I use Claude. When I need deep research, I use Gemini. Each of these models are different or have skills in different areas... It's kind of like a kid you're trying to teach... it's like an intern. You gotta coach it."
+    },
+    {
+     "episode": "ep-018",
+     "guest": "Matt Graves",
+     "source": "Practitioner",
+     "context": "Firms that lean into AI to make PMs' lives less sucky will win the talent war within a decade",
+     "quote": "We're going to wake up in 10 years and some of the top big names you know today are probably not going to be at the top anymore because they've done it the way they always did it... the companies that can get the A players and retain those people because they're supporting them the right way are going to be at the top of those lists."
+    },
+    {
+     "episode": "ep-018",
+     "guest": "Matt Graves",
+     "source": "Practitioner",
+     "context": "AI submittal review acts as a robot mentor that teaches juniors what to look for",
+     "quote": "You're still doing the submittal review, but instead of reading a 2000 page spec book, it's helping you identify the important parts... you're still a human in the loop, supposed to go review it all, but it just helps you pull out and highlight, okay, this is important. It is their mentor. It's a robot mentor."
+    },
+    {
+     "episode": "ep-020",
+     "guest": "Conley Oster and Gary Chen",
+     "source": "Founder (own tool)",
+     "context": "Generative design AI produces sexy plans it cannot manufacture or build",
+     "quote": "It comes up with a very sexy plan and then it's like, well, how do I manufacture this or how do I build it? Still a little bit of a challenging area is getting these type of models to really understand physics."
+    },
+    {
+     "episode": "ep-014",
+     "guest": "Jef Sharp",
+     "source": "Founder (own tool)",
+     "context": "We asked AI if we're an AI company; 2 of 3 engines said yes",
+     "quote": "We went to... three of the AI engines... ChatGPT, Copilot, Grok... and we prompted them, look at everything online about QNECT and tell us if we're already AI. And two out of three said that we were. So, are we an AI company? According to AI, we're an AI company."
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "A SMACNA mechanical contractor with 40 PMs on Excel timesheets asked ChatGPT to fix a nagging cell-navigation complaint; it wrote the code, walked him through developer mode, and shipped a fix no one\u2026",
+     "quote": "This guy goes in, he asks ChatGPT, how can I fix this? It gives him three options. He chooses a surprising one, which was, I'll write some code for you. It writes the code, tells him to turn on developer mode... and it worked."
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Unlike prior construction technology, AI adoption is happening bottom-up whether companies sanction it or not, anyone under 22 got through school on ChatGPT, and employees use chatbots at home in a\u2026",
+     "quote": "Anyone under the age of 22, you have to assume they just got through high school or college with ChatGPT writing their essays. So whether you want to adopt it or not, your people are using it... no one uses Procore to figure out what to do this weekend. But they are using chatbots for that."
+    },
+    {
+     "episode": "ep-034",
+     "guest": "Angelo Suntres",
+     "source": "Practitioner",
+     "context": "Overusing ChatGPT for internal emails erodes your professional brand because people can tell",
+     "quote": "50 % of the emails I see now probably don't need to be emails... and you can tell they're copy pasted from chat GPT... don't take it for face value because you know when it's AI generated. So go out, connect with people, have conversations. Sitting down face to face is a hundred times more effective than an email that chat GPT or co-pilot helped you craft."
+    },
+    {
+     "episode": "ep-023",
+     "guest": "Stuart Maggs",
+     "source": "Founder (own tool)",
+     "context": "Construction's scarce ingredient is industry people crossing into the technical side",
+     "quote": "What this industry does need is passionate people from construction moving into the technical side. We've got incredible technical development teams out there... But you do need that market knowledge. You need that nuanced understanding of markets like construction."
+    },
+    {
+     "episode": "ep-025",
+     "guest": "Alex Belkofer",
+     "source": "Host",
+     "context": "Stephen reports ChatGPT has moved past experimentation into being integrated into how he runs his business, saving hours per day, a working benchmark for individual AI adoption in\u2026",
+     "quote": "I'm at a point where ChatGPT is integrated into how I do my business... it is literally saving me hours a day, every day."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable\u2026",
+     "quote": "I've played around with ChatGPT and Copilot, Claude... and it does get hallucinations. So I'd be very worried about that... it's really about if we can scale up data collection now, and how do we download those people now?"
+    },
+    {
+     "episode": "ep-017",
+     "guest": "a Story the Field Believes with Jackie Guilbault",
+     "source": "Host",
+     "context": "AI transcription plus custom GPTs freed 2-3 hours a day for strategic work",
+     "quote": "At this point it's like two to three hours a day I'm able to refocus... I looked at where's the majority of my time going, and it was meetings and the outputs for meetings. I added an AI transcription tool, then layered in the creation of GPTs that leverage the transcript."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Microsoft-only shops are bringing in Claude alongside Copilot, and scaled workflow distribution is still the unsolved part",
+     "quote": "I'm seeing a lot of Microsoft only shops bringing in Claude as their enterprise license... but even then, you start to run into issues with how can I pass these workflows out at scale. They're starting to solve some of those things by being able to share out skills, but even then it's a bit of a mess."
+    }
+   ]
+  },
+  {
+   "name": "Excel",
+   "category": "Business Systems",
+   "mentions": [
+    {
+     "episode": "ep-029",
+     "guest": "Patrick Murphy and Jeremy Crumley",
+     "source": "Practitioner",
+     "context": "Excel is great but traps precon data and blocks enterprise leverage",
+     "quote": "Unfortunately, right now we still use Excel a lot. I think that Excel is a great product, but it does not allow you to share information beyond that file. It's difficult to get to the enterprise level with data that's stored in Excel."
+    },
+    {
+     "episode": "ep-031",
+     "guest": "Cameron Page",
+     "source": "Founder (own tool)",
+     "context": "Every subcontractor runs change orders differently, mostly on Word, Excel, or paper",
+     "quote": "The insight there was just like, oh, every single one does it differently. And it's mostly done on Microsoft Word or Excel, or if it's in the field, it's paper."
+    },
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the\u2026",
+     "quote": "If you're a little to midsize player, you may not be able to afford the partnership with like the Autodesk or the Procores of the world, but you have the IP and... the people knowledge... you just give them the platform to build in, they have the same power... it's right-sizing technology to the opportunity."
+    },
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "Digitalization mostly digitized the paper process, Word and Excel replicating paper forms, and lost the chance to improve the work itself; AI is the second chance to redesign processes rather than\u2026",
+     "quote": "Why do we have Word documents? Why do we have Excel spreadsheets? Well, that was the way we did it on paper. So we digitalized the paper process, but we lost the opportunity to actually make the process better by moving it to technology. So I think AI gives us the opportunity to actually repurpose technology to serve us."
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "With Claude embedded in Excel and PowerPoint, AI accepts work the way people already do it instead of forcing SaaS-style structured input, let people work how they're comfortable and add intelligence\u2026",
+     "quote": "Some of the strictness that SaaS requires isn't required by AI... where you can give people the ability to work the way they're comfortable working and then add the value and intelligence on the back end. That's one way I think that we can really win."
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "A SMACNA mechanical contractor with 40 PMs on Excel timesheets asked ChatGPT to fix a nagging cell-navigation complaint; it wrote the code, walked him through developer mode, and shipped a fix no one\u2026",
+     "quote": "This guy goes in, he asks ChatGPT, how can I fix this? It gives him three options. He chooses a surprising one, which was, I'll write some code for you. It writes the code, tells him to turn on developer mode... and it worked."
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "AI enables real knowledge management, codifying how the company does things and serving it up in context, which moves technology spend from covering risk to creating opportunity as a strategic asset.",
+     "quote": "If you're codifying how we do things, because AI can do that for you... real knowledge management as opposed to an Excel spreadsheet with lessons learned on it, that starts to mean that you're not just covering risk... you're actually creating new opportunities."
+    },
+    {
+     "episode": "ep-036",
+     "guest": "Aaron Toppston",
+     "source": "Host",
+     "context": "AI lets companies rethink requirements and make niche SaaS irrelevant",
+     "quote": "did that just make the electronic timesheet company that's been marketing the construction industry totally irrelevant?... you don't need 98 % of the features anyway, right? I just need a timesheet submitted accurately the first time."
+    },
+    {
+     "episode": "ep-019",
+     "guest": "Joe Wilson",
+     "source": "Practitioner",
+     "context": "Procore's submittal workflow pushes teams to Excel and fractures the source of truth",
+     "quote": "You have to get into every single individual submittal and update it one by one... It's an unsustainable workflow. And so what happens then... is that contractors will then open up an Excel spreadsheet and track the long lead procurement items in Excel... the source of truth has fractured immediately."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Hire for problem-solving persistence, not AI proficiency, the tooling is already table stakes",
+     "quote": "Not to oversimplify project management, but I always saw it as variable control and problem solving... Are they able to stick with a problem and solve it and see it all the way through? Are they okay interacting with other individuals?"
+    }
+   ]
+  },
+  {
+   "name": "Autodesk",
+   "category": "BIM/VDC",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "ConTech founders obsess over perceived competitors while the vast industry sits unpenetrated, and daily decision divergence means perceived competitors end up in different places anyway.",
+     "quote": "They were standing in a corner and looking into a ballroom, but the ballroom was the industry. But instead of looking into the ballroom, they were fighting each other in the corner."
+    },
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "Non-competing ConTech scale-ups are organizing a joint 'future of construction' conference (likely Austin) to replace separate vendor events that make customers travel all year.",
+     "quote": "Instead of every one of us does their own events and has their customers fly 50 weeks a year to somewhere, right, to wine and dine, let's just put it all together and show them what the future of construction looks like."
+    },
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the\u2026",
+     "quote": "If you're a little to midsize player, you may not be able to afford the partnership with like the Autodesk or the Procores of the world, but you have the IP and... the people knowledge... you just give them the platform to build in, they have the same power... it's right-sizing technology to the opportunity."
+    },
+    {
+     "episode": "ep-007",
+     "guest": "Andrew Rener",
+     "source": "Practitioner",
+     "context": "Generative design is a massing exercise, not constructable documents",
+     "quote": "if they're not investing in making sure that there are checks of constructability, buildability, and reliance on the quality of the information... what are you saving? The majority of the labor hours is on the field. It's not on the front end."
+    },
+    {
+     "episode": "ep-055",
+     "guest": "Tim Smith",
+     "source": "Practitioner",
+     "context": "Design engineers no longer spend field time before they design, and the drawings show it",
+     "quote": "It used to be that a design engineer was a field engineer for at least three years. They saw the snags, they saw the design flaws, because they're right there looking at them. Now design engineers come right out of college and everybody wants to sit at a desk and use Autodesk or AutoCAD right off the bat, not go in the field and get muddy."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "ConTech M&A is a data land-grab, not a product roll-up",
+     "quote": "It's a data play from what I can tell. It's how much data have these companies captured that we can fold into our own ecosystem and use that to train the AI models on top of it."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "A world where every owner Frankensteins their own platform is worse than the platform monopoly",
+     "quote": "A scary world would be where every owner has their own sort of platform that they somehow Frankenstein together in-house to control their own data and now I'm supposed to bend my organization to that constant changing on me."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Host",
+     "context": "Acquisition is a defensive move that makes the buying environment worse for contractors",
+     "quote": "It's kind of killing your competition in a different way... creating a more difficult buying environment with fewer and fewer firms having more leverage."
+    }
+   ]
+  },
+  {
+   "name": "iPad",
+   "category": "Field/Mobile",
+   "mentions": [
+    {
+     "episode": "ep-011",
+     "guest": "Chris Masse",
+     "source": "Practitioner",
+     "context": "Tech fatigue is the field's rational default: years of half-working apps (iPads that only refreshed in the trailer) mean superintendents open every pilot with 'no,' and EllisDon management had to say\u2026",
+     "quote": "When EllisDon wanted me to pilot project a piece of software... I literally was like, come on guys... done with apps, they're not working."
+    },
+    {
+     "episode": "ep-007",
+     "guest": "Andrew Rener",
+     "source": "Practitioner",
+     "context": "Robots widen the industry's talent base by making trades appealing to younger workers",
+     "quote": "You can train a younger person who's effectively using a PlayStation controller and an iPad to run a robot that otherwise would be disinterested in doing drywall finishing... then you need the technical support to do the maintenance."
+    },
+    {
+     "episode": "ep-005",
+     "guest": "Mitchell McDonald",
+     "source": "Practitioner",
+     "context": "Reject work-life balance in favor of work-life rhythm",
+     "quote": "I don't call it a balance. I call it a rhythm. Because there are times in our industry when your workload increases and you've got to place more time and effort in that... and for the most part, there's usually a valley afterwards. Are you enjoying that valley?"
+    },
+    {
+     "episode": "ep-017",
+     "guest": "a Story the Field Believes with Jackie Guilbault",
+     "source": "Practitioner",
+     "context": "iPads launched globally without field testing failed in rugged, cold conditions",
+     "quote": "We would launch these apps when iPads first came out and that was so ridiculous. So it's a glass screen in a very rugged environment and it was launching global. The people in Finland were like, this isn't even gonna survive in our conditions."
+    }
+   ]
+  },
+  {
+   "name": "OpenSpace",
+   "category": "Reality Capture",
+   "mentions": [
+    {
+     "episode": "ep-025",
+     "guest": "Alex Belkofer",
+     "source": "Practitioner",
+     "context": "Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk.",
+     "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Jobsite tech's time savings are a tug of war: tools like OpenSpace genuinely give time back, but over the same period regulatory complexity and more sophisticated clients added administrative drag\u2026",
+     "quote": "All these things are giving us time... However, in the same exact timeframe, [projects] have become more complex, especially regulatory environments, and clients are more sophisticated as well... it does create more administrative drag."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Photo documentation and site capture is the most oversaturated ConTech category to found a company in, because behemoths with funding and recurring revenue will out-ideate new entrants from their\u2026",
+     "quote": "I would think that'd be a very hard one to break into... there being behemoths in that space now, where they're going to ideate off of their current platform and they have the funding and the recurring revenue to support that."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Reality capture keeps getting funded because it multiplies the superintendent, not because it's novel",
+     "quote": "How do you double and triple the effort and capabilities of a superintendent? They're walking the job sites... now can we use and extract data from these images or these videos to make us more effective with flagging issues or measuring progress?"
+    }
+   ]
+  },
+  {
+   "name": "Claude",
+   "category": "AI/Analytics",
+   "mentions": [
+    {
+     "episode": "ep-033",
+     "guest": "Victor Muchiri",
+     "source": "Practitioner",
+     "context": "Match the AI model to the job: ChatGPT to spar, Claude to edit, Gemini to research",
+     "quote": "I beat up my own ideas a lot using ChatGPT. But when I need an editor for something, I use Claude. When I need deep research, I use Gemini. Each of these models are different or have skills in different areas... It's kind of like a kid you're trying to teach... it's like an intern. You gotta coach it."
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "With Claude embedded in Excel and PowerPoint, AI accepts work the way people already do it instead of forcing SaaS-style structured input, let people work how they're comfortable and add intelligence\u2026",
+     "quote": "Some of the strictness that SaaS requires isn't required by AI... where you can give people the ability to work the way they're comfortable working and then add the value and intelligence on the back end. That's one way I think that we can really win."
+    },
+    {
+     "episode": "ep-034",
+     "guest": "Angelo Suntres",
+     "source": "Practitioner",
+     "context": "The next-gen edge is knowing how buildings actually get built, which won't be replaced by a prompt",
+     "quote": "Understanding how jobs actually get built... understanding the logistics of how things come together, how trades interact on site, the coordination aspect... I don't see that being taken over by a prompt anytime soon, like, hey, Claude, build this building. We need builders, Steven."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable\u2026",
+     "quote": "I've played around with ChatGPT and Copilot, Claude... and it does get hallucinations. So I'd be very worried about that... it's really about if we can scale up data collection now, and how do we download those people now?"
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Microsoft-only shops are bringing in Claude alongside Copilot, and scaled workflow distribution is still the unsolved part",
+     "quote": "I'm seeing a lot of Microsoft only shops bringing in Claude as their enterprise license... but even then, you start to run into issues with how can I pass these workflows out at scale. They're starting to solve some of those things by being able to share out skills, but even then it's a bit of a mess."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "The assistant PM role changed underneath students mid-degree",
+     "quote": "If I get out of college and I want to go be a PM, even the assistant PM, my starting position has changed so much of that work can be absorbed by AI... I'm worried the kids are getting bad advice for here's what a good future career looks like."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Software prices are collapsing because buyers can now price the underlying build",
+     "quote": "They're paying fifty K a year for something and we're like, this is a database and a dashboard. It's not difficult. So why are we paying fifty grand a year for that?"
+    }
+   ]
+  },
+  {
+   "name": "Trimble",
+   "category": "BIM/VDC",
+   "mentions": [
+    {
+     "episode": "ep-026",
+     "guest": "Al Ricci",
+     "source": "Practitioner",
+     "context": "AccuBit's origin: a contractor built estimating software for himself, then pivoted to a company",
+     "quote": "His background was in electrical contracting... He needed a solution to help manage his estimating processes... And then he started kind of seeing that there was interest from fellow contractors. And so he then pivoted, got out of the electrical contracting business, started AcuBit as a full-time enterprise."
+    },
+    {
+     "episode": "ep-013",
+     "guest": "Hannu Lindberg",
+     "source": "Practitioner",
+     "context": "The Trimble model-to-field breakthrough, extracting model points to total stations, started as a back-office hack before becoming product, and connecting coordinated model data to field layout is\u2026",
+     "quote": "Initially was a hack and then it became part of the product and it was really, really what allowed us to really more seamlessly connect model information to the field... making sure that information that we coordinated actually gets out there the field and gets built accurately."
+    },
+    {
+     "episode": "ep-025",
+     "guest": "Alex Belkofer",
+     "source": "Practitioner",
+     "context": "Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk.",
+     "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "ConTech M&A is a data land-grab, not a product roll-up",
+     "quote": "It's a data play from what I can tell. It's how much data have these companies captured that we can fold into our own ecosystem and use that to train the AI models on top of it."
+    }
+   ]
+  },
+  {
+   "name": "AutoCAD",
+   "category": "BIM/VDC",
+   "mentions": [
+    {
+     "episode": "ep-011",
+     "guest": "Chris Masse",
+     "source": "Practitioner",
+     "context": "His CM Planner method strips drawings to a blank sheet in AutoCAD, rebuilds them layer-by-layer in build sequence with each layer matching a schedule task and green/yellow/red pass colors, and trades\u2026",
+     "quote": "Everybody seems to be able to relate to that better than the last planner system in my opinion, or takt planning or any of that stuff."
+    },
+    {
+     "episode": "ep-013",
+     "guest": "Hannu Lindberg",
+     "source": "Practitioner",
+     "context": "Going to the field first, against the pull of the 'cushy office', is how theory becomes practice, and his technology conversion came from tools that made his own job easier: finding drawing errors\u2026",
+     "quote": "There's nothing like learning through a series of mistakes in the field, in the fire, so to speak... it was helping me make my job easier and helping me find errors in drawings... it allowed me to not have to ask a bunch of RFIs to get the job done."
+    },
+    {
+     "episode": "ep-055",
+     "guest": "Tim Smith",
+     "source": "Practitioner",
+     "context": "Design engineers no longer spend field time before they design, and the drawings show it",
+     "quote": "It used to be that a design engineer was a field engineer for at least three years. They saw the snags, they saw the design flaws, because they're right there looking at them. Now design engineers come right out of college and everybody wants to sit at a desk and use Autodesk or AutoCAD right off the bat, not go in the field and get muddy."
+    }
+   ]
+  },
+  {
+   "name": "DroneDeploy",
+   "category": "Reality Capture",
+   "mentions": [
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Photo documentation and site capture is the most oversaturated ConTech category to found a company in, because behemoths with funding and recurring revenue will out-ideate new entrants from their\u2026",
+     "quote": "I would think that'd be a very hard one to break into... there being behemoths in that space now, where they're going to ideate off of their current platform and they have the funding and the recurring revenue to support that."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Consolidation, not novel capability, converts practitioner skeptics: he MacGyvered drone capture with a $3 app seven years ago and only saw DroneDeploy's value once it collapsed two or three\u2026",
+     "quote": "Where I would have to use like two or three different platforms, it's all in one spot... overlaying plans onto drone images ,  I could figure out how to do it in Photoshop and [Bluebeam], but they have it just built into their platform now."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Reality capture keeps getting funded because it multiplies the superintendent, not because it's novel",
+     "quote": "How do you double and triple the effort and capabilities of a superintendent? They're walking the job sites... now can we use and extract data from these images or these videos to make us more effective with flagging issues or measuring progress?"
+    }
+   ]
+  },
+  {
+   "name": "Trunk Tools",
+   "category": "AI/Analytics",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (own tool)",
+     "context": "Trunk Tools deliberately automates the 95% of bureaucratic work (e.g., the submittal agent comparing submittals to specs and RFIs) but shows the human why something is or isn't compliant and leaves\u2026",
+     "quote": "I do not want to take the decision-making away from the humans, but I want to take away the 95% of the... bureaucratic work to get there... We know if we do this for the whole industry, like in five to ten years people don't know anymore how to do these steps."
+    },
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (own tool)",
+     "context": "Startup validation comes from field users feeling relief or joy using the product, revenue follows that signal, and investment follows revenue.",
+     "quote": "When you have that, the revenue will follow. And when you have the revenue, the investment will follow. Everything that's the first domino is, do people feel relief or joy or whatever is trying to make them feel while using your product?"
+    },
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (own tool)",
+     "context": "Young PMs and supers should spend 30 minutes a day using AI as a personal teacher for their specific role, the improvement shows within a week and it's the fastest career accelerant available\u2026",
+     "quote": "Play for 30 minutes a day with AI and let it teach you how to become a better superintendent or a better PM or a better something. Like use AI as a teacher and you will show up within a week. You can learn anything, just 30 minutes a day."
+    },
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (own tool)",
+     "context": "Innovation-department enthusiasm is not real product validation, they want to try everything, so product-market fit must be proven with skeptical field users like supers and PMs.",
+     "quote": "Everybody can convince the innovation folks that this is cool and they want to try everything, right? And we need them. I'm a big fan of them, but that's not real feedback."
+    },
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (own tool)",
+     "context": "Customer demand consistently pulls ConTech products toward back-office white-collar workflows even when a field-native founder wants to build for blue-collar field workers.",
+     "quote": "I keep wanting to build for the field and we keep getting pushed building for the back office. And that's just like where my heart is crying a little bit because I'm a field person."
+    },
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (own tool)",
+     "context": "A large incumbent cut Trunk Tools off from its API for training models and growing too fast, platform gatekeeping is now a strategic risk for AI-native ConTech, with customers caught in the middle.",
+     "quote": "We as Trunk Tools have been excluded by one of the larger incumbents about like, hey, we can't be on their API anymore because we're training models and like, we're just like growing too fast."
+    },
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "The IP of a construction company is its people, when owners evaluate a bid they are really interviewing the project team, and even global GCs win or lose work on relationships",
+     "quote": "I truly believe the IP of construction is our people. When we bid on a job, yes, they wanna know our means and methods, but what they're really doing is they're interviewing our people... even we as a global company, deals are won or lost based off of relationships."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable\u2026",
+     "quote": "I've played around with ChatGPT and Copilot, Claude... and it does get hallucinations. So I'd be very worried about that... it's really about if we can scale up data collection now, and how do we download those people now?"
+    }
+   ]
+  },
+  {
+   "name": "Autodesk Construction Cloud",
+   "category": "Project Management",
+   "mentions": [
+    {
+     "episode": "ep-025",
+     "guest": "Alex Belkofer",
+     "source": "Practitioner",
+     "context": "Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk.",
+     "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Contractors are now building software to own the data, not to save the license fee",
+     "quote": "It's not even so much that we're spending 300 grand and we're saving the money over the next couple years. That's not necessarily the play. It's we're spending 300 grand and we're basically creating a moat for ourselves as a company because it's our data now."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data",
+     "quote": "They're being forced to, but it's through gritted teeth and they hate it. The attitude down on my end is not great about those systems. So we're already trying to bend and having to do what the next customer wants us to do."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "The integrator is the durable role in a stack no single vendor can serve",
+     "quote": "No one company is going to be able to serve every single segment of the market... Procore doesn't necessarily work for, or ACC for that matter, doesn't work for a steel detailing workflow."
+    }
+   ]
+  },
+  {
+   "name": "Bluebeam",
+   "category": "Document/Contract",
+   "mentions": [
+    {
+     "episode": "ep-011",
+     "guest": "Chris Masse",
+     "source": "Practitioner",
+     "context": "His CM Planner method strips drawings to a blank sheet in AutoCAD, rebuilds them layer-by-layer in build sequence with each layer matching a schedule task and green/yellow/red pass colors, and trades\u2026",
+     "quote": "Everybody seems to be able to relate to that better than the last planner system in my opinion, or takt planning or any of that stuff."
+    },
+    {
+     "episode": "ep-029",
+     "guest": "Patrick Murphy and Jeremy Crumley",
+     "source": "Founder (own tool)",
+     "context": "Web-based collaborative takeoff breaks the desktop silo of legacy tools",
+     "quote": "What's so different about Togal is we're web-based. Legacy software is the on-screens, Bluebeams. If Jeremy has a takeoff bid that's due, he can share those plans with 10 of his estimators with a click of a button... none of that information is lost, it's all web based. So you don't have these silos."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Consolidation, not novel capability, converts practitioner skeptics: he MacGyvered drone capture with a $3 app seven years ago and only saw DroneDeploy's value once it collapsed two or three\u2026",
+     "quote": "Where I would have to use like two or three different platforms, it's all in one spot... overlaying plans onto drone images ,  I could figure out how to do it in Photoshop and [Bluebeam], but they have it just built into their platform now."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Palantir's product is the ontology, and dashboards are just the surface",
+     "quote": "What they built is pretty stinking cool... but it's dashboarding. The subsurface is the ontology aspect of it. When you hear ontology, they're going to start trying to preach that out there like it's something that they invented. It's not."
+    }
+   ]
+  },
+  {
+   "name": "Document Crunch",
+   "category": "Document/Contract",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "Non-competing ConTech scale-ups are organizing a joint 'future of construction' conference (likely Austin) to replace separate vendor events that make customers travel all year.",
+     "quote": "Instead of every one of us does their own events and has their customers fly 50 weeks a year to somewhere, right, to wine and dine, let's just put it all together and show them what the future of construction looks like."
+    },
+    {
+     "episode": "ep-017",
+     "guest": "a Story the Field Believes with Jackie Guilbault",
+     "source": "Practitioner",
+     "context": "Contract value extends into the field, risk doesn't stop at signing",
+     "quote": "You can negotiate the best contract in the world. But if you don't follow the terms that you negotiated initially or use it to your advantage, you don't always have to reach into your contingency budget for things. You can use the contract to your advantage."
+    },
+    {
+     "episode": "ep-017",
+     "guest": "a Story the Field Believes with Jackie Guilbault",
+     "source": "Practitioner",
+     "context": "Founder-market fit: an ex-construction-attorney CEO builds for the persona's real pain",
+     "quote": "What makes Document Crunch unique is our CEO came from the industry. He was a construction attorney. And so he intimately knows the pain that our persona is dealing with... the product is built for someone like him."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "ConTech M&A is a data land-grab, not a product roll-up",
+     "quote": "It's a data play from what I can tell. It's how much data have these companies captured that we can fold into our own ecosystem and use that to train the AI models on top of it."
+    }
+   ]
+  },
+  {
+   "name": "Dusty Robotics",
+   "category": "Robotics/Automation",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "Her WhatsApp group of female construction-tech founders has found only 13 worldwide so far, including Dusty Robotics and Versatile, a stark measure of how thin the founder pipeline is.",
+     "quote": "I actually started the one with female founders in construction tech. Do you want to guess how many I found worldwide? ... 13 so far."
+    },
+    {
+     "episode": "ep-007",
+     "guest": "Andrew Rener",
+     "source": "Practitioner",
+     "context": "Robots widen the industry's talent base by making trades appealing to younger workers",
+     "quote": "You can train a younger person who's effectively using a PlayStation controller and an iPad to run a robot that otherwise would be disinterested in doing drywall finishing... then you need the technical support to do the maintenance."
+    },
+    {
+     "episode": "ep-023",
+     "guest": "Stuart Maggs",
+     "source": "Founder (own tool)",
+     "context": "By 2030 a data center build will have 10+ robots, not for novelty but for cost, speed and safety",
+     "quote": "Now is the moment where it's not too hard to paint a picture of having five, 10 plus robots on a job site. Not because we like technology, it's because it will help us deliver jobs faster, more effectively and cheaper and with less health and safety risks."
+    },
+    {
+     "episode": "ep-025",
+     "guest": "Alex Belkofer",
+     "source": "Practitioner",
+     "context": "Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk.",
+     "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
+    }
+   ]
+  },
+  {
+   "name": "Microsoft Copilot",
+   "category": "AI/Analytics",
+   "mentions": [
+    {
+     "episode": "ep-014",
+     "guest": "Jef Sharp",
+     "source": "Founder (own tool)",
+     "context": "We asked AI if we're an AI company; 2 of 3 engines said yes",
+     "quote": "We went to... three of the AI engines... ChatGPT, Copilot, Grok... and we prompted them, look at everything online about QNECT and tell us if we're already AI. And two out of three said that we were. So, are we an AI company? According to AI, we're an AI company."
+    },
+    {
+     "episode": "ep-034",
+     "guest": "Angelo Suntres",
+     "source": "Practitioner",
+     "context": "Overusing ChatGPT for internal emails erodes your professional brand because people can tell",
+     "quote": "50 % of the emails I see now probably don't need to be emails... and you can tell they're copy pasted from chat GPT... don't take it for face value because you know when it's AI generated. So go out, connect with people, have conversations. Sitting down face to face is a hundred times more effective than an email that chat GPT or co-pilot helped you craft."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable\u2026",
+     "quote": "I've played around with ChatGPT and Copilot, Claude... and it does get hallucinations. So I'd be very worried about that... it's really about if we can scale up data collection now, and how do we download those people now?"
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Microsoft-only shops are bringing in Claude alongside Copilot, and scaled workflow distribution is still the unsolved part",
+     "quote": "I'm seeing a lot of Microsoft only shops bringing in Claude as their enterprise license... but even then, you start to run into issues with how can I pass these workflows out at scale. They're starting to solve some of those things by being able to share out skills, but even then it's a bit of a mess."
+    }
+   ]
+  },
+  {
+   "name": "Microsoft Word",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-031",
+     "guest": "Cameron Page",
+     "source": "Founder (own tool)",
+     "context": "Every subcontractor runs change orders differently, mostly on Word, Excel, or paper",
+     "quote": "The insight there was just like, oh, every single one does it differently. And it's mostly done on Microsoft Word or Excel, or if it's in the field, it's paper."
+    },
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "Digitalization mostly digitized the paper process, Word and Excel replicating paper forms, and lost the chance to improve the work itself; AI is the second chance to redesign processes rather than\u2026",
+     "quote": "Why do we have Word documents? Why do we have Excel spreadsheets? Well, that was the way we did it on paper. So we digitalized the paper process, but we lost the opportunity to actually make the process better by moving it to technology. So I think AI gives us the opportunity to actually repurpose technology to serve us."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Hire for problem-solving persistence, not AI proficiency, the tooling is already table stakes",
+     "quote": "Not to oversimplify project management, but I always saw it as variable control and problem solving... Are they able to stick with a problem and solve it and see it all the way through? Are they okay interacting with other individuals?"
+    }
+   ]
+  },
+  {
+   "name": "NVIDIA",
+   "category": "AI/Analytics",
+   "mentions": [
+    {
+     "episode": "ep-032",
+     "guest": "Fouad Khalil",
+     "source": "Practitioner",
+     "context": "Hyperscale data centers have achieved 'China-level speed', a giant microchip on the earth",
+     "quote": "If you look at something like Stargate in Texas... he says we finally achieved China level speed. In some ways that's just a giant microchip on the surface of the earth. A lot of the constraints that we find in smaller projects just aren't there."
+    },
+    {
+     "episode": "ep-032",
+     "guest": "Fouad Khalil",
+     "source": "Practitioner",
+     "context": "Optimal modularity sits on a diagonal: standardization must be matched to required flexibility",
+     "quote": "Imagine a matrix. You have flexibility on one axis and standardization on the other axis, and the optimal modular solution lays out on a diagonal line. A substation is highly standardized... a prefab kitchen pod needs to be higher flexibility, but not as high as a custom home."
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Every model and chip generation cuts cost per token by roughly an order of magnitude, and unprecedented data-center capex (~$650B/year from hyperscalers, near 2008-bailout scale) plus\u2026",
+     "quote": "Every time a model comes out and honestly, every time the chips come out, the cost per token goes down by like an order of magnitude... I do think it'll get so cheap that it won't be the major consideration."
+    }
+   ]
+  },
+  {
+   "name": "Primavera P6",
+   "category": "Scheduling",
+   "mentions": [
+    {
+     "episode": "ep-012",
+     "guest": "Aaron Toppston",
+     "source": "Founder (third-party)",
+     "context": "The best ConTech customer support answers questions that have nothing to do with the software, domain expertise in CS is the moat",
+     "quote": "When you call customer support at SmartPM, you might have a question on the principles of good project controls. How do I make sure I'm getting the most out of coordinating a schedule across all of my trades and with my owner at every OAC meeting? That question has nothing to do with the software and everything to do with the outcomes."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Back-office schedule updating is low-hanging fruit for agentic AI right now, a chat-based agent reconciling what should have happened against what did and adjusting tied activities should be\u2026",
+     "quote": "Schedule updates I think are like ripe for it... an agentic thing that just is chat based where it's like what should have happened, okay give me an update on what did happen... I feel like that should be something that should be able to be done now."
+    },
+    {
+     "episode": "ep-055",
+     "guest": "Tim Smith",
+     "source": "Practitioner",
+     "context": "A GC's A-team or C-team is visible within 30 days, and the tell is a milestone schedule that is actually followed",
+     "quote": "An A-team in the first 30 days looks like they have a very well thought out schedule. And I'm not talking about a real pretty P6 schedule. Come up with a really good milestone schedule that is actually followed. We have been in month eight without a schedule before. And I don't know how things get done, honestly."
+    }
+   ]
+  },
+  {
+   "name": "Salesforce",
+   "category": "Business Systems",
+   "mentions": [
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "Cloud value has stagnated because SaaS providers grew so many layers of customer success that people who never touched the problem are building for it, losing the developer-to-user intimacy that made\u2026",
+     "quote": "The cloud providers have become so big and there's so many layers of customer success that people who have never touched the problem [are] trying to solve a problem they don't understand. So we've actually gotten to a point where the efficiency or the value of cloud and digitalization, I feel, has stagnated."
+    },
+    {
+     "episode": "ep-026",
+     "guest": "Al Ricci",
+     "source": "Practitioner",
+     "context": "The customer success model was pioneered by Salesforce as a subtle way of selling",
+     "quote": "It's a model that was really pioneered by Salesforce in the early two thousands. What they found was when they put someone in charge of helping a customer achieve their goals, that the customer was more likely to achieve those goals... And it's a subtle way of selling."
+    },
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Agents sitting on the database can replace SaaS business logic (per Satya Nadella), yet incumbents' real moats, relationships, trust, familiarity, are stronger than people think; what's genuinely\u2026",
+     "quote": "People are going to say, well, if I can string up an agent to do this for me, maybe I don't need 10 licenses. Maybe I just need two. Definitely why ServiceNow, Salesforce, and some of those other folks had a rough, rough week."
+    }
+   ]
+  },
+  {
+   "name": "Tekla Structures",
+   "category": "BIM/VDC",
+   "mentions": [
+    {
+     "episode": "ep-013",
+     "guest": "Hannu Lindberg",
+     "source": "Practitioner",
+     "context": "Fabrication-driven trades prove model-driven construction already works, steel detailers model 100% accurate in Tekla, MEP and now framing and reinforcement follow, so the missing link is how\u2026",
+     "quote": "They don't build airplanes. They don't build cars without modeling every single part of that vehicle, right? Because it goes into a factory and it gets built and automated. So maybe that's the missing link still. It's like how we consume information."
+    },
+    {
+     "episode": "ep-013",
+     "guest": "Hannu Lindberg",
+     "source": "Practitioner",
+     "context": "The Trimble model-to-field breakthrough, extracting model points to total stations, started as a back-office hack before becoming product, and connecting coordinated model data to field layout is\u2026",
+     "quote": "Initially was a hack and then it became part of the product and it was really, really what allowed us to really more seamlessly connect model information to the field... making sure that information that we coordinated actually gets out there the field and gets built accurately."
+    }
+   ]
+  },
+  {
+   "name": "Hexagon",
+   "category": "BIM/VDC",
+   "mentions": [
+    {
+     "episode": "ep-025",
+     "guest": "Alex Belkofer",
+     "source": "Practitioner",
+     "context": "Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk.",
+     "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "ConTech M&A is a data land-grab, not a product roll-up",
+     "quote": "It's a data play from what I can tell. It's how much data have these companies captured that we can fold into our own ecosystem and use that to train the AI models on top of it."
+    }
+   ]
+  },
+  {
+   "name": "Kahua",
+   "category": "Project Management",
+   "mentions": [
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (own tool)",
+     "context": "For The Link, the 2026 SaaS play is to build less new product until the agent landscape settles and instead invest in aggregated, categorized proprietary data, a database of 10,000 specs, that\u2026",
+     "quote": "Now is the time to say, how is this enhancing what I have already? And maybe build a little less than you might... the ability to assess a spec based on 10,000 specs... that you've got in your database. I think that's one opportunity."
+    },
+    {
+     "episode": "special-2",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data",
+     "quote": "They're being forced to, but it's through gritted teeth and they hate it. The attitude down on my end is not great about those systems. So we're already trying to bend and having to do what the next customer wants us to do."
+    }
+   ]
+  },
+  {
+   "name": "Microsoft Project",
+   "category": "Scheduling",
+   "mentions": [
+    {
+     "episode": "ep-012",
+     "guest": "Aaron Toppston",
+     "source": "Founder (third-party)",
+     "context": "The best ConTech customer support answers questions that have nothing to do with the software, domain expertise in CS is the moat",
+     "quote": "When you call customer support at SmartPM, you might have a question on the principles of good project controls. How do I make sure I'm getting the most out of coordinating a schedule across all of my trades and with my owner at every OAC meeting? That question has nothing to do with the software and everything to do with the outcomes."
+    },
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Back-office schedule updating is low-hanging fruit for agentic AI right now, a chat-based agent reconciling what should have happened against what did and adjusting tied activities should be\u2026",
+     "quote": "Schedule updates I think are like ripe for it... an agentic thing that just is chat based where it's like what should have happened, okay give me an update on what did happen... I feel like that should be something that should be able to be done now."
+    }
+   ]
+  },
+  {
+   "name": "Microsoft Teams",
+   "category": "Communication",
+   "mentions": [
+    {
+     "episode": "ep-011",
+     "guest": "Chris Masse",
+     "source": "Practitioner",
+     "context": "Field adoption of technology at a major GC only flipped from 'nice to have' to 'benefit' around 2018-2020, with COVID forcing digital collaboration that had been technically possible since 2015 but\u2026",
+     "quote": "It took a pandemic to get everybody to realize that you can click a link and you can turn on your camera and you can turn on your microphone and it can be effective."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Microsoft-only shops are bringing in Claude alongside Copilot, and scaled workflow distribution is still the unsolved part",
+     "quote": "I'm seeing a lot of Microsoft only shops bringing in Claude as their enterprise license... but even then, you start to run into issues with how can I pass these workflows out at scale. They're starting to solve some of those things by being able to share out skills, but even then it's a bit of a mess."
+    }
+   ]
+  },
+  {
+   "name": "Palantir",
+   "category": "AI/Analytics",
+   "mentions": [
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Ask how you exit an ontology partnership before you sign it",
+     "quote": "I always think of the end at the beginning... if you have a relationship like that, how do you get out of it? It's one thing to have a project management platform and the issues associated with change management there. I just can't imagine with something like this how you would part ways."
+    },
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Founder (third-party)",
+     "context": "Palantir's product is the ontology, and dashboards are just the surface",
+     "quote": "What they built is pretty stinking cool... but it's dashboarding. The subsurface is the ontology aspect of it. When you hear ontology, they're going to start trying to preach that out there like it's something that they invented. It's not."
+    }
+   ]
+  },
+  {
+   "name": "Python",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the\u2026",
+     "quote": "If you're a little to midsize player, you may not be able to afford the partnership with like the Autodesk or the Procores of the world, but you have the IP and... the people knowledge... you just give them the platform to build in, they have the same power... it's right-sizing technology to the opportunity."
+    },
+    {
+     "episode": "ep-036",
+     "guest": "Aaron Toppston",
+     "source": "Host",
+     "context": "Rethink every workflow via value stream mapping, most are built on archaic assumptions",
+     "quote": "there's so much baggage built into how we do things based on what are now kind of old archaic assumptions. And so actually revisiting how you do everything and just saying, okay, is there a Zapier automation for this or can [Claude] code write me like..."
+    }
+   ]
+  },
+  {
+   "name": "ArchiCAD",
+   "category": "BIM/VDC",
+   "mentions": [
+    {
+     "episode": "ep-013",
+     "guest": "Hannu Lindberg",
+     "source": "Practitioner",
+     "context": "Going to the field first, against the pull of the 'cushy office', is how theory becomes practice, and his technology conversion came from tools that made his own job easier: finding drawing errors\u2026",
+     "quote": "There's nothing like learning through a series of mistakes in the field, in the fire, so to speak... it was helping me make my job easier and helping me find errors in drawings... it allowed me to not have to ask a bunch of RFIs to get the job done."
+    }
+   ]
+  },
+  {
+   "name": "Leica",
+   "category": "Reality Capture",
+   "mentions": [
+    {
+     "episode": "ep-025",
+     "guest": "Alex Belkofer",
+     "source": "Practitioner",
+     "context": "Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk.",
+     "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
+    }
+   ]
+  },
+  {
+   "name": "LinkedIn",
+   "category": "Communication",
+   "mentions": [
+    {
+     "episode": "special-1",
+     "guest": "Reviewed as Noted panel",
+     "source": "Practitioner",
+     "context": "Vendor noise has trained innovation leaders to ignore the first eight emails",
+     "quote": "If you work in the construction industry and you have technology or innovation anywhere near your LinkedIn title, every tech product, domestic and abroad, is going to reach out... it's just always a flood and it's just always so much noise."
+    }
+   ]
+  },
+  {
+   "name": "OpenAI",
+   "category": "AI/Analytics",
+   "mentions": [
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "Skanska invested in its data solutions team nearly two years before ChatGPT existed, unglamorous standardization like office decoder rings and subcontractor dropdowns is the foundation AI readiness\u2026",
+     "quote": "We had made the investment in the data solutions team before OpenAI and before ChatGPT and before LLMs... we saw the value in putting discipline behind how we just manage our data and our processes... the decoder ring of how we refer to our offices or the drop-downs of how we refer to our subcontractors, just standardizing around the silliest things."
+    }
+   ]
+  },
+  {
+   "name": "Photoshop",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Consolidation, not novel capability, converts practitioner skeptics: he MacGyvered drone capture with a $3 app seven years ago and only saw DroneDeploy's value once it collapsed two or three\u2026",
+     "quote": "Where I would have to use like two or three different platforms, it's all in one spot... overlaying plans onto drone images ,  I could figure out how to do it in Photoshop and [Bluebeam], but they have it just built into their platform now."
+    }
+   ]
+  },
+  {
+   "name": "Pix4D",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-022",
+     "guest": "John Riggs",
+     "source": "Practitioner",
+     "context": "Photo documentation and site capture is the most oversaturated ConTech category to found a company in, because behemoths with funding and recurring revenue will out-ideate new entrants from their\u2026",
+     "quote": "I would think that'd be a very hard one to break into... there being behemoths in that space now, where they're going to ideate off of their current platform and they have the funding and the recurring revenue to support that."
+    }
+   ]
+  },
+  {
+   "name": "Revizto",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-025",
+     "guest": "Alex Belkofer",
+     "source": "Practitioner",
+     "context": "Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk.",
+     "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
+    }
+   ]
+  },
+  {
+   "name": "Safety Sidekick",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "With AI the build-vs-buy pendulum swings back to building in-house: vendors should secure the environment and provide the build tools rather than every native feature, Skanska's internally built\u2026",
+     "quote": "The big tech providers are always going to have a place at the table... but I don't need you to build the visualization engine native to your platform. I don't need you to build the one form that's kind of the edge case... Give me the environment, secure the environment, and give me the tools that let me build. And if we can get there, I'm excited for that future."
+    }
+   ]
+  },
+  {
+   "name": "Sherpods",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-013",
+     "guest": "Hannu Lindberg",
+     "source": "Practitioner",
+     "context": "Prefab has no magic button, it only pays where there's repetition and the right job (bathroom pods, exterior panels and skid-mounted electrical rooms for remote data centers), it requires design\u2026",
+     "quote": "Prefab isn't like, there's no easy magic button for it. There's gotta be some repetition. It's gotta be the right job where it makes sense... you got a hundred of these pieces... you got a mistake somewhere with it, that's also a big problem. It hurts."
+    }
+   ]
+  },
+  {
+   "name": "Vico",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-013",
+     "guest": "Hannu Lindberg",
+     "source": "Practitioner",
+     "context": "Going to the field first, against the pull of the 'cushy office', is how theory becomes practice, and his technology conversion came from tools that made his own job easier: finding drawing errors\u2026",
+     "quote": "There's nothing like learning through a series of mistakes in the field, in the fire, so to speak... it was helping me make my job easier and helping me find errors in drawings... it allowed me to not have to ask a bunch of RFIs to get the job done."
+    }
+   ]
+  },
+  {
+   "name": "Visual Basic",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-030",
+     "guest": "Michael Zeppieri",
+     "source": "Practitioner",
+     "context": "AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the\u2026",
+     "quote": "If you're a little to midsize player, you may not be able to afford the partnership with like the Autodesk or the Procores of the world, but you have the IP and... the people knowledge... you just give them the platform to build in, they have the same power... it's right-sizing technology to the opportunity."
+    }
+   ]
+  },
+  {
+   "name": "Zoom",
+   "category": "Communication",
+   "mentions": [
+    {
+     "episode": "ep-011",
+     "guest": "Chris Masse",
+     "source": "Practitioner",
+     "context": "Field adoption of technology at a major GC only flipped from 'nice to have' to 'benefit' around 2018-2020, with COVID forcing digital collaboration that had been technically possible since 2015 but\u2026",
+     "quote": "It took a pandemic to get everybody to realize that you can click a link and you can turn on your camera and you can turn on your microphone and it can be effective."
+    }
+   ]
+  },
+  {
+   "name": "Clearstory",
+   "category": "Document/Contract",
+   "mentions": [
+    {
+     "episode": "ep-031",
+     "guest": "Cameron Page",
+     "source": "Founder (own tool)",
+     "context": "Architect construction software as a true network, not upstream/downstream portals",
+     "quote": "Right after we launched, all the early feedback was like, this is awesome, but I want to use it upstream with my client and downstream with my subcontractors... we recognized early on that we had to re-architect the platform to be a true network. So we spent all of 2019 re-architecting the platform."
+    },
+    {
+     "episode": "ep-031",
+     "guest": "Cameron Page",
+     "source": "Founder (own tool)",
+     "context": "The real change order problem is exposure and visibility, not the T&M ticket",
+     "quote": "T is just one part of the challenge and really it's change order exposure more broadly. How do I as a GC know everything that's out there that all of my subcontractors have sent me? And then all of a sudden, it was morphing into a much bigger platform and bigger problem set to go solve."
+    },
+    {
+     "episode": "ep-031",
+     "guest": "Cameron Page",
+     "source": "Founder (own tool)",
+     "context": "Map every manual step, then reverse-engineer what to automate",
+     "quote": "So really it's just about mapping out every step that goes into this manual... we really mapped out what we thought was the industry best practice in every manual step. And then it was just kind of like reverse engineering. Like, what can we automate?"
+    },
+    {
+     "episode": "ep-012",
+     "guest": "Aaron Toppston",
+     "source": "Founder (third-party)",
+     "context": "Specialty trades finance every change order themselves, labor and materials are paid before the change is even approved",
+     "quote": "Most specialty trades, their cash flow is dictated based on how quickly they get paid for changes. You have to pay the overhead to payroll, the cost of the day and the cost of materials before the change is made. Then you record a time and materials ticket, that becomes an invoice, that invoice is sent to the general contractor, and there's almost always a conversation."
+    }
+   ]
+  },
+  {
+   "name": "PowerPoint",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "With Claude embedded in Excel and PowerPoint, AI accepts work the way people already do it instead of forcing SaaS-style structured input, let people work how they're comfortable and add intelligence\u2026",
+     "quote": "Some of the strictness that SaaS requires isn't required by AI... where you can give people the ability to work the way they're comfortable working and then add the value and intelligence on the back end. That's one way I think that we can really win."
+    },
+    {
+     "episode": "ep-054",
+     "guest": "Libby Magliolo",
+     "source": "Founder (third-party)",
+     "context": "Cut information until it hurts and give every slide a buddy in the appendix",
+     "quote": "I don't think about what's all the information I need to put into this presentation. I think instead: what is the least amount of information I can present and still give a really strong presentation. You cut away information until it absolutely hurts... Every slide has a buddy. You put the full data set in the appendix and a footnote that says see appendix page 34."
+    },
+    {
+     "episode": "ep-054",
+     "guest": "Libby Magliolo",
+     "source": "Founder (third-party)",
+     "context": "Reading text-filled slides signals to the audience that you have nothing to add beyond the screen",
+     "quote": "Adults can read... The bigger problem is we're signaling to our audience, I don't have anything of value to add for you beyond what you see on the screen. In which case the audience is thinking, can you please just email this to us?"
+    }
+   ]
+  },
+  {
+   "name": "Alice Technologies",
+   "category": "Scheduling",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "ConTech founders obsess over perceived competitors while the vast industry sits unpenetrated, and daily decision divergence means perceived competitors end up in different places anyway.",
+     "quote": "They were standing in a corner and looking into a ballroom, but the ballroom was the industry. But instead of looking into the ballroom, they were fighting each other in the corner."
+    }
+   ]
+  },
+  {
+   "name": "AWS",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Per-outcome and per-use AI pricing sounds right for agents but fails because nobody can budget for it, buyers burned by surprise AWS/Azure bills would rather pay more for predictability.",
+     "quote": "The problem is nobody can budget for that... people want to know what they're paying and they'd actually rather pay a little more than have surprising months."
+    }
+   ]
+  },
+  {
+   "name": "Azure",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Per-outcome and per-use AI pricing sounds right for agents but fails because nobody can budget for it, buyers burned by surprise AWS/Azure bills would rather pay more for predictability.",
+     "quote": "The problem is nobody can budget for that... people want to know what they're paying and they'd actually rather pay a little more than have surprising months."
+    }
+   ]
+  },
+  {
+   "name": "Cerebras",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Every model and chip generation cuts cost per token by roughly an order of magnitude, and unprecedented data-center capex (~$650B/year from hyperscalers, near 2008-bailout scale) plus\u2026",
+     "quote": "Every time a model comes out and honestly, every time the chips come out, the cost per token goes down by like an order of magnitude... I do think it'll get so cheap that it won't be the major consideration."
+    }
+   ]
+  },
+  {
+   "name": "Claude Cowork",
+   "category": "AI/Analytics",
+   "mentions": [
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Contractors delaying bespoke AI investment for fear the models will leapfrog them are overreacting, models are already good enough for most needs, and the real 2026 innovation is the agent harnesses\u2026",
+     "quote": "The models are already good enough to do most of what we want them to do. The big innovations, I think, in 2026 are going to be what they're wrapped up in."
+    }
+   ]
+  },
+  {
+   "name": "Google Maps",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (own tool)",
+     "context": "Decide what to automate with the Google Maps test, map-reading died and that's fine, but the driver still decides when to swerve, and by that necessity filter roughly 80% of white-collar construction\u2026",
+     "quote": "Is it a necessary skill for my future success and for humanity? If no, let's get rid of it... You can probably get rid of 80% of the workflows, the white-collar workflows in construction, because they're just bureaucratic and annoying and useless busy work."
+    }
+   ]
+  },
+  {
+   "name": "HammerTech",
+   "category": "Safety",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "Non-competing ConTech scale-ups are organizing a joint 'future of construction' conference (likely Austin) to replace separate vendor events that make customers travel all year.",
+     "quote": "Instead of every one of us does their own events and has their customers fly 50 weeks a year to somewhere, right, to wine and dine, let's just put it all together and show them what the future of construction looks like."
+    }
+   ]
+  },
+  {
+   "name": "OpenClaw",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Contractors delaying bespoke AI investment for fear the models will leapfrog them are overreacting, models are already good enough for most needs, and the real 2026 innovation is the agent harnesses\u2026",
+     "quote": "The models are already good enough to do most of what we want them to do. The big innovations, I think, in 2026 are going to be what they're wrapped up in."
+    }
+   ]
+  },
+  {
+   "name": "ServiceNow",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (third-party)",
+     "context": "Agents sitting on the database can replace SaaS business logic (per Satya Nadella), yet incumbents' real moats, relationships, trust, familiarity, are stronger than people think; what's genuinely\u2026",
+     "quote": "People are going to say, well, if I can string up an agent to do this for me, maybe I don't need 10 licenses. Maybe I just need two. Definitely why ServiceNow, Salesforce, and some of those other folks had a rough, rough week."
+    }
+   ]
+  },
+  {
+   "name": "The Link",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-035",
+     "guest": "Hugh Seaton",
+     "source": "Founder (own tool)",
+     "context": "For The Link, the 2026 SaaS play is to build less new product until the agent landscape settles and instead invest in aggregated, categorized proprietary data, a database of 10,000 specs, that\u2026",
+     "quote": "Now is the time to say, how is this enhancing what I have already? And maybe build a little less than you might... the ability to assess a spec based on 10,000 specs... that you've got in your database. I think that's one opportunity."
+    }
+   ]
+  },
+  {
+   "name": "TikTok",
+   "category": "Communication",
+   "mentions": [
+    {
+     "episode": "ep-054",
+     "guest": "Libby Magliolo",
+     "source": "Founder (third-party)",
+     "context": "You do not get to decide when your audience stops listening, assume roughly 30 seconds of real attention",
+     "quote": "You do not get to decide when your audience stops listening and stops paying attention to you. They do. Just because you have a lot of information to share does not mean that your audience has the appetite or attention span to consume it all."
+    }
+   ]
+  },
+  {
+   "name": "TrunkText",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (own tool)",
+     "context": "Startup validation comes from field users feeling relief or joy using the product, revenue follows that signal, and investment follows revenue.",
+     "quote": "When you have that, the revenue will follow. And when you have the revenue, the investment will follow. Everything that's the first domino is, do people feel relief or joy or whatever is trying to make them feel while using your product?"
+    }
+   ]
+  },
+  {
+   "name": "Versatile",
+   "category": "Other",
+   "mentions": [
+    {
+     "episode": "ep-028",
+     "guest": "Dr. Sarah Buchner",
+     "source": "Founder (third-party)",
+     "context": "Her WhatsApp group of female construction-tech founders has found only 13 worldwide so far, including Dusty Robotics and Versatile, a stark measure of how thin the founder pipeline is.",
+     "quote": "I actually started the one with female founders in construction tech. Do you want to guess how many I found worldwide? ... 13 so far."
+    }
+   ]
+  }
+ ]
+}

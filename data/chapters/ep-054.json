@@ -1,0 +1,33 @@
+{
+  "slug": "ep-054",
+  "guest": {"name": "Libby Magliolo", "title": "Founder and Presentation Skills Trainer", "firm": "The Slide Master"},
+  "chapters": [
+    {"time": "00:00", "title": "Why nobody budgets for communication training"},
+    {"time": "09:38", "title": "From PwC and Southwest to teaching MBAs"},
+    {"time": "13:10", "title": "The pyramid principle: lead with the answer"},
+    {"time": "16:55", "title": "Data dumping and reading your slides aloud"},
+    {"time": "19:29", "title": "The rain jacket story: analysis beats raw data"},
+    {"time": "22:24", "title": "When a visual actually earns its place"},
+    {"time": "25:30", "title": "Running an OAC meeting with one sentence"},
+    {"time": "29:27", "title": "Communicators get promoted, not technicians"},
+    {"time": "32:55", "title": "Public speaking nerves and the grace move"},
+    {"time": "38:22", "title": "Prep process, slide buddies, and AI tools"}
+  ],
+  "mentions": [
+    {"name": "The Slide Master", "kind": "company"},
+    {"name": "PwC", "kind": "company"},
+    {"name": "Southwest Airlines", "kind": "company"},
+    {"name": "SMU Cox School of Business", "kind": "company"},
+    {"name": "The Goal", "kind": "book"},
+    {"name": "The Toyota Way", "kind": "book"},
+    {"name": "Claude", "kind": "tool"},
+    {"name": "Canva", "kind": "tool"},
+    {"name": "Claude Design", "kind": "tool"},
+    {"name": "PowerPoint", "kind": "tool"}
+  ],
+  "quotes": [
+    {"time": "13:30", "text": "Lead with the answer. Don't walk me through the process that you walked through to get to the answer. Give me the answer and then walk me through the process.", "who": "Libby Magliolo"},
+    {"time": "15:22", "text": "You do not get to decide when your audience stops listening and stops paying attention to you. They do. You have to earn the right to give the details.", "who": "Libby Magliolo"},
+    {"time": "29:43", "text": "There's no one single person in your career that's ever going to see all of the work that you do. But many, many people will see you talk about the work that you do.", "who": "Libby Magliolo"}
+  ]
+}

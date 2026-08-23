@@ -1,0 +1,104 @@
+---
+title: What I Learned From the First 30 Episodes
+subtitle: Patterns from 30 conversations with the people building the industry
+date: 2026-04-01
+type: Essay
+episode: 
+author: Stephen Poppe
+substack: https://constructionbriefs.substack.com/p/construction-conversations-insights-5d6
+cover: https://substackcdn.com/image/fetch/$s_!foKR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2da76e9-3d4a-4f66-bfe8-b420470e9545_1536x1024.png
+---
+<p>I started this podcast with a simple premise: have real conversations with industry leaders without much pretense. Just honest talk about what works, what doesn’t, and what the next generation of construction leaders need to know.</p>
+<p>Thirty episodes in, and its been interesting to see some patterns and intersections of takeaways from each of the conversations.</p>
+<p>What follows is my attempt to synthesize what I’ve learned. Not a summary of each episode, but the threads that connect them.</p>
+<hr>
+<h2>On Leadership</h2>
+<h4>Good Leaders Guide. They Don’t Direct.</h4>
+<p>This came up early and never stopped. A superintendent from a major GC put it simply: the best leaders don’t tell people what to do. They ask the right questions at the right time. They create conditions where people figure things out themselves.</p>
+<p>This isn’t soft management philosophy. It’s practical. On a job with 15 trades and constant change, you can’t direct everything. You don’t have enough hours in the day, and even if you did, people stop thinking for themselves when someone’s always telling them what to do.</p>
+<p>The flip side is harder to talk about: this approach requires you to be okay with people doing things differently than you would. That’s uncomfortable. Especially when you’ve been doing this for 20 years and you know what works. But the guests who’ve led the most successful projects, the ones who kept their good people, they all found ways to let go of control without letting go of standards.</p>
+<h4>Intellectual Curiosity Beats Credentials Every Time</h4>
+<p>One guest started in plant biology. Another in art school. A third didn’t have a construction management degree at all. They all ended up running significant operations or building successful companies.</p>
+<p>What they had in common wasn’t pedigree. It was relentless curiosity. They asked questions that other people thought were stupid. They admitted what they didn’t know. They treated every conversation as a chance to learn something.</p>
+<p>This cuts against the credentialing culture that’s crept into the industry. Yes, you need technical competence. But I heard the same message from superintendents, owners, tech founders, and everyone in between: the people who rise fastest are the ones who never stop asking why.</p>
+<p>The hard part? This requires vulnerability. You have to be willing to look dumb in front of people who know more than you. Multiple guests admitted they wish they’d asked more questions earlier in their careers. The ones who seemed most confident were actually the ones most comfortable saying “I don’t know.”</p>
+<h4>Titles Don’t Equal Authority</h4>
+<p>One of the most interesting conversations was with a leader at a company that operates without titles. No VP of this, no Director of that. Just roles and responsibilities.</p>
+<p>The upside: people can’t hide behind hierarchy. Ideas get evaluated on merit. Young people can contribute without waiting for permission.</p>
+<p>The downside: it can be chaotic. When everyone’s in charge, sometimes nobody is. And people coming from traditional companies often struggle to figure out who to talk to.</p>
+<p>But the principle underneath matters regardless of your org structure: authority has to be earned through competence and relationships, not bestowed by a title. The best leaders I talked to understood this. They didn’t lean on their positions. They built influence through being useful, being right often enough, and treating people with respect.</p>
+<h4>Mentorship Requires Both Parties to Show Up</h4>
+<p>Everyone says mentorship matters. What actually makes it work?</p>
+<p>From multiple conversations, a few things became clear. First, the mentee has to take initiative. The guests who talked about transformative mentors all described pursuing those relationships, not waiting for them to happen. They asked for feedback. They showed up prepared. They made it easy for busy people to invest in them.</p>
+<p>Second, the mentor has to be willing to be vulnerable. One guest described a formal coaching relationship where the experienced leader had to learn to listen instead of advise. That was uncomfortable for someone who’d spent 30 years solving problems. But it was the only way to help someone develop their own judgment rather than just borrow his.</p>
+<p>Third, domain expertise matters. Generic coaching didn’t work for most guests. They needed someone who understood construction, who knew the rhythms of a job, who could speak to the specific dynamics of a project team. The ones who found that kind of mentor moved faster.</p>
+<hr>
+<h2>On Technology</h2>
+<h4>People First, Then Process, Then Technology</h4>
+<p>I heard variations of this phrase at least a dozen times. A technology leader at a major GC made it explicit: you can have the best software in the world, but if your people don’t trust it and your processes don’t support it, it’s worthless.</p>
+<p>This is frustrating if you’re trying to modernize an organization. You want to believe that the right tool will solve the problem. Sometimes it does. More often, the tool exposes problems in how people work together.</p>
+<p>The guests who’d successfully implemented new technology all described a similar pattern: understand the pain points first, get buy-in from the people who’ll actually use it, make sure the process makes sense, and only then introduce the tool. Skipping steps always backfired.</p>
+<h4>Field Exposure Is Non-Negotiable</h4>
+<p>A robotics founder mandated that everyone at the company, including software engineers, walk project sites regularly. A construction tech marketing leader said she didn’t understand the industry until she actually operated an excavator. A scheduling software founder emphasized that his co-founder’s field experience was essential because he himself came from outside construction.</p>
+<p>The pattern is clear: you cannot build for this industry from a distance. The jobsite is the ground truth. Anything created without understanding it will be rejected, worked around, or ignored.</p>
+<p>This has implications for hiring, for product development, for how tech companies should structure their teams. But it’s also a message to individuals: if you want to work in construction technology, find ways to <a href="https://youtube.com/shorts/-kWkqmpdPko?si=y8L9_a8S4o6RyUnA">get dirty first</a>. The learning is worth more than any course or certification.</p>
+<h4>Technology Fatigue Is Real</h4>
+<p>One guest described walking onto a job where the superintendent had to log into seven different apps to do his work. None of them talked to each other. The promise of each tool was to save time. The reality was drowning in logins and notifications.</p>
+<p>This is a systemic problem the industry hasn’t solved. Too many point solutions, not enough integration. And the burden falls on the people with the least capacity to absorb it: field teams under schedule pressure.</p>
+<p>The guests who’d navigated this successfully had a few common approaches. They were ruthless about eliminating tools that didn’t add clear value. They prioritized platforms that could replace multiple point solutions. They pushed back on adding new technology mid-project, recognizing that consistency mattered more than optimization.</p>
+<h4>Data Foundation Before AI</h4>
+<p>There’s a lot of hype about artificial intelligence in construction. The guests I talked to were more measured.</p>
+<p>The most direct assessment came from someone building analytics tools: if you don’t have structured data and clear KPIs, layering AI on top is just a black box. You might get recommendations, but you won’t be able to explain them. And in an industry where lives and livelihoods depend on decisions, unexplainable recommendations are dangerous.</p>
+<p>This doesn’t mean AI is useless. Several guests are actively using it. But they’re using it for specific, well-defined tasks: automating takeoffs, analyzing photos, summarizing documents. The guests who tried to apply AI to messy, undefined problems without clean data got nowhere.</p>
+<p>The implication for companies: before you chase AI, figure out your data strategy. Know what you’re measuring and why. Build the foundation first.</p>
+<hr>
+<h2>On Culture and Organizations</h2>
+<h4>Incentive Misalignment Is Everywhere</h4>
+<p>Almost every conversation touched on this in some way. Architects aren’t incentivized to produce perfect designs. Owners want speed and cost certainty but contract in ways that create adversarial relationships. GCs push risk down to subs who can least afford to absorb it.</p>
+<p>One guest put it bluntly: no technology or process improvement can overcome fundamentally broken incentives. You can make information more visible, but if people are rewarded for behavior that’s bad for the project, they’ll keep doing it.</p>
+<p>The most hopeful conversations were about structures that attempt to align incentives: integrated project delivery, ESOP ownership, design-build relationships with trusted partners. But even those have limitations. No contract structure is perfect. Every arrangement creates new tensions.</p>
+<p>What can individuals do? Understand the incentive landscape you’re operating in. Don’t be naive about why people behave the way they do. And where possible, build relationships with people who share your values, because trust fills gaps that contracts can’t.</p>
+<h4>Authenticity Is Table Stakes</h4>
+<p>Construction professionals detect inauthenticity inherently. This came up in conversations about marketing, about technology sales, about leadership.</p>
+<p>One guest talked about spending hours identifying fake stock photos. The people in the images were wearing the wrong safety gear. European construction vests in American marketing materials. Details that anyone in the industry would notice instantly.</p>
+<p>Another described the difference between education-based marketing and hype. When you help people solve real problems, they remember. When you promise the world and underdeliver, word travels fast. In an industry built on relationships, reputation is everything.</p>
+<p>The implication for tech companies, for service providers, for anyone trying to build credibility: lead with honesty. Admit what you don’t know. Deliver on what you promise. The bar isn’t high, but most fail to clear it.</p>
+<h4>Culture Determines Technology Adoption</h4>
+<p>A safety leader made this point with a powerful reframe. He said the most important thing about an incident isn’t the incident itself. It’s how leadership reacts. If they punish, people stop reporting. If they learn, people open up.</p>
+<p>The same dynamic applies to technology. If leaders treat new tools as boxes to check, that’s how people will use them. If leaders genuinely engage, ask questions, and hold themselves to the same standards, adoption follows.</p>
+<p>This means culture change has to precede technology change. You can’t just buy a platform and expect transformation. The leaders who got this right invested in communication, in training, in demonstrating their own commitment. It took longer, but it stuck.</p>
+<hr>
+<h2>On Career and Mindset</h2>
+<h4>Raise Your Hand</h4>
+<p>One of the earliest conversations I had was with a superintendent who’d risen quickly. His advice was simple: ask for opportunities. Don’t wait for them to be offered.</p>
+<p>Early in his career, he literally asked to run work. His supervisor looked at him like he was crazy. But he got his shot, and he made the most of it.</p>
+<p>This isn’t about being arrogant. It’s about being proactive. The construction industry rewards people who step up. There’s more work than people to do it. If you can demonstrate competence and willingness, opportunities will find you.</p>
+<p>The nuance is timing. You need enough experience to actually deliver when you get your chance. And you need to build trust first. But the guests who rose fastest all had moments where they asked for more before they felt ready.</p>
+<h4>Work Hard Early, But Recognize It’s a Season</h4>
+<p>This one came with a lot of caveats. Several guests talked about putting in 70-hour weeks early in their careers. The long hours built relationships, accelerated learning, created opportunities.</p>
+<p>But the same guests talked about adjusting as their lives changed. One described moving from “career first” to what he called “work-life rhythm.” He still worked hard. But he was intentional about when and how, making room for family without abandoning ambition.</p>
+<p>The tension here is real. The industry rewards availability. Projects don’t stop because you need time off. But burnout is also real, and I heard enough stories about people who crashed to take it seriously.</p>
+<p>The synthesis seems to be: <strong>there’s probably a season early in your career where putting in extra effort pays compounding dividends</strong>. But that season has to end. The people who built sustainable careers found ways to transition, often by getting efficient enough that they didn’t need to grind as hard.</p>
+<h4>Failure Is Data</h4>
+<p>Almost every founder I talked to had a failure story. Products that didn’t work. Companies that folded. Projects that went sideways.</p>
+<p>But none of them treated failure as permanent. They treated it as information. What went wrong? What would they do differently? How could they apply the lesson going forward?</p>
+<p>One founder spent his entire savings on an engineering team that built the product wrong. He had to re-architect everything after launch. He talked about it openly, not as trauma but as education.</p>
+<p>This mindset isn’t just for founders. Several guests who’d risen through the ranks described specific failures that shaped how they lead today. The pattern recognition that makes experienced superintendents valuable comes from all the times things went wrong.</p>
+<p>The implication: don’t hide from failure. Document it. Learn from it. Share it with people who can learn from it too.</p>
+<h4>The Grownups Don’t Have It Figured Out Either</h4>
+<p>One of my favorite moments came from a founder who said: don’t be intimidated by titles. People are just people. Everyone is figuring it out as they go.</p>
+<p>This is liberating if you’re early in your career. The executives you’re scared to talk to? They have imposter syndrome too. The industry veterans who seem to know everything? They’re still learning.</p>
+<p>The corollary is responsibility. If no one has it figured out, you’re not off the hook. Your ideas might be as good as anyone’s. Your perspective might surface something others missed. The hierarchy exists for reasons, but it’s not a substitute for your own thinking.</p>
+<hr>
+<h2>What This Means for the Next Generation</h2>
+<p>If you’re early in your career, here’s what I’d take from 30 conversations:</p>
+<p><strong>Get on the jobsite as fast as possible.</strong> Whatever role you’re in, find ways to spend time where the work actually happens. The learning is irreplaceable.</p>
+<p><strong>Ask questions relentlessly.</strong> The people who rise fastest are the ones who never stop being curious. Don’t pretend to know things you don’t.</p>
+<p><strong>Build relationships intentionally.</strong> This is a relationship business. Your network is career capital. Invest in it, buy tech to help you manage it (<a href="https://clay.earth/">clay - personal CRM</a>)</p>
+<p><strong>Learn to use AI tools now.</strong> The technology is here. The people who become fluent early will have advantages.</p>
+<p><strong>Seek out mentors, but take initiative.</strong> Don’t wait for a mentorship program. Identify people you want to learn from and make it easy for them to help you.</p>
+<p><strong>Be patient, but not passive.</strong> Career arcs take time. But waiting for permission isn’t the same as being patient. Ask for opportunities. Raise your hand.</p>
+<p><strong>Expect to fail.</strong> Not because you’re not good enough. Because that’s how everyone learns. The difference is what you do with it.</p>
+<p>The industry is changing. Labor constraints, technology adoption, generational transition, all of it creates flux. That’s uncomfortable if you want certainty. It’s opportunity if you’re willing to adapt.</p>
+<p>I’m still figuring this out too. That’s why I started the podcast. Thirty episodes in, I know more than I did, but I also know how much I don’t know. The guests who taught me the most were the ones honest about the same thing.</p>
+<p>Here’s to the next 30.</p>

@@ -11,6 +11,21 @@ from the Podbean RSS feed.
 - `build.py` — fetches the Podbean feed and regenerates `site/index.html`
   and `site/episodes.html` (episode cards, counts, cover art)
 
+## What's on the site (audience-first, Aug 2026)
+
+| Page | Source of truth | Edit how |
+|---|---|---|
+| Start Here paths (`start.html`, `start/*`) | `paths.json` | edit JSON, rebuild |
+| Episode chapters, quotes, guest line, mentions | `data/chapters/<slug>.json` | one JSON per episode (23 so far); add more from transcripts |
+| Articles (`articles.html`, `articles/*`) | `articles/<slug>.md` (front matter + HTML body) | add a file per Recap / Insider Take / Debrief |
+| Tools database (`tools.html`, `assets/tools.csv`) | `data/tools.json` | regenerate from the Notion Episode Insights DB (Tools Mentioned + Mention Source); only Practitioner mentions are published |
+| The 50 lessons (`lessons.html`, `assets/cc-50-expensive-lessons.pdf`) | `data/lessons.json` | edit JSON, rebuild, re-print the PDF (headless Chrome on lessons.html) |
+| Reviews (`reviews.html`) | Apple RSS at build time, cached in `data/reviews.json` | add non-Apple reviews by hand to the cache with `"source": "LinkedIn"` |
+| Join In (`join.html`) | `data/upcoming.json` + form links in `templates/join.html` | paste Tally form URLs over the mailto placeholders |
+| From the Field (`stories.html`) | `stories/<slug>.md` | one file per approved listener story |
+
+Nav and footer are single-sourced in `extras.py` (`NAV_ITEMS`, `FOOT_ITEMS`). The newsletter block on every page is `extras.newsletter_block()`.
+
 ## Refresh episodes
 
 ```bash
