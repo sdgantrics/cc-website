@@ -1,5 +1,5 @@
 ---
-title: Insiders Take | 03 - Prefab Is a Manufacturing Business, Not Construction in a Warehouse
+title: Prefab Is a Manufacturing Business, Not Construction in a Warehouse
 subtitle: By Andrew Rener | Executive, Architectural Metals
 date: 2026-05-21
 type: Insider Take

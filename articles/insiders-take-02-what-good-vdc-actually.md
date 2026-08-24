@@ -1,5 +1,5 @@
 ---
-title: Insiders Take | 02 - What Good VDC Actually Looks Like
+title: What Good VDC Actually Looks Like
 subtitle: By Jack Desloge | Senior VDC Manager, VIATechnik
 date: 2026-05-06
 type: Insider Take

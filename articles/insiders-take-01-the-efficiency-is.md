@@ -1,5 +1,5 @@
 ---
-title: Insiders Take | 01 - The Efficiency Is in the Planning, Not the Software
+title: The Efficiency Is in the Planning, Not the Software
 subtitle: By Chris Masse | General Superintendent, EllisDon
 date: 2026-04-16
 type: Insider Take

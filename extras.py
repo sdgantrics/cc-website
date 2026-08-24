@@ -214,7 +214,7 @@ def fmt_date(iso: str) -> str:
 
 def article_card(a, base: str = "") -> str:
     ep = a["episodes"][0] if a["episodes"] else ""
-    ep_tag = f'<span class="stamp">{esc(ep_label(ep))}</span>' if ep else ""
+    ep_tag = f'<span class="stamp">From {esc(ep_label(ep)).replace("EP 0", "Ep ").replace("EP ", "Ep ")}</span>' if ep else ""
     sub = f'<p class="ep-desc">{esc(a.get("subtitle", ""))}</p>' if a.get("subtitle") else ""
     return f'''      <article class="ep-card art-card" data-type="{esc(a.get("type", ""))}">
         <div class="ep-meta"><span class="tag">{esc(a.get("type", "Article"))}</span><span class="stamp">{esc(fmt_date(a.get("date", "")).upper())}</span>{ep_tag}</div>
