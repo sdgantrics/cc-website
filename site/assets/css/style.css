@@ -485,3 +485,8 @@ footer { border-top: 1px solid var(--hairline); }
   .lesson .ep-quote p { color: #0B0F12; }
   .l-story { color: #3A444C; }
 }
+
+/* ---------- keyboard focus: Crane, not browser blue ---------- */
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--crane); outline-offset: 2px; }
+.nl-form input:focus, .search-row input:focus { outline: none; }
