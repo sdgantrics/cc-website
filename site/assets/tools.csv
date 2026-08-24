@@ -1,87 +1,208 @@
-Tool,Category,Episode,Who said it,What they said
-Procore,Project Management,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
-Procore,Project Management,EP 033,Victor Muchiri,Procore's DataGrid buy signals a shift from discrete steps to whole workflows
-Procore,Project Management,EP 022,John Riggs,"Even when the GC is in the room before MSAs are signed, the owner-architect-engineer-GC contracting chain leaves each party on their own platform, and integrating them into the Procore home base gets…"
-Procore,Project Management,EP 019,Joe Wilson,Procore's submittal workflow pushes teams to Excel and fractures the source of truth
-Procore,Project Management,RAN Jul 2026,Reviewed as Noted panel,"The hard part of building your own software is context, not code"
-Procore,Project Management,RAN Jul 2026,Reviewed as Noted panel,"Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data"
-Procore,Project Management,RAN Jul 2026,Reviewed as Noted panel,A world where every owner Frankensteins their own platform is worse than the platform monopoly
-Procore,Project Management,RAN Jul 2026,Reviewed as Noted panel,"Customer success churn at a vendor is an adoption risk, not just an annoyance"
-Procore,Project Management,RAN Aug 2026,Reviewed as Noted panel,Legacy platforms letting features languish is what creates room for startups
-ChatGPT,AI/Analytics,EP 027,Tim Straub,"AI will make commissioning agents more efficient, not replace them, it's only as good as the human's prompt"
-ChatGPT,AI/Analytics,EP 032,Fouad Khalil,"AI in construction will be a long augmentation phase, not replacement, you can't automate what you don't understand"
-ChatGPT,AI/Analytics,EP 030,Michael Zeppieri,"Skanska invested in its data solutions team nearly two years before ChatGPT existed, unglamorous standardization like office decoder rings and subcontractor dropdowns is the foundation AI readiness…"
-ChatGPT,AI/Analytics,EP 033,Victor Muchiri,"Match the AI model to the job: ChatGPT to spar, Claude to edit, Gemini to research"
-ChatGPT,AI/Analytics,EP 018,Matt Graves,Firms that lean into AI to make PMs' lives less sucky will win the talent war within a decade
-ChatGPT,AI/Analytics,EP 018,Matt Graves,AI submittal review acts as a robot mentor that teaches juniors what to look for
-ChatGPT,AI/Analytics,EP 034,Angelo Suntres,Overusing ChatGPT for internal emails erodes your professional brand because people can tell
-ChatGPT,AI/Analytics,EP 022,John Riggs,"Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable…"
-Excel,Business Systems,EP 029,Patrick Murphy and Jeremy Crumley,Excel is great but traps precon data and blocks enterprise leverage
-Excel,Business Systems,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
-Excel,Business Systems,EP 030,Michael Zeppieri,"Digitalization mostly digitized the paper process, Word and Excel replicating paper forms, and lost the chance to improve the work itself; AI is the second chance to redesign processes rather than…"
-Excel,Business Systems,EP 019,Joe Wilson,Procore's submittal workflow pushes teams to Excel and fractures the source of truth
-Excel,Business Systems,RAN Aug 2026,Reviewed as Noted panel,"Hire for problem-solving persistence, not AI proficiency, the tooling is already table stakes"
-Autodesk,BIM/VDC,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
-Autodesk,BIM/VDC,EP 007,Andrew Rener,"Generative design is a massing exercise, not constructable documents"
-Autodesk,BIM/VDC,EP 055,Tim Smith,"Design engineers no longer spend field time before they design, and the drawings show it"
-Autodesk,BIM/VDC,RAN Jul 2026,Reviewed as Noted panel,A world where every owner Frankensteins their own platform is worse than the platform monopoly
-iPad,Field/Mobile,EP 011,Chris Masse,"Tech fatigue is the field's rational default: years of half-working apps (iPads that only refreshed in the trailer) mean superintendents open every pilot with 'no,' and EllisDon management had to say…"
-iPad,Field/Mobile,EP 007,Andrew Rener,Robots widen the industry's talent base by making trades appealing to younger workers
-iPad,Field/Mobile,EP 005,Mitchell McDonald,Reject work-life balance in favor of work-life rhythm
-iPad,Field/Mobile,EP 017,a Story the Field Believes with Jackie Guilbault,"iPads launched globally without field testing failed in rugged, cold conditions"
-OpenSpace,Reality Capture,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
-OpenSpace,Reality Capture,EP 022,John Riggs,"Jobsite tech's time savings are a tug of war: tools like OpenSpace genuinely give time back, but over the same period regulatory complexity and more sophisticated clients added administrative drag…"
-OpenSpace,Reality Capture,EP 022,John Riggs,"Photo documentation and site capture is the most oversaturated ConTech category to found a company in, because behemoths with funding and recurring revenue will out-ideate new entrants from their…"
-OpenSpace,Reality Capture,RAN Aug 2026,Reviewed as Noted panel,"Reality capture keeps getting funded because it multiplies the superintendent, not because it's novel"
-Claude,AI/Analytics,EP 033,Victor Muchiri,"Match the AI model to the job: ChatGPT to spar, Claude to edit, Gemini to research"
-Claude,AI/Analytics,EP 034,Angelo Suntres,"The next-gen edge is knowing how buildings actually get built, which won't be replaced by a prompt"
-Claude,AI/Analytics,EP 022,John Riggs,"Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable…"
-Trimble,BIM/VDC,EP 026,Al Ricci,"AccuBit's origin: a contractor built estimating software for himself, then pivoted to a company"
-Trimble,BIM/VDC,EP 013,Hannu Lindberg,"The Trimble model-to-field breakthrough, extracting model points to total stations, started as a back-office hack before becoming product, and connecting coordinated model data to field layout is…"
-Trimble,BIM/VDC,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
-AutoCAD,BIM/VDC,EP 011,Chris Masse,"His CM Planner method strips drawings to a blank sheet in AutoCAD, rebuilds them layer-by-layer in build sequence with each layer matching a schedule task and green/yellow/red pass colors, and trades…"
-AutoCAD,BIM/VDC,EP 013,Hannu Lindberg,"Going to the field first, against the pull of the 'cushy office', is how theory becomes practice, and his technology conversion came from tools that made his own job easier: finding drawing errors…"
-AutoCAD,BIM/VDC,EP 055,Tim Smith,"Design engineers no longer spend field time before they design, and the drawings show it"
-DroneDeploy,Reality Capture,EP 022,John Riggs,"Photo documentation and site capture is the most oversaturated ConTech category to found a company in, because behemoths with funding and recurring revenue will out-ideate new entrants from their…"
-DroneDeploy,Reality Capture,EP 022,John Riggs,"Consolidation, not novel capability, converts practitioner skeptics: he MacGyvered drone capture with a $3 app seven years ago and only saw DroneDeploy's value once it collapsed two or three…"
-DroneDeploy,Reality Capture,RAN Aug 2026,Reviewed as Noted panel,"Reality capture keeps getting funded because it multiplies the superintendent, not because it's novel"
-Trunk Tools,AI/Analytics,EP 030,Michael Zeppieri,"The IP of a construction company is its people, when owners evaluate a bid they are really interviewing the project team, and even global GCs win or lose work on relationships"
-Trunk Tools,AI/Analytics,EP 022,John Riggs,"Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable…"
-Autodesk Construction Cloud,Project Management,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
-Autodesk Construction Cloud,Project Management,RAN Jul 2026,Reviewed as Noted panel,"Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data"
-Bluebeam,Document/Contract,EP 011,Chris Masse,"His CM Planner method strips drawings to a blank sheet in AutoCAD, rebuilds them layer-by-layer in build sequence with each layer matching a schedule task and green/yellow/red pass colors, and trades…"
-Bluebeam,Document/Contract,EP 022,John Riggs,"Consolidation, not novel capability, converts practitioner skeptics: he MacGyvered drone capture with a $3 app seven years ago and only saw DroneDeploy's value once it collapsed two or three…"
-Document Crunch,Document/Contract,EP 017,a Story the Field Believes with Jackie Guilbault,"Contract value extends into the field, risk doesn't stop at signing"
-Document Crunch,Document/Contract,EP 017,a Story the Field Believes with Jackie Guilbault,Founder-market fit: an ex-construction-attorney CEO builds for the persona's real pain
-Dusty Robotics,Robotics/Automation,EP 007,Andrew Rener,Robots widen the industry's talent base by making trades appealing to younger workers
-Dusty Robotics,Robotics/Automation,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
-Microsoft Copilot,AI/Analytics,EP 034,Angelo Suntres,Overusing ChatGPT for internal emails erodes your professional brand because people can tell
-Microsoft Copilot,AI/Analytics,EP 022,John Riggs,"Capturing retiring superintendents' knowledge is a data-collection problem before it is an LLM problem, hallucinations make him wary of models over unstructured field knowledge, so the actionable…"
-Microsoft Word,Other,EP 030,Michael Zeppieri,"Digitalization mostly digitized the paper process, Word and Excel replicating paper forms, and lost the chance to improve the work itself; AI is the second chance to redesign processes rather than…"
-Microsoft Word,Other,RAN Aug 2026,Reviewed as Noted panel,"Hire for problem-solving persistence, not AI proficiency, the tooling is already table stakes"
-NVIDIA,AI/Analytics,EP 032,Fouad Khalil,"Hyperscale data centers have achieved 'China-level speed', a giant microchip on the earth"
-NVIDIA,AI/Analytics,EP 032,Fouad Khalil,Optimal modularity sits on a diagonal: standardization must be matched to required flexibility
-Primavera P6,Scheduling,EP 022,John Riggs,"Back-office schedule updating is low-hanging fruit for agentic AI right now, a chat-based agent reconciling what should have happened against what did and adjusting tied activities should be…"
-Primavera P6,Scheduling,EP 055,Tim Smith,"A GC's A-team or C-team is visible within 30 days, and the tell is a milestone schedule that is actually followed"
-Salesforce,Business Systems,EP 030,Michael Zeppieri,"Cloud value has stagnated because SaaS providers grew so many layers of customer success that people who never touched the problem are building for it, losing the developer-to-user intimacy that made…"
-Salesforce,Business Systems,EP 026,Al Ricci,The customer success model was pioneered by Salesforce as a subtle way of selling
-Tekla Structures,BIM/VDC,EP 013,Hannu Lindberg,"Fabrication-driven trades prove model-driven construction already works, steel detailers model 100% accurate in Tekla, MEP and now framing and reinforcement follow, so the missing link is how…"
-Tekla Structures,BIM/VDC,EP 013,Hannu Lindberg,"The Trimble model-to-field breakthrough, extracting model points to total stations, started as a back-office hack before becoming product, and connecting coordinated model data to field layout is…"
-Hexagon,BIM/VDC,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
-Kahua,Project Management,RAN Jul 2026,Reviewed as Noted panel,"Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data"
-Microsoft Project,Scheduling,EP 022,John Riggs,"Back-office schedule updating is low-hanging fruit for agentic AI right now, a chat-based agent reconciling what should have happened against what did and adjusting tied activities should be…"
-Microsoft Teams,Communication,EP 011,Chris Masse,"Field adoption of technology at a major GC only flipped from 'nice to have' to 'benefit' around 2018-2020, with COVID forcing digital collaboration that had been technically possible since 2015 but…"
-Palantir,AI/Analytics,RAN Aug 2026,Reviewed as Noted panel,Ask how you exit an ontology partnership before you sign it
-Python,Other,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
-ArchiCAD,BIM/VDC,EP 013,Hannu Lindberg,"Going to the field first, against the pull of the 'cushy office', is how theory becomes practice, and his technology conversion came from tools that made his own job easier: finding drawing errors…"
-Leica,Reality Capture,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
-LinkedIn,Communication,RAN Aug 2026,Reviewed as Noted panel,Vendor noise has trained innovation leaders to ignore the first eight emails
-OpenAI,AI/Analytics,EP 030,Michael Zeppieri,"Skanska invested in its data solutions team nearly two years before ChatGPT existed, unglamorous standardization like office decoder rings and subcontractor dropdowns is the foundation AI readiness…"
-Photoshop,Other,EP 022,John Riggs,"Consolidation, not novel capability, converts practitioner skeptics: he MacGyvered drone capture with a $3 app seven years ago and only saw DroneDeploy's value once it collapsed two or three…"
-Pix4D,Other,EP 022,John Riggs,"Photo documentation and site capture is the most oversaturated ConTech category to found a company in, because behemoths with funding and recurring revenue will out-ideate new entrants from their…"
-Revizto,Other,EP 025,Alex Belkofer,"Connected platforms linking digital tools to physical tools broke BIM out of 15 years of siloed workflows, and every break in the office-to-field information chain is an opportunity for risk."
-Safety Sidekick,Other,EP 030,Michael Zeppieri,"With AI the build-vs-buy pendulum swings back to building in-house: vendors should secure the environment and provide the build tools rather than every native feature, Skanska's internally built…"
-Sherpods,Other,EP 013,Hannu Lindberg,"Prefab has no magic button, it only pays where there's repetition and the right job (bathroom pods, exterior panels and skid-mounted electrical rooms for remote data centers), it requires design…"
-Vico,Other,EP 013,Hannu Lindberg,"Going to the field first, against the pull of the 'cushy office', is how theory becomes practice, and his technology conversion came from tools that made his own job easier: finding drawing errors…"
-Visual Basic,Other,EP 030,Michael Zeppieri,"AI-driven low-code/no-code levels the playing field for small and mid-size contractors who can't afford Autodesk or Procore partnerships, their people knowledge plus a build platform gives them the…"
-Zoom,Communication,EP 011,Chris Masse,"Field adoption of technology at a major GC only flipped from 'nice to have' to 'benefit' around 2018-2020, with COVID forcing digital collaboration that had been technically possible since 2015 but…"
+Company,Categories,Stage,HQ,Heard on the show,Tech to Watch,Website,What they do
+Adaptive,Financial / Payments,Series A,,,,,"Back-office financial services platform, an a16z portfolio company, built for contractors."
+Agave,Financial / Payments; AI / Data Infrastructure,Series A,"San Francisco, CA",,,https://useagave.com,"AI platform for construction financials that connects 14+ ERP and project-management systems to automate AP invoice coding, expense management, and vendor compliance for contractors."
+Aitenders Technologies,Preconstruction & Estimating; Project Management; AI / Data Infrastructure,Public,"Saint-Étienne, France",,,https://aitenders.com,"AI platform for tender response and contract management that tracks every requirement, clause and commitment from bid through project delivery."
+Alice Technologies,Scheduling,Series B,,,,,AI-driven construction schedule-optimization software that generates and compares alternative project schedules.
+Alloovium,AI / Data Infrastructure; Project Management,Pre-seed,"Brisbane, QLD, Australia (also reported as San Francisco, CA)",,,,"Document intelligence layer for construction that reads every contract, spec, drawing, compliance record and conversation on a project and answers questions with a citation back to the exact source sentence."
+Andrew Rener stealth startup (name TBD),Field Operations,Pre-seed,,,,,"In-development construction workflow product for subcontractors (underserved vs GCs), embedding experiential knowledge from subject-matter experts"
+Arcol,Design / BIM / VDC,Seed,"New York, NY",,,https://arcol.io,"Browser-based collaborative 'BIM 2.0' for early-stage design, feasibility and presentations; public launch June 2025"
+Attentive.ai,Preconstruction & Estimating,Series B,"Noida, India (US ops)",,,https://attentive.ai,Beam AI takeoff and estimating platform expanding into full preconstruction automation
+Augmenta,Design / BIM / VDC,Seed,,,,,AI-driven generative design automation for electrical raceway/systems design.
+Automated Architecture,Robotics & Hardware,Unknown,,,,,Robotics company developing single-shot nailing robots for timber-frame construction.
+Beck Technologies,Preconstruction & Estimating,Unknown,,,,,Maker of Destiny (formerly Destiny Profiler) conceptual estimating software for preconstruction teams.
+Beck Technology,Preconstruction & Estimating,Unknown,,,,,Software arm of The Beck Group making the Destiny estimating/preconstruction platform used by GCs.
+Bedrock Robotics,Robotics & Hardware,Series B,"San Francisco, CA",,,https://www.bedrockrobotics.com,"Retrofits excavators, dozers and loaders with autonomy so contractors can run self-operating heavy equipment fleets"
+Belidor,Preconstruction & Estimating; AI / Data Infrastructure,Unknown,,,,,AI-powered bid-leveling and scope-generation software for preconstruction teams.
+BidScript,Preconstruction & Estimating,Pre-seed,"Manchester, UK",,,https://www.bidscript.co.uk,"AI-native tender management platform to find, qualify, write, and submit bids for construction and engineering contracts."
+Bild AI,Preconstruction & Estimating,Seed,"San Francisco, CA",,,https://bild.ai,"YC-backed AI that reads blueprints to extract quantities, cost estimates and compliance issues, starting with Division 8 doors/frames/hardware"
+Billdr,Project Management,Unknown,,,,,"Vertical SaaS back-office platform for SMB general contractors, pivoted from a home-renovation marketplace."
+Birdsview (Burview),Reality Capture,Unknown,,,,,Norwegian startup using enhanced ground-penetrating radar and 3D point-cloud algorithms to non-destructively scan existing concrete reinforcement.
+Bitchat,Field Operations,Unknown,,,yes,https://bitchat.free,Peer-to-peer encrypted messaging over Bluetooth mesh for offline jobsite comms
+Bobyard,Preconstruction & Estimating; AI / Data Infrastructure,Series A,,,,,"AI takeoff startup automating construction quantity takeoffs, originally built around landscape takeoff."
+Boon,Preconstruction & Estimating; AI / Data Infrastructure,Unknown,,,,,AI startup that reads construction drawings and automates preconstruction estimating end-to-end.
+Breadcrumb,Safety,Unknown,,,,,"Construction safety/compliance app digitizing site orientations, permits, manpower tracking, and pre-task safety plans for GCs."
+Brickanta,Preconstruction & Estimating; Supply Chain & Procurement,Seed,"Stockholm, Sweden",,,https://www.brickanta.com,"YC-backed agentic AI for contractor preconstruction: bid analysis, cost estimation, procurement"
+Bridgeline,Preconstruction & Estimating,Seed,,,,,"Startup automating bid-leveling data transfer for general contractors, backed by University of Chicago."
+Bridgit,Workforce / Training,Series B,"Kitchener, ON, Canada",,yes,https://gobridgit.com,"Workforce intelligence for construction labor planning, management and forecasting"
+Build (infrastructure AI),Preconstruction & Estimating; AI / Data Infrastructure,Seed,"San Francisco, CA",,,,"Multi-agent AI platform accelerating infrastructure project workflows, site sourcing, due diligence, power assessment, and early design for data centers, energy, and industrial facilities."
+Build Factory,Supply Chain & Procurement; Project Management,Unknown,,,,,Marketplace connecting underutilized MEP prefab shops with fabrication demand across regions.
+BuildCrew,Design / BIM / VDC; AI / Data Infrastructure,Seed,,,,,Early-stage AI-for-construction-drawings startup backed by Vinod Khosla.
+Builder,Project Management; Financial / Payments,Unknown,,,,,"Vertical SaaS operating system for small and mid-size general contractors, covering back-office and project workflows."
+Buildforce,Workforce / Training; Field Operations,Series A,"Austin, TX (also Houston)",,,https://www.buildforce.com,"Tech-enabled staffing platform that connects pre-vetted electricians with electrical contractors on commercial and industrial construction projects, via a worker mobile app and a contractor web app."
+Building Catalyst,Preconstruction & Estimating; Owner / Facilities,Unknown,,,,,"Systems-thinking platform that predicts space program, design massing, schedule, and cost from an owner's business case."
+BuildMentor,Workforce / Training,Pre-seed,,,,,"Knowledge-sharing and mentorship platform for construction, Tinder-style mentor/mentee matching plus a searchable 'Experience Hub' of lessons-learned cards capturing retiring experts' knowledge"
+BuildOps,Project Management; Field Operations,Series C+,,,,,Unicorn-valued operating system software platform for commercial MEP trade contractors.
+Buildots,Reality Capture; AI / Data Infrastructure,Growth / PE,,,,,Reality-capture and AI progress-tracking company (acquired Genda to combine visual progress data with workforce location data).
+Buildr,Project Management; Preconstruction & Estimating,Unknown,,,,,All-in-one CRM and preconstruction platform for general contractors.
+Buildroid,Robotics & Hardware; AI / Data Infrastructure,Pre-seed,,,,,Simulation-first platform helping GCs model projects and deploy the right construction robotics solutions.
+BuildVision,Supply Chain & Procurement,Unknown,,,,https://buildvision.io,Network/marketplace connecting MEP manufacturers and OEMs with contractors for equipment purchasing and financing
+BuildWitt,Workforce / Training,Unknown,,,yes,https://buildwitt.com,"Mobile microtraining for heavy civil, utilities and mining crews"
+Built Technologies,Financial / Payments,Growth / PE,,,,,"Construction lending and draw-management/payments platform for lenders, owners, and GCs, using agentic AI for draw processing."
+Caliperd,Preconstruction & Estimating,Unknown,Australia,,,,"AI concrete estimating tool that calculates volumes, reinforcement and formwork quantities directly from project schedules."
+Capture,Sustainability; Robotics & Hardware,Unknown,,,,,Melbourne startup retrofitting diesel generators with carbon-capture hardware that converts CO2 into calcium carbonate for use in concrete.
+Cascade,Preconstruction & Estimating; AI / Data Infrastructure,Seed,"New York, NY",,,https://usecascade.ai,"AI pursuit platform that reads bond filings, permits, capital plans and public meeting minutes to surface construction projects before they go to bid, then scores each against a firm's track record."
+CIV Robotics,Robotics & Hardware,Unknown,,,,,"Robotics company automating construction layout marking, backed by Trimble and Bobcat."
+Clearstory,Financial / Payments,Unknown,"San Francisco, CA",yes,yes,https://clearstory.build,"Change order platform: T&M ticket capture, AI categorization and real-time cost exposure"
+ClueWorth,Financial / Payments; Sustainability,Series A,,,,,"Financing platform for residential solar, battery, and heat-pump installations across Europe via local installer networks."
+CMIC,Financial / Payments; Project Management,Unknown,,,,,"Construction-specific ERP platform covering project management, accounting, and HR that GCs run their back office on."
+Command Post,Field Operations,Unknown,,,,,Voice-to-text daily reporting and field-documentation app for construction sites.
+Comstruct,Supply Chain & Procurement,Series A,"Munich, Germany",,,https://www.comstruct.com,Procurement and invoice-reconciliation digitizing materials ordering between contractors and suppliers
+ConCntric,Preconstruction & Estimating,Series A,"Greenbrae, CA",,,https://concntric.com,"Preconstruction platform unifying cost, scope and design decisions in one workspace"
+conmeet,Project Management; Scheduling; Supply Chain & Procurement; Financial / Payments,Seed,"Borken, Germany",,,,"AI-native operating system for mid-sized trades and construction firms, unifying project management, procurement, scheduling, site documentation, finance and invoicing on one data model."
+Constrafor,Financial / Payments; Supply Chain & Procurement,Series A,"New York, NY",,,https://www.constrafor.com,GC-subcontractor procurement platform with embedded Early Pay financing so subs get paid in 1-2 days instead of 83
+Construction Gamma,AI / Data Infrastructure,Bootstrapped,,,,,"Private verified-members community for construction pros (AI best practices, shared workflows/prompts) plus an independent Procore MCP connector letting Claude query Procore data"
+Contracts Connected,Financial / Payments; Project Management,Unknown,,yes,yes,https://contractsconnected.com,"AI automation of back-office contracts, document collection, compliance and vendor management"
+Coral,Financial / Payments; Sustainability,Seed,,,,,AI software that guarantees and advances exact utility heat-pump rebate amounts at point of sale for contractors.
+Creature,Design / BIM / VDC,Unknown,,,,,Integrated design+construction company delivering industrialized/modular healthcare projects (~100 volumetric modules per 60k sq ft hospital) using manufacturer production models
+Cumulus,Field Operations,Unknown,,,,,Software digitizing QA/QC paperwork for electrical and mechanical contractors on data-center projects via Bluetooth-enabled tools.
+Cupix,Reality Capture,Unknown,,yes,,https://cupix.com,360° reality capture and digital twin platform for jobsite documentation
+dConstruct Robotics,Robotics & Hardware; Reality Capture,Unknown,,,,,Builds AI-powered scanning robots for construction sites.
+Digs,Owner / Facilities,Seed,"Vancouver, WA",,,https://digs.com,AI for home builders: preconstruction collaboration through 3D digital-twin handover and AI warranty management
+Dili,Financial / Payments; Workforce / Training; AI / Data Infrastructure,Series A,"New York, NY",,,https://www.dili.com,"AI-native compliance platform that automates prevailing wage monitoring, Davis-Bacon compliance, and certified payroll review for federally funded infrastructure and construction projects."
+DIRTT,Robotics & Hardware; Design / BIM / VDC,Public,,,,,Publicly traded manufacturer of prefabricated interior construction systems with proprietary ICE configuration software.
+Document Crunch,Financial / Payments; Project Management,Growth / PE,"Atlanta, GA",yes,,https://documentcrunch.com,"AI contract review, risk identification and compliance for construction documents"
+Doxel,AI / Data Infrastructure; Reality Capture,Unknown,,,,,AI-driven progress tracking and clash-detection platform using computer vision on jobsite data.
+DroneDeploy,Reality Capture,Series C+,"San Francisco, CA",yes,,https://dronedeploy.com,Drone and ground reality capture with AI progress tracking
+Dusty Robotics,Robotics & Hardware; Field Operations,Series B,,yes,,,Robotics company making an automated robotic layout tool (FieldPrinter) for jobsite floor layout.
+Early Trade,Financial / Payments,Series A,,,,,Subcontractor payment/working-capital marketplace offering early payments to subs on construction projects.
+EarthCam,Reality Capture; Safety,Unknown,,,,,Jobsite camera and AI-based safety-monitoring company providing construction site imaging and time-lapse services.
+Ecoworks,Sustainability; Reality Capture,Unknown,,,,,Startup retrofitting residential/office buildings to net-zero using prefab wooden facade panels manufactured from digital-twin scans.
+Edify,Preconstruction & Estimating,Unknown,,,,,"GC-centric preconstruction and cost-conversation estimating software co-founded by Dustin, expanding into self-perform estimating."
+Ediphi,Preconstruction & Estimating,Unknown,,,,,"Cloud-based preconstruction estimating and system-of-record platform, originally developed inside Suffolk Construction and spun out under CEO Dustin DeVan."
+Egnyte,AI / Data Infrastructure; Project Management,Growth / PE,,,,,Cloud content management and data governance platform serving the AEC industry.
+Endra,Design / BIM / VDC; Project Management,Series A,,,,,"MEP engineering workspace/software startup for coordinating mechanical, electrical, and plumbing design work."
+Enlay,AI / Data Infrastructure,Seed,,,,,"AI predictive risk-intelligence layer for construction, built on knowledge/graph networks of past projects."
+Eno Drape,Sustainability,Unknown,,,,,"Startup turning underground spaces (basements, parking, tunnels) into geothermal heating/cooling sources via wall-mounted panels."
+Eos Group,Preconstruction & Estimating,Unknown,,,,,Cost-estimating technology company providing the Cortex data-analytics and conceptual-estimating platform plus benchmarking/predictive-analytics consulting.
+Evercam,Reality Capture,Unknown,"Dublin, Ireland",,,https://evercam.io,Construction time-lapse and AI jobsite camera platform
+Facus,Financial / Payments,Series A,,,,,French fintech 'neo-bank for construction' offering invoice factoring to construction SMBs.
+Field AI,Robotics & Hardware; AI / Data Infrastructure,Series C+,"Mission Viejo, CA",yes,,https://fieldai.com,Foundation models ('field brains') powering autonomous robots across construction and industrial sites
+Field Materials,Supply Chain & Procurement,Series A,"Charlotte, NC",,,https://www.fieldmaterials.com,"AI reading vendor quotes, delivery slips and invoices for materials/equipment rentals, pushing data into accounting systems"
+Fieldproof,Workforce / Training; AI / Data Infrastructure,Bootstrapped,,,,https://fieldproof.io,"AI/tech implementation consulting and boot camps for construction firms ($20M–$100M MEPs and services firms), franchising-style network model"
+Fieldwire by Hilti,Field Operations; Project Management,Growth / PE,,,,https://fieldwire.com,Field task management and plan viewing; acquired by Hilti
+Fixxly,Supply Chain & Procurement; Field Operations,Seed,"Bengaluru, India",,,https://fixxly.in,"AI-powered quick-commerce platform delivering building materials, plywood, paint, electricals, lighting, hardware, plumbing, to jobsites within 30 minutes via a dark-store network."
+Foresight,Scheduling,Series A,"London, UK",,,https://www.foresight.works,Predictive project delivery running AI over existing P6/MS Project schedules to forecast delays on megaprojects (data centers)
+FormX,Design / BIM / VDC; Preconstruction & Estimating; Supply Chain & Procurement,Seed,"Sunnyvale / SF Bay Area, CA",,,https://www.formx.com,"AI platform that designs, engineers and permits custom single-family homes and ADUs, then delivers them as modular construction kits."
+Fyld,Field Operations; AI / Data Infrastructure; Safety,Series B,"London, UK",,,https://fyld.ai,"AI that converts field-crew videos into actionable safety, quality and productivity data for infrastructure work"
+Gaudi AI,Preconstruction & Estimating; Scheduling; AI / Data Infrastructure,Pre-seed,"San Francisco, CA",,,,"Back-office AI for contractors that delivers completed, auditable work products, estimates, bid levelling, change orders and schedules."
+goNEON,Design / BIM / VDC; Preconstruction & Estimating; AI / Data Infrastructure,Pre-seed,"Zurich, Switzerland",,,https://www.goneon.city,"ETH Zurich spin-off building an agentic AI service that generates technically feasible, regulation-compliant infrastructure and mobility designs in minutes rather than months."
+Gravis Robotics,Robotics & Hardware; Field Operations,Unknown,,,,,Swiss/Munich-based autonomous excavation company building robotics for heavy earthmoving equipment.
+GreenVibe,Field Operations; Robotics & Hardware; AI / Data Infrastructure,Seed,"Tel Aviv, Israel",,,https://greenvibe.io,"Wireless multi-sensor devices embedded in concrete before the pour that report strength, temperature, density, workability and humidity every 30 minutes, replacing cylinder break tests."
+Gritt,Robotics & Hardware; Field Operations,Series A,"San Francisco, CA",,,https://gritt.ai,"AI-controlled robots that bolt onto rented, off-the-shelf construction equipment to automate solar farm build-out, and, next, data centers and large infrastructure."
+GroundedAI,Field Operations; Reality Capture; AI / Data Infrastructure,Seed,"Vancouver, BC, Canada",,,https://www.groundedai.com,"System of record for underground construction, field capture and analysis of ground composition and rock quality observations for tunnelling, civil and underground mining teams."
+Gryps,Owner / Facilities,Seed,"New York, NY",,,https://www.gryps.io,"Managed AI ingesting construction/facilities documents for owners (universities, hospitals, infra) making asset data queryable post-handover"
+Guthrie AI,Preconstruction & Estimating; AI / Data Infrastructure,Seed,"Philadelphia, PA",,,https://www.guthrieai.com,"AI 'Virtual Bid Assistant' platform that automates bid prep, scope takeoff, and RFI tracking for glazing and specialty-trade estimators."
+HammerTech,Safety,Growth / PE,,,,,Construction safety-management technology platform founded by Ben Leach.
+Hardline,Field Operations,Unknown,,,,https://hardlineapp.com,"Construction field app (upcoming guest company, enrich after discovery call)"
+HCSS,Preconstruction & Estimating; Project Management,Public,,,,,"Heavy-civil/infrastructure estimating and project management software, now part of Nemetschek's Build segment."
+Higharc,Preconstruction & Estimating; Design / BIM / VDC; AI / Data Infrastructure,Series C+,"North Carolina, USA",,,https://higharc.com,AI homebuilding platform that turns homes into 3D spatial data to auto-generate permit-ready documents and real-time takeoffs.
+Highwire,Safety,Unknown,,,,,"Contractor risk-management platform for prequalification, compliance, and safety data used by GCs and owners."
+Hive (Hive Autonomy),Robotics & Hardware; AI / Data Infrastructure,Seed,"Oslo, Norway & London, UK",,,https://hiveautonomy.no,"Physical-AI 'silicon brain', a foundational model and software layer that retrofits construction and industrial machines (e.g. wheel loaders) for autonomous and remote-teleoperated operation."
+HomeRun,Supply Chain & Procurement,Series A,"Bengaluru, India",,,,"Quick-commerce platform delivering cement, plywood, paint, electrical and other building materials to contractors and homeowners in Bengaluru within 60 minutes."
+Hyperion Robotics,Robotics & Hardware; Sustainability; Supply Chain & Procurement,Unknown,"Espoo, Finland",,,https://www.hyperionrobotics.com,"Deploys mobile 3D-printing robotic microfactories that cast low-carbon reinforced concrete infrastructure components, substation bases, bridge elements, water systems, on or near site."
+ICON,Robotics & Hardware,Growth / PE,,,,,3D-printed concrete construction company building homes and government facilities via large-format additive manufacturing.
+Infra.Market,Supply Chain & Procurement,Growth / PE,,,,,Large construction materials procurement marketplace/platform based in India (Foundamental portfolio company).
+Inlay,Preconstruction & Estimating,Seed,,,,,"AI-native construction risk management platform for catching contract/bid risk (e.g., missed clauses) before award."
+Invite,Sustainability,Pre-seed,,,,,Frankfurt-based smart streetlight retrofit startup expanding into US/EU municipal infrastructure markets.
+Jabberwocki,Field Operations,Unknown,,,,,App for coordinating and vetting remote job-site walks.
+JOIN,Owner / Facilities; Project Management,Series B,,,,,"Venture-backed AEC software platform for owners built around the thesis that owners want buildings, not software."
+Kahua,Project Management; Financial / Payments; Owner / Facilities,Growth / PE,"Alpharetta, GA",yes,,https://kahua.com,"Construction program/project management and financial management platform (owner-centric, ERP-adjacent)"
+Kaya AI,Supply Chain & Procurement,Pre-seed,"New York, NY",,,https://www.usekaya.ai,"Supply chain intelligence for data center / mission-critical projects: AI tracking procurement, lead times and delivery risk"
+Kebra,Field Operations; AI / Data Infrastructure; Owner / Facilities,Pre-seed,"San Francisco, CA",,,https://www.kebra.com,"Vision-based system that guides field technicians through jobs and captures what they do, automatically triggering back-office workflows in ServiceTitan, financial software, and warranty portals."
+Kewazo,Robotics & Hardware; Field Operations,Series A,,,,,Robotics company building vertical material-handling and scaffolding-automation systems for construction logistics.
+Kind Designs,Robotics & Hardware; Sustainability; Owner / Facilities,Pre-seed,"Miami, FL",,,,"3D-prints ""Living Seawalls"", coastal armor that doubles as artificial reef habitat, for municipal, hospitality and federal shoreline infrastructure projects."
+Kraaft,Field Operations,Series A,"Paris, France",,,https://www.kraaft.com,"'WhatsApp for construction', jobsite messaging that turns field photos and conversations into geolocated reports and structured field data"
+Kuadra,Preconstruction & Estimating; Supply Chain & Procurement; AI / Data Infrastructure,Pre-seed,"Cairo, Egypt",,,,"AI platform for Egyptian contractors that analyzes tender documents, extracts technical specifications, allocates work packages to suppliers and subcontractors, and evaluates bids in one place."
+LeanCon,Preconstruction & Estimating,Seed,Israel,,,https://www.leancon.ai,"AI pre-construction engineering converting preliminary building models into coordinated schedules, cost plans and logistics in minutes"
+Light Table,Design / BIM / VDC,Series A,,,,,"AI platform that finds errors, omissions, and value-engineering opportunities in construction drawings; closed a $22M Series A."
+Lotta Build,Robotics & Hardware; Design / BIM / VDC,Bootstrapped,,,,,"Bootstrapped industrialized-construction manufacturer of demountable/reconfigurable wall and build systems ('the 2x4 of the future') for retail, DoD, universities and health-station builders"
+Lumber,Workforce / Training,Series A,"San Jose, CA",,,https://www.lumberfi.com,"AI workforce management for construction: payroll, time tracking, union compliance, safety and field productivity"
+MaintainX,Owner / Facilities; Field Operations,Public,,,,,"Mobile-first maintenance and asset-management platform for operations teams, acquired by Autodesk to extend into building operations."
+"Management Controls, Inc.",Supply Chain & Procurement; Owner / Facilities,Unknown,,,,,Contractor management software providing risk transparency and compliance tracking between owners and vendors.
+Mango,Financial / Payments; Supply Chain & Procurement,Seed,"Mexico City, Mexico",,,,"Financial infrastructure platform for Mexican construction, connects contractors, developers, distributors and suppliers for procurement and payments, then uses that transaction data to build credit histories and extend financing."
+MeltPlan,Preconstruction & Estimating,Seed,,,,https://www.meltplan.com,"AI-native preconstruction planning: scenario runs, automated takeoffs, code compliance and cost alignment before plans lock"
+Mesh Robotics,Robotics & Hardware; Design / BIM / VDC,Seed,,,,,ETH Zurich robotics spinout building software and hardware that link BIM rebar models to robotic tying and assembly.
+Modly,Design / BIM / VDC,Unknown,,yes,,,Technology vendor in industrialized / modular construction (standardization-flexibility strategy)
+Monumental,Robotics & Hardware,Series B,"Amsterdam, Netherlands",,,https://www.monumental.co,"Small electric autonomous robots laying bricks on live sites, starting with facades and social housing in Europe"
+Motif,Design / BIM / VDC,Series A,"San Francisco, CA",,,https://motif.io,"Cloud + AI building design platform from ex-Autodesk co-CEO Amar Hanspal, positioned as a Revit challenger"
+Navatech,Safety; AI / Data Infrastructure,Unknown,,,,,"AI safety-tech company for construction, founded by Prakash Senghani."
+Neuron Factory,Preconstruction & Estimating; AI / Data Infrastructure,Seed,,,,,Preconstruction knowledge-graph AI platform backed by Trimble Ventures and Suffolk Technologies.
+Nomic,AI / Data Infrastructure; Design / BIM / VDC; Project Management,Unknown,"New York, NY",,,https://www.nomic.ai,"Domain-specific AI agent platform for AEC firms that automates drawing review, submittal review, RFI research, and code compliance checks grounded in a firm's own drawings, specs, and standards."
+NotebookLM,AI / Data Infrastructure,Public,,,yes,https://notebooklm.google,"Google AI research assistant turning source material into summaries, audio, video and mind maps"
+Novorender,Design / BIM / VDC; Reality Capture,Unknown,,,,,"BIM viewer company that streams massive 3D models to mobile devices, rooted in oil-and-gas digital-twin rendering tech."
+nuuEnergy,Sustainability,Seed,,,,,Heat-pump installation hub network/platform expanding across Germany; raised a €4.3M seed round.
+Nyfty.ai,Field Operations; AI / Data Infrastructure,Unknown,,,yes,https://nyfty.ai,"AI jobsite assistant automating daily reports, safety checks and manpower over SMS, no app or login"
+OpenSpace,Reality Capture; AI / Data Infrastructure,Series C+,,yes,,,"Reality-capture and visual-intelligence platform for jobsites, expanding into spatial AI agents (Agent Space) after acquiring Disperse."
+Outbuild,Scheduling,Series A,"San Francisco, CA",yes,,https://outbuild.com,Collaborative scheduling and lookahead planning connecting the master schedule to the field
+PermitFlow,Project Management,Series B,"New York, NY",,,https://www.permitflow.com,"AI-powered permitting: automated permit research, application prep and submission tracking for builders"
+Perry Weather,Safety; Field Operations,Unknown,,,yes,https://perryweather.com,Hyper-local jobsite weather monitoring with automated safety alerts
+Pillar,Project Management,Seed,"Milan, Italy",,,https://www.pillar.it,"AI operating system for contractors unifying PM, estimates, invoicing, procurement, margin tracking and workforce activity"
+Planera,Scheduling,Series A,"Pleasanton, CA",yes,,https://planera.io,Collaborative CPM scheduling and planning for complex projects; sells to ENR 400 GCs
+Primepoint AI,AI / Data Infrastructure; Design / BIM / VDC,Seed,"San Mateo, CA",,yes,https://primepoint.ai,"AI that reads construction drawings, connects plans, specs, RFIs and submittals, auto-flags clashes and gaps, answers questions traced to the exact detail"
+Printerra,Robotics & Hardware,Unknown,,,,,Canadian additive-construction (3D concrete printing) company providing advisory and printing services.
+ProcurePro,Supply Chain & Procurement,Series B,,,,,Construction procurement and buyout software that closed an $11M Series B.
+ProjectMark,Preconstruction & Estimating,Unknown,,,,,Construction-focused CRM and proposal/RFP software helping contractors track business development and sell preconstruction services.
+Projexion,AI / Data Infrastructure; Project Management,Unknown,,yes,yes,https://projexion.io,"Project intelligence aggregating data from existing tools (Procore, P6) into unified project health"
+Prolo,Supply Chain & Procurement; AI / Data Infrastructure,Seed,"London, UK",,,https://prolo.io,"AI-powered procurement service for SME construction contractors, order materials and plant hire via WhatsApp/email/phone and get trade rates from a 185+ supplier network plus up to 90-day credit."
+Pronto,Robotics & Hardware,Unknown,,,,,Anthony Levandowski's autonomy company building self-driving/autonomous heavy equipment technology.
+Provision,Preconstruction & Estimating; AI / Data Infrastructure,Unknown,,,,,"AI estimating startup building agents for GCs and subs, including a 'Scope Agent' that generates scopes of work from construction documents."
+Provizual,Field Operations; Project Management,Unknown,,,yes,https://provizual.com,Cloud platform overlaying inspection and QA/QC status onto project drawings with color-coding
+QNECT,Design / BIM / VDC,Unknown,,yes,,https://qnect.com,Steel connection design optimization software for structural engineering and fabrication
+Qonic,Design / BIM / VDC,Unknown,"Ghent, Belgium",,,https://www.qonic.com,"Cloud BIM modeling combining solid modeling, open interoperability and real-time collaboration, from ex-Bricsys founders"
+QUICKBLOCK,Robotics & Hardware; Sustainability; Supply Chain & Procurement,Seed,"Scotland, UK",,,https://quickblock.uk,"Scottish maker of a flat-pack interlocking modular building system made from 100% recycled polypropylene, used for rapidly deployable training environments and ballistic, blast, and drone protection structures."
+Raise Robotics,Robotics & Hardware,Unknown,"San Francisco, CA",yes,,https://raiserobotics.com,Mobile manipulator robots for facade construction and high-hazard installation work
+Relay Construction Services,Preconstruction & Estimating,Unknown,,,,,Budget and buyout software startup replacing Excel-based workflows for preconstruction.
+Revizto,Design / BIM / VDC; Project Management,Unknown,,yes,,,"AEC collaboration and BIM-coordination software, also known for its industry survey research on project budget overruns."
+RhinoDox,Preconstruction & Estimating; AI / Data Infrastructure,Unknown,,,,https://rhinodox.com,"AI risk assessment and proposal/bidding workflow platform, expert-persona system generating risk analysis, win probability and project briefs; $20B+ of projects processed"
+Rhumbix,Field Operations; Workforce / Training,Public,,,,,"Construction labor-tracking and timekeeping platform for field crews, acquired by Autodesk."
+RMOne,Preconstruction & Estimating; Financial / Payments,Bootstrapped,,,,,"ERP platform built to solve preconstruction data and workflow gaps, self-funded without VC backing."
+Roger,Preconstruction & Estimating; Field Operations,Unknown,,,yes,https://tryroger.com,"AI workspace auto-generating project logs (scope sheets, bid forms, inspection logs) from drawings"
+RS Means,Preconstruction & Estimating,Unknown,,,,,Widely used construction cost-data and cost-index reference used to benchmark and adjust estimates.
+Rugged Robotics,Robotics & Hardware,Unknown,"Houston, TX",,yes,https://rugged-robotics.com,Autonomous robot (Mark 1) printing BIM layout onto jobsite floors at millimeter accuracy
+Saible,Financial / Payments; Supply Chain & Procurement,Seed,"Birmingham, UK",,,https://saible.co.uk,"Construction payments fintech whose Digital Parallel Payment Account holds project funds in trust with a regulated bank and releases them simultaneously to every approved firm across all tiers of the supply chain, instead of cascading down the chain."
+Salus,Safety,Unknown,,,,,Construction safety-technology company founded by Gabe Getta.
+Scoreboard AI,Preconstruction & Estimating,Unknown,,,yes,https://scoreboardai.net,Automated scope review of drawings and specs via customizable checklists; assigns bid packages
+Sensera Systems,Safety; Reality Capture,Series B,"Golden, CO",,,https://www.senserasystems.com,SiteCloud jobsite cameras with AI interpreting site imagery to flag safety hazards and OSHA-violation risks
+ServiceTitan,Field Operations,Public,,,,,"Vertical field-service management software for trades contractors (plumbing, electrical, HVAC)."
+Shepherd,Financial / Payments,Series B,"San Francisco, CA",,,https://www.shepherdinsurance.com,"AI-native commercial P&C insurance for construction, underwriting with live data from contech platforms"
+Sitegeist,Robotics & Hardware; Field Operations,Pre-seed,,,,,"TU Munich spinout building modular, van-sized robots for high-pressure water-lance concrete demolition and renovation, starting with parking garages."
+SiteLink,Design / BIM / VDC; Field Operations,Unknown,,,,,"BIM viewer for active construction, Babylon.js web + Cesium iOS, custom C++ Revit/ACC-to-GLTF tile pipeline on Google Cloud, QR positioning via Multiset partnership"
+Sledge,Project Management; Preconstruction & Estimating; Financial / Payments; AI / Data Infrastructure,Unknown,"Las Vegas, NV (founder also operates Ferrocrete Builders in Los Angeles, CA)",,,https://www.getsledge.com,"AI-native construction operating system whose agentic AI writes bids, runs jobs, sends invoices and chases payments, running a contractor's company from bid to build to paid."
+SmartPM,Scheduling,Unknown,"Atlanta, GA",yes,,https://smartpmtech.com,Schedule analytics and delay analysis automated from P6/MSP data
+SmrtBld,,Unknown,,,,https://smrtbld.com,"Construction tech company (early conversation, category TBD)"
+SnapScale,Design / BIM / VDC; AI / Data Infrastructure,Seed,South Korea,,,,"Generative-AI layer (AutoFlow) that sits inside existing CAD environments so plant and EPC engineers can generate, modify and review design documents without switching systems."
+Snaptrude,Design / BIM / VDC,Series A,"New York, NY",,,https://www.snaptrude.com,"Browser-based AI-powered BIM for architects, focused on conceptual and schematic design"
+Sodex Innovations,Reality Capture; Field Operations,Seed,"Vorarlberg, Austria",,,https://www.sodex-innovations.com,Machine-integrated laser scanning plus SDX-Cloud platform that turns excavators and heavy equipment into real-time construction-site surveying and progress-documentation sensors.
+Sonabel Instruments,Robotics & Hardware; Field Operations,Seed,,,,,Develops an acoustic weld-defect-detection sensor.
+SP10 / Build.ai (working name),Project Management; AI / Data Infrastructure,Pre-seed,,,,,"Alpha-stage AI submittal review, checks submittals against specs/drawings, generates marked-up PDFs with comments and cover sheets; targeting $30M–$300M GCs"
+Speckle,Design / BIM / VDC; AI / Data Infrastructure,Series A,,,,,"Open-source data-interoperability layer for 3D/AEC models, enabling BIM data exchange across tools."
+Stack,Preconstruction & Estimating,Unknown,,,,,AI-enabled construction takeoff and estimating software platform (STACK Construction Technologies).
+STACK Construction Technologies,Preconstruction & Estimating,Growth / PE,,,,,Cloud-based takeoff and estimating software vendor for construction preconstruction teams.
+StirlingX,Reality Capture,Series A,United Kingdom,,,https://www.stirlingx.io,"UK drone operator providing survey, mapping, inspection, and scan-to-BIM data intelligence for construction sites."
+Stratus,Field Operations,Unknown,,,,,Shop/fabrication management software for tracking off-site fabrication in trades such as sheet metal.
+Structured AI,Field Operations,Seed,,,,https://getstructured.ai,YC-backed computer-vision QA/QC checking completed fieldwork and drawing sets against construction documents
+SubBase,Supply Chain & Procurement; Financial / Payments,Series A,"Fort Lauderdale, FL",,,,"Materials procurement and payments platform for construction, helping contractors manage supplier transactions."
+SUSA International,Supply Chain & Procurement; Sustainability,Unknown,,,,,Circular-economy asset disposition and resale company for construction equipment/assets.
+TerraFirma,Robotics & Hardware; Field Operations,Series A,"Austin, TX",,,https://www.terrafirma.inc,"Vertically integrated earthworks contractor that retrofits excavators, dozers and loaders into semi-autonomous machines run from a remote command center, selling site work as a service rather than selling software."
+TestFit,Preconstruction & Estimating; Design / BIM / VDC,Series B,,,,,AI-powered feasibility and site-planning software letting AEC teams rapidly test massing and program options.
+The Link,AI / Data Infrastructure,Bootstrapped,,yes,yes,https://thelink.ai,Spec data platform ('SpecGPT') pivoted to AI strategy consulting and integration for contractors (AI Edge offering with Jay Snyder / BBI)
+Timescapes,Reality Capture,Unknown,,,,,Jobsite timelapse camera and visual progress-documentation platform for construction projects.
+Togal,Preconstruction & Estimating,Unknown,,,,,AI-enabled takeoff software for automating quantity takeoffs from construction drawings.
+Togal.ai,Preconstruction & Estimating,Series A,"Miami, FL",yes,,https://togal.ai,AI-powered takeoff and estimating from construction drawings
+Torus,Design / BIM / VDC; AI / Data Infrastructure,Seed,"San Francisco, CA",,,https://www.usetorus.com,"AI agents that run 50+ cross-document consistency checks across specs, drawings, and datasheets for capital-project engineering (EPC) firms."
+Track3D,Reality Capture,Series A,"Milpitas, CA",,,https://track3d.ai,"AI reality-intelligence consolidating 360, drone and lidar captures to track progress and detect deviations against plan"
+Trade,Financial / Payments; Workforce / Training,Series A,,,,,Construction back-office and payroll operating system built for specialty trade contractors.
+Trayd,Financial / Payments; Workforce / Training,Series A,"New York, NY",,,https://www.trayd.co,"Payroll and back-office platform for specialty trade contractors: same-day pay, prevailing-wage compliance, labor cost tracking"
+Trunk Tools,AI / Data Infrastructure; Field Operations,Series B,"New York, NY",yes,,https://trunk.tools,AI agents over construction documents for field question-answering and workflow automation
+Unlimited Industries,AI / Data Infrastructure,Seed,"San Francisco, CA",,,https://www.unlimitedindustries.com,AI-native vertically integrated E&C company building an AI-powered delivery stack for infrastructure and capital projects
+UpCodes,Design / BIM / VDC,Unknown,,,,,"Platform aggregating building, plumbing, and fire codes into a searchable tool for design and compliance research."
+Versatile,Field Operations; AI / Data Infrastructure,Unknown,,,,,Crane-mounted IoT sensor and data company providing jobsite productivity analytics.
+Veyor,Supply Chain & Procurement,Series A,,,,,Delivery and material-management startup for construction site logistics.
+viAct,Safety,Series A,Hong Kong,,,https://www.viact.ai,"Real-time AI video analytics detecting hazards, unsafe behavior and compliance issues on construction sites"
+VIATechnik (Voyager),Owner / Facilities,Unknown,,,yes,https://viatechnik.com/capabilities/software-solutions/voyager,"Web-based digital twin centralizing BIM, CMMS, BMS, IoT and reality-capture data for owners/operators"
+Wyre AI,Preconstruction & Estimating; AI / Data Infrastructure,Unknown,,,,,AI-native preconstruction software company building tools for early-stage project scoping and estimating.
+XBuild,Preconstruction & Estimating,Series A,"San Francisco, CA",,,https://x.build,"AI-native chat-based estimating that turns measurement reports and site photos into finished contractor estimates, starting with residential roofing"
+Xpanner,Robotics & Hardware,Series B,"Santa Fe Springs, CA",,,https://www.xpanner.com,"Automation-as-a-service retrofitting equipment with physical-AI autonomy for piling and material handling (solar, battery, data center sites)"
+Zabidou,Reality Capture; Robotics & Hardware; AI / Data Infrastructure,Seed,Australia,,,,"Laser-and-camera sensing system that reads material properties in real time on prefabrication and industrial production lines, retrofittable to existing lines."
+Zebel,Preconstruction & Estimating; AI / Data Infrastructure,Unknown,,,,,Preconstruction data analytics platform helping teams benchmark and analyze historical project cost/performance data.
+Zero RFI,Project Management; Preconstruction & Estimating,Unknown,"Atlanta, GA",,,,AI to eliminate RFIs by resolving document conflicts before they hit the field

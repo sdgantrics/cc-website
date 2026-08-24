@@ -124,7 +124,7 @@ document.querySelectorAll('.filters').forEach(function (bar) {
     var type = btn.dataset.type;
     list.querySelectorAll('[data-type],[data-cat]').forEach(function (c) {
       var v = c.dataset.type !== undefined ? c.dataset.type : c.dataset.cat;
-      c.style.display = (!type || v === type) ? '' : 'none';
+      c.style.display = (!type || v === type || v.split('|').indexOf(type) !== -1) ? '' : 'none';
     });
   });
 });
@@ -132,7 +132,7 @@ var toolSearch = document.getElementById('tool-search');
 if (toolSearch) {
   toolSearch.addEventListener('input', function () {
     var term = toolSearch.value.trim().toLowerCase();
-    document.querySelectorAll('#tool-list .tool-card').forEach(function (c) {
+    document.querySelectorAll('#tool-page .tool-card, #tool-page .radar-row').forEach(function (c) {
       c.style.display = (!term || c.textContent.toLowerCase().indexOf(term) !== -1) ? '' : 'none';
     });
   });

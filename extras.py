@@ -100,7 +100,7 @@ def newsletter_block(base: str = "", compact: bool = False) -> str:
     head = "" if compact else '<h2 class="display">Get the 50 most expensive lessons</h2>'
     return f'''<div class="newsletter-inner">
       {head}
-      <p class="lede">The Expensive Lessons Field Deck: 50 cards, one page each, with what it cost, the exact quote from the person who paid it, and the move to make next time. Printable for toolbox talks, in Superintendent, PM, and Exec editions. Free, delivered by the Construction Briefs welcome email, and a new lesson lands with each episode.</p>
+      <p class="lede">The Expensive Lessons Field Deck: 50 cards with what it cost, the exact quote from the person who paid it, and the move to make next time. Print-ready for toolbox talks, in Superintendent, PM, and Exec editions. Free, delivered by the Construction Briefs welcome email, and a new lesson lands with each episode.</p>
       <form class="nl-form" action="{SUBSTACK}/subscribe" method="get" data-event="Newsletter Submit">
         <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address">
         <button type="submit" class="btn btn-primary">Send me the 50 lessons</button>
@@ -318,47 +318,95 @@ def load_tools():
     return json.loads(p.read_text()) if p.exists() else {"tools": [], "sponsors": []}
 
 
-def practitioner_mentions(tool, sponsors):
-    return [m for m in tool["mentions"] if m["source"] == "Practitioner"]
+def load_radar():
+    p = ROOT / "data" / "radar.json"
+    return json.loads(p.read_text()) if p.exists() else {"companies": []}
 
 
-def build_tools(data, tpl_dir: Path):
-    sponsors = set(data.get("sponsors", []))
-    tools = data.get("tools", [])
-    rows, csv_rows = [], []
-    cats = sorted({t["category"] for t in tools})
-    for t in tools:
-        pm = practitioner_mentions(t, sponsors)
-        if not pm:
-            continue  # the database is what the field says, not what vendors say
-        badge = ' <span class="stamp dim">(sponsor)</span>' if t["name"] in sponsors else ""
-        eps = sorted({m["episode"] for m in pm})
-        ep_links = " ".join(f'<a href="episodes/{e}.html">{esc(ep_label(e))}</a>' for e in eps)
-        ctx = "".join(
-            f'<li><span class="stamp">{esc(ep_label(m["episode"]))} · {esc(m["guest"])}</span> {esc(m["context"])}</li>'
-            for m in pm[:4])
-        rows.append(f'''      <article class="ep-card tool-card" data-cat="{esc(t["category"])}" data-name="{esc(t["name"].lower())}">
-        <div class="ep-meta"><span class="tag">{esc(t["category"])}</span><span class="stamp">{len(pm)} practitioner mention{"s" if len(pm) != 1 else ""}</span></div>
-        <h3>{esc(t["name"])}{badge}</h3>
-        <ul class="tool-ctx">{ctx}</ul>
-        <div class="ep-actions"><span class="stamp">Heard in:</span> {ep_links}</div>
+def load_radar_exclude():
+    """Majors that never belong on a discovery page. Editable list."""
+    p = ROOT / "data" / "radar_exclude.json"
+    return set(json.loads(p.read_text())) if p.exists() else set()
+
+
+def _norm(name: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", name.lower())
+
+
+EP_REF = re.compile(r"[Ee]p\.?\s*(\d+)")
+
+
+def radar_matches(company, tools_data):
+    """Practitioner mentions from the insights pipeline matching this company."""
+    cn = _norm(company["name"])
+    out = []
+    for t in tools_data.get("tools", []):
+        tn = _norm(t["name"])
+        if tn == cn or (len(tn) > 5 and (tn in cn or cn in tn)):
+            out += [m for m in t["mentions"] if m["source"] == "Practitioner"]
+    return out
+
+
+def coverage_episodes(company):
+    return [f"ep-{int(n):03d}" for n in EP_REF.findall(company.get("coverage", ""))]
+
+
+def build_tools(tools_data, tpl_dir: Path, radar=None):
+    radar = radar or load_radar()
+    exclude = load_radar_exclude()
+    proven_rows, radar_rows, csv_rows = [], [], []
+    cats = sorted({c for co in radar.get("companies", []) for c in co.get("categories", [])})
+    n_proven = 0
+    for co in sorted(radar.get("companies", []), key=lambda c: c["name"].lower()):
+        if co["name"] in exclude:
+            continue
+        mentions = radar_matches(co, tools_data)
+        eps = sorted(set([m["episode"] for m in mentions] + coverage_episodes(co)))
+        heard = bool(eps)
+        cat_attr = esc("|".join(co.get("categories", [])))
+        meta_bits = [b for b in (co.get("stage") if co.get("stage") not in ("", "Unknown") else "", co.get("hq", "")) if b]
+        ttw_badge = ""
+        if co.get("ttw"):
+            issue = f" · CB {esc(co['ttw_issue'])}" if co.get("ttw_issue") else ""
+            ttw_badge = f'<span class="tag">Tech to Watch{issue}</span>'
+        site_link = f'<a href="{esc(co["website"])}" target="_blank" rel="noopener">{esc(co["website"].replace("https://", "").replace("http://", "").rstrip("/"))}</a>' if co.get("website") else ""
+        csv_rows.append([co["name"], "; ".join(co.get("categories", [])), co.get("stage", ""), co.get("hq", ""),
+                        "yes" if heard else "", "yes" if co.get("ttw") else "", co.get("website", ""), co.get("oneliner", "")])
+        if heard:
+            n_proven += 1
+            ctx = "".join(
+                f'<li><span class="stamp"><a href="episodes/{m["episode"]}.html">{esc(ep_label(m["episode"]))}</a> · {esc(m["guest"])}</span> {esc(m["context"])}</li>'
+                for m in mentions[:3])
+            ep_links = " ".join(f'<a href="episodes/{e}.html">{esc(ep_label(e))}</a>' for e in eps)
+            proven_rows.append(f'''      <article class="ep-card tool-card" data-cat="{cat_attr}" data-name="{esc(co["name"].lower())}">
+        <div class="ep-meta"><span class="tag">{esc(co["categories"][0] if co.get("categories") else "Contech")}</span>{ttw_badge}<span class="stamp">{esc(" · ".join(meta_bits)).upper()}</span></div>
+        <h3>{esc(co["name"])}</h3>
+        <p class="ep-desc">{esc(co.get("oneliner", ""))}</p>
+        {f'<ul class="tool-ctx">{ctx}</ul>' if ctx else ""}
+        <div class="ep-actions"><span class="stamp">Heard in:</span> {ep_links} {site_link}</div>
       </article>''')
-        for m in pm:
-            csv_rows.append([t["name"], t["category"], ep_label(m["episode"]), m["guest"], m["context"]])
+        else:
+            chips = "".join(f'<span class="pill">{esc(c)}</span>' for c in co.get("categories", []))
+            radar_rows.append(f'''      <article class="radar-row" data-cat="{cat_attr}" data-name="{esc(co["name"].lower())}">
+        <div class="radar-head"><h3>{esc(co["name"])}</h3>{ttw_badge}<span class="stamp">{esc(" · ".join(meta_bits)).upper()}</span></div>
+        <p>{esc(co.get("oneliner", ""))}</p>
+        <div class="radar-foot">{chips} {site_link}</div>
+      </article>''')
     buf = io.StringIO()
     w = csv.writer(buf)
-    w.writerow(["Tool", "Category", "Episode", "Who said it", "What they said"])
+    w.writerow(["Company", "Categories", "Stage", "HQ", "Heard on the show", "Tech to Watch", "Website", "What they do"])
     w.writerows(csv_rows)
     (SITE / "assets").mkdir(exist_ok=True)
     (SITE / "assets" / "tools.csv").write_text(buf.getvalue())
     page = (tpl_dir / "tools.html").read_text()
-    page = page.replace("{{TOOL_COUNT}}", str(len(rows)))
-    page = page.replace("{{MENTION_COUNT}}", str(len(csv_rows)))
+    page = page.replace("{{PROVEN_COUNT}}", str(n_proven))
+    page = page.replace("{{RADAR_COUNT}}", str(len(radar_rows)))
     page = page.replace("{{FILTERS}}", "".join(f'<button class="filter" data-type="{esc(c)}">{esc(c)}</button>' for c in cats))
-    page = page.replace("{{TOOLS}}", "\n".join(rows))
+    page = page.replace("{{PROVEN}}", "\n".join(proven_rows))
+    page = page.replace("{{RADAR}}", "\n".join(radar_rows))
     page = page.replace("{{NEWSLETTER}}", newsletter_block(""))
     (SITE / "tools.html").write_text(apply_chrome(page, ""))
-    print(f"Wrote site/tools.html ({len(rows)} tools, {len(csv_rows)} practitioner mentions) + assets/tools.csv")
+    print(f"Wrote site/tools.html ({n_proven} proven on the show, {len(radar_rows)} on the radar, {len(exclude)} majors excluded) + assets/tools.csv")
 
 
 def episode_tools_block(slug: str, data) -> str:

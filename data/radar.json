@@ -1,0 +1,3214 @@
+{
+ "generated": "2026-08-24",
+ "companies": [
+  {
+   "name": "Adaptive",
+   "oneliner": "Back-office financial services platform, an a16z portfolio company, built for contractors.",
+   "categories": [
+    "Financial / Payments"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Agave",
+   "oneliner": "AI platform for construction financials that connects 14+ ERP and project-management systems to automate AP invoice coding, expense management, and vendor compliance for contractors.",
+   "categories": [
+    "Financial / Payments",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Series A",
+   "hq": "San Francisco, CA",
+   "funding": "$15M Series A, Jul 2026, led by Accel (~$20M+ total)",
+   "website": "https://useagave.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Aitenders Technologies",
+   "oneliner": "AI platform for tender response and contract management that tracks every requirement, clause and commitment from bid through project delivery.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Project Management",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Public",
+   "hq": "Saint-Étienne, France",
+   "funding": "Listed on the Canadian Securities Exchange (CSE: BIDS) Aug 10 2026 via reverse takeover of eXeBlock Technology Corp.; ~C$5.1M raised across concurrent placements; built without prior VC",
+   "website": "https://aitenders.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Alice Technologies",
+   "oneliner": "AI-driven construction schedule-optimization software that generates and compares alternative project schedules.",
+   "categories": [
+    "Scheduling"
+   ],
+   "stage": "Series B",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Alloovium",
+   "oneliner": "Document intelligence layer for construction that reads every contract, spec, drawing, compliance record and conversation on a project and answers questions with a citation back to the exact source sentence.",
+   "categories": [
+    "AI / Data Infrastructure",
+    "Project Management"
+   ],
+   "stage": "Pre-seed",
+   "hq": "Brisbane, QLD, Australia (also reported as San Francisco, CA)",
+   "funding": "Stealth launch, Jul 2026; Y Combinator S2026 cohort (amount undisclosed)",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Andrew Rener stealth startup (name TBD)",
+   "oneliner": "In-development construction workflow product for subcontractors (underserved vs GCs), embedding experiential knowledge from subject-matter experts",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Pre-seed",
+   "hq": "",
+   "funding": "Beyond-MVP within a month as of Feb 2026; 12 companies testing; founder targeting acquisition within 36 months",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Feb 27, 2026 conversation; Andrew interested in a podcast appearance when product-ready"
+  },
+  {
+   "name": "Arcol",
+   "oneliner": "Browser-based collaborative 'BIM 2.0' for early-stage design, feasibility and presentations; public launch June 2025",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Seed",
+   "hq": "New York, NY",
+   "funding": "$5M Seed + follow-on late 2024 (investors incl. Craig Courtemanche, Amar Hanspal)",
+   "website": "https://arcol.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Attentive.ai",
+   "oneliner": "Beam AI takeoff and estimating platform expanding into full preconstruction automation",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Series B",
+   "hq": "Noida, India (US ops)",
+   "funding": "$30.5M Series B, Nov 2025",
+   "website": "https://attentive.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Augmenta",
+   "oneliner": "AI-driven generative design automation for electrical raceway/systems design.",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Autodesk",
+   "oneliner": "Major AEC software incumbent behind AutoCAD, Revit, and Autodesk Construction Cloud, and an active acquirer of construction-tech startups.",
+   "categories": [
+    "Design / BIM / VDC",
+    "Project Management"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Automated Architecture",
+   "oneliner": "Robotics company developing single-shot nailing robots for timber-frame construction.",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Beck Technologies",
+   "oneliner": "Maker of Destiny (formerly Destiny Profiler) conceptual estimating software for preconstruction teams.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Beck Technology",
+   "oneliner": "Software arm of The Beck Group making the Destiny estimating/preconstruction platform used by GCs.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Bedrock Robotics",
+   "oneliner": "Retrofits excavators, dozers and loaders with autonomy so contractors can run self-operating heavy equipment fleets",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Series B",
+   "hq": "San Francisco, CA",
+   "funding": "$270M Series B, Feb 2026, co-led by CapitalG and Valor Atreides ($350M+ total, $1.75B valuation)",
+   "website": "https://www.bedrockrobotics.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Belidor",
+   "oneliner": "AI-powered bid-leveling and scope-generation software for preconstruction teams.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Bentley Systems",
+   "oneliner": "Public infrastructure engineering software major providing BIM/digital-twin tools for civil, structural, and industrial projects.",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "BidScript",
+   "oneliner": "AI-native tender management platform to find, qualify, write, and submit bids for construction and engineering contracts.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Pre-seed",
+   "hq": "Manchester, UK",
+   "funding": "$800K pre-seed (>$1M total) (Jul 2, 2026), PXN Ventures + SFC Capital",
+   "website": "https://www.bidscript.co.uk",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Bild AI",
+   "oneliner": "YC-backed AI that reads blueprints to extract quantities, cost estimates and compliance issues, starting with Division 8 doors/frames/hardware",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Seed",
+   "hq": "San Francisco, CA",
+   "funding": "$3.1M Seed, Jul 2025, led by Khosla Ventures",
+   "website": "https://bild.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Billdr",
+   "oneliner": "Vertical SaaS back-office platform for SMB general contractors, pivoted from a home-renovation marketplace.",
+   "categories": [
+    "Project Management"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Birdsview (Burview)",
+   "oneliner": "Norwegian startup using enhanced ground-penetrating radar and 3D point-cloud algorithms to non-destructively scan existing concrete reinforcement.",
+   "categories": [
+    "Reality Capture"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Bitchat",
+   "oneliner": "Peer-to-peer encrypted messaging over Bluetooth mesh for offline jobsite comms",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://bitchat.free",
+   "ttw": true,
+   "ttw_issue": "013",
+   "coverage": ""
+  },
+  {
+   "name": "Bluebeam",
+   "oneliner": "PDF-based markup, takeoff, and document collaboration software for design and field teams, owned by Nemetschek.",
+   "categories": [
+    "Design / BIM / VDC",
+    "Project Management"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Bobyard",
+   "oneliner": "AI takeoff startup automating construction quantity takeoffs, originally built around landscape takeoff.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Boon",
+   "oneliner": "AI startup that reads construction drawings and automates preconstruction estimating end-to-end.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Breadcrumb",
+   "oneliner": "Construction safety/compliance app digitizing site orientations, permits, manpower tracking, and pre-task safety plans for GCs.",
+   "categories": [
+    "Safety"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Brickanta",
+   "oneliner": "YC-backed agentic AI for contractor preconstruction: bid analysis, cost estimation, procurement",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Seed",
+   "hq": "Stockholm, Sweden",
+   "funding": "$8M Seed, Jan 2026, led by Northzone",
+   "website": "https://www.brickanta.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Bridgeline",
+   "oneliner": "Startup automating bid-leveling data transfer for general contractors, backed by University of Chicago.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Bridgit",
+   "oneliner": "Workforce intelligence for construction labor planning, management and forecasting",
+   "categories": [
+    "Workforce / Training"
+   ],
+   "stage": "Series B",
+   "hq": "Kitchener, ON, Canada",
+   "funding": "",
+   "website": "https://gobridgit.com",
+   "ttw": true,
+   "ttw_issue": "003",
+   "coverage": ""
+  },
+  {
+   "name": "Build (infrastructure AI)",
+   "oneliner": "Multi-agent AI platform accelerating infrastructure project workflows, site sourcing, due diligence, power assessment, and early design for data centers, energy, and industrial facilities.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "San Francisco, CA",
+   "funding": "$8.5M Seed (Jul 2026), led by Index Ventures (Pebblebed, Puzzle Ventures, Tiny.vc)",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Build Factory",
+   "oneliner": "Marketplace connecting underutilized MEP prefab shops with fabrication demand across regions.",
+   "categories": [
+    "Supply Chain & Procurement",
+    "Project Management"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "BuildCrew",
+   "oneliner": "Early-stage AI-for-construction-drawings startup backed by Vinod Khosla.",
+   "categories": [
+    "Design / BIM / VDC",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Builder",
+   "oneliner": "Vertical SaaS operating system for small and mid-size general contractors, covering back-office and project workflows.",
+   "categories": [
+    "Project Management",
+    "Financial / Payments"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Buildforce",
+   "oneliner": "Tech-enabled staffing platform that connects pre-vetted electricians with electrical contractors on commercial and industrial construction projects, via a worker mobile app and a contractor web app.",
+   "categories": [
+    "Workforce / Training",
+    "Field Operations"
+   ],
+   "stage": "Series A",
+   "hq": "Austin, TX (also Houston)",
+   "funding": "$10M Series A, Jul 28 2026, led by Saepio Capital (w/ Blue Heron Capital, Revolution's Rise of the Rest Seed Fund, S3 Ventures, Chicago Ventures)",
+   "website": "https://www.buildforce.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Building Catalyst",
+   "oneliner": "Systems-thinking platform that predicts space program, design massing, schedule, and cost from an owner's business case.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Owner / Facilities"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "BuildMentor",
+   "oneliner": "Knowledge-sharing and mentorship platform for construction, Tinder-style mentor/mentee matching plus a searchable 'Experience Hub' of lessons-learned cards capturing retiring experts' knowledge",
+   "categories": [
+    "Workforce / Training"
+   ],
+   "stage": "Pre-seed",
+   "hq": "",
+   "funding": "Prototype on Lovable (no-code); 35 beta users; pre-revenue, exploring corporate sponsorship / B2B licensing",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Advisory session Feb 27, 2026 (with Will Meurer); Angelo also in Podcasters Unite group"
+  },
+  {
+   "name": "BuildOps",
+   "oneliner": "Unicorn-valued operating system software platform for commercial MEP trade contractors.",
+   "categories": [
+    "Project Management",
+    "Field Operations"
+   ],
+   "stage": "Series C+",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Buildots",
+   "oneliner": "Reality-capture and AI progress-tracking company (acquired Genda to combine visual progress data with workforce location data).",
+   "categories": [
+    "Reality Capture",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Buildr",
+   "oneliner": "All-in-one CRM and preconstruction platform for general contractors.",
+   "categories": [
+    "Project Management",
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Buildroid",
+   "oneliner": "Simulation-first platform helping GCs model projects and deploy the right construction robotics solutions.",
+   "categories": [
+    "Robotics & Hardware",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Pre-seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "BuildVision",
+   "oneliner": "Network/marketplace connecting MEP manufacturers and OEMs with contractors for equipment purchasing and financing",
+   "categories": [
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://buildvision.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Victor Muchiri episode (recorded Jan 2026, alternative construction career paths)"
+  },
+  {
+   "name": "BuildWitt",
+   "oneliner": "Mobile microtraining for heavy civil, utilities and mining crews",
+   "categories": [
+    "Workforce / Training"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://buildwitt.com",
+   "ttw": true,
+   "ttw_issue": "016",
+   "coverage": ""
+  },
+  {
+   "name": "Built Technologies",
+   "oneliner": "Construction lending and draw-management/payments platform for lenders, owners, and GCs, using agentic AI for draw processing.",
+   "categories": [
+    "Financial / Payments"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Caliperd",
+   "oneliner": "AI concrete estimating tool that calculates volumes, reinforcement and formwork quantities directly from project schedules.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "Australia",
+   "funding": "Launched from stealth week of Aug 10 2026; no funding disclosed",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Capture",
+   "oneliner": "Melbourne startup retrofitting diesel generators with carbon-capture hardware that converts CO2 into calcium carbonate for use in concrete.",
+   "categories": [
+    "Sustainability",
+    "Robotics & Hardware"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Cascade",
+   "oneliner": "AI pursuit platform that reads bond filings, permits, capital plans and public meeting minutes to surface construction projects before they go to bid, then scores each against a firm's track record.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "New York, NY",
+   "funding": "$3.5M Seed, Jul 21 2026, led by a16z Speedrun (w/ Ada Ventures, Blitzscaling Ventures, Indico Capital, shuckerVC, G2C Ventures, Snowball VC)",
+   "website": "https://usecascade.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "CIV Robotics",
+   "oneliner": "Robotics company automating construction layout marking, backed by Trimble and Bobcat.",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Clearstory",
+   "oneliner": "Change order platform: T&M ticket capture, AI categorization and real-time cost exposure",
+   "categories": [
+    "Financial / Payments"
+   ],
+   "stage": "Unknown",
+   "hq": "San Francisco, CA",
+   "funding": "",
+   "website": "https://clearstory.build",
+   "ttw": true,
+   "ttw_issue": "015",
+   "coverage": "Ep 31 (Cameron Page, Founder & CEO); podcast sponsor Mar–Aug 2026"
+  },
+  {
+   "name": "ClueWorth",
+   "oneliner": "Financing platform for residential solar, battery, and heat-pump installations across Europe via local installer networks.",
+   "categories": [
+    "Financial / Payments",
+    "Sustainability"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "CMIC",
+   "oneliner": "Construction-specific ERP platform covering project management, accounting, and HR that GCs run their back office on.",
+   "categories": [
+    "Financial / Payments",
+    "Project Management"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Command Alkon",
+   "oneliner": "Supply chain and operations software for the concrete and aggregates/heavy-materials industry.",
+   "categories": [
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Command Post",
+   "oneliner": "Voice-to-text daily reporting and field-documentation app for construction sites.",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Comstruct",
+   "oneliner": "Procurement and invoice-reconciliation digitizing materials ordering between contractors and suppliers",
+   "categories": [
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Series A",
+   "hq": "Munich, Germany",
+   "funding": "€12.5M (~$13M), Feb 2025, co-led by GV and 20VC",
+   "website": "https://www.comstruct.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "ConCntric",
+   "oneliner": "Preconstruction platform unifying cost, scope and design decisions in one workspace",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Series A",
+   "hq": "Greenbrae, CA",
+   "funding": "$10M Series A, Oct 2025, led by 53 Stations",
+   "website": "https://concntric.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Episode with Steve Dell'Orto (Founder & CEO), live; Q3 sponsor prospect (Precon slot)"
+  },
+  {
+   "name": "conmeet",
+   "oneliner": "AI-native operating system for mid-sized trades and construction firms, unifying project management, procurement, scheduling, site documentation, finance and invoicing on one data model.",
+   "categories": [
+    "Project Management",
+    "Scheduling",
+    "Supply Chain & Procurement",
+    "Financial / Payments"
+   ],
+   "stage": "Seed",
+   "hq": "Borken, Germany",
+   "funding": "€6M Seed, Aug 5 2026, co-led by Reimann Investors and Smedvig Ventures (May Ventures returning); follows €1.3M pre-seed, Feb 2026",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Constrafor",
+   "oneliner": "GC-subcontractor procurement platform with embedded Early Pay financing so subs get paid in 1-2 days instead of 83",
+   "categories": [
+    "Financial / Payments",
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Series A",
+   "hq": "New York, NY",
+   "funding": "$14M equity + $250M credit facility, Nov 2024, led by NFX",
+   "website": "https://www.constrafor.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Construction Gamma",
+   "oneliner": "Private verified-members community for construction pros (AI best practices, shared workflows/prompts) plus an independent Procore MCP connector letting Claude query Procore data",
+   "categories": [
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Bootstrapped",
+   "hq": "",
+   "funding": "Free side project (creator's day job is at Document Crunch); built on Glide, 'build first, monetize later'",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ryan Gaiss podcast discovery Jan 28, 2026; Procore MCP connector announced on the episode (Feb 2026)"
+  },
+  {
+   "name": "Contracts Connected",
+   "oneliner": "AI automation of back-office contracts, document collection, compliance and vendor management",
+   "categories": [
+    "Financial / Payments",
+    "Project Management"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://contractsconnected.com",
+   "ttw": true,
+   "ttw_issue": "007",
+   "coverage": "Co-host Lars Herman's company; Ep 4"
+  },
+  {
+   "name": "Coral",
+   "oneliner": "AI software that guarantees and advances exact utility heat-pump rebate amounts at point of sale for contractors.",
+   "categories": [
+    "Financial / Payments",
+    "Sustainability"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "CostX",
+   "oneliner": "Digital takeoff/measurement software for drawing overlay and quantity measurement, part of the RIB Software (Schneider Electric) group.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Creature",
+   "oneliner": "Integrated design+construction company delivering industrialized/modular healthcare projects (~100 volumetric modules per 60k sq ft hospital) using manufacturer production models",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "VIATechnik partnership scoping Dec 17, 2025 (civil-to-module alignment, model interconnects, visualization)"
+  },
+  {
+   "name": "Cumulus",
+   "oneliner": "Software digitizing QA/QC paperwork for electrical and mechanical contractors on data-center projects via Bluetooth-enabled tools.",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Cupix",
+   "oneliner": "360° reality capture and digital twin platform for jobsite documentation",
+   "categories": [
+    "Reality Capture"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://cupix.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 10 (Hammad); Q3 Reality Capture sponsor prospect"
+  },
+  {
+   "name": "dConstruct Robotics",
+   "oneliner": "Builds AI-powered scanning robots for construction sites.",
+   "categories": [
+    "Robotics & Hardware",
+    "Reality Capture"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Digs",
+   "oneliner": "AI for home builders: preconstruction collaboration through 3D digital-twin handover and AI warranty management",
+   "categories": [
+    "Owner / Facilities"
+   ],
+   "stage": "Seed",
+   "hq": "Vancouver, WA",
+   "funding": "$5M pre-Series A top-up, Nov 2025, led by SPLY Capital (~$20M total)",
+   "website": "https://digs.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Dili",
+   "oneliner": "AI-native compliance platform that automates prevailing wage monitoring, Davis-Bacon compliance, and certified payroll review for federally funded infrastructure and construction projects.",
+   "categories": [
+    "Financial / Payments",
+    "Workforce / Training",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Series A",
+   "hq": "New York, NY",
+   "funding": "$15M Series A, Jul 30 2026, led by Khosla Ventures (w/ Y Combinator, Allianz, Brick & Mortar Ventures, Rebel Fund); $21.7M total equity",
+   "website": "https://www.dili.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "DIRTT",
+   "oneliner": "Publicly traded manufacturer of prefabricated interior construction systems with proprietary ICE configuration software.",
+   "categories": [
+    "Robotics & Hardware",
+    "Design / BIM / VDC"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Document Crunch",
+   "oneliner": "AI contract review, risk identification and compliance for construction documents",
+   "categories": [
+    "Financial / Payments",
+    "Project Management"
+   ],
+   "stage": "Growth / PE",
+   "hq": "Atlanta, GA",
+   "funding": "Acquired by Trimble, confirmed (Apr 2026 agreement signed by Trimble Inc.; DC marketing lead Sabrina Miskelly now Trimble Head of Corporate AECO PR)",
+   "website": "https://documentcrunch.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Active podcast sponsor (Apr–Jul 2026); Sabrina Miskelly (Trimble) evaluating renewed/upgraded sponsorship under Trimble 2026 budget, met Jul 9, 2026"
+  },
+  {
+   "name": "Doxel",
+   "oneliner": "AI-driven progress tracking and clash-detection platform using computer vision on jobsite data.",
+   "categories": [
+    "AI / Data Infrastructure",
+    "Reality Capture"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "DroneDeploy",
+   "oneliner": "Drone and ground reality capture with AI progress tracking",
+   "categories": [
+    "Reality Capture"
+   ],
+   "stage": "Series C+",
+   "hq": "San Francisco, CA",
+   "funding": "",
+   "website": "https://dronedeploy.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Q3 Reality Capture sponsor prospect"
+  },
+  {
+   "name": "Dusty Robotics",
+   "oneliner": "Robotics company making an automated robotic layout tool (FieldPrinter) for jobsite floor layout.",
+   "categories": [
+    "Robotics & Hardware",
+    "Field Operations"
+   ],
+   "stage": "Series B",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Early Trade",
+   "oneliner": "Subcontractor payment/working-capital marketplace offering early payments to subs on construction projects.",
+   "categories": [
+    "Financial / Payments"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "EarthCam",
+   "oneliner": "Jobsite camera and AI-based safety-monitoring company providing construction site imaging and time-lapse services.",
+   "categories": [
+    "Reality Capture",
+    "Safety"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Ecoworks",
+   "oneliner": "Startup retrofitting residential/office buildings to net-zero using prefab wooden facade panels manufactured from digital-twin scans.",
+   "categories": [
+    "Sustainability",
+    "Reality Capture"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Edify",
+   "oneliner": "GC-centric preconstruction and cost-conversation estimating software co-founded by Dustin, expanding into self-perform estimating.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Ediphi",
+   "oneliner": "Cloud-based preconstruction estimating and system-of-record platform, originally developed inside Suffolk Construction and spun out under CEO Dustin DeVan.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Egnyte",
+   "oneliner": "Cloud content management and data governance platform serving the AEC industry.",
+   "categories": [
+    "AI / Data Infrastructure",
+    "Project Management"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Endra",
+   "oneliner": "MEP engineering workspace/software startup for coordinating mechanical, electrical, and plumbing design work.",
+   "categories": [
+    "Design / BIM / VDC",
+    "Project Management"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Enlay",
+   "oneliner": "AI predictive risk-intelligence layer for construction, built on knowledge/graph networks of past projects.",
+   "categories": [
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Eno Drape",
+   "oneliner": "Startup turning underground spaces (basements, parking, tunnels) into geothermal heating/cooling sources via wall-mounted panels.",
+   "categories": [
+    "Sustainability"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Eos Group",
+   "oneliner": "Cost-estimating technology company providing the Cortex data-analytics and conceptual-estimating platform plus benchmarking/predictive-analytics consulting.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Equipment Share",
+   "oneliner": "Heavy construction equipment rental company built around its T3 fleet-telematics and asset-management platform.",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Evercam",
+   "oneliner": "Construction time-lapse and AI jobsite camera platform",
+   "categories": [
+    "Reality Capture"
+   ],
+   "stage": "Unknown",
+   "hq": "Dublin, Ireland",
+   "funding": "",
+   "website": "https://evercam.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Episode with Marco Herbst (CEO) & Shannon Brown (Chief of Staff); sponsor conversation open"
+  },
+  {
+   "name": "Facus",
+   "oneliner": "French fintech 'neo-bank for construction' offering invoice factoring to construction SMBs.",
+   "categories": [
+    "Financial / Payments"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Field AI",
+   "oneliner": "Foundation models ('field brains') powering autonomous robots across construction and industrial sites",
+   "categories": [
+    "Robotics & Hardware",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Series C+",
+   "hq": "Mission Viejo, CA",
+   "funding": "$405M raised (2025)",
+   "website": "https://fieldai.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 23 (Stuart Maggs)"
+  },
+  {
+   "name": "Field Materials",
+   "oneliner": "AI reading vendor quotes, delivery slips and invoices for materials/equipment rentals, pushing data into accounting systems",
+   "categories": [
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Series A",
+   "hq": "Charlotte, NC",
+   "funding": "$10.5M Series A, May 2025 (~$19M total)",
+   "website": "https://www.fieldmaterials.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Fieldproof",
+   "oneliner": "AI/tech implementation consulting and boot camps for construction firms ($20M–$100M MEPs and services firms), franchising-style network model",
+   "categories": [
+    "Workforce / Training",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Bootstrapped",
+   "hq": "",
+   "funding": "",
+   "website": "https://fieldproof.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Tyler Campbell episode(s) in production; Fieldproof sponsorship discussed Jun 18, 2026"
+  },
+  {
+   "name": "Fieldwire by Hilti",
+   "oneliner": "Field task management and plan viewing; acquired by Hilti",
+   "categories": [
+    "Field Operations",
+    "Project Management"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "https://fieldwire.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Q3 sponsor prospect (field execution category)"
+  },
+  {
+   "name": "Fixxly",
+   "oneliner": "AI-powered quick-commerce platform delivering building materials, plywood, paint, electricals, lighting, hardware, plumbing, to jobsites within 30 minutes via a dark-store network.",
+   "categories": [
+    "Supply Chain & Procurement",
+    "Field Operations"
+   ],
+   "stage": "Seed",
+   "hq": "Bengaluru, India",
+   "funding": "$5.5M Seed, Jul/Aug 2026 (Accel, Fireside Ventures, Lightspeed India Partners)",
+   "website": "https://fixxly.in",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Foresight",
+   "oneliner": "Predictive project delivery running AI over existing P6/MS Project schedules to forecast delays on megaprojects (data centers)",
+   "categories": [
+    "Scheduling"
+   ],
+   "stage": "Series A",
+   "hq": "London, UK",
+   "funding": "$25M Series A, Mar 2026, led by Macquarie Capital",
+   "website": "https://www.foresight.works",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "FormX",
+   "oneliner": "AI platform that designs, engineers and permits custom single-family homes and ADUs, then delivers them as modular construction kits.",
+   "categories": [
+    "Design / BIM / VDC",
+    "Preconstruction & Estimating",
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Seed",
+   "hq": "Sunnyvale / SF Bay Area, CA",
+   "funding": "$12.5M Seed, late Jul 2026, led by Grove Ventures (w/ Poalim Equity, At:inc, Script Capital)",
+   "website": "https://www.formx.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Fyld",
+   "oneliner": "AI that converts field-crew videos into actionable safety, quality and productivity data for infrastructure work",
+   "categories": [
+    "Field Operations",
+    "AI / Data Infrastructure",
+    "Safety"
+   ],
+   "stage": "Series B",
+   "hq": "London, UK",
+   "funding": "$41M Series B, Feb 2026, led by Energy Impact Partners",
+   "website": "https://fyld.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Gaudi AI",
+   "oneliner": "Back-office AI for contractors that delivers completed, auditable work products, estimates, bid levelling, change orders and schedules.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Scheduling",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Pre-seed",
+   "hq": "San Francisco, CA",
+   "funding": "Undisclosed Pre-Seed, Jul 2026",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "GoCanvas",
+   "oneliner": "Field data capture and safety-workflow software, now a Nemetschek Build segment product integrated with Bluebeam.",
+   "categories": [
+    "Field Operations",
+    "Safety"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "goNEON",
+   "oneliner": "ETH Zurich spin-off building an agentic AI service that generates technically feasible, regulation-compliant infrastructure and mobility designs in minutes rather than months.",
+   "categories": [
+    "Design / BIM / VDC",
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Pre-seed",
+   "hq": "Zurich, Switzerland",
+   "funding": "CHF 150K / €160K from Venture Kick, Jul 2026",
+   "website": "https://www.goneon.city",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Gravis Robotics",
+   "oneliner": "Swiss/Munich-based autonomous excavation company building robotics for heavy earthmoving equipment.",
+   "categories": [
+    "Robotics & Hardware",
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "GreenVibe",
+   "oneliner": "Wireless multi-sensor devices embedded in concrete before the pour that report strength, temperature, density, workability and humidity every 30 minutes, replacing cylinder break tests.",
+   "categories": [
+    "Field Operations",
+    "Robotics & Hardware",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "Tel Aviv, Israel",
+   "funding": "$12M Seed, Jul 2026",
+   "website": "https://greenvibe.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Gritt",
+   "oneliner": "AI-controlled robots that bolt onto rented, off-the-shelf construction equipment to automate solar farm build-out, and, next, data centers and large infrastructure.",
+   "categories": [
+    "Robotics & Hardware",
+    "Field Operations"
+   ],
+   "stage": "Series A",
+   "hq": "San Francisco, CA",
+   "funding": "$26M Series A, Jul 2026, led by Obvious Ventures (w/ Union Square Ventures, First Round Capital, Active Impact); ~$32M total",
+   "website": "https://gritt.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "GroundedAI",
+   "oneliner": "System of record for underground construction, field capture and analysis of ground composition and rock quality observations for tunnelling, civil and underground mining teams.",
+   "categories": [
+    "Field Operations",
+    "Reality Capture",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "Vancouver, BC, Canada",
+   "funding": "CAD $2M, Jul 2026, led by StandUp Ventures (w/ Accelia, BoxOne Ventures, The51, LOI Venture, SOSV); CAD $2.8M total equity",
+   "website": "https://www.groundedai.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Gryps",
+   "oneliner": "Managed AI ingesting construction/facilities documents for owners (universities, hospitals, infra) making asset data queryable post-handover",
+   "categories": [
+    "Owner / Facilities"
+   ],
+   "stage": "Seed",
+   "hq": "New York, NY",
+   "funding": "$6.2M Seed, Dec 2023, led by Primary Venture Partners",
+   "website": "https://www.gryps.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Guthrie AI",
+   "oneliner": "AI 'Virtual Bid Assistant' platform that automates bid prep, scope takeoff, and RFI tracking for glazing and specialty-trade estimators.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "Philadelphia, PA",
+   "funding": "$4M Seed, Jul 2026, led by Chicago Ventures",
+   "website": "https://www.guthrieai.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "HammerTech",
+   "oneliner": "Construction safety-management technology platform founded by Ben Leach.",
+   "categories": [
+    "Safety"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Hardline",
+   "oneliner": "Construction field app (upcoming guest company, enrich after discovery call)",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://hardlineapp.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Karly Heffernan discovery call 2026-06-29"
+  },
+  {
+   "name": "HCSS",
+   "oneliner": "Heavy-civil/infrastructure estimating and project management software, now part of Nemetschek's Build segment.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Project Management"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Hexagon",
+   "oneliner": "Geospatial measurement, BIM, and robotics/AGV technology conglomerate serving construction and industrial clients.",
+   "categories": [
+    "Reality Capture",
+    "Robotics & Hardware"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Higharc",
+   "oneliner": "AI homebuilding platform that turns homes into 3D spatial data to auto-generate permit-ready documents and real-time takeoffs.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Design / BIM / VDC",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Series C+",
+   "hq": "North Carolina, USA",
+   "funding": "$95M Series C (Jun 30, 2026), led by Insight Partners; total funding >$170M",
+   "website": "https://higharc.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Highwire",
+   "oneliner": "Contractor risk-management platform for prequalification, compliance, and safety data used by GCs and owners.",
+   "categories": [
+    "Safety"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Hive (Hive Autonomy)",
+   "oneliner": "Physical-AI 'silicon brain', a foundational model and software layer that retrofits construction and industrial machines (e.g. wheel loaders) for autonomous and remote-teleoperated operation.",
+   "categories": [
+    "Robotics & Hardware",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "Oslo, Norway & London, UK",
+   "funding": "$15M seed / pre-Series A, Jul 2026, led by SuperSeed",
+   "website": "https://hiveautonomy.no",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "HomeRun",
+   "oneliner": "Quick-commerce platform delivering cement, plywood, paint, electrical and other building materials to contractors and homeowners in Bengaluru within 60 minutes.",
+   "categories": [
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Series A",
+   "hq": "Bengaluru, India",
+   "funding": "$12M Series A+, Aug 6 2026, led by Nexus Venture Partners (w/ Sorin Investments, Titan Capital, Sparrow Capital, Consumer Collective by Atrium)",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Hyperion Robotics",
+   "oneliner": "Deploys mobile 3D-printing robotic microfactories that cast low-carbon reinforced concrete infrastructure components, substation bases, bridge elements, water systems, on or near site.",
+   "categories": [
+    "Robotics & Hardware",
+    "Sustainability",
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Unknown",
+   "hq": "Espoo, Finland",
+   "funding": "€6.4M (~$7.4M) growth round, Jul 16 2026, co-led by Course Corrected and the EIC Fund (w/ RE Ventures, Lifeline Ventures, Übermorgen Ventures, PC Rettig Impact); follows €3M seed led by Lifeline Ventures (2022)",
+   "website": "https://www.hyperionrobotics.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "ICON",
+   "oneliner": "3D-printed concrete construction company building homes and government facilities via large-format additive manufacturing.",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Infra.Market",
+   "oneliner": "Large construction materials procurement marketplace/platform based in India (Foundamental portfolio company).",
+   "categories": [
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Inlay",
+   "oneliner": "AI-native construction risk management platform for catching contract/bid risk (e.g., missed clauses) before award.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Invite",
+   "oneliner": "Frankfurt-based smart streetlight retrofit startup expanding into US/EU municipal infrastructure markets.",
+   "categories": [
+    "Sustainability"
+   ],
+   "stage": "Pre-seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Jabberwocki",
+   "oneliner": "App for coordinating and vetting remote job-site walks.",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "JOIN",
+   "oneliner": "Venture-backed AEC software platform for owners built around the thesis that owners want buildings, not software.",
+   "categories": [
+    "Owner / Facilities",
+    "Project Management"
+   ],
+   "stage": "Series B",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Kahua",
+   "oneliner": "Construction program/project management and financial management platform (owner-centric, ERP-adjacent)",
+   "categories": [
+    "Project Management",
+    "Financial / Payments",
+    "Owner / Facilities"
+   ],
+   "stage": "Growth / PE",
+   "hq": "Alpharetta, GA",
+   "funding": "",
+   "website": "https://kahua.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Kevin Owsley (Kahua AE) in VIATechnik recruiting conversations, Jun 2026"
+  },
+  {
+   "name": "Kaya AI",
+   "oneliner": "Supply chain intelligence for data center / mission-critical projects: AI tracking procurement, lead times and delivery risk",
+   "categories": [
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Pre-seed",
+   "hq": "New York, NY",
+   "funding": "$5.3M pre-seed, Jan 2025 (53 Stations, Suffolk Technologies, Soma Capital)",
+   "website": "https://www.usekaya.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Kebra",
+   "oneliner": "Vision-based system that guides field technicians through jobs and captures what they do, automatically triggering back-office workflows in ServiceTitan, financial software, and warranty portals.",
+   "categories": [
+    "Field Operations",
+    "AI / Data Infrastructure",
+    "Owner / Facilities"
+   ],
+   "stage": "Pre-seed",
+   "hq": "San Francisco, CA",
+   "funding": "Launched from stealth week of Aug 3 2026 (Y Combinator-backed; amount undisclosed)",
+   "website": "https://www.kebra.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Kewazo",
+   "oneliner": "Robotics company building vertical material-handling and scaffolding-automation systems for construction logistics.",
+   "categories": [
+    "Robotics & Hardware",
+    "Field Operations"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Kind Designs",
+   "oneliner": "3D-prints \"Living Seawalls\", coastal armor that doubles as artificial reef habitat, for municipal, hospitality and federal shoreline infrastructure projects.",
+   "categories": [
+    "Robotics & Hardware",
+    "Sustainability",
+    "Owner / Facilities"
+   ],
+   "stage": "Pre-seed",
+   "hq": "Miami, FL",
+   "funding": "$10M Pre-Series A at $70M valuation, Jul 16 2026 (Mark Cuban, NY Angels, TaMiami, Adrian Fenty, Kyle Kuzma); $21.5M total",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Kraaft",
+   "oneliner": "'WhatsApp for construction', jobsite messaging that turns field photos and conversations into geolocated reports and structured field data",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Series A",
+   "hq": "Paris, France",
+   "funding": "€13M Series A, Jan 2025, led by Dawn Capital (w/ Brick & Mortar Ventures)",
+   "website": "https://www.kraaft.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Kuadra",
+   "oneliner": "AI platform for Egyptian contractors that analyzes tender documents, extracts technical specifications, allocates work packages to suppliers and subcontractors, and evaluates bids in one place.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Supply Chain & Procurement",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Pre-seed",
+   "hq": "Cairo, Egypt",
+   "funding": "Undisclosed round, Jul 2026, led by Edafa Venture Capital",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "LeanCon",
+   "oneliner": "AI pre-construction engineering converting preliminary building models into coordinated schedules, cost plans and logistics in minutes",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Seed",
+   "hq": "Israel",
+   "funding": "$6M Seed, 2025",
+   "website": "https://www.leancon.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Light Table",
+   "oneliner": "AI platform that finds errors, omissions, and value-engineering opportunities in construction drawings; closed a $22M Series A.",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Lotta Build",
+   "oneliner": "Bootstrapped industrialized-construction manufacturer of demountable/reconfigurable wall and build systems ('the 2x4 of the future') for retail, DoD, universities and health-station builders",
+   "categories": [
+    "Robotics & Hardware",
+    "Design / BIM / VDC"
+   ],
+   "stage": "Bootstrapped",
+   "hq": "",
+   "funding": "Bootstrapped 12 years; renamed from Lotta Cube Feb 2025; acquired OnMed care-station manufacturing Mar 2025",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Podcast discovery call Mar 23, 2026 (John Fay), note: appears in Guests DB misspelled as 'Ladacube'"
+  },
+  {
+   "name": "Lumber",
+   "oneliner": "AI workforce management for construction: payroll, time tracking, union compliance, safety and field productivity",
+   "categories": [
+    "Workforce / Training"
+   ],
+   "stage": "Series A",
+   "hq": "San Jose, CA",
+   "funding": "$15.5M Series A, Mar 2025, led by Foundation Capital",
+   "website": "https://www.lumberfi.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "MaintainX",
+   "oneliner": "Mobile-first maintenance and asset-management platform for operations teams, acquired by Autodesk to extend into building operations.",
+   "categories": [
+    "Owner / Facilities",
+    "Field Operations"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Management Controls, Inc.",
+   "oneliner": "Contractor management software providing risk transparency and compliance tracking between owners and vendors.",
+   "categories": [
+    "Supply Chain & Procurement",
+    "Owner / Facilities"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Mango",
+   "oneliner": "Financial infrastructure platform for Mexican construction, connects contractors, developers, distributors and suppliers for procurement and payments, then uses that transaction data to build credit histories and extend financing.",
+   "categories": [
+    "Financial / Payments",
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Seed",
+   "hq": "Mexico City, Mexico",
+   "funding": "Seed+ round, Jul 15 2026, led by Brick & Mortar Ventures (w/ Ironspring Ventures); $6M total since founding",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "MeltPlan",
+   "oneliner": "AI-native preconstruction planning: scenario runs, automated takeoffs, code compliance and cost alignment before plans lock",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "$10M Seed, 2025, led by Bessemer Venture Partners",
+   "website": "https://www.meltplan.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Mesh Robotics",
+   "oneliner": "ETH Zurich robotics spinout building software and hardware that link BIM rebar models to robotic tying and assembly.",
+   "categories": [
+    "Robotics & Hardware",
+    "Design / BIM / VDC"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Modly",
+   "oneliner": "Technology vendor in industrialized / modular construction (standardization-flexibility strategy)",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 32 (Fouad Khalil, IC Strategy)"
+  },
+  {
+   "name": "Monumental",
+   "oneliner": "Small electric autonomous robots laying bricks on live sites, starting with facades and social housing in Europe",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Series B",
+   "hq": "Amsterdam, Netherlands",
+   "funding": "$32M Series B, Jul 2026, led by Khosla Ventures (Plural and Hummingbird returning); follows $25M Seed + Series A, Feb 2024",
+   "website": "https://www.monumental.co",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Motif",
+   "oneliner": "Cloud + AI building design platform from ex-Autodesk co-CEO Amar Hanspal, positioned as a Revit challenger",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Series A",
+   "hq": "San Francisco, CA",
+   "funding": "$46M Seed + Series A, Jan 2025 (CapitalG, Redpoint)",
+   "website": "https://motif.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Navatech",
+   "oneliner": "AI safety-tech company for construction, founded by Prakash Senghani.",
+   "categories": [
+    "Safety",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Nemetschek",
+   "oneliner": "German design/BIM software group (owner of Bluebeam, acquirer of HCSS) serving architecture, engineering, and construction.",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Neuron Factory",
+   "oneliner": "Preconstruction knowledge-graph AI platform backed by Trimble Ventures and Suffolk Technologies.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Nomic",
+   "oneliner": "Domain-specific AI agent platform for AEC firms that automates drawing review, submittal review, RFI research, and code compliance checks grounded in a firm's own drawings, specs, and standards.",
+   "categories": [
+    "AI / Data Infrastructure",
+    "Design / BIM / VDC",
+    "Project Management"
+   ],
+   "stage": "Unknown",
+   "hq": "New York, NY",
+   "funding": "Strategic investment from Arcadis, Jul/Aug 2026 (terms undisclosed)",
+   "website": "https://www.nomic.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "NotebookLM",
+   "oneliner": "Google AI research assistant turning source material into summaries, audio, video and mind maps",
+   "categories": [
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "https://notebooklm.google",
+   "ttw": true,
+   "ttw_issue": "017",
+   "coverage": ""
+  },
+  {
+   "name": "Novorender",
+   "oneliner": "BIM viewer company that streams massive 3D models to mobile devices, rooted in oil-and-gas digital-twin rendering tech.",
+   "categories": [
+    "Design / BIM / VDC",
+    "Reality Capture"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "nuuEnergy",
+   "oneliner": "Heat-pump installation hub network/platform expanding across Germany; raised a €4.3M seed round.",
+   "categories": [
+    "Sustainability"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Nyfty.ai",
+   "oneliner": "AI jobsite assistant automating daily reports, safety checks and manpower over SMS, no app or login",
+   "categories": [
+    "Field Operations",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://nyfty.ai",
+   "ttw": true,
+   "ttw_issue": "002",
+   "coverage": ""
+  },
+  {
+   "name": "OpenSpace",
+   "oneliner": "Reality-capture and visual-intelligence platform for jobsites, expanding into spatial AI agents (Agent Space) after acquiring Disperse.",
+   "categories": [
+    "Reality Capture",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Series C+",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Outbuild",
+   "oneliner": "Collaborative scheduling and lookahead planning connecting the master schedule to the field",
+   "categories": [
+    "Scheduling"
+   ],
+   "stage": "Series A",
+   "hq": "San Francisco, CA",
+   "funding": "$11M Series A, Nov 2025 (Sway Ventures, BGV, Hilti, Trimble, Zacua)",
+   "website": "https://outbuild.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 47 (Franco Giaquinto, CEO); Q3 sponsorship CLOSED, $4,500/mo × 3 months (Lee Evans, Head of Marketing)"
+  },
+  {
+   "name": "PermitFlow",
+   "oneliner": "AI-powered permitting: automated permit research, application prep and submission tracking for builders",
+   "categories": [
+    "Project Management"
+   ],
+   "stage": "Series B",
+   "hq": "New York, NY",
+   "funding": "$54M Series B, Dec 2025, led by Accel",
+   "website": "https://www.permitflow.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Perry Weather",
+   "oneliner": "Hyper-local jobsite weather monitoring with automated safety alerts",
+   "categories": [
+    "Safety",
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://perryweather.com",
+   "ttw": true,
+   "ttw_issue": "001",
+   "coverage": ""
+  },
+  {
+   "name": "Pillar",
+   "oneliner": "AI operating system for contractors unifying PM, estimates, invoicing, procurement, margin tracking and workforce activity",
+   "categories": [
+    "Project Management"
+   ],
+   "stage": "Seed",
+   "hq": "Milan, Italy",
+   "funding": "€12M Seed, May 2026, co-led by Earlybird and Base10",
+   "website": "https://www.pillar.it",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Planera",
+   "oneliner": "Collaborative CPM scheduling and planning for complex projects; sells to ENR 400 GCs",
+   "categories": [
+    "Scheduling"
+   ],
+   "stage": "Series A",
+   "hq": "Pleasanton, CA",
+   "funding": "$13.5M Series A (Sierra Ventures, Aug 2024) + $8M extension, Oct 2025",
+   "website": "https://planera.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 15 (Nitin, Co-Founder); former sponsor (churned Feb 2026)"
+  },
+  {
+   "name": "Primepoint AI",
+   "oneliner": "AI that reads construction drawings, connects plans, specs, RFIs and submittals, auto-flags clashes and gaps, answers questions traced to the exact detail",
+   "categories": [
+    "AI / Data Infrastructure",
+    "Design / BIM / VDC"
+   ],
+   "stage": "Seed",
+   "hq": "San Mateo, CA",
+   "funding": "$10M seed, 2026",
+   "website": "https://primepoint.ai",
+   "ttw": true,
+   "ttw_issue": "018",
+   "coverage": "TTW 018; podcast recording targeted late July 2026; exploring VIATechnik design partnership (intro via Mitch ~2025; board adviser Aaron, GS Futures)"
+  },
+  {
+   "name": "Printerra",
+   "oneliner": "Canadian additive-construction (3D concrete printing) company providing advisory and printing services.",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Procore",
+   "oneliner": "Cloud-based construction project management and ERP platform used across preconstruction, field, and financials.",
+   "categories": [
+    "Project Management"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "ProcurePro",
+   "oneliner": "Construction procurement and buyout software that closed an $11M Series B.",
+   "categories": [
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Series B",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "ProjectMark",
+   "oneliner": "Construction-focused CRM and proposal/RFP software helping contractors track business development and sell preconstruction services.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Projexion",
+   "oneliner": "Project intelligence aggregating data from existing tools (Procore, P6) into unified project health",
+   "categories": [
+    "AI / Data Infrastructure",
+    "Project Management"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://projexion.io",
+   "ttw": true,
+   "ttw_issue": "004",
+   "coverage": "Ep 19 (Joe Wilson, Founder); TTW 004"
+  },
+  {
+   "name": "Prolo",
+   "oneliner": "AI-powered procurement service for SME construction contractors, order materials and plant hire via WhatsApp/email/phone and get trade rates from a 185+ supplier network plus up to 90-day credit.",
+   "categories": [
+    "Supply Chain & Procurement",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "London, UK",
+   "funding": "£4.2M / €4.9M Seed, Jul 2026, led by Triple Point Ventures",
+   "website": "https://prolo.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Pronto",
+   "oneliner": "Anthony Levandowski's autonomy company building self-driving/autonomous heavy equipment technology.",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Provision",
+   "oneliner": "AI estimating startup building agents for GCs and subs, including a 'Scope Agent' that generates scopes of work from construction documents.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Provizual",
+   "oneliner": "Cloud platform overlaying inspection and QA/QC status onto project drawings with color-coding",
+   "categories": [
+    "Field Operations",
+    "Project Management"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://provizual.com",
+   "ttw": true,
+   "ttw_issue": "010",
+   "coverage": ""
+  },
+  {
+   "name": "QNECT",
+   "oneliner": "Steel connection design optimization software for structural engineering and fabrication",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://qnect.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 14 (Jef Sharp, Founder)"
+  },
+  {
+   "name": "Qonic",
+   "oneliner": "Cloud BIM modeling combining solid modeling, open interoperability and real-time collaboration, from ex-Bricsys founders",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Unknown",
+   "hq": "Ghent, Belgium",
+   "funding": "",
+   "website": "https://www.qonic.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "QUICKBLOCK",
+   "oneliner": "Scottish maker of a flat-pack interlocking modular building system made from 100% recycled polypropylene, used for rapidly deployable training environments and ballistic, blast, and drone protection structures.",
+   "categories": [
+    "Robotics & Hardware",
+    "Sustainability",
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Seed",
+   "hq": "Scotland, UK",
+   "funding": "£940K equity + innovation grant, Jul 28 2026, led by Equity Gap (w/ University of Strathclyde, Scottish Enterprise; grants from Scottish Enterprise and Innovate UK); follows an earlier £1.3M round",
+   "website": "https://quickblock.uk",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Raise Robotics",
+   "oneliner": "Mobile manipulator robots for facade construction and high-hazard installation work",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Unknown",
+   "hq": "San Francisco, CA",
+   "funding": "",
+   "website": "https://raiserobotics.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 20 (Gary Chen & Conley Oster, Co-Founders)"
+  },
+  {
+   "name": "Relay Construction Services",
+   "oneliner": "Budget and buyout software startup replacing Excel-based workflows for preconstruction.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Revizto",
+   "oneliner": "AEC collaboration and BIM-coordination software, also known for its industry survey research on project budget overruns.",
+   "categories": [
+    "Design / BIM / VDC",
+    "Project Management"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "RhinoDox",
+   "oneliner": "AI risk assessment and proposal/bidding workflow platform, expert-persona system generating risk analysis, win probability and project briefs; $20B+ of projects processed",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "Preparing a raise; SPV investment structure per deal (as of Jul 2026)",
+   "website": "https://rhinodox.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Met with founder Justin Ullman; discussed at Jul 9 BCCP partner meeting as deal-flow candidate"
+  },
+  {
+   "name": "Rhumbix",
+   "oneliner": "Construction labor-tracking and timekeeping platform for field crews, acquired by Autodesk.",
+   "categories": [
+    "Field Operations",
+    "Workforce / Training"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "RMOne",
+   "oneliner": "ERP platform built to solve preconstruction data and workflow gaps, self-funded without VC backing.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Financial / Payments"
+   ],
+   "stage": "Bootstrapped",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Roger",
+   "oneliner": "AI workspace auto-generating project logs (scope sheets, bid forms, inspection logs) from drawings",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://tryroger.com",
+   "ttw": true,
+   "ttw_issue": "006",
+   "coverage": ""
+  },
+  {
+   "name": "RS Means",
+   "oneliner": "Widely used construction cost-data and cost-index reference used to benchmark and adjust estimates.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Rugged Robotics",
+   "oneliner": "Autonomous robot (Mark 1) printing BIM layout onto jobsite floors at millimeter accuracy",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Unknown",
+   "hq": "Houston, TX",
+   "funding": "",
+   "website": "https://rugged-robotics.com",
+   "ttw": true,
+   "ttw_issue": "009",
+   "coverage": ""
+  },
+  {
+   "name": "Sage",
+   "oneliner": "Legacy ERP/estimating software vendor (Sage Estimating, Sage 300 CRE) long used by GCs for accounting and bid work.",
+   "categories": [
+    "Financial / Payments",
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Saible",
+   "oneliner": "Construction payments fintech whose Digital Parallel Payment Account holds project funds in trust with a regulated bank and releases them simultaneously to every approved firm across all tiers of the supply chain, instead of cascading down the chain.",
+   "categories": [
+    "Financial / Payments",
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Seed",
+   "hq": "Birmingham, UK",
+   "funding": "£800K angel round, Jul 15 2026 (£2.9M total)",
+   "website": "https://saible.co.uk",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Salus",
+   "oneliner": "Construction safety-technology company founded by Gabe Getta.",
+   "categories": [
+    "Safety"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Scoreboard AI",
+   "oneliner": "Automated scope review of drawings and specs via customizable checklists; assigns bid packages",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://scoreboardai.net",
+   "ttw": true,
+   "ttw_issue": "008",
+   "coverage": "Episode with Charles Ma (Founder) in production; TTW 008"
+  },
+  {
+   "name": "Sensera Systems",
+   "oneliner": "SiteCloud jobsite cameras with AI interpreting site imagery to flag safety hazards and OSHA-violation risks",
+   "categories": [
+    "Safety",
+    "Reality Capture"
+   ],
+   "stage": "Series B",
+   "hq": "Golden, CO",
+   "funding": "$27M Series B, Feb 2026, led by 10 Atlantic Group",
+   "website": "https://www.senserasystems.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "ServiceTitan",
+   "oneliner": "Vertical field-service management software for trades contractors (plumbing, electrical, HVAC).",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Shepherd",
+   "oneliner": "AI-native commercial P&C insurance for construction, underwriting with live data from contech platforms",
+   "categories": [
+    "Financial / Payments"
+   ],
+   "stage": "Series B",
+   "hq": "San Francisco, CA",
+   "funding": "$42M Series B, Mar 2026, led by Intact Private Capital ($67M total)",
+   "website": "https://www.shepherdinsurance.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Sitegeist",
+   "oneliner": "TU Munich spinout building modular, van-sized robots for high-pressure water-lance concrete demolition and renovation, starting with parking garages.",
+   "categories": [
+    "Robotics & Hardware",
+    "Field Operations"
+   ],
+   "stage": "Pre-seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "SiteLink",
+   "oneliner": "BIM viewer for active construction, Babylon.js web + Cesium iOS, custom C++ Revit/ACC-to-GLTF tile pipeline on Google Cloud, QR positioning via Multiset partnership",
+   "categories": [
+    "Design / BIM / VDC",
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "Ted personally invested $3.5M; distressed, down to 2 employees, 15 buyer rejections",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "VIATechnik technical review Jul 9, 2026 (acquisition evaluation)"
+  },
+  {
+   "name": "Sledge",
+   "oneliner": "AI-native construction operating system whose agentic AI writes bids, runs jobs, sends invoices and chases payments, running a contractor's company from bid to build to paid.",
+   "categories": [
+    "Project Management",
+    "Preconstruction & Estimating",
+    "Financial / Payments",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "Las Vegas, NV (founder also operates Ferrocrete Builders in Los Angeles, CA)",
+   "funding": "Launched from stealth Jul 30, 2026; private beta with ~$20M project volume under management (funding undisclosed)",
+   "website": "https://www.getsledge.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "SmartPM",
+   "oneliner": "Schedule analytics and delay analysis automated from P6/MSP data",
+   "categories": [
+    "Scheduling"
+   ],
+   "stage": "Unknown",
+   "hq": "Atlanta, GA",
+   "funding": "",
+   "website": "https://smartpmtech.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 8 (Michael Pink); Q3 sponsor prospect (Planning/Scheduling slot)"
+  },
+  {
+   "name": "SmrtBld",
+   "oneliner": "Construction tech company (early conversation, category TBD)",
+   "categories": [],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://smrtbld.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Sponsorship media kit sent 2026-05-29 (Zulq Malik)"
+  },
+  {
+   "name": "SnapScale",
+   "oneliner": "Generative-AI layer (AutoFlow) that sits inside existing CAD environments so plant and EPC engineers can generate, modify and review design documents without switching systems.",
+   "categories": [
+    "Design / BIM / VDC",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "South Korea",
+   "funding": "Seed round announced Jul 23 2026 (amount undisclosed) from KAIST Venture Investment Holdings, POSTECH Holdings and Bass Ventures",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Snaptrude",
+   "oneliner": "Browser-based AI-powered BIM for architects, focused on conceptual and schematic design",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Series A",
+   "hq": "New York, NY",
+   "funding": "$14M Series A (Accel); ~$21.8M total",
+   "website": "https://www.snaptrude.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Sodex Innovations",
+   "oneliner": "Machine-integrated laser scanning plus SDX-Cloud platform that turns excavators and heavy equipment into real-time construction-site surveying and progress-documentation sensors.",
+   "categories": [
+    "Reality Capture",
+    "Field Operations"
+   ],
+   "stage": "Seed",
+   "hq": "Vorarlberg, Austria",
+   "funding": "€4M / $4.4M, Jul 2026, led by Capmont Technology",
+   "website": "https://www.sodex-innovations.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Sonabel Instruments",
+   "oneliner": "Develops an acoustic weld-defect-detection sensor.",
+   "categories": [
+    "Robotics & Hardware",
+    "Field Operations"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "SP10 / Build.ai (working name)",
+   "oneliner": "Alpha-stage AI submittal review, checks submittals against specs/drawings, generates marked-up PDFs with comments and cover sheets; targeting $30M–$300M GCs",
+   "categories": [
+    "Project Management",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Pre-seed",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Advisory-style conversation with founders (alpha demo)"
+  },
+  {
+   "name": "Speckle",
+   "oneliner": "Open-source data-interoperability layer for 3D/AEC models, enabling BIM data exchange across tools.",
+   "categories": [
+    "Design / BIM / VDC",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Stack",
+   "oneliner": "AI-enabled construction takeoff and estimating software platform (STACK Construction Technologies).",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "STACK Construction Technologies",
+   "oneliner": "Cloud-based takeoff and estimating software vendor for construction preconstruction teams.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Growth / PE",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "StirlingX",
+   "oneliner": "UK drone operator providing survey, mapping, inspection, and scan-to-BIM data intelligence for construction sites.",
+   "categories": [
+    "Reality Capture"
+   ],
+   "stage": "Series A",
+   "hq": "United Kingdom",
+   "funding": "$20M (£15.1M) Series A (~Jul 2, 2026), led by Ventura Capital",
+   "website": "https://www.stirlingx.io",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Stratus",
+   "oneliner": "Shop/fabrication management software for tracking off-site fabrication in trades such as sheet metal.",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Structured AI",
+   "oneliner": "YC-backed computer-vision QA/QC checking completed fieldwork and drawing sets against construction documents",
+   "categories": [
+    "Field Operations"
+   ],
+   "stage": "Seed",
+   "hq": "",
+   "funding": "$4.2M Seed, 2026, led by FCVC (w/ YC, 20VC, Cherry Ventures)",
+   "website": "https://getstructured.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "SubBase",
+   "oneliner": "Materials procurement and payments platform for construction, helping contractors manage supplier transactions.",
+   "categories": [
+    "Supply Chain & Procurement",
+    "Financial / Payments"
+   ],
+   "stage": "Series A",
+   "hq": "Fort Lauderdale, FL",
+   "funding": "$7M Series A, announced week of Aug 3 2026, led by FINTOP Capital",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "SUSA International",
+   "oneliner": "Circular-economy asset disposition and resale company for construction equipment/assets.",
+   "categories": [
+    "Supply Chain & Procurement",
+    "Sustainability"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Tekla",
+   "oneliner": "BIM modeling software (Trimble-owned) used for detailed steel and reinforcement modeling and coordination.",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "TerraFirma",
+   "oneliner": "Vertically integrated earthworks contractor that retrofits excavators, dozers and loaders into semi-autonomous machines run from a remote command center, selling site work as a service rather than selling software.",
+   "categories": [
+    "Robotics & Hardware",
+    "Field Operations"
+   ],
+   "stage": "Series A",
+   "hq": "Austin, TX",
+   "funding": "$100M Series A, Jul 14 2026, led by Kleiner Perkins (w/ Bain Capital Ventures, Glade Brook, Saga, Trust Ventures, PEAK6, Magnetar); ~$115M total",
+   "website": "https://www.terrafirma.inc",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "TestFit",
+   "oneliner": "AI-powered feasibility and site-planning software letting AEC teams rapidly test massing and program options.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "Design / BIM / VDC"
+   ],
+   "stage": "Series B",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "The Link",
+   "oneliner": "Spec data platform ('SpecGPT') pivoted to AI strategy consulting and integration for contractors (AI Edge offering with Jay Snyder / BBI)",
+   "categories": [
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Bootstrapped",
+   "hq": "",
+   "funding": "",
+   "website": "https://thelink.ai",
+   "ttw": true,
+   "ttw_issue": "005",
+   "coverage": "Ep 35 + July 2026 return episode (Hugh Seaton); TTW 005"
+  },
+  {
+   "name": "Timescapes",
+   "oneliner": "Jobsite timelapse camera and visual progress-documentation platform for construction projects.",
+   "categories": [
+    "Reality Capture"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Togal",
+   "oneliner": "AI-enabled takeoff software for automating quantity takeoffs from construction drawings.",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Togal.ai",
+   "oneliner": "AI-powered takeoff and estimating from construction drawings",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Series A",
+   "hq": "Miami, FL",
+   "funding": "",
+   "website": "https://togal.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 29 (Patrick Murphy, Founder); Q3 sponsor prospect (Precon slot)"
+  },
+  {
+   "name": "Torus",
+   "oneliner": "AI agents that run 50+ cross-document consistency checks across specs, drawings, and datasheets for capital-project engineering (EPC) firms.",
+   "categories": [
+    "Design / BIM / VDC",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "San Francisco, CA",
+   "funding": "Stealth / YC 2026 (amount undisclosed)",
+   "website": "https://www.usetorus.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Track3D",
+   "oneliner": "AI reality-intelligence consolidating 360, drone and lidar captures to track progress and detect deviations against plan",
+   "categories": [
+    "Reality Capture"
+   ],
+   "stage": "Series A",
+   "hq": "Milpitas, CA",
+   "funding": "$10M Series A, Sep 2025, co-led by Ironspring and Zacua ($14.3M total)",
+   "website": "https://track3d.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Trade",
+   "oneliner": "Construction back-office and payroll operating system built for specialty trade contractors.",
+   "categories": [
+    "Financial / Payments",
+    "Workforce / Training"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Trayd",
+   "oneliner": "Payroll and back-office platform for specialty trade contractors: same-day pay, prevailing-wage compliance, labor cost tracking",
+   "categories": [
+    "Financial / Payments",
+    "Workforce / Training"
+   ],
+   "stage": "Series A",
+   "hq": "New York, NY",
+   "funding": "$10M Series A, Mar 2026, led by White Star Capital (w/ YC, Suffolk Technologies, RXR)",
+   "website": "https://www.trayd.co",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Trimble",
+   "oneliner": "Diversified positioning, survey, and construction software/hardware conglomerate spanning field, design, and connected-construction workflows.",
+   "categories": [
+    "Field Operations",
+    "Design / BIM / VDC"
+   ],
+   "stage": "Public",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Trunk Tools",
+   "oneliner": "AI agents over construction documents for field question-answering and workflow automation",
+   "categories": [
+    "AI / Data Infrastructure",
+    "Field Operations"
+   ],
+   "stage": "Series B",
+   "hq": "New York, NY",
+   "funding": "$40M Series B, Jul 2025, led by Insight Partners ($70M total)",
+   "website": "https://trunk.tools",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Ep 28 (Sarah Buchner, Founder & CEO); active podcast sponsor (Show + Story)"
+  },
+  {
+   "name": "Unlimited Industries",
+   "oneliner": "AI-native vertically integrated E&C company building an AI-powered delivery stack for infrastructure and capital projects",
+   "categories": [
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "San Francisco, CA",
+   "funding": "$12M Seed, Dec 2025, co-led by a16z and CIV",
+   "website": "https://www.unlimitedindustries.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "UpCodes",
+   "oneliner": "Platform aggregating building, plumbing, and fire codes into a searchable tool for design and compliance research.",
+   "categories": [
+    "Design / BIM / VDC"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Versatile",
+   "oneliner": "Crane-mounted IoT sensor and data company providing jobsite productivity analytics.",
+   "categories": [
+    "Field Operations",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Mentioned in Construction Conversations episode(s), ecosystem corpus backfill 2026-07-18"
+  },
+  {
+   "name": "Veyor",
+   "oneliner": "Delivery and material-management startup for construction site logistics.",
+   "categories": [
+    "Supply Chain & Procurement"
+   ],
+   "stage": "Series A",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "viAct",
+   "oneliner": "Real-time AI video analytics detecting hazards, unsafe behavior and compliance issues on construction sites",
+   "categories": [
+    "Safety"
+   ],
+   "stage": "Series A",
+   "hq": "Hong Kong",
+   "funding": "$7.3M Series A, Apr 2025, led by Venturewave Capital",
+   "website": "https://www.viact.ai",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "VIATechnik (Voyager)",
+   "oneliner": "Web-based digital twin centralizing BIM, CMMS, BMS, IoT and reality-capture data for owners/operators",
+   "categories": [
+    "Owner / Facilities"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "https://viatechnik.com/capabilities/software-solutions/voyager",
+   "ttw": true,
+   "ttw_issue": "014",
+   "coverage": ""
+  },
+  {
+   "name": "Wyre AI",
+   "oneliner": "AI-native preconstruction software company building tools for early-stage project scoping and estimating.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "XBuild",
+   "oneliner": "AI-native chat-based estimating that turns measurement reports and site photos into finished contractor estimates, starting with residential roofing",
+   "categories": [
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Series A",
+   "hq": "San Francisco, CA",
+   "funding": "$19M Series A, Jan 2026, led by N47 (w/ Rackhouse, a16z)",
+   "website": "https://x.build",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Xpanner",
+   "oneliner": "Automation-as-a-service retrofitting equipment with physical-AI autonomy for piling and material handling (solar, battery, data center sites)",
+   "categories": [
+    "Robotics & Hardware"
+   ],
+   "stage": "Series B",
+   "hq": "Santa Fe Springs, CA",
+   "funding": "$18M Series B bridge, May 2026 (Korea Investment Partners, KB Investment; $38M total)",
+   "website": "https://www.xpanner.com",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Zabidou",
+   "oneliner": "Laser-and-camera sensing system that reads material properties in real time on prefabrication and industrial production lines, retrofittable to existing lines.",
+   "categories": [
+    "Reality Capture",
+    "Robotics & Hardware",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Seed",
+   "hq": "Australia",
+   "funding": "A$3.5M Seed, Aug 3 2026, led by Black Nova with Main Sequence and Antler (follows ~$1.8M pre-seed)",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Zebel",
+   "oneliner": "Preconstruction data analytics platform helping teams benchmark and analyze historical project cost/performance data.",
+   "categories": [
+    "Preconstruction & Estimating",
+    "AI / Data Infrastructure"
+   ],
+   "stage": "Unknown",
+   "hq": "",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": ""
+  },
+  {
+   "name": "Zero RFI",
+   "oneliner": "AI to eliminate RFIs by resolving document conflicts before they hit the field",
+   "categories": [
+    "Project Management",
+    "Preconstruction & Estimating"
+   ],
+   "stage": "Unknown",
+   "hq": "Atlanta, GA",
+   "funding": "",
+   "website": "",
+   "ttw": false,
+   "ttw_issue": "",
+   "coverage": "Episode with KP Reddy (Founder & CEO; also Managing Partner, Shadow Ventures)"
+  }
+ ]
+}

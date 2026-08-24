@@ -29,25 +29,35 @@
 
 <section class="page-head studs">
   <div class="wrap">
-    <span class="stamp orange" style="display:block; margin-bottom:18px;">The database</span>
+    <span class="stamp orange" style="display:block; margin-bottom:18px;">The discovery database</span>
     <h1 class="display">Tools field teams actually use</h1>
-    <p class="lede" style="max-width:640px;">{{TOOL_COUNT}} tools, {{MENTION_COUNT}} mentions, every one from a practitioner on the show talking about their own work. Founders pitching their own product and sponsor reads are excluded. Each entry links to the episode where it was said.</p>
+    <p class="lede" style="max-width:680px;">The point of this database is discovery: tools working in the market that you may not have heard of yet. The incumbents everyone already knows are deliberately excluded. Top section: tools a guest has actually used or that have been covered on the show, with what was said. Below that: the wider radar we track, one line each, so you know it exists before your competitor does.</p>
     <div class="search-row">
       <input type="search" id="tool-search" placeholder="Search tools…" aria-label="Search tools">
       <a class="btn btn-ghost" href="assets/tools.csv" download data-event="Tools CSV">Download the sheet (CSV)</a>
     </div>
-    <div class="search-row filters" data-target="#tool-list"><button class="filter active" data-type="">All</button>{{FILTERS}}</div>
+    <div class="search-row filters" data-target="#tool-page"><button class="filter active" data-type="">All</button>{{FILTERS}}</div>
   </div>
 </section>
+<div id="tool-page">
 <section class="block" style="padding-top:36px;">
   <div class="wrap">
+    <div class="sec-label">01 / Proven on the show · {{PROVEN_COUNT}} tools</div>
     <div class="ep-grid" id="tool-list">
-{{TOOLS}}
+{{PROVEN}}
     </div>
-    <p class="stamp dim" style="margin-top:24px;">Built from the show's episode knowledge base. Updated as episodes are processed. Hearing a tool named is not an endorsement; it is a record of what someone doing the work said.</p>
   </div>
 </section>
-
+<section class="block" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-label">02 / On our radar · {{RADAR_COUNT}} companies</div>
+    <div class="radar-grid">
+{{RADAR}}
+    </div>
+    <p class="stamp dim" style="margin-top:24px;">Built from the Construction Tech Radar we maintain for the show. A listing is a record, not an endorsement. Tech to Watch tags link back to the Construction Briefs issue that covered them.</p>
+  </div>
+</section>
+</div>
 <section class="block" id="newsletter">
   <div class="wrap">
     <div class="sec-label">Construction Briefs</div>
