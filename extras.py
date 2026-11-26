@@ -59,6 +59,7 @@ FOOT_ITEMS = [
     ("https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3", "Spotify", "Platform: Spotify"),
     ("https://www.youtube.com/@ConstructionConversations", "YouTube", "Platform: YouTube"),
     ("https://www.linkedin.com/company/construction-conversations/", "LinkedIn", ""),
+    ("https://www.instagram.com/construction_conversations/", "Instagram", "Platform: Instagram"),
     (f"{SUBSTACK}/", "Briefs", ""),
     ("episodes.html?q=reviewed%20as%20noted", "Reviewed as Noted", ""),
     ("reviews.html", "Reviews", ""),
