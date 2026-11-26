@@ -3,7 +3,7 @@ title: The Debrief: June 2026
 subtitle: A soft market with a hot tech layer
 date: 2026-07-10
 type: Debrief
-episode: special-1
+episode: ran-2026-07-07
 author: Stephen Poppe
 substack: https://constructionbriefs.substack.com/p/the-debrief-june-2026
 cover: https://substackcdn.com/image/fetch/$s_!Ina6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4d6029ad-6f6c-40bf-8148-65dfd165d4b4_2400x1260.png

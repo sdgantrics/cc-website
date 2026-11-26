@@ -1,0 +1,12 @@
+{
+  "frozen": "2026-11-26",
+  "note": "Legacy special-N.html URLs redirect to the stable ran- slug each one resolved to in the Podbean feed on the frozen date (newest special was special-1). build.py reads redirects and does not recompute this from feed order.",
+  "redirects": {
+    "special-1": "ran-2026-11-10",
+    "special-2": "ran-2026-10-06",
+    "special-3": "ran-2026-09-08",
+    "special-4": "ran-2026-08-04",
+    "special-5": "ran-2026-07-07",
+    "special-6": "ran-2026-05-22"
+  }
+}

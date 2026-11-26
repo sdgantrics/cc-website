@@ -6,6 +6,7 @@ Fetches the Podbean RSS feed and regenerates the site from templates/:
   site/episodes.html   - full episode list with search
   site/sponsors.html   - sponsor page (static content, count injected)
   site/episodes/*.html - one page per episode, with PodcastEpisode JSON-LD
+  site/episodes/special-N.html - legacy redirects from data/special_redirects.json
   site/start.html      - Start Here hub (listening paths from paths.json)
   site/start/*.html    - one page per listening path
 
@@ -84,10 +85,26 @@ def parse_duration(raw: str) -> int:
     return int(raw)
 
 
+def assign_special_slugs(episodes):
+    """Unnumbered episodes (Reviewed as Noted). The slug is the publish date,
+    so it does not move when a newer special is added. Episodes that share a
+    date are disambiguated by guid (then link, then title), not feed position:
+    the first keeps ran-YYYY-MM-DD and the rest get -2, -3, ..."""
+    groups = {}
+    for e in episodes:
+        if e["num"]:
+            continue
+        groups.setdefault(e["date_iso"], []).append(e)
+    for date_iso, group in groups.items():
+        group.sort(key=lambda e: e.get("_stable") or "")
+        base = f"ran-{date_iso}" if date_iso else "ran-undated"
+        for n, e in enumerate(group):
+            e["slug"] = base if n == 0 else f"{base}-{n + 1}"
+
+
 def parse_episodes(xml_text: str):
     channel = ET.fromstring(xml_text).find("channel")
     episodes = []
-    specials = 0
     for item in channel.findall("item"):
         title = text(item, "title")
         enclosure = item.find("enclosure")
@@ -101,8 +118,6 @@ def parse_episodes(xml_text: str):
         # itunes:episode counts specials too and drifts from it.
         m = re.match(r"Ep\.?\s*(\d+)", title)
         ep_num = m.group(1) if m else ""
-        if not ep_num:
-            specials += 1
         secs = parse_duration(text(item, "duration", ITUNES))
         desc = strip_html(text(item, "description") or text(item, "summary", ITUNES))
         item_img = item.find(ITUNES + "image")
@@ -110,7 +125,7 @@ def parse_episodes(xml_text: str):
             "title": title,
             "display_title": re.sub(r"^Ep\.?\s*\d+\s*[-–—:]\s*", "", title),
             "num": ep_num,
-            "slug": f"ep-{int(ep_num):03d}" if ep_num else f"special-{specials}",
+            "slug": f"ep-{int(ep_num):03d}" if ep_num else "",
             "date": date,
             "date_iso": date_iso,
             "secs": secs,
@@ -121,7 +136,11 @@ def parse_episodes(xml_text: str):
             "audio": enclosure.get("url") if enclosure is not None else "",
             "link": text(item, "link"),
             "image": item_img.get("href") if item_img is not None else "",
+            "_stable": text(item, "guid") or text(item, "link") or title,
         })
+    assign_special_slugs(episodes)
+    for e in episodes:
+        e.pop("_stable", None)
     art = channel.find(ITUNES + "image")
     artwork = art.get("href") if art is not None else ""
     return episodes, artwork
@@ -206,6 +225,41 @@ def path_jsonld(p) -> str:
         ],
     }
     return json.dumps(data, indent=2)
+
+
+def build_special_redirects(episodes):
+    """Write tiny redirect pages for legacy special-N URLs.
+
+    The map is frozen in data/special_redirects.json. It is not recomputed
+    from the current feed, so a new special does not retarget old links.
+    """
+    path = ROOT / "data" / "special_redirects.json"
+    if not path.exists():
+        print("WARNING data/special_redirects.json missing; no legacy special-N redirects")
+        return
+    redirects = json.loads(path.read_text()).get("redirects") or {}
+    known = {e["slug"] for e in episodes}
+    ep_dir = ROOT / "site" / "episodes"
+    ep_dir.mkdir(exist_ok=True)
+    n = 0
+    for src, dest in redirects.items():
+        if not re.fullmatch(r"special-\d+", src) or not re.fullmatch(r"ran-[0-9-]+", dest):
+            print(f"WARNING special redirect skipped: {src} -> {dest}")
+            continue
+        if dest not in known:
+            print(f"WARNING special redirect {src} -> {dest}: target not in this feed")
+        page = (
+            "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n"
+            "<title>Redirect</title>\n"
+            f'<meta http-equiv="refresh" content="0; url={dest}.html">\n'
+            f'<link rel="canonical" href="https://constructionconversations.com/episodes/{dest}.html">\n'
+            "</head>\n<body>\n"
+            f'<p><a href="{dest}.html">Continue to the episode</a></p>\n'
+            "</body>\n</html>\n"
+        )
+        (ep_dir / f"{src}.html").write_text(page)
+        n += 1
+    print(f"Wrote {n} special redirects to site/episodes/")
 
 
 def build_paths(first, paths, count: int):
@@ -323,6 +377,9 @@ def build():
 
     episodes, artwork = parse_episodes(xml_text)
     print(f"Parsed {len(episodes)} episodes from feed")
+    for e in episodes:
+        if not e["num"]:
+            print(f"  {e['slug']}  {e['date_iso']}  {e['title']}")
 
     def download(url, dest):
         req = urllib.request.Request(url, headers={"User-Agent": "cc-site-builder"})
@@ -403,6 +460,7 @@ def build():
             page = page.replace(k, v)
         (ep_dir / f'{ep["slug"]}.html').write_text(extras.apply_chrome(page, "../"))
     print(f"Wrote {len(episodes)} episode pages to site/episodes/")
+    build_special_redirects(episodes)
 
     build_paths(first, paths, len(episodes))
     tpl_dir = ROOT / "templates"
