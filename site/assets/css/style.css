@@ -344,8 +344,13 @@ section.block + section.block { border-top: 1px solid var(--hairline); }
 
 /* ---------- footer ---------- */
 footer { border-top: 1px solid var(--hairline); }
-.foot { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; padding: 40px 0; }
-.foot-links { display: flex; gap: 10px 22px; flex-wrap: wrap; }
+.foot { display: flex; flex-direction: column; align-items: stretch; gap: 28px; padding-top: 40px; padding-bottom: 40px; }
+.foot-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 32px; width: 100%; }
+.foot-group { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.foot-label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--grey-3); margin-bottom: 4px;
+}
 .foot a {
   font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--grey-2); border-bottom: none;
@@ -375,6 +380,7 @@ footer { border-top: 1px solid var(--hairline); }
   section.block { padding: 56px 0; }
   .host-card { flex-direction: column; }
   .duotone { width: 100%; height: 300px; }
+  .foot-links { grid-template-columns: 1fr 1fr; gap: 28px 16px; }
 }
 
 /* ---------- start here: listening paths ---------- */
