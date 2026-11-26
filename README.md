@@ -10,6 +10,11 @@ from the Podbean RSS feed.
 - `site/` — the deployable output (this folder is what gets hosted)
 - `build.py` — fetches the Podbean feed and regenerates `site/index.html`
   and `site/episodes.html` (episode cards, counts, cover art)
+- Episode slugs: `ep-054` when the title starts with a number. Unnumbered
+  specials (Reviewed as Noted) use `ran-YYYY-MM-DD` from the publish date,
+  not feed position, so a new special does not renumber older ones. Two
+  specials on the same date get a `-2`, `-3` suffix from a guid sort.
+  Legacy `episodes/special-N.html` URLs redirect via `data/special_redirects.json`.
 
 ## What's on the site (audience-first, Aug 2026)
 

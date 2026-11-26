@@ -67,77 +67,77 @@
      "quote": "You have to get into every single individual submittal and update it one by one... It's an unsustainable workflow. And so what happens then... is that contractors will then open up an Excel spreadsheet and track the long lead procurement items in Excel... the source of truth has fractured immediately."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "The hard part of building your own software is context, not code",
      "quote": "The big battle though is context and getting content... now I've got to add the context of what I need. I've got to express that to them so that they can build it."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Contractors are now building software to own the data, not to save the license fee",
      "quote": "It's not even so much that we're spending 300 grand and we're saving the money over the next couple years. That's not necessarily the play. It's we're spending 300 grand and we're basically creating a moat for ourselves as a company because it's our data now."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data",
      "quote": "They're being forced to, but it's through gritted teeth and they hate it. The attitude down on my end is not great about those systems. So we're already trying to bend and having to do what the next customer wants us to do."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "ConTech M&A is a data land-grab, not a product roll-up",
      "quote": "It's a data play from what I can tell. It's how much data have these companies captured that we can fold into our own ecosystem and use that to train the AI models on top of it."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "The integrator is the durable role in a stack no single vendor can serve",
      "quote": "No one company is going to be able to serve every single segment of the market... Procore doesn't necessarily work for, or ACC for that matter, doesn't work for a steel detailing workflow."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "A world where every owner Frankensteins their own platform is worse than the platform monopoly",
      "quote": "A scary world would be where every owner has their own sort of platform that they somehow Frankenstein together in-house to control their own data and now I'm supposed to bend my organization to that constant changing on me."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Host",
      "context": "You are increasingly paying for a UI you will interface with less and less",
      "quote": "In five years, the user interface of these platforms is going to matter a whole lot less than it does now... there's gonna be more agents kind of cross collaborating across platforms."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Customer success churn at a vendor is an adoption risk, not just an annoyance",
      "quote": "In the course of 18 months, I had like six or seven customer success managers through my organization. That's not cool... you charge me how much and you can't manage your people?"
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Host",
      "context": "Acquisition is a defensive move that makes the buying environment worse for contractors",
      "quote": "It's kind of killing your competition in a different way... creating a more difficult buying environment with fewer and fewer firms having more leverage."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Legacy platforms letting features languish is what creates room for startups",
      "quote": "Some of these legacy platforms, I think, are letting features and functionalities and tools die on the vine and just languish... as a result, we need to supplement it with other more compelling, earlier stage companies."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Palantir's product is the ontology, and dashboards are just the surface",
@@ -269,7 +269,7 @@
      "quote": "At this point it's like two to three hours a day I'm able to refocus... I looked at where's the majority of my time going, and it was meetings and the outputs for meetings. I added an AI transcription tool, then layered in the creation of GPTs that leverage the transcript."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Microsoft-only shops are bringing in Claude alongside Copilot, and scaled workflow distribution is still the unsolved part",
@@ -345,7 +345,7 @@
      "quote": "You have to get into every single individual submittal and update it one by one... It's an unsustainable workflow. And so what happens then... is that contractors will then open up an Excel spreadsheet and track the long lead procurement items in Excel... the source of truth has fractured immediately."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Hire for problem-solving persistence, not AI proficiency, the tooling is already table stakes",
@@ -393,21 +393,21 @@
      "quote": "It used to be that a design engineer was a field engineer for at least three years. They saw the snags, they saw the design flaws, because they're right there looking at them. Now design engineers come right out of college and everybody wants to sit at a desk and use Autodesk or AutoCAD right off the bat, not go in the field and get muddy."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "ConTech M&A is a data land-grab, not a product roll-up",
      "quote": "It's a data play from what I can tell. It's how much data have these companies captured that we can fold into our own ecosystem and use that to train the AI models on top of it."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "A world where every owner Frankensteins their own platform is worse than the platform monopoly",
      "quote": "A scary world would be where every owner has their own sort of platform that they somehow Frankenstein together in-house to control their own data and now I'm supposed to bend my organization to that constant changing on me."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Host",
      "context": "Acquisition is a defensive move that makes the buying environment worse for contractors",
@@ -475,7 +475,7 @@
      "quote": "I would think that'd be a very hard one to break into... there being behemoths in that space now, where they're going to ideate off of their current platform and they have the funding and the recurring revenue to support that."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Reality capture keeps getting funded because it multiplies the superintendent, not because it's novel",
@@ -516,21 +516,21 @@
      "quote": "I've played around with ChatGPT and Copilot, Claude... and it does get hallucinations. So I'd be very worried about that... it's really about if we can scale up data collection now, and how do we download those people now?"
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Microsoft-only shops are bringing in Claude alongside Copilot, and scaled workflow distribution is still the unsolved part",
      "quote": "I'm seeing a lot of Microsoft only shops bringing in Claude as their enterprise license... but even then, you start to run into issues with how can I pass these workflows out at scale. They're starting to solve some of those things by being able to share out skills, but even then it's a bit of a mess."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "The assistant PM role changed underneath students mid-degree",
      "quote": "If I get out of college and I want to go be a PM, even the assistant PM, my starting position has changed so much of that work can be absorbed by AI... I'm worried the kids are getting bad advice for here's what a good future career looks like."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Software prices are collapsing because buyers can now price the underlying build",
@@ -564,7 +564,7 @@
      "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "ConTech M&A is a data land-grab, not a product roll-up",
@@ -618,7 +618,7 @@
      "quote": "Where I would have to use like two or three different platforms, it's all in one spot... overlaying plans onto drone images ,  I could figure out how to do it in Photoshop and [Bluebeam], but they have it just built into their platform now."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Reality capture keeps getting funded because it multiplies the superintendent, not because it's novel",
@@ -700,21 +700,21 @@
      "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Contractors are now building software to own the data, not to save the license fee",
      "quote": "It's not even so much that we're spending 300 grand and we're saving the money over the next couple years. That's not necessarily the play. It's we're spending 300 grand and we're basically creating a moat for ourselves as a company because it's our data now."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data",
      "quote": "They're being forced to, but it's through gritted teeth and they hate it. The attitude down on my end is not great about those systems. So we're already trying to bend and having to do what the next customer wants us to do."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "The integrator is the durable role in a stack no single vendor can serve",
@@ -748,7 +748,7 @@
      "quote": "Where I would have to use like two or three different platforms, it's all in one spot... overlaying plans onto drone images ,  I could figure out how to do it in Photoshop and [Bluebeam], but they have it just built into their platform now."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Palantir's product is the ontology, and dashboards are just the surface",
@@ -782,7 +782,7 @@
      "quote": "What makes Document Crunch unique is our CEO came from the industry. He was a construction attorney. And so he intimately knows the pain that our persona is dealing with... the product is built for someone like him."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "ConTech M&A is a data land-grab, not a product roll-up",
@@ -850,7 +850,7 @@
      "quote": "I've played around with ChatGPT and Copilot, Claude... and it does get hallucinations. So I'd be very worried about that... it's really about if we can scale up data collection now, and how do we download those people now?"
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Microsoft-only shops are bringing in Claude alongside Copilot, and scaled workflow distribution is still the unsolved part",
@@ -877,7 +877,7 @@
      "quote": "Why do we have Word documents? Why do we have Excel spreadsheets? Well, that was the way we did it on paper. So we digitalized the paper process, but we lost the opportunity to actually make the process better by moving it to technology. So I think AI gives us the opportunity to actually repurpose technology to serve us."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Hire for problem-solving persistence, not AI proficiency, the tooling is already table stakes",
@@ -998,7 +998,7 @@
      "quote": "If we would not have seen tools like Revizto, tools like OpenSpace, tools like Dusty Robotics, just to name a few, we'd probably still be where we were 15 years ago with these siloed tools just kind of doing their thing."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "ConTech M&A is a data land-grab, not a product roll-up",
@@ -1018,7 +1018,7 @@
      "quote": "Now is the time to say, how is this enhancing what I have already? And maybe build a little less than you might... the ability to assess a spec based on 10,000 specs... that you've got in your database. I think that's one opportunity."
     },
     {
-     "episode": "special-2",
+     "episode": "ran-2026-05-22",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Subs adopt the GC's platform through gritted teeth, and that attitude flows into the data",
@@ -1058,7 +1058,7 @@
      "quote": "It took a pandemic to get everybody to realize that you can click a link and you can turn on your camera and you can turn on your microphone and it can be effective."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Microsoft-only shops are bringing in Claude alongside Copilot, and scaled workflow distribution is still the unsolved part",
@@ -1071,14 +1071,14 @@
    "category": "AI/Analytics",
    "mentions": [
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Ask how you exit an ontology partnership before you sign it",
      "quote": "I always think of the end at the beginning... if you have a relationship like that, how do you get out of it? It's one thing to have a project management platform and the issues associated with change management there. I just can't imagine with something like this how you would part ways."
     },
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Founder (third-party)",
      "context": "Palantir's product is the ontology, and dashboards are just the surface",
@@ -1137,7 +1137,7 @@
    "category": "Communication",
    "mentions": [
     {
-     "episode": "special-1",
+     "episode": "ran-2026-07-07",
      "guest": "Reviewed as Noted panel",
      "source": "Practitioner",
      "context": "Vendor noise has trained innovation leaders to ignore the first eight emails",
