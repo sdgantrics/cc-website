@@ -54,17 +54,26 @@ NAV_ITEMS = [
 ]
 NAV_CTA = ("lessons.html", "The 50 Lessons")
 
+# (group label, links). Each link is (href, text, plausible event or "").
 FOOT_ITEMS = [
-    ("https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812", "Apple", "Platform: Apple"),
-    ("https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3", "Spotify", "Platform: Spotify"),
-    ("https://www.youtube.com/@ConstructionConversations", "YouTube", "Platform: YouTube"),
-    ("https://www.linkedin.com/company/construction-conversations/", "LinkedIn", ""),
-    ("https://www.instagram.com/construction_conversations/", "Instagram", "Platform: Instagram"),
-    (f"{SUBSTACK}/", "Briefs", ""),
-    ("episodes.html?q=reviewed%20as%20noted", "Reviewed as Noted", ""),
-    ("reviews.html", "Reviews", ""),
-    ("join.html#guest", "Be a Guest", ""),
-    ("sponsors.html", "Sponsor the show", "Sponsor Link: Footer"),
+    ("Listen", [
+        ("https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812", "Apple", "Platform: Apple"),
+        ("https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3", "Spotify", "Platform: Spotify"),
+        ("https://www.youtube.com/@ConstructionConversations", "YouTube", "Platform: YouTube"),
+    ]),
+    ("Follow", [
+        ("https://www.linkedin.com/company/construction-conversations/", "LinkedIn", ""),
+        ("https://www.instagram.com/construction_conversations/", "Instagram", "Platform: Instagram"),
+        (f"{SUBSTACK}/", "Briefs", ""),
+    ]),
+    ("Explore", [
+        ("episodes.html?q=reviewed%20as%20noted", "Reviewed as Noted", ""),
+        ("reviews.html", "Reviews", ""),
+    ]),
+    ("Work with us", [
+        ("join.html#guest", "Be a Guest", ""),
+        ("sponsors.html", "Tell your story", "Sponsor Link: Footer"),
+    ]),
 ]
 
 
@@ -75,17 +84,27 @@ def nav_html(base: str) -> str:
 
 
 def foot_html(base: str) -> str:
-    out = []
-    for h, t, ev in FOOT_ITEMS:
-        href = h if h.startswith("http") else base + h
-        ext = ' target="_blank" rel="noopener"' if h.startswith("http") else ""
-        evt = f' data-event="{ev}"' if ev else ""
-        out.append(f'      <a href="{href}"{evt}{ext}>{t}</a>')
-    return '<div class="foot-links">\n' + "\n".join(out) + "\n    </div>"
+    groups = []
+    for label, items in FOOT_ITEMS:
+        links = []
+        for h, t, ev in items:
+            href = h if h.startswith("http") else base + h
+            ext = ' target="_blank" rel="noopener"' if h.startswith("http") else ""
+            evt = f' data-event="{ev}"' if ev else ""
+            links.append(f'        <a href="{href}"{evt}{ext}>{t}</a>')
+        groups.append(
+            '      <div class="foot-group">\n'
+            f'        <span class="foot-label">{label}</span>\n'
+            + "\n".join(links) + "\n"
+            "      </div>"
+        )
+    return '<div class="foot-links">\n' + "\n".join(groups) + "\n    </div>"
 
 
 NAV_RE = re.compile(r'<ul class="nav-links">.*?</ul>', re.S)
-FOOT_RE = re.compile(r'<div class="foot-links">.*?</div>', re.S)
+# Templates (and rebuilt pages) nest group divs inside .foot-links, so stop at
+# the </div> that closes the list, the one sitting just before the copyright.
+FOOT_RE = re.compile(r'<div class="foot-links">.*?</div>(?=\s*<small>)', re.S)
 
 
 def apply_chrome(page: str, base: str) -> str:
