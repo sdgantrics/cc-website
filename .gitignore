@@ -1,2 +1,7 @@
 .DS_Store
 feed.xml
+# Raw Podbean downloads and the normalized episode records. Both are
+# rebuilt by build.py; see README "Transcripts and chapters".
+cache/
+data/episodes/
+site/episodes/*.txt

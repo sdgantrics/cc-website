@@ -10,8 +10,14 @@ window.plausible = window.plausible || function () {
 };
 
 document.addEventListener('click', function (e) {
-  var el = e.target.closest('a[data-event], button[data-event]');
-  if (el) plausible(el.dataset.event);
+  var el = e.target.closest('a[data-event], button[data-event], summary[data-event]');
+  if (!el) return;
+  // "Transcript Open" counts the disclosure opening, not closing it.
+  if (el.tagName === 'SUMMARY') {
+    var details = el.parentElement;
+    if (details && details.tagName === 'DETAILS' && details.open) return;
+  }
+  plausible(el.dataset.event);
 });
 
 document.addEventListener('submit', function (e) {
@@ -89,28 +95,135 @@ if (search) {
 }
 
 // ---------------------------------------------------------------------------
-// Chapter timestamps: click seeks the page's main player (episode pages)
+// Chapter and transcript timestamps. Chapter Seek / Transcript Seek are
+// data-event values, fired by the click listener above.
+function seekAudio(audio, seconds, andPlay) {
+  if (!audio.src) audio.src = audio.dataset.src;
+  var seek = function () {
+    var dur = audio.duration;
+    var t = seconds;
+    if (dur && t > dur) t = dur;
+    audio.currentTime = t;
+    if (andPlay) audio.play();
+    highlightChapter(audio);
+  };
+  if (audio.readyState >= 1) seek();
+  else {
+    audio.addEventListener('loadedmetadata', seek, { once: true });
+    audio.load();
+  }
+}
+
+function highlightChapter(audio) {
+  var t = audio.currentTime || 0;
+  var links = document.querySelectorAll('.chapters a.chapter');
+  var current = null;
+  for (var i = 0; i < links.length; i++) {
+    var start = parseInt(links[i].getAttribute('data-t'), 10);
+    if (!isNaN(start) && start <= t) current = links[i];
+  }
+  for (var j = 0; j < links.length; j++) {
+    var on = links[j] === current;
+    links[j].classList.toggle('is-current', on);
+    if (links[j].parentElement) links[j].parentElement.classList.toggle('is-current', on);
+    if (on) links[j].setAttribute('aria-current', 'true');
+    else links[j].removeAttribute('aria-current');
+  }
+}
+
+function prefersReducedMotion() {
+  return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+}
+
+// Last paragraph that has started, or the first if the cue is before it.
+function paragraphForSecond(sec) {
+  var paras = document.querySelectorAll('.transcript .tx-p');
+  if (!paras.length) return null;
+  var found = paras[0];
+  for (var i = 0; i < paras.length; i++) {
+    var start = parseInt(paras[i].getAttribute('data-start'), 10);
+    if (isNaN(start) || sec < start) break;
+    found = paras[i];
+  }
+  return found;
+}
+
+function revealTranscript(sec) {
+  var details = document.querySelector('details.transcript');
+  if (!details) return;
+  details.open = true;
+  var target = paragraphForSecond(sec);
+  if (!target) return;
+  document.querySelectorAll('.transcript .tx-p.is-target').forEach(function (p) {
+    p.classList.remove('is-target');
+  });
+  target.classList.add('is-target');
+  var behavior = prefersReducedMotion() ? 'auto' : 'smooth';
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () {
+      target.scrollIntoView({ behavior: behavior, block: 'center' });
+    });
+  });
+}
+
 document.addEventListener('click', function (e) {
-  var a = e.target.closest('a.chapter[data-t]');
+  var a = e.target.closest('.ep-page a[data-t]');
   if (!a) return;
   var audio = document.querySelector('.ep-page audio');
   if (!audio) return;
   e.preventDefault();
-  if (!audio.src) audio.src = audio.dataset.src;
-  var seek = function () { audio.currentTime = parseInt(a.dataset.t, 10); audio.play(); };
-  if (audio.readyState >= 1) seek(); else { audio.addEventListener('loadedmetadata', seek, { once: true }); audio.load(); }
-  plausible('Chapter Seek');
+  seekAudio(audio, parseInt(a.dataset.t, 10), true);
 });
-// Deep link: episodes/ep-045.html#t=754
-(function () {
-  var m = /[#&]t=(\d+)/.exec(window.location.hash);
-  var audio = document.querySelector('.ep-page audio');
-  if (m && audio) {
-    if (!audio.src) audio.src = audio.dataset.src;
-    audio.addEventListener('loadedmetadata', function () { audio.currentTime = parseInt(m[1], 10); }, { once: true });
-    audio.load();
+
+var pageAudio = document.querySelector('.ep-page audio');
+if (pageAudio) {
+  pageAudio.addEventListener('timeupdate', function () { highlightChapter(pageAudio); });
+  pageAudio.addEventListener('seeked', function () { highlightChapter(pageAudio); });
+}
+
+document.addEventListener('click', function (e) {
+  var btn = e.target.closest('button.tx-copy');
+  if (!btn) return;
+  var sec = btn.getAttribute('data-t');
+  var url = window.location.href.split('#')[0] + '#t=' + sec;
+  var label = btn.getAttribute('aria-label') || 'Copy link to this moment';
+  var mark = function () {
+    btn.textContent = 'Copied';
+    btn.setAttribute('aria-label', 'Copied');
+    window.setTimeout(function () {
+      btn.textContent = 'Copy link to this moment';
+      btn.setAttribute('aria-label', label);
+    }, 1600);
+  };
+  var fallback = function () {
+    var ta = document.createElement('textarea');
+    ta.value = url;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); mark(); } catch (err) {}
+    document.body.removeChild(ta);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(mark).catch(fallback);
+  } else {
+    fallback();
   }
-})();
+});
+
+// Deep link: episodes/ep-045.html#t=754 seeks, opens the transcript, scrolls to the paragraph.
+function applyTimeHash() {
+  var m = /[#&]t=(\d+)/.exec(window.location.hash);
+  if (!m) return;
+  var sec = parseInt(m[1], 10);
+  var audio = document.querySelector('.ep-page audio');
+  if (audio) seekAudio(audio, sec, false);
+  revealTranscript(sec);
+}
+applyTimeHash();
+window.addEventListener('hashchange', applyTimeHash);
 
 // ---------------------------------------------------------------------------
 // Type / category filters (articles, tools) + tool search
