@@ -661,6 +661,7 @@ a.tx-time:hover { color: var(--crane-hover); }
   gap: 12px;
 }
 .tier-story { grid-column: 1 / -1; }
+.tier-note { margin: 10px 0; padding-left: 29px; }
 .tier h3 {
   font-family: var(--anton);
   font-weight: 400;
