@@ -603,16 +603,12 @@ a.tx-time:hover { color: var(--crane-hover); }
 .archive-hit.is-active { box-shadow: inset 3px 0 0 var(--crane); padding-left: 12px; }
 .hit-kicker { color: var(--grey-2); margin-bottom: 8px; }
 .hit-title {
-  font-family: var(--anton); font-weight: 400; text-transform: uppercase;
-  font-size: clamp(26px, 4vw, 36px); line-height: 0.94; letter-spacing: -0.01em;
+  font-family: var(--archivo); font-weight: 700; text-transform: none;
+  font-size: 20px; line-height: 1.35; letter-spacing: 0;
   margin: 0 0 8px;
 }
 .hit-title a { color: var(--chalk); border-bottom: none; }
 .hit-title a:hover { color: var(--crane); }
-.hit-title-text {
-  font-family: var(--archivo); font-weight: 700; text-transform: none;
-  font-size: 20px; line-height: 1.35; letter-spacing: 0;
-}
 .hit-chapter { color: var(--grey); font-size: 15px; margin: 0 0 8px; }
 .hit-excerpt { color: var(--grey); font-size: 15px; line-height: 1.55; margin: 0 0 12px; max-width: 720px; }
 .hit-excerpt mark { background: none; color: var(--crane); font-weight: 700; }
@@ -629,6 +625,5 @@ a.tx-time:hover { color: var(--crane-hover); }
   .archive-page .search-row { flex-direction: column; align-items: stretch; }
   .archive-page .search-row input, .search-filters select { min-width: 0; width: 100%; margin-left: 0; }
   .search-filter-row label { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; width: 100%; }
-  .hit-title { font-size: 26px; }
   .hit-play { display: inline-flex; }
 }
