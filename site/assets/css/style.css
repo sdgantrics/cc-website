@@ -27,6 +27,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 
 body {
   background: var(--pitch);
@@ -122,6 +125,14 @@ h2.display { font-size: clamp(34px, 4.5vw, 48px); }
 .nav-links a.nav-cta { color: var(--crane); }
 .nav-links a.nav-cta:hover { color: var(--crane-hover); }
 .nav-toggle { display: none; background: none; border: 1px solid var(--steel); color: var(--chalk); font-size: 20px; padding: 4px 10px; cursor: pointer; }
+.nav-cluster { display: flex; align-items: center; gap: 22px; }
+.nav-search {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; flex-shrink: 0;
+  color: var(--grey); border: 1px solid var(--steel);
+}
+.nav-search:hover { color: var(--chalk); border-color: var(--crane); }
+.nav-search svg { display: block; }
 
 /* ---------- hero ---------- */
 .hero { border-bottom: 1px solid var(--hairline); }
@@ -227,6 +238,15 @@ h2.display { font-size: clamp(34px, 4.5vw, 48px); }
 .ep-page { padding: 64px 0; }
 .ep-page .ep-meta { margin-bottom: 18px; }
 .ep-page h1 { max-width: 900px; margin-bottom: 24px; }
+/* Episode title only. Articles share .ep-page but are <article>, so this stays off them. */
+section.ep-page > h1.display {
+  font-family: var(--archivo);
+  font-weight: 600;
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+}
 .ep-page .ep-body { color: var(--grey); font-size: 16px; line-height: 1.6; max-width: 720px; margin-bottom: 28px; }
 .ep-page audio { width: 100%; max-width: 720px; }
 .ep-page .ep-links { margin-top: 28px; }
@@ -376,6 +396,9 @@ footer { border-top: 1px solid var(--hairline); }
   }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
+  /* .ep-page { padding: 64px 0 } clears the .wrap gutter. Put it back on
+     small screens so chapters and the transcript line up with the nav. */
+  .ep-page { padding-left: 28px; padding-right: 28px; }
   .hero-inner { padding-top: 56px; padding-bottom: 44px; }
   section.block { padding: 56px 0; }
   .host-card { flex-direction: column; }
@@ -411,6 +434,53 @@ footer { border-top: 1px solid var(--hairline); }
 .chapters a.chapter { display: flex; gap: 18px; align-items: baseline; padding: 12px 4px; color: var(--chalk); border-bottom: none; }
 .chapters a.chapter:hover { color: var(--crane); }
 .chapters a.chapter .stamp { color: var(--crane); min-width: 54px; font-variant-numeric: tabular-nums; }
+.chapters li.is-current { background: rgba(246, 139, 79, 0.08); }
+.chapters li.is-current a.chapter { color: var(--crane); }
+
+/* ---------- transcript (episode pages) ---------- */
+.transcript { max-width: 720px; margin-top: 40px; }
+.transcript > summary {
+  font-family: var(--mono); font-size: 12px; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--crane);
+  cursor: pointer; list-style: none;
+  border-bottom: 1px solid var(--border); padding-bottom: 10px;
+}
+.transcript > summary::-webkit-details-marker { display: none; }
+.transcript > summary::marker { content: ""; }
+.transcript > summary:hover { color: var(--crane-hover); }
+.transcript .when-open { display: none; }
+.transcript[open] .when-closed { display: none; }
+.transcript[open] .when-open { display: inline; }
+.tx-note { margin: 16px 0 4px; }
+.tx-ch {
+  font-family: var(--mono); font-weight: 500; font-size: 12px;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--grey-2);
+  line-height: 1.4; margin: 28px 0 12px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.tx-p { position: relative;
+  display: grid; grid-template-columns: auto 1fr; column-gap: 12px; row-gap: 6px;
+  align-items: baseline; margin: 0 0 18px;
+  color: var(--grey); font-size: 16px; line-height: 1.6;
+  scroll-margin-top: 84px;
+}
+.tx-p.is-target { border-left: 3px solid var(--crane); padding-left: 12px; }
+a.tx-time { grid-column: 1; grid-row: 1; border-bottom: none; color: var(--crane); white-space: nowrap; }
+a.tx-time:hover { color: var(--crane-hover); }
+.tx-text { grid-column: 2; grid-row: 1; color: var(--grey); }
+.tx-cue {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.tx-copy {
+  grid-column: 2; grid-row: 2; justify-self: start;
+  appearance: none; -webkit-appearance: none;
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--grey-2); background: none; border: none; border-radius: 0;
+  border-bottom: 1px solid var(--border); padding: 0; cursor: pointer;
+}
+.tx-copy:hover { color: var(--crane); border-bottom-color: var(--crane); }
 .ep-quote { border-left: 3px solid var(--crane); padding: 6px 0 6px 20px; margin: 0 0 18px; max-width: 720px; }
 .ep-quote p { font-family: var(--archivo); font-size: 18px; line-height: 1.5; color: var(--chalk); margin: 0 0 6px; }
 .ep-quote cite { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--grey-2); font-style: normal; }
@@ -523,6 +593,49 @@ footer { border-top: 1px solid var(--hairline); }
 .radar-foot { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .radar-foot a { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; color: var(--crane); border-bottom: none; }
 @media (max-width: 860px) { .radar-grid { grid-template-columns: 1fr; } }
+
+/* ---------- archive search ---------- */
+.search-filters { margin-top: 22px; }
+.search-filters summary { cursor: pointer; color: var(--crane); margin-bottom: 12px; list-style: none; }
+.search-filters summary::-webkit-details-marker { display: none; }
+.search-filters[open] summary { margin-bottom: 14px; }
+#archive-filter-body { display: flex; flex-direction: column; gap: 12px; }
+.search-filter-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.search-filter-row select {
+  margin-left: 8px;
+  background: var(--pitch); color: var(--chalk); border: 1px solid var(--steel);
+  font-family: var(--archivo); font-size: 14px; padding: 8px 10px; max-width: 100%;
+}
+.archive-out { margin-top: 28px; }
+.archive-count, .archive-status { color: var(--grey-2); margin-bottom: 8px; }
+.archive-hit { border-top: 1px solid var(--border); padding: 18px 0 16px; }
+.archive-hit.is-active { box-shadow: inset 3px 0 0 var(--crane); padding-left: 12px; }
+.hit-kicker { color: var(--grey-2); margin-bottom: 8px; }
+.hit-title {
+  font-family: var(--archivo); font-weight: 700; text-transform: none;
+  font-size: 20px; line-height: 1.35; letter-spacing: 0;
+  margin: 0 0 8px;
+}
+.hit-title a { color: var(--chalk); border-bottom: none; }
+.hit-title a:hover { color: var(--crane); }
+.hit-chapter { color: var(--grey); font-size: 15px; margin: 0 0 8px; }
+.hit-excerpt { color: var(--grey); font-size: 15px; line-height: 1.55; margin: 0 0 12px; max-width: 720px; }
+.hit-excerpt mark { background: none; color: var(--crane); font-weight: 700; }
+.hit-play {
+  display: inline-block; font-family: var(--archivo); font-weight: 700; font-size: 13px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  background: none; border: 1px solid var(--steel); color: var(--chalk);
+  padding: 10px 18px;
+}
+.hit-play:hover { border-color: var(--crane); color: var(--crane); }
+.archive-more { margin: 8px 0 18px; }
+@media (max-width: 760px) {
+  .nav-cluster { gap: 10px; }
+  .archive-page .search-row { flex-direction: column; align-items: stretch; }
+  .archive-page .search-row input, .search-filters select { min-width: 0; width: 100%; margin-left: 0; }
+  .search-filter-row label { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; width: 100%; }
+  .hit-play { display: inline-flex; }
+}
 
 /* ---------- sponsors page: claims, options, name fallback ---------- */
 .stats-claims .stat p {

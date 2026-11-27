@@ -5,8 +5,10 @@ Fetches the Podbean RSS feed and regenerates the site from templates/:
   site/index.html      - homepage (latest 3 episodes injected)
   site/episodes.html   - full episode list with search
   site/sponsors.html   - sponsor page (static content, count injected)
-  site/episodes/*.html - one page per episode, with PodcastEpisode JSON-LD
+  site/episodes/*.html - one page per episode, with chapters, transcript, JSON-LD
+  site/episodes/*.txt  - plain-text transcript ([mm:ss] stamps)
   site/episodes/special-N.html - legacy redirects from data/special_redirects.json
+  data/episodes/*.json - normalized chapters + transcript (build output)
   site/start.html      - Start Here hub (listening paths from paths.json)
   site/start/*.html    - one page per listening path
 
@@ -29,11 +31,13 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import extras
+import transcripts
 
 ROOT = Path(__file__).parent
 FEED_URL = "https://feed.podbean.com/constructionconversations/feed.xml"
 FEED_CACHE = ROOT / "feed.xml"
 ITUNES = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
+PODCAST = "{https://podcastindex.org/namespace/1.0}"
 # YouTube uploads feed for @ConstructionConversations; episode thumbnails
 # live on YouTube (the Podbean feed has no per-episode art).
 YT_FEED = "https://www.youtube.com/feeds/videos.xml?channel_id=UC2NzKKnmKxtvlFRO6c3R1Aw"
@@ -121,6 +125,13 @@ def parse_episodes(xml_text: str):
         secs = parse_duration(text(item, "duration", ITUNES))
         desc = strip_html(text(item, "description") or text(item, "summary", ITUNES))
         item_img = item.find(ITUNES + "image")
+        # Keep the enclosure URL exactly as published. The feed uses a
+        # cohst.app prefix; do not resolve it to the mcdn host behind it.
+        ch_el = item.find(PODCAST + "chapters")
+        tr_els = item.findall(PODCAST + "transcript")
+        tr_el = next((t for t in tr_els if "vtt" in (t.get("type") or "")), None)
+        if tr_el is None and tr_els:
+            tr_el = tr_els[0]
         episodes.append({
             "title": title,
             "display_title": re.sub(r"^Ep\.?\s*\d+\s*[-–—:]\s*", "", title),
@@ -136,6 +147,9 @@ def parse_episodes(xml_text: str):
             "audio": enclosure.get("url") if enclosure is not None else "",
             "link": text(item, "link"),
             "image": item_img.get("href") if item_img is not None else "",
+            "chapters_url": ch_el.get("url") if ch_el is not None else "",
+            "transcript_url": tr_el.get("url") if tr_el is not None else "",
+            "transcript_type": (tr_el.get("type") if tr_el is not None else "") or "",
             "_stable": text(item, "guid") or text(item, "link") or title,
         })
     assign_special_slugs(episodes)
@@ -309,8 +323,10 @@ def episode_paths_block(ep, paths) -> str:
     links = "".join(
         f'<a class="path-pill" href="../start/{p["slug"]}.html" data-event="Path: {html.escape(p["tag"])}">'
         f'{html.escape(p["title"])} →</a>' for p in hits)
-    return f'''<div class="sec-label" style="margin-top:40px;">Part of these listening paths</div>
-  <div class="path-pills">{links}</div>'''
+    return f'''<div data-pagefind-ignore>
+  <div class="sec-label" style="margin-top:40px;">Part of these listening paths</div>
+  <div class="path-pills">{links}</div>
+</div>'''
 
 
 def youtube_thumb_url(ep) -> str:
@@ -368,6 +384,13 @@ def jsonld(ep) -> str:
     return json.dumps(data, indent=2)
 
 
+def build_search(tpl_dir: Path):
+    page = (tpl_dir / "search.html").read_text()
+    page = extras.apply_chrome(page, "")
+    (ROOT / "site" / "search.html").write_text(page)
+    print("Wrote site/search.html")
+
+
 def build():
     offline = "--offline" in sys.argv
     if offline and FEED_CACHE.exists():
@@ -407,9 +430,22 @@ def build():
         except Exception:
             continue
 
+    bad_audio = [e["slug"] for e in episodes if e.get("audio") and not str(e["audio"]).startswith("https://cohst.app/")]
+    if bad_audio:
+        print("WARNING audio url is not the cohst.app enclosure: " + ", ".join(bad_audio))
+
     first, paths = load_paths(episodes)
     extras.set_episode_index(episodes)
+    extras.set_path_index(paths)
+    lessons_data = extras.load_lessons()
+    roles_by_slug = {}
+    for lesson in lessons_data.get("lessons") or []:
+        bucket = roles_by_slug.setdefault(lesson.get("episode") or "", [])
+        for role in lesson.get("roles") or []:
+            if role not in bucket:
+                bucket.append(role)
     chapters = extras.load_chapters()
+    docs = transcripts.build_episode_docs(episodes, chapters, offline, ROOT)
     articles = extras.load_articles()
     tools = extras.load_tools()
 
@@ -436,9 +472,15 @@ def build():
     ep_dir = ROOT / "site" / "episodes"
     ep_dir.mkdir(exist_ok=True)
     ep_template = (ROOT / "templates" / "episode.html").read_text()
+    n_ch = n_tx = 0
+    missing = []
     for ep in episodes:
         tag = f'EP {int(ep["num"]):03d}' if ep["num"] else "SPECIAL"
         meta = " · ".join(v for v in (ep["date"], ep["duration"]) if v).upper()
+        hand = chapters.get(ep["slug"]) or {}
+        doc = docs.get(ep["slug"]) or {}
+        # Hand-written chapters win. Feed chapters fill episodes that have none.
+        shown = hand if hand.get("chapters") else extras.feed_chapter_doc(doc)
         page = ep_template
         for k, v in {
             "{{TITLE}}": html.escape(ep["display_title"]),
@@ -450,23 +492,46 @@ def build():
             "{{LINK}}": ep["link"],
             "{{JSONLD}}": jsonld(ep),
             "{{PATHS}}": episode_paths_block(ep, paths),
-            "{{GUEST_LINE}}": (f'<p class="stamp guest-line">{gl}</p>' if (gl := extras.guest_line(chapters.get(ep["slug"]))) else ""),
-            "{{CHAPTERS}}": extras.chapters_block(chapters.get(ep["slug"])),
-            "{{QUOTES}}": extras.quotes_block(chapters.get(ep["slug"])),
-            "{{MENTIONS}}": extras.mentions_block(chapters.get(ep["slug"])),
+            "{{PAGEFIND_HEAD}}": extras.episode_search_head(
+                ep, hand, roles_by_slug.get(ep["slug"], []), extras.paths_for(ep["slug"])),
+            "{{GUEST_LINE}}": (f'<p class="stamp guest-line" data-pagefind-meta="guest">{gl}</p>' if (gl := extras.guest_line(hand)) else ""),
+            "{{CHAPTERS}}": extras.chapters_block(shown),
+            "{{TRANSCRIPT}}": extras.transcript_block(
+                (doc or {}).get("transcript"), shown, (doc or {}).get("cues")),
+            "{{QUOTES}}": extras.quotes_block(hand),
+            "{{MENTIONS}}": extras.mentions_block(hand),
             "{{ARTICLES}}": extras.episode_articles_block(ep["slug"], articles),
             "{{TOOLS}}": extras.episode_tools_block(ep["slug"], tools),
         }.items():
             page = page.replace(k, v)
         (ep_dir / f'{ep["slug"]}.html').write_text(extras.apply_chrome(page, "../"))
+        has_ch = bool(shown.get("chapters"))
+        has_tx = bool((doc or {}).get("transcript"))
+        n_ch += has_ch
+        n_tx += has_tx
+        if not has_ch or not has_tx:
+            why = []
+            if not has_ch:
+                why.append("no chapters")
+            if not has_tx:
+                why.append("no transcript")
+            missing.append(f"{ep['slug']}: {', '.join(why)}")
     print(f"Wrote {len(episodes)} episode pages to site/episodes/")
+    print(f"Chapters: {n_ch}/{len(episodes)}  Transcripts: {n_tx}/{len(episodes)}")
+    if missing:
+        print("Missing sections:")
+        for line in missing:
+            print(f"  {line}")
+    else:
+        print("Missing sections: none")
     build_special_redirects(episodes)
 
     build_paths(first, paths, len(episodes))
     tpl_dir = ROOT / "templates"
     extras.build_articles(articles, episodes, tpl_dir)
     extras.build_tools(tools, tpl_dir)
-    extras.build_lessons(extras.load_lessons(), tpl_dir)
+    extras.build_lessons(lessons_data, tpl_dir)
+    build_search(tpl_dir)
     extras.build_reviews(extras.load_reviews(offline), tpl_dir)
     extras.build_join(extras.load_stories(), tpl_dir)
 

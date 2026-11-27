@@ -16,6 +16,7 @@
 <script type="application/ld+json">
 {{JSONLD}}
 </script>
+{{PAGEFIND_HEAD}}
 <!-- Privacy-friendly analytics by Plausible -->
 <script async src="https://plausible.io/js/pa-N0Lt_7EKjp6V7qd20DBtb.js"></script>
 <script>
@@ -40,15 +41,16 @@
   </div>
 </header>
 
-<section class="wrap ep-page">
+<section class="wrap ep-page" data-pagefind-body>
   <div class="ep-meta"><span class="tag">{{TAG}}</span><span class="stamp">{{META}}</span></div>
   <!-- GUEST DATA PLACEHOLDER: prepend guest name, title, firm when confirmed. -->
-  <h1 class="display">{{TITLE}}</h1>
+  <h1 class="display" data-pagefind-meta="title">{{TITLE}}</h1>
   {{GUEST_LINE}}
   <p class="ep-body">{{DESC_FULL}}</p>
-  <audio controls preload="none" data-src="{{AUDIO}}"></audio>
+  <audio controls preload="none" data-src="{{AUDIO}}" data-pagefind-ignore></audio>
   {{TOOLS}}
   {{CHAPTERS}}
+  {{TRANSCRIPT}}
   {{QUOTES}}
   {{ARTICLES}}
   {{MENTIONS}}
@@ -60,7 +62,7 @@
   <blockquote class="ep-body">"[Pull quote three]"</blockquote>
   -->
 
-  <div class="platforms ep-links">
+  <div class="platforms ep-links" data-pagefind-ignore>
     <span class="stamp">Listen on:</span>
     <a href="https://podcasts.apple.com/us/podcast/construction-conversations/id1746691812" data-event="Platform: Apple" target="_blank" rel="noopener">Apple</a>
     <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3" data-event="Platform: Spotify" target="_blank" rel="noopener">Spotify</a>
