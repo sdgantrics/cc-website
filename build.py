@@ -108,6 +108,41 @@ def assign_special_slugs(episodes):
             e["slug"] = base if n == 0 else f"{base}-{n + 1}"
 
 
+def feed_notes(desc: str):
+    """Guest and sponsor links already written in the Podbean description.
+
+    The description is the only place those URLs live. Nothing is invented.
+    """
+    cut = re.search(r"\bEpisode Sponsors?:\s*", desc, re.I)
+    head = desc[:cut.start()] if cut else desc
+    tail = desc[cut.end():] if cut else ""
+    sponsors, seen = [], set()
+    for name, url in re.findall(r"Check Out\s+(.+?):\s*(https?://\S+)", tail, re.I):
+        url = re.sub(r"\?trk=.*$", "", url.rstrip(".,)"))
+        if url in seen:
+            continue
+        seen.add(url)
+        sponsors.append({"name": re.sub(r"\s+", " ", name).strip(), "url": url})
+    guests, seen_g = [], set()
+    for name, url in re.findall(
+        r"([A-Z][\w.'’-]+(?:\s+[A-Z][\w.'’-]+){0,4}):\s*(https?://(?:www\.)?linkedin\.com/\S+)",
+        head,
+    ):
+        url = re.sub(r"\?trk=.*$", "", url.rstrip(".,)"))
+        if url in seen_g:
+            continue
+        seen_g.add(url)
+        label = "" if name.strip().casefold() == "linkedin" else name.strip()
+        guests.append({"name": label, "url": url})
+    for url in re.findall(r"Check (?:Him|Her|Them) Out on Linkedin:\s*(https?://\S+)", head, re.I):
+        url = re.sub(r"\?trk=.*$", "", url.rstrip(".,)"))
+        if url in seen_g:
+            continue
+        seen_g.add(url)
+        guests.append({"name": "", "url": url})
+    return sponsors, guests
+
+
 def parse_episodes(xml_text: str):
     channel = ET.fromstring(xml_text).find("channel")
     episodes = []
@@ -126,6 +161,7 @@ def parse_episodes(xml_text: str):
         ep_num = m.group(1) if m else ""
         secs = parse_duration(text(item, "duration", ITUNES))
         desc = strip_html(text(item, "description") or text(item, "summary", ITUNES))
+        sponsors, feed_guests = feed_notes(desc)
         item_img = item.find(ITUNES + "image")
         # Keep the enclosure URL exactly as published. The feed uses a
         # cohst.app prefix; do not resolve it to the mcdn host behind it.
@@ -146,6 +182,8 @@ def parse_episodes(xml_text: str):
             "duration_iso": f"PT{round(secs / 60)}M" if secs else "",
             "desc": clip_chars(desc, 230),
             "desc_full": clip_words(desc, 150),
+            "sponsors": sponsors,
+            "feed_guests": feed_guests,
             "audio": enclosure.get("url") if enclosure is not None else "",
             "link": text(item, "link"),
             "image": item_img.get("href") if item_img is not None else "",
@@ -489,7 +527,8 @@ def build():
             "{{SOCIAL}}": parts["social"],
             "{{TAG}}": tag,
             "{{META}}": meta,
-            "{{DESC_FULL}}": html.escape(ep["desc_full"]),
+            "{{DESC_FULL}}": html.escape(parts["intro"]),
+            "{{SPONSORS}}": parts["sponsors"],
             "{{AUDIO}}": ep["audio"],
             "{{LINK}}": ep["link"],
             "{{JSONLD}}": parts["jsonld"],

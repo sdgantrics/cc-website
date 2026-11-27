@@ -72,6 +72,8 @@ The first build needs network access to Podbean. `--offline` still renders an ep
 
 An episode page reads `content/episodes/<slug>.yml` when that file exists. The file is human-owned. The build does not write it, and a page with no file leaves the new sections out. No placeholder text is shown.
 
+When that file has a `summary`, the summary replaces the Podbean description under the title, and it is also the meta description. A page with no summary keeps the feed description. Sponsor and guest links that the feed already printed stay on the page: sponsors as a short line, guest LinkedIn on the guest block when the YAML left that URL empty.
+
 ```yaml
 guests:
   - name: Jane Doe

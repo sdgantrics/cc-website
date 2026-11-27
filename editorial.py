@@ -315,17 +315,10 @@ def quote_sec_for_deck(lesson, segments):
     return sec
 
 
-def social_description(lessons, pull_quotes, summary, fallback: str) -> str:
-    for kind, lesson in lessons:
-        headline = lesson.get("headline") if kind == "inline" else lesson.get("lesson")
-        if headline:
-            return headline
-    for q in pull_quotes or []:
-        if q.get("text"):
-            return q["text"]
-    if (summary or "").strip():
-        return summary.strip()
-    return fallback or ""
+def meta_description(summary: str, feed_desc: str) -> str:
+    """YAML summary when the page has one. Otherwise the feed description."""
+    text = (summary or "").strip()
+    return text if text else (feed_desc or "")
 
 
 def _chips(roles):
@@ -414,7 +407,6 @@ def who_block(ed, paths):
         return ""
     roles = [r for r in (ed.get("roles") or []) if r]
     wanted = [p for p in (ed.get("paths") or []) if p]
-    summary = (ed.get("summary") or "").strip()
     by_slug = {p["slug"]: p for p in paths or []}
     badges = []
     for slug in wanted:
@@ -427,15 +419,13 @@ def who_block(ed, paths):
             f'data-event="Path: {esc(p.get("tag") or p.get("title") or "")}">'
             f'{esc(p.get("title") or slug)}</a>'
         )
-    if not roles and not badges and not summary:
+    if not roles and not badges:
         return ""
     parts = ['<div class="sec-label" style="margin-top:40px;">Who this is for</div>']
     if roles or badges:
         parts.append(f'<div class="ep-meta">{_chips(roles)}</div>')
     if badges:
         parts.append(f'<div class="path-pills">{"".join(badges)}</div>')
-    if summary:
-        parts.append(f'<p class="ep-body">{esc(summary)}</p>')
     return "\n".join(parts)
 
 
@@ -513,13 +503,47 @@ def tools_block(slug, tools):
     )
 
 
-def guests_block(guests):
+def _same_name(a: str, b: str) -> bool:
+    def flat(s):
+        return re.sub(r"[^a-z]", "", (s or "").casefold())
+    left, right = flat(a), flat(b)
+    return bool(left and right and (left == right or left.startswith(right) or right.startswith(left)))
+
+
+def linkedin_for(guest, feed_guests, only_guest: bool) -> str:
+    """YAML URL, or the LinkedIn URL the feed already printed next to this name."""
+    url = (guest.get("linkedin_url") or "").strip()
+    if url:
+        return url
+    name = guest.get("name") or ""
+    named = [g for g in feed_guests or [] if g.get("name") and _same_name(name, g["name"])]
+    if len(named) == 1:
+        return named[0]["url"]
+    unnamed = [g for g in feed_guests or [] if not g.get("name")]
+    if only_guest and len(unnamed) == 1:
+        return unnamed[0]["url"]
+    return ""
+
+
+def sponsors_line(sponsors) -> str:
+    if not sponsors:
+        return ""
+    links = " · ".join(
+        f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["name"])}</a>'
+        for s in sponsors if s.get("name") and s.get("url")
+    )
+    if not links:
+        return ""
+    return f'<p class="stamp dim" data-pagefind-ignore>Sponsors · {links}</p>'
+
+
+def guests_block(guests, feed_guests=None):
     rows = []
-    for g in guests or []:
+    named = [g for g in guests or [] if guest_phrase(g)]
+    only = len(named) == 1
+    for g in named:
         line = guest_phrase(g)
-        if not line:
-            continue
-        url = (g.get("linkedin_url") or "").strip()
+        url = linkedin_for(g, feed_guests, only)
         link = ""
         if url:
             link = (
@@ -643,14 +667,14 @@ def people_for_jsonld(ep_slug, ed, hand):
     return []
 
 
-def jsonld(ep, ed, hand, has_transcript: bool) -> str:
+def jsonld(ep, ed, hand, has_transcript: bool, description: str) -> str:
     page = f"{SITE}/episodes/{ep['slug']}.html"
     data = {
         "@context": "https://schema.org",
         "@type": "PodcastEpisode",
         "name": ep["title"],
         "datePublished": ep["date_iso"],
-        "description": ep["desc_full"],
+        "description": description,
         "url": page,
         "associatedMedia": {"@type": "MediaObject", "contentUrl": ep["audio"]},
         "partOfSeries": {
@@ -678,23 +702,25 @@ def page_parts(ep, ed, hand, lessons, tools, paths, by_slug, segments):
     """HTML snippets for one episode. Empty editorial sections are empty strings."""
     title = document_title(ep, ed)
     pulls = (ed or {}).get("pull_quotes") or []
-    summary = (ed or {}).get("summary") or ""
-    desc = social_description(lessons, pulls, summary, ep.get("desc") or "")
+    summary = ((ed or {}).get("summary") or "").strip()
+    desc = meta_description(summary, ep.get("desc_full") or "")
     url = f"{SITE}/episodes/{ep['slug']}.html"
     return {
         "title": title,
         "h1": episode_title(ep),
         "byline": byline_html(ed, hand),
+        "intro": summary if summary else (ep.get("desc_full") or ""),
+        "sponsors": sponsors_line(ep.get("sponsors")) if summary else "",
         "quotes": worth_writing_down(pulls, segments) if pulls else "",
         "description": desc,
         "social": social_tags(title, desc, url),
         "who": who_block(ed, paths),
         "lessons": lesson_cards(ep["slug"], lessons, segments),
         "tools": tools_block(ep["slug"], tools),
-        "guests": guests_block((ed or {}).get("guests")),
+        "guests": guests_block((ed or {}).get("guests"), ep.get("feed_guests")),
         "keep": keep_going(ep["slug"], ed, paths, by_slug),
         "newsletter": newsletter_section(),
-        "jsonld": jsonld(ep, ed, hand, bool(segments)),
+        "jsonld": jsonld(ep, ed, hand, bool(segments), desc),
     }
 
 
