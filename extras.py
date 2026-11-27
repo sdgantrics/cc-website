@@ -157,11 +157,45 @@ def t2s(t: str) -> int:
     return s
 
 
+def clock(secs: int) -> str:
+    """00:00 under an hour, H:MM:SS at an hour and beyond. Round-trips through t2s."""
+    secs = max(0, int(secs))
+    h, rem = divmod(secs, 3600)
+    m, s = divmod(rem, 60)
+    if h:
+        return f"{h}:{m:02d}:{s:02d}"
+    return f"{m:02d}:{s:02d}"
+
+
+def clock_words(secs: int) -> str:
+    secs = max(0, int(secs))
+    if secs == 0:
+        return "the start"
+    h, rem = divmod(secs, 3600)
+    m, s = divmod(rem, 60)
+    parts = []
+    if h:
+        parts.append("1 hour" if h == 1 else f"{h} hours")
+    if m:
+        parts.append("1 minute" if m == 1 else f"{m} minutes")
+    if s or not parts:
+        parts.append("1 second" if s == 1 else f"{s} seconds")
+    return " ".join(parts)
+
+
+def feed_chapter_doc(doc) -> dict:
+    """Shape feed chapters like a hand-written chapters file, for chapters_block."""
+    chs = (doc or {}).get("chapters") or []
+    if not chs:
+        return {}
+    return {"chapters": [{"time": clock(c["start_sec"]), "title": c.get("title") or ""} for c in chs]}
+
+
 def chapters_block(ch) -> str:
     if not ch or not ch.get("chapters"):
         return ""
     rows = "".join(
-        f'<li><a class="chapter" href="#t={t2s(c["time"])}" data-t="{t2s(c["time"])}">'
+        f'<li><a class="chapter" href="#t={t2s(c["time"])}" data-t="{t2s(c["time"])}" data-event="Chapter Seek">'
         f'<span class="stamp">{esc(c["time"])}</span><span>{esc(c["title"])}</span></a></li>'
         for c in ch["chapters"])
     return f'''<div class="sec-label" style="margin-top:40px;">In this episode</div>
@@ -169,12 +203,75 @@ def chapters_block(ch) -> str:
   <p class="stamp dim">Timestamps are from the recording and may drift a minute or two from the published edit.</p>'''
 
 
+def transcript_block(paragraphs, ch) -> str:
+    """Collapsed transcript. Paragraphs are already in the HTML; JS only seeks and opens."""
+    if not paragraphs:
+        return ""
+    chapters = []
+    for c in (ch or {}).get("chapters") or []:
+        try:
+            chapters.append((t2s(c["time"]), c.get("title") or ""))
+        except (TypeError, ValueError, KeyError):
+            continue
+    chapters.sort(key=lambda x: x[0])
+
+    def chapter_at(start: int):
+        idx = -1
+        for i, (t, _name) in enumerate(chapters):
+            if t <= start:
+                idx = i
+            else:
+                break
+        return idx
+
+    groups = []
+    for p in paragraphs:
+        idx = chapter_at(int(p["start_sec"]))
+        if not groups or groups[-1][0] != idx:
+            title = chapters[idx][1] if idx >= 0 else ""
+            groups.append((idx, title, []))
+        groups[-1][2].append(p)
+
+    used = set()
+    body = []
+    for _idx, title, paras in groups:
+        if title:
+            body.append(f'<h2 class="tx-ch">{esc(title)}</h2>')
+        for p in paras:
+            start = int(p["start_sec"])
+            end = int(p["end_sec"])
+            anchor = start
+            while anchor in used:
+                anchor += 1
+            used.add(anchor)
+            words = clock_words(start)
+            body.append(
+                f'<p class="tx-p" id="t-{anchor}" data-start="{start}" data-end="{end}">'
+                f'<a class="tx-time stamp" href="#t={start}" data-t="{start}" data-event="Transcript Seek" '
+                f'aria-label="Seek to {esc(words)}">{esc(clock(start))}</a>'
+                f'<span class="tx-text">{esc(p["text"])}</span>'
+                f'<button type="button" class="tx-copy" data-t="{anchor}" data-event="Moment Link Copied" '
+                f'aria-label="Copy link to this moment, {esc(words)}">Copy link to this moment</button>'
+                f'</p>'
+            )
+    inner = "\n".join(body)
+    return (
+        '<details class="transcript" id="transcript">\n'
+        '  <summary data-event="Transcript Open">'
+        '<span class="when-closed">Show full transcript</span>'
+        '<span class="when-open">Hide transcript</span></summary>\n'
+        '  <p class="stamp dim tx-note">Machine-generated transcript; may contain errors.</p>\n'
+        f'{inner}\n'
+        '</details>'
+    )
+
+
 def quotes_block(ch) -> str:
     if not ch or not ch.get("quotes"):
         return ""
     q = "".join(
         f'<blockquote class="ep-quote"><p>"{esc(x["text"])}"</p><cite>{esc(x.get("who", ""))}'
-        + (f' · <a class="chapter" href="#t={t2s(x["time"])}" data-t="{t2s(x["time"])}">{esc(x["time"])}</a>' if x.get("time") else "")
+        + (f' · <a class="chapter" href="#t={t2s(x["time"])}" data-t="{t2s(x["time"])}" data-event="Chapter Seek">{esc(x["time"])}</a>' if x.get("time") else "")
         + "</cite></blockquote>"
         for x in ch["quotes"])
     return f'<div class="sec-label" style="margin-top:40px;">Worth writing down</div>{q}'
