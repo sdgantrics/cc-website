@@ -53,8 +53,9 @@
     var head = parts.map(escRe).join('\\s+');
     var tail = escRe(last) + '(?:s|es)?';
     var body = (head ? head + '\\s+' : '') + tail;
-    // Punctuation counts as a boundary, so "Exhibit 12." and "exhibit 12?" match.
-    return '(^|[^A-Za-z0-9])(' + body + ')(?=[^A-Za-z0-9]|$)';
+    // Sentence punctuation counts as a boundary, so "Exhibit 12." matches.
+    // A hyphen does not, so the short form "co" does not match "co-host".
+    return '(^|[\\s(\\["\'])(' + body + ')(?=[\\s.,;:!?)"\'\\]\\]]|$)';
   }
 
   function hasPhrase(q, phrase) {
