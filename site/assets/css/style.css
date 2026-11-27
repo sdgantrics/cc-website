@@ -379,6 +379,9 @@ footer { border-top: 1px solid var(--hairline); }
   }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
+  /* .ep-page { padding: 64px 0 } clears the .wrap gutter. Put it back on
+     small screens so chapters and the transcript line up with the nav. */
+  .ep-page { padding-left: 28px; padding-right: 28px; }
   .hero-inner { padding-top: 56px; padding-bottom: 44px; }
   section.block { padding: 56px 0; }
   .host-card { flex-direction: column; }
