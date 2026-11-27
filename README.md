@@ -73,7 +73,7 @@ Search covers episode pages, `lessons.html`, `tools.html`, and article pages. Na
 
 Pagefind runs after `build.py`. It writes a fragmented index under `site/pagefind/` (gitignored). The browser does not load that index until someone uses a search box, and a query fetches only the fragments for its words, not one JSON file of the whole archive.
 
-A transcript paragraph is its own result. The anchor on the page is `t-SECONDS`; the results page rewrites that to `episodes/<slug>.html#t=SECONDS`, which is the same hash the episode page already uses to seek and open the transcript. "Play from here" opens that URL.
+Each caption cue is its own result, anchored as `c-SECONDS` and rewritten to `episodes/<slug>.html#t=SECONDS`. The episode page already seeks and opens the transcript on that hash, so playback starts at the caption that matched rather than at the start of the merged paragraph. "Play from here" opens that URL. The cues are in the HTML for Pagefind and are not shown; the page still reads as paragraphs.
 
 Pagefind 1.6 has no synonym dictionary, so construction shorthand is expanded in `site/assets/js/search.js` before the query is sent. That is more reliable than stuffing alias words into the HTML: extra tokens in the index would dilute `data-pagefind-weight`, and an unquoted short query is a prefix match (`co` would hit "construction"). Abbreviations such as CO, RFI, GC, and super are rewritten to the full phrase (`change order`, `request for information`, `general contractor`, `superintendent`) and the short form is added as an exact-token search. BIM, VDC, T&M, and pay app are searched as both the short form and the full phrase.
 

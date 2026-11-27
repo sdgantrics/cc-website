@@ -496,7 +496,8 @@ def build():
                 ep, hand, roles_by_slug.get(ep["slug"], []), extras.paths_for(ep["slug"])),
             "{{GUEST_LINE}}": (f'<p class="stamp guest-line" data-pagefind-meta="guest">{gl}</p>' if (gl := extras.guest_line(hand)) else ""),
             "{{CHAPTERS}}": extras.chapters_block(shown),
-            "{{TRANSCRIPT}}": extras.transcript_block((doc or {}).get("transcript"), shown),
+            "{{TRANSCRIPT}}": extras.transcript_block(
+                (doc or {}).get("transcript"), shown, (doc or {}).get("cues")),
             "{{QUOTES}}": extras.quotes_block(hand),
             "{{MENTIONS}}": extras.mentions_block(hand),
             "{{ARTICLES}}": extras.episode_articles_block(ep["slug"], articles),

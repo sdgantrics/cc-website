@@ -197,7 +197,7 @@
   }
 
   function secondsOf(url, info) {
-    var m = /#(?:t=|t-|ch-|q-)(\d+)/.exec(url || '');
+    var m = /#(?:t=|t-|c-|ch-|q-)(\d+)/.exec(url || '');
     if (m) return parseInt(m[1], 10);
     if (info && /^\d+$/.test(info.seconds || '')) return parseInt(info.seconds, 10);
     return null;
@@ -221,7 +221,7 @@
   }
 
   function pathOnly(url) {
-    var rewritten = String(url || '').replace(/#(t|ch|q)-(\d+)\b/, '#t=$2');
+    var rewritten = String(url || '').replace(/#(t|c|ch|q)-(\d+)\b/, '#t=$2');
     return rewritten.replace(/^https?:\/\/[^/]+/i, '');
   }
 
@@ -248,7 +248,7 @@
   // Transcript paragraphs stay under lesson cards and chapter titles even
   // when a page mentions the words many times.
   function bandOf(anchorId) {
-    if (/^t-\d+$/.test(anchorId)) return 2;
+    if (/^(t|c)-\d+$/.test(anchorId)) return 2;
     if (/^l\d+$/.test(anchorId) || /^ch-\d+$/.test(anchorId)) return 0;
     if (/^q-\d+$/.test(anchorId)) return 1;
     return 1;
@@ -339,13 +339,13 @@
     var slug = slugFrom(item.url, info);
     var type = item.type;
     var guest = info.guest || item.guest || '';
-    var fromMoment = /^(t|ch)-\d+$/.test(item.anchorId);
+    var fromMoment = /^(t|c|ch)-\d+$/.test(item.anchorId);
     var when = fromMoment && sec != null ? clock(sec) : '';
     var kicker = [type.toUpperCase(), epLabel(slug), guest, item.date, when].filter(Boolean).join(' · ');
     var heading = info.label || item.pageTitle || 'Result';
     var chapter = '';
     if (type === 'Episode' || type === 'Roundtable') {
-      if (/^(t|ch|q)-\d+$/.test(item.anchorId)) chapter = info.label;
+      if (/^(t|c|ch|q)-\d+$/.test(item.anchorId)) chapter = info.label;
       heading = item.pageTitle || heading;
     } else if (type === 'Article') {
       if (info.label && item.pageTitle && info.label !== item.pageTitle) chapter = info.label;
@@ -410,7 +410,7 @@
         var url = sub.url || data.url || '';
         var sec = secondsOf(url, info);
         var href = pathOnly(url);
-        if (sec != null && /#(t|ch|q)-\d+/.test(url)) href = pathOnly(url.replace(/#(t|ch|q)-\d+/, '#t=' + sec));
+        if (sec != null && /#(t|c|ch|q)-\d+/.test(url)) href = pathOnly(url.replace(/#(t|c|ch|q)-\d+/, '#t=' + sec));
         if (/^l\d+$/.test(anchorId)) href = pathOnly(url);
         if (seenHref[href]) return;
         seenHref[href] = 1;

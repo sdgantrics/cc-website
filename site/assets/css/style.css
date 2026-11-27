@@ -449,7 +449,7 @@ footer { border-top: 1px solid var(--hairline); }
   line-height: 1.4; margin: 28px 0 12px; padding-bottom: 8px;
   border-bottom: 1px solid var(--border);
 }
-.tx-p {
+.tx-p { position: relative;
   display: grid; grid-template-columns: auto 1fr; column-gap: 12px; row-gap: 6px;
   align-items: baseline; margin: 0 0 18px;
   color: var(--grey); font-size: 16px; line-height: 1.6;
@@ -459,6 +459,10 @@ footer { border-top: 1px solid var(--hairline); }
 a.tx-time { grid-column: 1; grid-row: 1; border-bottom: none; color: var(--crane); white-space: nowrap; }
 a.tx-time:hover { color: var(--crane-hover); }
 .tx-text { grid-column: 2; grid-row: 1; color: var(--grey); }
+.tx-cue {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
 .tx-copy {
   grid-column: 2; grid-row: 2; justify-self: start;
   appearance: none; -webkit-appearance: none;

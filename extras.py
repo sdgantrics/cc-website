@@ -255,8 +255,12 @@ def chapter_title_at(ch, sec: int) -> str:
     return best
 
 
-def transcript_block(paragraphs, ch) -> str:
-    """Collapsed transcript. Paragraphs are already in the HTML; JS only seeks and opens."""
+def transcript_block(paragraphs, ch, cues=None) -> str:
+    """Collapsed transcript. Paragraphs are already in the HTML; JS only seeks and opens.
+
+    Caption cues are indexed separately (visually hidden) so a search hit can
+    seek to that caption, not the start of a 20-45s paragraph.
+    """
     if not paragraphs:
         return ""
     chapters = []
@@ -284,31 +288,53 @@ def transcript_block(paragraphs, ch) -> str:
             groups.append((idx, title, []))
         groups[-1][2].append(p)
 
-    used = set()
+    cue_list = sorted(
+        (c for c in (cues or []) if (c.get("text") or "").strip()),
+        key=lambda c: int(c["start_sec"]),
+    )
+    flat = [p for _i, _t, paras in groups for p in paras]
     body = []
+    cue_at = 0
+    flat_i = 0
+    cue_ids = set()
+    para_ids = set()
     for _idx, title, paras in groups:
         # The chapter list item is the searchable chapter title. Ignore this
         # visible heading so it is not indexed a second time.
         if title:
             body.append(f'<h2 class="tx-ch" data-pagefind-ignore>{esc(title)}</h2>')
+        ch_title = esc(title or "Transcript")
         for p in paras:
             start = int(p["start_sec"])
             end = int(p["end_sec"])
             anchor = start
-            while anchor in used:
+            while anchor in para_ids:
                 anchor += 1
-            used.add(anchor)
+            para_ids.add(anchor)
+            nxt = flat[flat_i + 1]["start_sec"] if flat_i + 1 < len(flat) else 10**9
+            flat_i += 1
+            mine = []
+            while cue_at < len(cue_list) and int(cue_list[cue_at]["start_sec"]) < int(nxt):
+                c = cue_list[cue_at]
+                cue_at += 1
+                sec = int(c["start_sec"])
+                while sec in cue_ids:
+                    sec += 1
+                cue_ids.add(sec)
+                mine.append(
+                    f'<span class="tx-cue" aria-hidden="true" id="c-{sec}" '
+                    f'data-pagefind-title="{ch_title}" data-pagefind-weight="0.3">'
+                    f'{esc(c["text"])}</span>'
+                )
             words = clock_words(start)
-            # Each paragraph is its own sub-result. The anchor id is t-SECONDS;
-            # the search UI rewrites that to #t=SECONDS. Weight stays low so a
-            # passing mention ranks under a lesson card or a chapter title.
-            ch_title = esc(title or "Transcript")
+            # Visible text is one paragraph. Pagefind reads the caption cues
+            # instead, so a hit seeks to that caption.
             body.append(
-                f'<p class="tx-p" id="t-{anchor}" data-start="{start}" data-end="{end}" '
-                f'data-pagefind-title="{ch_title}" data-pagefind-weight="0.3">'
+                f'<p class="tx-p" id="t-{anchor}" data-start="{start}" data-end="{end}">'
                 f'<a class="tx-time stamp" href="#t={start}" data-t="{start}" data-event="Transcript Seek" '
                 f'data-pagefind-ignore aria-label="Seek to {esc(words)}">{esc(clock(start))}</a>'
-                f'<span class="tx-text">{esc(p["text"])}</span>'
+                f'<span class="tx-text" data-pagefind-ignore>{esc(p["text"])}</span>'
+                f'{"".join(mine)}'
                 f'<button type="button" class="tx-copy" data-t="{anchor}" data-event="Moment Link Copied" '
                 f'data-pagefind-ignore aria-label="Copy link to this moment, {esc(words)}">Copy link to this moment</button>'
                 f'</p>'
