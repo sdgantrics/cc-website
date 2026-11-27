@@ -67,6 +67,26 @@ python3 -m http.server 8741 --directory site
 
 The first build needs network access to Podbean. `--offline` still renders an episode that is missing from `cache/media/`; that page just has no chapters or transcript from the feed.
 
+## Search
+
+Search covers episode pages, `lessons.html`, `tools.html`, and article pages. Nav, footers, the newsletter, sponsor blocks, and audio players are left out of the index with `data-pagefind-body` and `data-pagefind-ignore`. Filters (type, role, path, guest, year) and the title, guest, and date are `data-pagefind-filter` / `data-pagefind-meta`. Lesson cards and chapter titles use `data-pagefind-weight` so they rank above a passing line in a transcript.
+
+Pagefind runs after `build.py`. It writes a fragmented index under `site/pagefind/` (gitignored). The browser does not load that index until someone uses a search box, and a query fetches only the fragments for its words, not one JSON file of the whole archive.
+
+Each caption cue is its own result, anchored as `c-SECONDS` and rewritten to `episodes/<slug>.html#t=SECONDS`. The episode page already seeks and opens the transcript on that hash, so playback starts at the caption that matched rather than at the start of the merged paragraph. "Play from here" opens that URL. The cues are in the HTML for Pagefind and are not shown; the page still reads as paragraphs.
+
+Pagefind 1.6 has no synonym dictionary, so construction shorthand is expanded in `site/assets/js/search.js` before the query is sent. That is more reliable than stuffing alias words into the HTML: extra tokens in the index would dilute `data-pagefind-weight`, and an unquoted short query is a prefix match (`co` would hit "construction"). Abbreviations such as CO, RFI, GC, and super are rewritten to the full phrase (`change order`, `request for information`, `general contractor`, `superintendent`) and the short form is added as an exact-token search. BIM, VDC, T&M, and pay app are searched as both the short form and the full phrase.
+
+### Run search locally
+
+```bash
+python3 build.py                 # or: python3 build.py --offline
+npx -y pagefind@1.6.0 --site site --force-language en
+python3 -m http.server 8741 --directory site
+```
+
+Open `http://127.0.0.1:8741/search.html`. `?q=` prefills the box on that page and on `episodes.html`. The same Pagefind step is in `.github/workflows/ci.yml` and `deploy.yml`, pinned to `pagefind@1.6.0`.
+
 ## Refresh episodes
 
 ```bash

@@ -1,7 +1,11 @@
 .DS_Store
+__pycache__/
 feed.xml
 # Raw Podbean downloads and the normalized episode records. Both are
 # rebuilt by build.py; see README "Transcripts and chapters".
 cache/
 data/episodes/
 site/episodes/*.txt
+# Pagefind writes a fragmented index here. CI and the Pages workflow
+# rebuild it after build.py; do not commit it.
+site/pagefind/

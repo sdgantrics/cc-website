@@ -125,6 +125,14 @@ h2.display { font-size: clamp(34px, 4.5vw, 48px); }
 .nav-links a.nav-cta { color: var(--crane); }
 .nav-links a.nav-cta:hover { color: var(--crane-hover); }
 .nav-toggle { display: none; background: none; border: 1px solid var(--steel); color: var(--chalk); font-size: 20px; padding: 4px 10px; cursor: pointer; }
+.nav-cluster { display: flex; align-items: center; gap: 22px; }
+.nav-search {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; flex-shrink: 0;
+  color: var(--grey); border: 1px solid var(--steel);
+}
+.nav-search:hover { color: var(--chalk); border-color: var(--crane); }
+.nav-search svg { display: block; }
 
 /* ---------- hero ---------- */
 .hero { border-bottom: 1px solid var(--hairline); }
@@ -441,7 +449,7 @@ footer { border-top: 1px solid var(--hairline); }
   line-height: 1.4; margin: 28px 0 12px; padding-bottom: 8px;
   border-bottom: 1px solid var(--border);
 }
-.tx-p {
+.tx-p { position: relative;
   display: grid; grid-template-columns: auto 1fr; column-gap: 12px; row-gap: 6px;
   align-items: baseline; margin: 0 0 18px;
   color: var(--grey); font-size: 16px; line-height: 1.6;
@@ -451,6 +459,10 @@ footer { border-top: 1px solid var(--hairline); }
 a.tx-time { grid-column: 1; grid-row: 1; border-bottom: none; color: var(--crane); white-space: nowrap; }
 a.tx-time:hover { color: var(--crane-hover); }
 .tx-text { grid-column: 2; grid-row: 1; color: var(--grey); }
+.tx-cue {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
 .tx-copy {
   grid-column: 2; grid-row: 2; justify-self: start;
   appearance: none; -webkit-appearance: none;
@@ -572,3 +584,51 @@ a.tx-time:hover { color: var(--crane-hover); }
 .radar-foot { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .radar-foot a { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; color: var(--crane); border-bottom: none; }
 @media (max-width: 860px) { .radar-grid { grid-template-columns: 1fr; } }
+
+/* ---------- archive search ---------- */
+.search-filters { margin-top: 22px; }
+.search-filters summary { cursor: pointer; color: var(--crane); margin-bottom: 12px; list-style: none; }
+.search-filters summary::-webkit-details-marker { display: none; }
+.search-filters[open] summary { margin-bottom: 14px; }
+#archive-filter-body { display: flex; flex-direction: column; gap: 12px; }
+.search-filter-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.search-filter-row select {
+  margin-left: 8px;
+  background: var(--pitch); color: var(--chalk); border: 1px solid var(--steel);
+  font-family: var(--archivo); font-size: 14px; padding: 8px 10px; max-width: 100%;
+}
+.archive-out { margin-top: 28px; }
+.archive-count, .archive-status { color: var(--grey-2); margin-bottom: 8px; }
+.archive-hit { border-top: 1px solid var(--border); padding: 18px 0 16px; }
+.archive-hit.is-active { box-shadow: inset 3px 0 0 var(--crane); padding-left: 12px; }
+.hit-kicker { color: var(--grey-2); margin-bottom: 8px; }
+.hit-title {
+  font-family: var(--anton); font-weight: 400; text-transform: uppercase;
+  font-size: clamp(26px, 4vw, 36px); line-height: 0.94; letter-spacing: -0.01em;
+  margin: 0 0 8px;
+}
+.hit-title a { color: var(--chalk); border-bottom: none; }
+.hit-title a:hover { color: var(--crane); }
+.hit-title-text {
+  font-family: var(--archivo); font-weight: 700; text-transform: none;
+  font-size: 20px; line-height: 1.35; letter-spacing: 0;
+}
+.hit-chapter { color: var(--grey); font-size: 15px; margin: 0 0 8px; }
+.hit-excerpt { color: var(--grey); font-size: 15px; line-height: 1.55; margin: 0 0 12px; max-width: 720px; }
+.hit-excerpt mark { background: none; color: var(--crane); font-weight: 700; }
+.hit-play {
+  display: inline-block; font-family: var(--archivo); font-weight: 700; font-size: 13px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  background: none; border: 1px solid var(--steel); color: var(--chalk);
+  padding: 10px 18px;
+}
+.hit-play:hover { border-color: var(--crane); color: var(--crane); }
+.archive-more { margin: 8px 0 18px; }
+@media (max-width: 760px) {
+  .nav-cluster { gap: 10px; }
+  .archive-page .search-row { flex-direction: column; align-items: stretch; }
+  .archive-page .search-row input, .search-filters select { min-width: 0; width: 100%; margin-left: 0; }
+  .search-filter-row label { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; width: 100%; }
+  .hit-title { font-size: 26px; }
+  .hit-play { display: inline-flex; }
+}

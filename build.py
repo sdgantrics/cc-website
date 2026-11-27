@@ -323,8 +323,10 @@ def episode_paths_block(ep, paths) -> str:
     links = "".join(
         f'<a class="path-pill" href="../start/{p["slug"]}.html" data-event="Path: {html.escape(p["tag"])}">'
         f'{html.escape(p["title"])} →</a>' for p in hits)
-    return f'''<div class="sec-label" style="margin-top:40px;">Part of these listening paths</div>
-  <div class="path-pills">{links}</div>'''
+    return f'''<div data-pagefind-ignore>
+  <div class="sec-label" style="margin-top:40px;">Part of these listening paths</div>
+  <div class="path-pills">{links}</div>
+</div>'''
 
 
 def youtube_thumb_url(ep) -> str:
@@ -382,6 +384,13 @@ def jsonld(ep) -> str:
     return json.dumps(data, indent=2)
 
 
+def build_search(tpl_dir: Path):
+    page = (tpl_dir / "search.html").read_text()
+    page = extras.apply_chrome(page, "")
+    (ROOT / "site" / "search.html").write_text(page)
+    print("Wrote site/search.html")
+
+
 def build():
     offline = "--offline" in sys.argv
     if offline and FEED_CACHE.exists():
@@ -427,6 +436,14 @@ def build():
 
     first, paths = load_paths(episodes)
     extras.set_episode_index(episodes)
+    extras.set_path_index(paths)
+    lessons_data = extras.load_lessons()
+    roles_by_slug = {}
+    for lesson in lessons_data.get("lessons") or []:
+        bucket = roles_by_slug.setdefault(lesson.get("episode") or "", [])
+        for role in lesson.get("roles") or []:
+            if role not in bucket:
+                bucket.append(role)
     chapters = extras.load_chapters()
     docs = transcripts.build_episode_docs(episodes, chapters, offline, ROOT)
     articles = extras.load_articles()
@@ -475,9 +492,12 @@ def build():
             "{{LINK}}": ep["link"],
             "{{JSONLD}}": jsonld(ep),
             "{{PATHS}}": episode_paths_block(ep, paths),
-            "{{GUEST_LINE}}": (f'<p class="stamp guest-line">{gl}</p>' if (gl := extras.guest_line(hand)) else ""),
+            "{{PAGEFIND_HEAD}}": extras.episode_search_head(
+                ep, hand, roles_by_slug.get(ep["slug"], []), extras.paths_for(ep["slug"])),
+            "{{GUEST_LINE}}": (f'<p class="stamp guest-line" data-pagefind-meta="guest">{gl}</p>' if (gl := extras.guest_line(hand)) else ""),
             "{{CHAPTERS}}": extras.chapters_block(shown),
-            "{{TRANSCRIPT}}": extras.transcript_block((doc or {}).get("transcript"), shown),
+            "{{TRANSCRIPT}}": extras.transcript_block(
+                (doc or {}).get("transcript"), shown, (doc or {}).get("cues")),
             "{{QUOTES}}": extras.quotes_block(hand),
             "{{MENTIONS}}": extras.mentions_block(hand),
             "{{ARTICLES}}": extras.episode_articles_block(ep["slug"], articles),
@@ -510,7 +530,8 @@ def build():
     tpl_dir = ROOT / "templates"
     extras.build_articles(articles, episodes, tpl_dir)
     extras.build_tools(tools, tpl_dir)
-    extras.build_lessons(extras.load_lessons(), tpl_dir)
+    extras.build_lessons(lessons_data, tpl_dir)
+    build_search(tpl_dir)
     extras.build_reviews(extras.load_reviews(offline), tpl_dir)
     extras.build_join(extras.load_stories(), tpl_dir)
 

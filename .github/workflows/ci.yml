@@ -11,3 +11,6 @@ jobs:
 
       - name: Build site from Podbean feed
         run: python3 build.py
+
+      - name: Index search
+        run: npx -y pagefind@1.6.0 --site site --force-language en

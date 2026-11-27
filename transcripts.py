@@ -511,6 +511,14 @@ def prepare_episode(ep: dict, hand, offline: bool, root: Path):
             else:
                 bounds = [c["start_sec"] for c in chapters] + hand_starts(hand)
                 doc["transcript"] = merge_paragraphs(cues, bounds)
+                doc["cues"] = [
+                    {
+                        "start_sec": int(math.floor(c["start"] + 1e-6)),
+                        "text": (c.get("text") or "").strip(),
+                    }
+                    for c in cues
+                    if (c.get("text") or "").strip()
+                ]
                 if not doc["transcript"]:
                     warnings.append(f"{slug}: transcript produced no paragraphs")
         except Exception as e:

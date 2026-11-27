@@ -43,9 +43,14 @@
       <a href="https://open.spotify.com/show/3TPc3EDgxGvmJoRwmffVL3" data-event="Platform: Spotify" target="_blank" rel="noopener">Spotify</a>, and
       <a href="https://www.youtube.com/@ConstructionConversations" data-event="Platform: YouTube" target="_blank" rel="noopener">YouTube</a>.</p>
     <div class="search-row">
-      <input type="search" id="ep-search" placeholder="Search by title, guest, or topic…" aria-label="Search episodes">
+      <input type="search" id="ep-search" placeholder="Search the archive by title, guest, or what was said…" aria-label="Search the archive">
       <span class="search-count" id="ep-count"></span>
     </div>
+    <details id="archive-filters" class="search-filters" hidden>
+      <summary class="stamp">Filters</summary>
+      <div id="archive-filter-body"></div>
+    </details>
+    <div id="archive-out" class="archive-out" hidden></div>
     <!-- Shown by site.js when the list is filtered to Reviewed as Noted -->
     <div class="ran-note" id="ran-note" hidden>
       <span class="tag">The Roundtable</span>
@@ -79,5 +84,6 @@
 </footer>
 
 <script src="assets/js/site.js"></script>
+<script src="assets/js/search.js"></script>
 </body>
 </html>
