@@ -1,0 +1,37 @@
+# Editorial notes for ep-045. The build never overwrites this file.
+# Lessons 1 and 7 already live in data/lessons.json. Reference them by number.
+guests:
+  - name: Garrett Mott
+    title: Construction Trial Lawyer
+    firm: Hennigh Law
+    linkedin_url: "https://www.linkedin.com/in/garrett-mott-90a106b/"
+summary: >
+  For superintendents and project managers who write the emails and the daily log.
+  Garrett Mott, a construction trial lawyer, walks through how five emails from a
+  young PM became Exhibit 12 in a case he puts at about $30 million, and why a
+  note written the same day is the record a jury will believe. You leave with
+  the habit of stating what happened, not what you concluded, and of keeping
+  the daily log while the work is still going on.
+roles:
+  - Super
+  - PM
+paths:
+  - running-the-job
+tools: []
+related:
+  - ep-043
+  - ep-038
+  - ep-011
+lessons:
+  - 1
+  - 7
+pull_quotes:
+  - text: "The advice is send emails that are descriptive, not emails that are prescriptive."
+    speaker: Garrett Mott
+    sec: 392
+  - text: "every time you send something, think, is that going to be exhibit 12?"
+    speaker: Garrett Mott
+    sec: 902
+  - text: "I consider daily notes as absolute gold"
+    speaker: Garrett Mott
+    sec: 3320

@@ -9,6 +9,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: python3 -m pip install pyyaml
+
+      - name: Draft quote validator
+        run: python3 -m unittest tests/test_draft.py -v
+
       - name: Build site from Podbean feed
         run: python3 build.py
 

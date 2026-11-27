@@ -6,6 +6,9 @@ feed.xml
 cache/
 data/episodes/
 site/episodes/*.txt
+site/episodes/*.md
+site/llms.txt
+content/episodes/_drafts/
 # Pagefind writes a fragmented index here. CI and the Pages workflow
 # rebuild it after build.py; do not commit it.
 site/pagefind/

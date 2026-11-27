@@ -24,6 +24,7 @@ from the Podbean RSS feed.
 |---|---|---|
 | Start Here paths (`start.html`, `start/*`) | `paths.json` | edit JSON, rebuild |
 | Episode chapters, quotes, guest line, mentions | `data/chapters/<slug>.json` for quotes, mentions, the guest line, and any chapter list you write. Feed chapters and the full transcript fill in at build time. | edit the JSON to override chapters or add quotes; see Transcripts and chapters |
+| Episode lesson page (guests, summary, lessons, pull quotes, tools, related) | `content/episodes/<slug>.yml` | edit the YAML; the build never overwrites it. See Editorial lesson pages |
 | Articles (`articles.html`, `articles/*`) | `articles/<slug>.md` (front matter + HTML body) | add a file per Recap / Insider Take / Debrief |
 | Tools database (`tools.html`, `assets/tools.csv`) | `data/tools.json` | regenerate from the Notion Episode Insights DB (Tools Mentioned + Mention Source); only Practitioner mentions are published |
 | The 50 lessons (`lessons.html`, `assets/cc-50-expensive-lessons.pdf`) | `data/lessons.json` | edit JSON, rebuild, re-print the PDF (headless Chrome on lessons.html) |
@@ -66,6 +67,58 @@ python3 -m http.server 8741 --directory site
 ```
 
 The first build needs network access to Podbean. `--offline` still renders an episode that is missing from `cache/media/`; that page just has no chapters or transcript from the feed.
+
+## Editorial lesson pages
+
+An episode page reads `content/episodes/<slug>.yml` when that file exists. The file is human-owned. The build does not write it, and a page with no file leaves the new sections out. No placeholder text is shown.
+
+```yaml
+guests:
+  - name: Jane Doe
+    title: VP of VDC
+    firm: Example Co
+    linkedin_url: ""          # only if the repo already has the URL
+summary: >
+  Two or three sentences on who the episode is for and what they walk away with.
+lessons:
+  - 1                         # deck number from data/lessons.json, not a copy
+  - id: short-name            # or a lesson that is not in the deck yet
+    headline: One sentence.
+    what_it_cost: What it cost, in the guest's terms.
+    quote: Verbatim words from the transcript.
+    quote_speaker: Jane Doe
+    quote_sec: 392            # seconds; the build checks this against the transcript
+    the_move: What to do next time.
+    roles: [Super, PM]
+pull_quotes:
+  - text: Verbatim.
+    speaker: Jane Doe
+    sec: 392
+paths: [running-the-job]     # Start Here slugs from paths.json
+tools: [document-crunch]     # slug of a name in data/tools.json
+related: [ep-043]
+roles: [Super, PM, Exec, Founder]
+```
+
+A lesson in `data/lessons.json`, or a tool in `data/tools.json`, that cites the episode is added to the page even when the YAML does not list it. Quotes in the YAML have to match the transcript after whitespace and punctuation are normalized. The build prints `OK` or `INVALID` for each one and stops if any quote is not in the transcript.
+
+### Run a draft
+
+Drafts are suggestions. They land in `content/episodes/_drafts/<slug>.yml` and are not published. The site build never calls the API. You need both variables or the command stops:
+
+```bash
+export ANTHROPIC_API_KEY=...
+export DRAFT_MODEL=...
+python3 build.py --draft ep-069          # one slug, or several
+python3 build.py --draft all             # every episode that has no YAML yet
+```
+
+The draft reads the transcript and the chapters, asks for a summary, 2 to 4 lessons, and 3 pull quotes, then keeps only quotes it can find in the transcript. It sets `sec` from that match. A quote it cannot find is dropped and printed.
+
+```bash
+python3 -m pip install pyyaml    # once
+python3 -m unittest tests/test_draft.py -v
+```
 
 ## Search
 

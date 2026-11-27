@@ -1,0 +1,116 @@
+# Editorial notes for ep-069. The build never overwrites this file.
+# Title and firm are from the feed description. LinkedIn is left blank:
+# the show's description does not give a title, and these profile URLs
+# are not already in the repo.
+guests:
+  - name: Matthew Ramage
+    title: ""
+    firm: Trimble
+    linkedin_url: ""
+  - name: Josh Levy
+    title: ""
+    firm: Document Crunch
+    linkedin_url: ""
+summary: >
+  For the project manager, the executive, and the founder who still treats a
+  good relationship as the thing that keeps a job out of a dispute. Josh Levy
+  of Document Crunch and Matthew Ramage of Trimble, recorded live at Trimble
+  Dimensions, talk through what changes when the field record and the contract
+  can be checked against each other. You leave with a test for an AI tool, a
+  reason not to gamble a thin margin on trust, and a picture of why getting
+  trade partners paid is risk management.
+roles:
+  - Super
+  - PM
+  - Exec
+  - Founder
+paths:
+  - running-the-job
+  - ai-without-the-easy-button
+  - getting-the-field-to-use-it
+tools:
+  - document-crunch
+  - trimble
+related:
+  - ep-045
+  - ep-053
+  - ep-031
+lessons:
+  - id: comply
+    headline: Most of the risk is a team that does not follow the contract, not a clause someone negotiated badly.
+    what_it_cost: >
+      Josh pointed at an annual litigation report that put the average
+      construction dispute at about $60 million. The top reasons were errors
+      and omissions in the documents, and parties that did not do what they
+      had agreed to do while the job was moving.
+    quote: "whether the contract was a good contract or a bad contract, whether someone like me negotiated or not, most of the risk in construction actually is related to the failure of teams to comply with that contract."
+    quote_speaker: Josh Levy
+    quote_sec: 173
+    the_move: >
+      Put the obligation in front of the person doing the work. The contract
+      is the legal document plus the project documents that ride with it, and
+      the field has to be able to see both.
+    roles:
+      - PM
+      - Super
+      - Exec
+  - id: hard-hat
+    headline: Handing someone an AI tool is like handing them a hard hat. It does not make the job safer until you require the system around it.
+    what_it_cost: >
+      A team can already paste a contract into Claude or ChatGPT and get an
+      answer. Without a check against the company's own risk rules, that
+      answer never becomes a decision anyone owns.
+    quote: "When we started handing out hardhats, that didn't drive the outcome of a safer industry. It was when we started requiring that hardhats be used."
+    quote_speaker: Josh Levy
+    quote_sec: 694
+    the_move: >
+      Do not roll out a model by itself. Name who uses it, when, and what
+      oversight and company practice the answer has to pass before anyone
+      acts on it.
+    roles:
+      - Exec
+      - PM
+      - Founder
+  - id: trust
+    headline: Trust is not a strategy when one bad job takes about ten good ones to earn back.
+    what_it_cost: >
+      Josh's rule of thumb from the big general contractors: for every really
+      bad job you have to win about ten profitable ones just to get back to
+      even. The margins are not big enough to gamble.
+    quote: "you can't be willy nilly with that. Trust is not enough. Relationships are not enough. You have to get it right."
+    quote_speaker: Josh Levy
+    quote_sec: 1076
+    the_move: >
+      When the trailer cannot agree on what happened, put the field record
+      next to the contract before anyone goes back to their corner. Do not
+      paper the gap over with the relationship.
+    roles:
+      - PM
+      - Exec
+      - Super
+  - id: landmine
+    headline: A payment you hold is a landmine you leave on the next job.
+    what_it_cost: >
+      Trade partners live and die on cash flow. Josh's example was a glass of
+      wine at dinner: nobody waits a hundred days to pay a restaurant for
+      something they are already drinking, then calls the supply chain risky.
+    quote: "What you're actually doing is you're reaching into the future and you're taking a landmine off of the field."
+    quote_speaker: Josh Levy
+    quote_sec: 1901
+    the_move: >
+      Treat each signed change and each payment as a small settlement.
+      Shorten the time between work in place and money out, and reconcile
+      the field record to the pay app while the event is still checkable.
+    roles:
+      - PM
+      - Exec
+pull_quotes:
+  - text: "Trust is not enough. Relationships are not enough. You have to get it right."
+    speaker: Josh Levy
+    sec: 11
+  - text: "When we started handing out hardhats, that didn't drive the outcome of a safer industry."
+    speaker: Josh Levy
+    sec: 694
+  - text: "could you imagine if you didn't pay this restaurant for like a hundred days for the glass of wine that you're actually consuming right now?"
+    speaker: Josh Levy
+    sec: 1939

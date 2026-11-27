@@ -3,11 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- GUEST DATA PLACEHOLDER: when guest name, title, and firm are confirmed for
-     this episode, prepend them to the <title> and <h1>, e.g.
-     "Jane Doe, VP of VDC at Example Co: {{TITLE}}" -->
-<title>{{TITLE}} | Construction Conversations</title>
-<meta name="description" content="{{DESC_SHORT}}">
+<title>{{HEAD_TITLE}} | Construction Conversations</title>
+<meta name="description" content="{{META_DESC}}">
+{{SOCIAL}}
 <link rel="icon" type="image/png" href="../assets/img/cc-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,24 +41,19 @@
 
 <section class="wrap ep-page" data-pagefind-body>
   <div class="ep-meta"><span class="tag">{{TAG}}</span><span class="stamp">{{META}}</span></div>
-  <!-- GUEST DATA PLACEHOLDER: prepend guest name, title, firm when confirmed. -->
-  <h1 class="display" data-pagefind-meta="title">{{TITLE}}</h1>
+  <h1 class="display" data-pagefind-meta="title">{{H1}}</h1>
   {{GUEST_LINE}}
   <p class="ep-body">{{DESC_FULL}}</p>
   <audio controls preload="none" data-src="{{AUDIO}}" data-pagefind-ignore></audio>
-  {{TOOLS}}
+  {{WHO}}
+  {{LESSONS_BLOCK}}
   {{CHAPTERS}}
   {{TRANSCRIPT}}
   {{QUOTES}}
+  {{NOTABLE}}
+  {{TOOLS_CARDS}}
   {{ARTICLES}}
   {{MENTIONS}}
-
-  <!-- NOTABLE QUOTES PLACEHOLDER: uncomment and fill three pull quotes.
-  <div class="sec-label" style="margin-top:40px;">Notable Quotes</div>
-  <blockquote class="ep-body">"[Pull quote one]"</blockquote>
-  <blockquote class="ep-body">"[Pull quote two]"</blockquote>
-  <blockquote class="ep-body">"[Pull quote three]"</blockquote>
-  -->
 
   <div class="platforms ep-links" data-pagefind-ignore>
     <span class="stamp">Listen on:</span>
@@ -70,12 +63,12 @@
     <a href="{{LINK}}" target="_blank" rel="noopener">Podbean</a>
   </div>
 
+  {{GUESTS}}
   {{PATHS}}
-
-  <!-- GUEST LINKEDIN PLACEHOLDER: uncomment and set the guest's profile URL.
-  <p class="stamp dim" style="margin-top:20px;"><a href="[GUEST_LINKEDIN_URL]" style="color:var(--crane);">Guest on LinkedIn →</a></p>
-  -->
+  {{KEEP_GOING}}
 </section>
+
+{{NEWSLETTER}}
 
 <footer>
   <div class="wrap foot">
