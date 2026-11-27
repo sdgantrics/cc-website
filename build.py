@@ -18,6 +18,7 @@ only fills in episode data at the {{...}} markers.
 Usage:
     python3 build.py            # fetch fresh feed + rebuild
     python3 build.py --offline  # rebuild from cached feed.xml
+    python3 build.py --draft ep-069   # write content/episodes/_drafts (needs API env)
 """
 
 import html
@@ -30,6 +31,7 @@ from datetime import datetime
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
+import editorial
 import extras
 import transcripts
 
@@ -106,6 +108,41 @@ def assign_special_slugs(episodes):
             e["slug"] = base if n == 0 else f"{base}-{n + 1}"
 
 
+def feed_notes(desc: str):
+    """Guest and sponsor links already written in the Podbean description.
+
+    The description is the only place those URLs live. Nothing is invented.
+    """
+    cut = re.search(r"\bEpisode Sponsors?:\s*", desc, re.I)
+    head = desc[:cut.start()] if cut else desc
+    tail = desc[cut.end():] if cut else ""
+    sponsors, seen = [], set()
+    for name, url in re.findall(r"Check Out\s+(.+?):\s*(https?://\S+)", tail, re.I):
+        url = re.sub(r"\?trk=.*$", "", url.rstrip(".,)"))
+        if url in seen:
+            continue
+        seen.add(url)
+        sponsors.append({"name": re.sub(r"\s+", " ", name).strip(), "url": url})
+    guests, seen_g = [], set()
+    for name, url in re.findall(
+        r"([A-Z][\w.'’-]+(?:\s+[A-Z][\w.'’-]+){0,4}):\s*(https?://(?:www\.)?linkedin\.com/\S+)",
+        head,
+    ):
+        url = re.sub(r"\?trk=.*$", "", url.rstrip(".,)"))
+        if url in seen_g:
+            continue
+        seen_g.add(url)
+        label = "" if name.strip().casefold() == "linkedin" else name.strip()
+        guests.append({"name": label, "url": url})
+    for url in re.findall(r"Check (?:Him|Her|Them) Out on Linkedin:\s*(https?://\S+)", head, re.I):
+        url = re.sub(r"\?trk=.*$", "", url.rstrip(".,)"))
+        if url in seen_g:
+            continue
+        seen_g.add(url)
+        guests.append({"name": "", "url": url})
+    return sponsors, guests
+
+
 def parse_episodes(xml_text: str):
     channel = ET.fromstring(xml_text).find("channel")
     episodes = []
@@ -124,6 +161,7 @@ def parse_episodes(xml_text: str):
         ep_num = m.group(1) if m else ""
         secs = parse_duration(text(item, "duration", ITUNES))
         desc = strip_html(text(item, "description") or text(item, "summary", ITUNES))
+        sponsors, feed_guests = feed_notes(desc)
         item_img = item.find(ITUNES + "image")
         # Keep the enclosure URL exactly as published. The feed uses a
         # cohst.app prefix; do not resolve it to the mcdn host behind it.
@@ -144,6 +182,8 @@ def parse_episodes(xml_text: str):
             "duration_iso": f"PT{round(secs / 60)}M" if secs else "",
             "desc": clip_chars(desc, 230),
             "desc_full": clip_words(desc, 150),
+            "sponsors": sponsors,
+            "feed_guests": feed_guests,
             "audio": enclosure.get("url") if enclosure is not None else "",
             "link": text(item, "link"),
             "image": item_img.get("href") if item_img is not None else "",
@@ -362,28 +402,6 @@ def youtube_thumb_url(ep) -> str:
     return f"https://i.ytimg.com/vi/{vid}/maxresdefault.jpg" if vid else ""
 
 
-def jsonld(ep) -> str:
-    data = {
-        "@context": "https://schema.org",
-        "@type": "PodcastEpisode",
-        "name": ep["title"],
-        "datePublished": ep["date_iso"],
-        "description": ep["desc_full"],
-        "url": ep["link"],
-        "associatedMedia": {"@type": "MediaObject", "contentUrl": ep["audio"]},
-        "partOfSeries": {
-            "@type": "PodcastSeries",
-            "name": "Construction Conversations",
-            "url": "https://constructionconversations.com/",
-        },
-    }
-    if ep["num"]:
-        data["episodeNumber"] = int(ep["num"])
-    if ep["duration_iso"]:
-        data["timeRequired"] = ep["duration_iso"]
-    return json.dumps(data, indent=2)
-
-
 def build_search(tpl_dir: Path):
     page = (tpl_dir / "search.html").read_text()
     page = extras.apply_chrome(page, "")
@@ -468,43 +486,75 @@ def build():
         (ROOT / "site" / name).write_text(out)
         print(f"Wrote site/{name}")
 
-    # Per-episode pages
+    # Per-episode pages. Editorial YAML is optional. Sections with nothing
+    # to say are left out. Drafts under content/episodes/_drafts are not read.
+    episode_copy = editorial.load_editorial()
+    by_n, lessons_by_ep = editorial.index_lessons(lessons_data)
+    tools_by_slug, tools_by_ep = editorial.index_tools(tools)
+    by_slug = {e["slug"]: e for e in episodes}
     ep_dir = ROOT / "site" / "episodes"
     ep_dir.mkdir(exist_ok=True)
     ep_template = (ROOT / "templates" / "episode.html").read_text()
     n_ch = n_tx = 0
     missing = []
+    has_txt = {}
     for ep in episodes:
         tag = f'EP {int(ep["num"]):03d}' if ep["num"] else "SPECIAL"
         meta = " · ".join(v for v in (ep["date"], ep["duration"]) if v).upper()
         hand = chapters.get(ep["slug"]) or {}
         doc = docs.get(ep["slug"]) or {}
+        ed = episode_copy.get(ep["slug"])
+        segments = editorial.segments_for(doc)
+        shown_lessons = editorial.resolved_lessons(ep["slug"], ed, by_n, lessons_by_ep)
+        shown_tools = editorial.resolved_tools(ep["slug"], ed, tools_by_slug, tools_by_ep)
+        parts = editorial.page_parts(
+            ep, ed, hand, shown_lessons, shown_tools, paths, by_slug, segments)
         # Hand-written chapters win. Feed chapters fill episodes that have none.
         shown = hand if hand.get("chapters") else extras.feed_chapter_doc(doc)
+        roles = list(roles_by_slug.get(ep["slug"]) or [])
+        for role in (ed or {}).get("roles") or []:
+            if role not in roles:
+                roles.append(role)
+        pf = extras.episode_search_head(ep, hand, roles, extras.paths_for(ep["slug"]))
+        for guest in (ed or {}).get("guests") or []:
+            if guest.get("name"):
+                pf += f'\n<meta data-pagefind-filter="guest:{extras.esc(guest["name"])}">'
         page = ep_template
         for k, v in {
-            "{{TITLE}}": html.escape(ep["display_title"]),
+            "{{HEAD_TITLE}}": html.escape(parts["title"]),
+            "{{H1}}": html.escape(parts["h1"]),
+            "{{META_DESC}}": html.escape(parts["description"]),
+            "{{SOCIAL}}": parts["social"],
             "{{TAG}}": tag,
             "{{META}}": meta,
-            "{{DESC_SHORT}}": html.escape(ep["desc"]),
-            "{{DESC_FULL}}": html.escape(ep["desc_full"]),
+            "{{DESC_FULL}}": html.escape(parts["intro"]),
+            "{{SPONSORS}}": parts["sponsors"],
             "{{AUDIO}}": ep["audio"],
             "{{LINK}}": ep["link"],
-            "{{JSONLD}}": jsonld(ep),
+            "{{JSONLD}}": parts["jsonld"],
             "{{PATHS}}": episode_paths_block(ep, paths),
-            "{{PAGEFIND_HEAD}}": extras.episode_search_head(
-                ep, hand, roles_by_slug.get(ep["slug"], []), extras.paths_for(ep["slug"])),
-            "{{GUEST_LINE}}": (f'<p class="stamp guest-line" data-pagefind-meta="guest">{gl}</p>' if (gl := extras.guest_line(hand)) else ""),
+            "{{PAGEFIND_HEAD}}": pf,
+            "{{GUEST_LINE}}": parts["byline"],
+            "{{WHO}}": parts["who"],
+            "{{LESSONS_BLOCK}}": parts["lessons"],
             "{{CHAPTERS}}": extras.chapters_block(shown),
             "{{TRANSCRIPT}}": extras.transcript_block(
                 (doc or {}).get("transcript"), shown, (doc or {}).get("cues")),
-            "{{QUOTES}}": extras.quotes_block(hand),
+            "{{QUOTES}}": parts["quotes"] or extras.quotes_block(hand),
+            "{{TOOLS_CARDS}}": parts["tools"],
             "{{MENTIONS}}": extras.mentions_block(hand),
             "{{ARTICLES}}": extras.episode_articles_block(ep["slug"], articles),
-            "{{TOOLS}}": extras.episode_tools_block(ep["slug"], tools),
+            "{{GUESTS}}": parts["guests"],
+            "{{KEEP_GOING}}": parts["keep"],
+            "{{NEWSLETTER}}": parts["newsletter"],
         }.items():
             page = page.replace(k, v)
         (ep_dir / f'{ep["slug"]}.html').write_text(extras.apply_chrome(page, "../"))
+        has_txt[ep["slug"]] = bool((doc or {}).get("transcript"))
+        (ep_dir / f'{ep["slug"]}.md').write_text(
+            editorial.episode_markdown(ep, ed, shown_lessons, segments),
+            encoding="utf-8",
+        )
         has_ch = bool(shown.get("chapters"))
         has_tx = bool((doc or {}).get("transcript"))
         n_ch += has_ch
@@ -524,6 +574,12 @@ def build():
             print(f"  {line}")
     else:
         print("Missing sections: none")
+    (ROOT / "site" / "llms.txt").write_text(
+        editorial.llms_text(episodes, episode_copy, chapters, has_txt),
+        encoding="utf-8",
+    )
+    print("Wrote site/llms.txt and episode markdown")
+    bad_quotes = editorial.check_published(episode_copy, docs)
     build_special_redirects(episodes)
 
     build_paths(first, paths, len(episodes))
@@ -536,7 +592,14 @@ def build():
     extras.build_join(extras.load_stories(), tpl_dir)
 
     print(f"Built {datetime.now():%Y-%m-%d %H:%M}")
+    if bad_quotes:
+        sys.exit(f"ERROR: {bad_quotes} editorial quote(s) are not in the transcript")
 
 
 if __name__ == "__main__":
-    build()
+    # --draft writes content/episodes/_drafts and does not build the site.
+    # The Pages workflow runs build() only, so it never calls the API.
+    if "--draft" in sys.argv:
+        editorial.run_draft(sys.argv[1:])
+    else:
+        build()
