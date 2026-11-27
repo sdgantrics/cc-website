@@ -484,7 +484,7 @@ def build():
         page = ep_template
         for k, v in {
             "{{HEAD_TITLE}}": html.escape(parts["title"]),
-            "{{H1}}": html.escape(parts["title"]),
+            "{{H1}}": html.escape(parts["h1"]),
             "{{META_DESC}}": html.escape(parts["description"]),
             "{{SOCIAL}}": parts["social"],
             "{{TAG}}": tag,
@@ -495,14 +495,13 @@ def build():
             "{{JSONLD}}": parts["jsonld"],
             "{{PATHS}}": episode_paths_block(ep, paths),
             "{{PAGEFIND_HEAD}}": pf,
-            "{{GUEST_LINE}}": (f'<p class="stamp guest-line" data-pagefind-meta="guest">{gl}</p>' if (gl := extras.guest_line(hand)) else ""),
+            "{{GUEST_LINE}}": parts["byline"],
             "{{WHO}}": parts["who"],
             "{{LESSONS_BLOCK}}": parts["lessons"],
             "{{CHAPTERS}}": extras.chapters_block(shown),
             "{{TRANSCRIPT}}": extras.transcript_block(
                 (doc or {}).get("transcript"), shown, (doc or {}).get("cues")),
-            "{{QUOTES}}": extras.quotes_block(hand),
-            "{{NOTABLE}}": parts["notable"],
+            "{{QUOTES}}": parts["quotes"] or extras.quotes_block(hand),
             "{{TOOLS_CARDS}}": parts["tools"],
             "{{MENTIONS}}": extras.mentions_block(hand),
             "{{ARTICLES}}": extras.episode_articles_block(ep["slug"], articles),

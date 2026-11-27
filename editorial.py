@@ -262,13 +262,44 @@ def join_phrases(phrases):
     return ", ".join(phrases[:-1]) + ", and " + phrases[-1]
 
 
-def heading_for(ep, ed) -> str:
-    title = ep.get("display_title") or ep.get("title") or ""
+def episode_title(ep) -> str:
+    """The <h1>. The episode title only, same as before the editorial layer."""
+    return ep.get("display_title") or ep.get("title") or ""
+
+
+def document_title(ep, ed) -> str:
+    """<title> and Open Graph. Guest, title, and firm lead the episode title."""
+    title = episode_title(ep)
     guests = [guest_phrase(g) for g in ((ed or {}).get("guests") or [])]
     lead = join_phrases(guests)
     if lead:
         return f"{lead}: {title}"
     return title
+
+
+def byline_html(ed, hand) -> str:
+    """Stamp under the h1. YAML guests replace the chapter-file byline."""
+    phrases = []
+    for g in (ed or {}).get("guests") or []:
+        name = (g.get("name") or "").strip()
+        if not name:
+            continue
+        bits = [name]
+        for key in ("title", "firm"):
+            value = (g.get(key) or "").strip()
+            if value:
+                bits.append(value)
+        phrases.append(" · ".join(bits))
+    if phrases:
+        lines = []
+        for i, phrase in enumerate(phrases):
+            meta = ' data-pagefind-meta="guest"' if i == 0 else ""
+            lines.append(f'<p class="stamp guest-line"{meta}>{esc(phrase)}</p>')
+        return "\n".join(lines)
+    line = extras.guest_line(hand)
+    if not line:
+        return ""
+    return f'<p class="stamp guest-line" data-pagefind-meta="guest">{line}</p>'
 
 
 def quote_sec_for_deck(lesson, segments):
@@ -408,26 +439,34 @@ def who_block(ed, paths):
     return "\n".join(parts)
 
 
-def notable_block(quotes, segments):
+def worth_writing_down(quotes, segments):
+    """Pull quotes under the existing heading, with times from the transcript.
+
+    Used only when the YAML lists pull_quotes. The hand-written quotes in
+    data/chapters stay on disk and still render for episodes with no YAML.
+    """
     kept = []
     for q in quotes or []:
         text = (q.get("text") or "").strip()
         if not text:
             continue
-        sec = locate_quote(text, segments)
-        kept.append((q, sec))
+        kept.append((q, locate_quote(text, segments)))
     if not kept:
         return ""
-    parts = ['<div class="sec-label" style="margin-top:40px;">Notable quotes</div>']
+    parts = []
     for q, sec in kept:
         link = _time_link(sec, "Quote Seek")
         who = esc(q.get("speaker") or "")
-        cite = f"{who} · {link}" if who and link else (who or link)
+        cite = f"{who}{(' · ' + link) if link else ''}" if who else link
         parts.append(
             f'<blockquote class="ep-quote"><p>"{esc(q.get("text") or "")}"</p>'
             f'<cite>{cite}</cite></blockquote>'
         )
-    return "\n".join(parts)
+    return (
+        '<div data-pagefind-ignore>'
+        '<div class="sec-label" style="margin-top:40px;">Worth writing down</div>'
+        + "".join(parts) + '</div>'
+    )
 
 
 _TOOL_ANCHORS = None
@@ -637,18 +676,20 @@ def jsonld(ep, ed, hand, has_transcript: bool) -> str:
 
 def page_parts(ep, ed, hand, lessons, tools, paths, by_slug, segments):
     """HTML snippets for one episode. Empty editorial sections are empty strings."""
-    title = heading_for(ep, ed)
+    title = document_title(ep, ed)
     pulls = (ed or {}).get("pull_quotes") or []
     summary = (ed or {}).get("summary") or ""
     desc = social_description(lessons, pulls, summary, ep.get("desc") or "")
     url = f"{SITE}/episodes/{ep['slug']}.html"
     return {
         "title": title,
+        "h1": episode_title(ep),
+        "byline": byline_html(ed, hand),
+        "quotes": worth_writing_down(pulls, segments) if pulls else "",
         "description": desc,
         "social": social_tags(title, desc, url),
         "who": who_block(ed, paths),
         "lessons": lesson_cards(ep["slug"], lessons, segments),
-        "notable": notable_block(pulls, segments),
         "tools": tools_block(ep["slug"], tools),
         "guests": guests_block((ed or {}).get("guests")),
         "keep": keep_going(ep["slug"], ed, paths, by_slug),
@@ -695,7 +736,7 @@ def check_published(editorial, docs):
 
 
 def episode_markdown(ep, ed, lessons, segments) -> str:
-    lines = [f"# {heading_for(ep, ed)}", ""]
+    lines = [f"# {episode_title(ep)}", ""]
     meta = " · ".join(v for v in (ep.get("date"), ep.get("duration")) if v)
     if meta:
         lines.append(meta)
