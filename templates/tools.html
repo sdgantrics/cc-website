@@ -16,6 +16,9 @@
   window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
   plausible.init()
 </script>
+<meta data-pagefind-meta="title:Tools field teams actually use">
+<meta data-pagefind-meta="kind:Tool">
+<meta data-pagefind-filter="type:Tool">
 </head>
 <body>
 
@@ -39,10 +42,10 @@
     <div class="search-row filters" data-target="#tool-page"><button class="filter active" data-type="">All</button>{{FILTERS}}</div>
   </div>
 </section>
-<div id="tool-page">
+<div id="tool-page" data-pagefind-body>
 <section class="block" style="padding-top:36px;">
   <div class="wrap">
-    <div class="sec-label">01 / Proven on the show · {{PROVEN_COUNT}} tools</div>
+    <div class="sec-label" data-pagefind-ignore>01 / Proven on the show · {{PROVEN_COUNT}} tools</div>
     <div class="ep-grid" id="tool-list">
 {{PROVEN}}
     </div>
@@ -50,11 +53,11 @@
 </section>
 <section class="block" style="padding-top:0;">
   <div class="wrap">
-    <div class="sec-label">02 / On our radar · {{RADAR_COUNT}} companies</div>
+    <div class="sec-label" data-pagefind-ignore>02 / On our radar · {{RADAR_COUNT}} companies</div>
     <div class="radar-grid">
 {{RADAR}}
     </div>
-    <p class="stamp dim" style="margin-top:24px;">Built from the Construction Tech Radar we maintain for the show. A listing is a record, not an endorsement. Tech to Watch tags link back to the Construction Briefs issue that covered them.</p>
+    <p class="stamp dim" style="margin-top:24px;" data-pagefind-ignore>Built from the Construction Tech Radar we maintain for the show. A listing is a record, not an endorsement. Tech to Watch tags link back to the Construction Briefs issue that covered them.</p>
   </div>
 </section>
 </div>
