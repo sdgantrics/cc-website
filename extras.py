@@ -148,6 +148,7 @@ def newsletter_block(base: str = "", compact: bool = False) -> str:
       {head}
       <p class="lede">The Expensive Lessons Field Deck: 50 cards with what it cost, the exact quote from the person who paid it, and the move to make next time. Print-ready for toolbox talks, in Superintendent, PM, and Exec editions. Free, delivered by the Construction Briefs welcome email, and a new lesson lands with each episode.</p>
       <form class="nl-form" action="{SUBSTACK}/subscribe" method="get" data-event="Newsletter Submit">
+        <input type="hidden" name="utm_source" value="site-form">
         <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address">
         <button type="submit" class="btn btn-primary">Send me the 50 lessons</button>
       </form>
