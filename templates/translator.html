@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contech Pitch to Jobsite Translator | Construction Conversations</title>
+<meta name="description" content="Paste a construction-tech tagline and read it the way a superintendent would hear it. Placeholder copy, not approved yet.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="assets/img/cc-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400..900;1,400..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-N0Lt_7EKjp6V7qd20DBtb.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+</head>
+<body class="translator" data-pagefind-ignore="all">
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="index.html"><img src="assets/img/cc-logo.png" alt="Construction Conversations"></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links"></ul>
+  </div>
+</header>
+
+<section class="page-head studs" id="t-ask">
+  <div class="wrap">
+    <span class="stamp orange t-kicker" id="t-flag" hidden>Placeholder copy. Not approved.</span>
+    <h1 class="display">Contech pitch to jobsite translator</h1>
+    <p class="lede t-intro">Paste a construction-tech tagline. This says it back the way a superintendent would hear it. The lines are placeholder copy until the real translations are approved. Nothing you paste leaves this page.</p>
+    <label class="stamp t-label" for="t-input">The tagline</label>
+    <textarea class="t-input" id="t-input" rows="5" maxlength="500" placeholder="The AI-powered platform for a seamless, end-to-end single source of truth"></textarea>
+    <div class="t-ask-row">
+      <button type="button" class="btn btn-primary t-go" id="t-go" data-event="Translator Generate" disabled>Translate</button>
+    </div>
+    <noscript><p class="lede t-intro">Turn on JavaScript to run the translator. It stays on this page.</p></noscript>
+  </div>
+</section>
+
+<section class="block" id="t-result" hidden>
+  <div class="wrap">
+    <article class="t-card" id="t-card" aria-labelledby="t-heard">
+      <div class="hazard" aria-hidden="true"></div>
+      <div class="t-card-body">
+        <p class="stamp orange" id="t-brand">Construction Conversations</p>
+        <p class="stamp dim" id="t-card-flag" hidden>Placeholder copy</p>
+        <h2 class="display" id="t-heard" tabindex="-1">What the super hears</h2>
+        <p class="t-pitch" id="t-pitch"></p>
+        <p class="t-line" id="t-line"></p>
+        <div class="t-meter" id="t-meter" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Buzzword load, a joke">
+          <div class="t-meter-top">
+            <span class="stamp">Buzzword load</span>
+            <p class="t-score" id="t-score"><b id="t-score-n">0</b><span>/ 100</span></p>
+          </div>
+          <div class="t-track" aria-hidden="true"><div class="t-fill" id="t-fill"></div></div>
+          <p class="stamp dim" id="t-joke">A joke. 16 points per buzzword, capped at 100.</p>
+        </div>
+        <a class="t-subscribe" id="t-subscribe" href="{{SUBSCRIBE_URL}}" target="_blank" rel="noopener" data-event="Translator Subscribe">
+          <span class="btn btn-primary">Subscribe to Construction Briefs</span>
+          <span class="t-url">{{SUBSCRIBE_URL}}</span>
+        </a>
+        <p class="stamp dim t-gantrics" id="t-gantrics">Construction Conversations is a Gantrics show</p>
+      </div>
+      <div class="hazard" aria-hidden="true"></div>
+    </article>
+    <div class="t-actions" role="group" aria-label="Share this translation">
+      <button type="button" class="btn btn-ghost" id="t-download" data-event="Translator Share: Download">Download image</button>
+      <button type="button" class="btn btn-ghost" id="t-copy" data-event="Translator Share: Copy">Copy link</button>
+      <a class="btn btn-ghost" id="t-linkedin" href="https://www.linkedin.com/sharing/share-offsite/" target="_blank" rel="noopener" data-event="Translator Share: LinkedIn">Share on LinkedIn</a>
+      <button type="button" class="btn btn-ghost" id="t-again">Try another</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-links"></div>
+    <small>© 2026 Construction Conversations · Every other Tuesday · Wherever you listen</small>
+  </div>
+  <div class="hazard"></div>
+</footer>
+
+<script type="application/json" id="translator-data">{{TRANSLATOR_JSON}}</script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/translator.js"></script>
+</body>
+</html>
