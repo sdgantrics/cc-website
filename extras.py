@@ -8,6 +8,7 @@ Data in:
   data/reviews.json          Apple Podcasts reviews cache (refreshed online)
   data/upcoming.json         next guests for the Ask form
   stories/<slug>.md          listener-submitted field stories (moderated)
+  data/translator.json       placeholder lines for the jobsite translator
 
 Pages out:
   site/articles.html, site/articles/<slug>.html
@@ -15,6 +16,7 @@ Pages out:
   site/lessons.html
   site/reviews.html
   site/join.html, site/stories.html
+  site/translator.html       standalone, noindex, not in the nav
 Plus per-episode blocks injected into episode pages.
 """
 
@@ -979,3 +981,36 @@ def build_join(stories, tpl_dir: Path):
     sp = sp.replace("{{NEWSLETTER}}", newsletter_block(""))
     (SITE / "stories.html").write_text(apply_chrome(sp, ""))
     print(f"Wrote site/join.html + site/stories.html ({len(stories)} stories)")
+
+
+def build_translator(tpl_dir: Path):
+    """Standalone /translator.html. Copy stays in data/translator.json."""
+    data = json.loads((ROOT / "data" / "translator.json").read_text())
+    if data.get("placeholder") is not True:
+        raise SystemExit("data/translator.json: placeholder must stay true until copy is approved")
+    templates = data.get("templates") or []
+    if len(templates) < 25:
+        raise SystemExit(f"data/translator.json: need at least 25 templates, found {len(templates)}")
+    for i, line in enumerate(templates):
+        if not isinstance(line, str) or "PLACEHOLDER" not in line or "{phrase}" not in line:
+            raise SystemExit(f"data/translator.json: template {i} must include PLACEHOLDER and {{phrase}}")
+    url = data.get("subscribe_url") or ""
+    if not url.startswith("https://constructionbriefs.substack.com/"):
+        raise SystemExit("data/translator.json: subscribe_url must be the Construction Briefs URL")
+    if len(data.get("buzzwords") or []) < 10:
+        raise SystemExit("data/translator.json: buzzword list is missing")
+    page = (tpl_dir / "translator.html").read_text()
+    if "{{TRANSLATOR_JSON}}" not in page or "{{SUBSCRIBE_URL}}" not in page:
+        raise SystemExit("templates/translator.html is missing placeholders")
+    if 'rel="noopener"' not in page:
+        raise SystemExit("templates/translator.html subscribe link needs rel=\"noopener\"")
+    lowered = page.lower()
+    if "noreferrer" in lowered or "referrerpolicy" in lowered or "referrer-policy" in lowered:
+        raise SystemExit("translator page must not set a stricter referrer policy")
+    blob = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
+    page = page.replace("{{TRANSLATOR_JSON}}", blob)
+    page = page.replace("{{SUBSCRIBE_URL}}", html.escape(url, quote=True))
+    if "{{" in page:
+        raise SystemExit("translator template has an unfilled placeholder")
+    (SITE / "translator.html").write_text(apply_chrome(page, ""))
+    print(f"Wrote site/translator.html ({len(templates)} placeholder templates, noindex)")

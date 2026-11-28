@@ -534,6 +534,7 @@ def build():
     build_search(tpl_dir)
     extras.build_reviews(extras.load_reviews(offline), tpl_dir)
     extras.build_join(extras.load_stories(), tpl_dir)
+    extras.build_translator(tpl_dir)
 
     print(f"Built {datetime.now():%Y-%m-%d %H:%M}")
 
